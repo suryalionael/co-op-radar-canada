@@ -3,7 +3,8 @@ name: Daily
 # Fetch postings and program pages, store raw snapshots on the orphan `data`
 # branch (ADR 0002), then rebuild data/processed/ on main from every snapshot.
 # A failing source is logged in data/run_log.jsonl and never blocks the others;
-# the run is marked failed at the end so the failure is visible.
+# the run is marked failed at the end so the failure is visible. A commit to
+# main with new site data triggers the Vercel deploy (ADR 0005).
 
 on:
   schedule:
@@ -76,9 +77,14 @@ jobs:
         continue-on-error: true
         run: python -m pipeline.cli process-programs --data-root data-branch
 
-      - name: Commit processed outputs to main
+      - name: Build site data
+        id: site_data
+        continue-on-error: true
+        run: python -m pipeline.cli build-site-data
+
+      - name: Commit processed outputs and site data to main
         run: |
-          git add data/processed data/run_log.jsonl
+          git add data/processed data/run_log.jsonl site/public/data
           if git diff --cached --quiet; then
             echo "Processed outputs unchanged."
           else
@@ -90,8 +96,10 @@ jobs:
       - name: Fail the run if any step failed
         if: >-
           steps.postings.outcome == 'failure' || steps.programs.outcome == 'failure' ||
-          steps.process_postings.outcome == 'failure' || steps.process_programs.outcome == 'failure'
+          steps.process_postings.outcome == 'failure' || steps.process_programs.outcome == 'failure' ||
+          steps.site_data.outcome == 'failure'
         run: |
           echo "postings=${{ steps.postings.outcome }} programs=${{ steps.programs.outcome }}"
           echo "process_postings=${{ steps.process_postings.outcome }} process_programs=${{ steps.process_programs.outcome }}"
+          echo "site_data=${{ steps.site_data.outcome }}"
           exit 1

@@ -4,6 +4,7 @@
     python -m pipeline.cli process-postings --data-root data-branch
     python -m pipeline.cli fetch-programs   --data-root data-branch
     python -m pipeline.cli process-programs --data-root data-branch
+    python -m pipeline.cli build-site-data  # data/processed -> site/public/data
     python -m pipeline.cli label-sheet      --data-root data-branch
     python -m pipeline.cli evaluate         --data-root data-branch
 
@@ -24,7 +25,7 @@ from typing import Any
 
 import yaml
 
-from pipeline import program_watch
+from pipeline import build_site_data, program_watch
 from pipeline.evaluate import markdown_table, read_labels, score, write_label_sheet
 from pipeline.postings import build_postings, write_postings
 from pipeline.sources import fetch_board
@@ -151,6 +152,7 @@ def main(argv: list[str] | None = None) -> int:
             "process-postings",
             "fetch-programs",
             "process-programs",
+            "build-site-data",
             "label-sheet",
             "evaluate",
         ],
@@ -166,6 +168,10 @@ def main(argv: list[str] | None = None) -> int:
         return process_postings(args.data_root)
     if args.command == "fetch-programs":
         return fetch_programs(args.data_root, day)
+    if args.command == "build-site-data":
+        meta = build_site_data.build()
+        log_run({"command": "build-site-data", **meta["counts"]})
+        return 0
     if args.command == "label-sheet":
         return label_sheet(args.data_root)
     if args.command == "evaluate":
