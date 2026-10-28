@@ -22,6 +22,7 @@ import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
+from typing import Any
 
 USER_AGENT = "co-op-radar-canada/0.1 (student project; board token check)"
 SLEEP_SECONDS = 0.3  # pause between requests to the same host
@@ -42,7 +43,7 @@ def is_canadian(location: str) -> bool:
     return bool(CANADA_NAMES.search(location) or CANADA_CODES.search(location))
 
 
-def get_json(url: str) -> object | None:
+def get_json(url: str) -> Any:
     """Return parsed JSON, or None on 404 or any error."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
@@ -52,7 +53,7 @@ def get_json(url: str) -> object | None:
         return None
 
 
-def check_greenhouse(token: str) -> dict | None:
+def check_greenhouse(token: str) -> dict[str, Any] | None:
     board = get_json(f"https://boards-api.greenhouse.io/v1/boards/{token}")
     if not isinstance(board, dict) or "name" not in board:
         return None
@@ -62,26 +63,27 @@ def check_greenhouse(token: str) -> dict | None:
     return {"board_name": board["name"], "jobs": len(jobs), "locations": locations}
 
 
-def check_lever(token: str) -> dict | None:
+def check_lever(token: str) -> dict[str, Any] | None:
     jobs = get_json(f"https://api.lever.co/v0/postings/{token}?mode=json")
     if not isinstance(jobs, list):
         return None
     locations = [
-        " / ".join([(j.get("categories") or {}).get("location") or ""]
-                   + ((j.get("categories") or {}).get("allLocations") or []))
+        " / ".join(
+            [(j.get("categories") or {}).get("location") or ""]
+            + ((j.get("categories") or {}).get("allLocations") or [])
+        )
         for j in jobs
     ]
     return {"board_name": None, "jobs": len(jobs), "locations": locations}
 
 
-def check_ashby(token: str) -> dict | None:
+def check_ashby(token: str) -> dict[str, Any] | None:
     data = get_json(f"https://api.ashbyhq.com/posting-api/job-board/{token}")
     if not isinstance(data, dict) or "jobs" not in data:
         return None
     jobs = data["jobs"]
     locations = [
-        " / ".join([j.get("location") or ""]
-                   + [s.get("location") or "" for s in j.get("secondaryLocations") or []])
+        " / ".join([j.get("location") or ""] + [s.get("location") or "" for s in j.get("secondaryLocations") or []])
         for j in jobs
     ]
     return {"board_name": None, "jobs": len(jobs), "locations": locations}
@@ -90,7 +92,7 @@ def check_ashby(token: str) -> dict | None:
 CHECKERS = {"greenhouse": check_greenhouse, "lever": check_lever, "ashby": check_ashby}
 
 
-def run_platform(platform: str, tokens: list[str]) -> list[dict]:
+def run_platform(platform: str, tokens: list[str]) -> list[dict[str, Any]]:
     """Check every token on one platform, sequentially, sleeping between requests."""
     hits = []
     for token in tokens:
