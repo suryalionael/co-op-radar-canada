@@ -106,7 +106,11 @@ def build_postings(con: duckdb.DuckDBPyConnection, processed: Path, employers: d
             | {
                 "employer": employer.get("name", row["employer_id"]),
                 "sector": employer.get("sector"),
-                "evidence": {k: evidence[k] for k in ("term", "term_dates", "duration") if k in evidence},
+                "evidence": {
+                    k: evidence[k]
+                    for k in ("term", "term_context", "term_dates", "duration", "duration_context")
+                    if k in evidence
+                },
             }
         )
     return out

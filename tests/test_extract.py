@@ -219,3 +219,29 @@ def test_track_falls_back_to_description() -> None:
 )
 def test_student_role(title: str, student: bool) -> None:
     assert is_student_role(title)[0] is student
+
+
+# --- Evidence quotes ------------------------------------------------------------
+
+
+def test_quote_context_cuts_at_words() -> None:
+    from pipeline.extract import quote_context
+
+    text = "We are a growing fintech in Toronto. This is a 4-month co-op on our analytics team, starting in May."
+    quote = quote_context("4-month", text, width=20)
+    assert quote == "…Toronto. This is a 4-month co-op on our…"
+    assert quote_context("4-month", "A 4-month co-op") == "A 4-month co-op"
+    assert quote_context("missing", text) is None
+
+
+def test_extract_posting_adds_contexts() -> None:
+    from pipeline.extract import extract_posting
+    from pipeline.models import RawPosting, Source
+
+    raw = RawPosting(
+        source=Source.greenhouse, board_token="a", employer_id="a", source_job_id="1",
+        title="Data Co-op (Summer 2027)", url="u", location_raw="Toronto, ON",
+    )  # fmt: skip
+    fields = extract_posting(raw, "<p>This is a 4-month co-op on our analytics team.</p>")
+    assert fields["evidence"]["term_context"] == "Data Co-op (Summer 2027)"
+    assert fields["evidence"]["duration_context"] == "This is a 4-month co-op on our analytics team."

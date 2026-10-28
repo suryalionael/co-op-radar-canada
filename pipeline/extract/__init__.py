@@ -12,6 +12,30 @@ from pipeline.extract.track import extract_track
 from pipeline.models import RawPosting
 from pipeline.text import html_to_text
 
+CONTEXT_CHARS = 70
+
+
+def quote_context(span: str, *texts: str, width: int = CONTEXT_CHARS) -> str | None:
+    """A short quote around the first place `span` appears, cut at word boundaries.
+
+    Used to show the posting's own words next to an extracted fact. Ellipses mark
+    where the quote was cut.
+    """
+    for text in texts:
+        at = text.find(span)
+        if at < 0:
+            continue
+        start, end = max(0, at - width), min(len(text), at + len(span) + width)
+        if start > 0:
+            space = text.find(" ", start, at)
+            start = space + 1 if space >= 0 else start
+        if end < len(text):
+            space = text.rfind(" ", at + len(span), end)
+            end = space if space >= 0 else end
+        quote = " ".join(text[start:end].split())
+        return ("…" if start > 0 else "") + quote + ("…" if end < len(text) else "")
+    return None
+
 
 def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
     """Every extracted Posting field for one raw posting."""
@@ -33,6 +57,13 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         evidence["province"] = location.province_evidence
     if location.remote_evidence:
         evidence["remote"] = location.remote_evidence
+
+    # The posting's own words around the term and duration, for the site's evidence quotes.
+    for field in ("term", "duration"):
+        span = evidence.get(field, "").split(" | ")[0]
+        context = quote_context(span, raw.title, description) if span else None
+        if context:
+            evidence[f"{field}_context"] = context
 
     track, track_evidence = extract_track(raw.title, description)
     if track_evidence:
