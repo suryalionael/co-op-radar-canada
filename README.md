@@ -62,6 +62,8 @@ Full method and results will live in [`docs/evaluation.md`](docs/evaluation.md).
 | v2 | Jan 2027 | Posting submissions, employer pages, student-opportunity news, weekly digest and RSS |
 | v3 | Spring 2027 | Market view, recruiting calendar, season write-up |
 
+The week-by-week schedule, with what is done and what is next, is in [`docs/timeline.md`](docs/timeline.md).
+
 ## Repository layout
 
 ```
@@ -77,7 +79,16 @@ docs/decisions/    architecture decision records (one per decision)
 
 ## Running locally
 
-Requires Python 3.12. Setup instructions will be added here as the code lands. For now, the only runnable piece is the Phase 0 coverage check in `scripts/`.
+Requires Python 3.12. For now, the runnable pieces are the Phase 0 scripts in `scripts/`.
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev]"
+pytest                                   # counting-rule tests
+python scripts/coverage_spike.py         # fetch every seed board once, save to data/coverage/
+```
+
+`scripts/check_board_tokens.py` checks which platform a candidate board token lives on, for adding employers to `config/employers.yaml`.
 
 ## Design decisions
 

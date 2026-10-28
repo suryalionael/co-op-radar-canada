@@ -1,0 +1,86 @@
+# Candidate board tokens to grow config/employers.yaml past the 100 responding
+# boards that ADR 0001 needs before the decision run (70 so far).
+#
+# These are UNVERIFIED guesses: employers with Canadian offices that may use
+# Greenhouse, Lever or Ashby. Many will miss or hit a same-named company elsewhere.
+# Check them with:
+#
+#   python scripts/check_board_tokens.py scripts/candidate_tokens.txt > hits.jsonl
+#
+# Add a hit to the seed list only if canada_jobs > 0 and the Greenhouse
+# board_name (or the job URLs) shows it is the company you expected.
+
+# Canadian tech and fintech
+achievers
+arcticwolf
+axonify
+bench
+borrowell
+certn
+clearco
+clio
+coveo
+dapperlabs
+dialogue
+drop
+earnwithdrop
+ecobee
+financeit
+flinks
+freshbooks
+humi
+koho
+league
+maple
+mogo
+nesto
+nulogy
+nuvei
+properly
+ratehub
+rewind
+ritual
+sensibill
+shopify
+ssense
+tophat
+touchbistro
+tulip
+vena
+venasolutions
+vidyard
+wealthica
+
+# Canadian deep tech, AI and hardware
+1qbit
+bluej
+dwave
+dwavesys
+sanctuary
+sanctuaryai
+untether
+untetherai
+waabi
+xanadu
+xanaduai
+
+# US and global employers with Canadian engineering offices
+atlassian
+chime
+cloudflare
+confluent
+dbtlabsinc
+discord
+figma
+fivetran
+grammarly
+hashicorp
+mozilla
+notion
+plaid
+retool
+rippling
+unity3d
+vercel
+wealthfront
+zapier
