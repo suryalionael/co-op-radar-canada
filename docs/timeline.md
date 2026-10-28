@@ -134,6 +134,6 @@ Seven weeks, ~21 h. Holidays may add time; the plan does not assume it.
 | 0002 | Raw storage design, Canada filter, size budget | Drafted; accept with the measured size by Nov 3 |
 | 0003 | Workday out of scope | Done |
 | 0004 | LinkedIn and other forbidden sites as link-outs only | Done |
-| 0005 | Hosting: GitHub Pages or Vercel | Week 1 of v1 (Nov 10) |
+| 0005 | Hosting: Vercel free tier with Web Analytics | Done |
 | 0006 | Multi-value term and province, in-Canada flag | Done |
 | later | Google News RSS terms check; each new source from brief 5.5; rules vs model for news | v2 weeks 1 and 7 |
