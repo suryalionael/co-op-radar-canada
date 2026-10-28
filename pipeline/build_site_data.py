@@ -30,6 +30,7 @@ RUN_LOG = ROOT / "data" / "run_log.jsonl"
 
 POSTING_FIELDS = [
     "id",
+    "source",
     "employer_id",
     "title",
     "url",

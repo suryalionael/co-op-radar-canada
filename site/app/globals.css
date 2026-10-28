@@ -1,0 +1,126 @@
+/* Tokens come from DESIGN.md at the repo root. Change them there first. */
+@import "tailwindcss";
+@import "@fontsource-variable/source-serif-4/opsz.css";
+@import "@fontsource-variable/public-sans/wght.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
+:root {
+  --bg: oklch(0.99 0.002 260);
+  --surface: oklch(0.965 0.004 260);
+  --fg: oklch(0.23 0.012 260);
+  --muted: oklch(0.48 0.012 260);
+  --border: oklch(0.88 0.006 260);
+  --accent: oklch(0.5 0.17 27);
+  --accent-fg: oklch(0.99 0 0);
+  --mark: oklch(0.93 0.08 95);
+  --success: oklch(0.5 0.12 150);
+  --warning: oklch(0.5 0.12 65);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: oklch(0.17 0.008 260);
+    --surface: oklch(0.21 0.01 260);
+    --fg: oklch(0.93 0.004 260);
+    --muted: oklch(0.7 0.01 260);
+    --border: oklch(0.32 0.01 260);
+    --accent: oklch(0.72 0.13 27);
+    --accent-fg: oklch(0.17 0.008 260);
+    --mark: oklch(0.42 0.07 95);
+    --success: oklch(0.72 0.12 150);
+    --warning: oklch(0.78 0.12 75);
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-mark: var(--mark);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --font-display: "Source Serif 4 Variable", Georgia, serif;
+  --font-sans: "Public Sans Variable", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Minor third (1.2) from 16px */
+  --text-xs: 0.8333rem;
+  --text-sm: 0.8333rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.44rem;
+  --text-2xl: 1.728rem;
+  --text-3xl: 2.0736rem;
+
+  --radius-sm: 2px;
+  --radius-md: 6px;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-optical-sizing: auto;
+  text-wrap: balance;
+}
+
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+mark {
+  background: var(--mark);
+  color: inherit;
+  padding: 0 0.12em;
+  border-radius: var(--radius-sm);
+}
+
+/* Fact line: small capitals, tracked. */
+.facts {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .transition-colors {
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

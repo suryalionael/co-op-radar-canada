@@ -1,0 +1,191 @@
+[
+ {
+  "id": "sample01",
+  "source": "greenhouse",
+  "employer_id": "northwind",
+  "employer": "Northwind Analytics (sample)",
+  "sector": "software",
+  "title": "Data Science Co-op",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Toronto, ON",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "term": "Summer 2027",
+  "terms": [
+   "Summer 2027"
+  ],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "track": "data_science",
+  "first_seen": "2026-11-03",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Data Science Co-op (Summer 2027)",
+   "duration": "4-month",
+   "duration_context": "This is a 4-month co-op on our analytics team, working with dbt and Python."
+  }
+ },
+ {
+  "id": "sample02",
+  "source": "greenhouse",
+  "employer_id": "maplewood",
+  "employer": "Maplewood Software (sample)",
+  "sector": "software",
+  "title": "Software Developer Intern",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Waterloo, ON / Vancouver, BC",
+  "province": "ON",
+  "provinces": [
+   "ON",
+   "BC"
+  ],
+  "remote": "onsite",
+  "term": "Summer 2027",
+  "terms": [
+   "Summer 2027",
+   "Fall 2027"
+  ],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [
+   4.0,
+   8.0
+  ],
+  "duration_status": "stated",
+  "track": "software",
+  "first_seen": "2026-11-01",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "…start in Summer 2027 or Fall 2027, depending on your school's schedule.",
+   "duration": "4 or 8 months",
+   "duration_context": "Co-op terms are 4 or 8 months long, and returning students are welcome."
+  }
+ },
+ {
+  "id": "sample03",
+  "source": "greenhouse",
+  "employer_id": "fernhill",
+  "employer": "Fernhill Bank (sample)",
+  "sector": "software",
+  "title": "Summer Analyst, Risk",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Montréal, QC",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "term": "Summer 2027",
+  "terms": [
+   "Summer 2027"
+  ],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "track": "data_analytics",
+  "first_seen": "2026-10-29",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term": "May–August 2027",
+   "term_context": "The program runs May–August 2027 in our Montréal office.",
+   "term_dates": "May–August 2027"
+  }
+ },
+ {
+  "id": "sample04",
+  "source": "greenhouse",
+  "employer_id": "lakeshore",
+  "employer": "Lakeshore Robotics (sample)",
+  "sector": "software",
+  "title": "Machine Learning Intern",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Remote - Canada",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "term": "Winter 2027",
+  "terms": [
+   "Winter 2027"
+  ],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "track": "ml_ai",
+  "first_seen": "2026-10-28",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "We're hiring ML interns for Winter 2027."
+  }
+ },
+ {
+  "id": "sample05",
+  "source": "greenhouse",
+  "employer_id": "cedar",
+  "employer": "Cedar Health (sample)",
+  "sector": "software",
+  "title": "Data Engineering Co-op",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Calgary, AB",
+  "province": "AB",
+  "provinces": [
+   "AB"
+  ],
+  "remote": "hybrid",
+  "term": null,
+  "terms": [],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "track": "data_eng",
+  "first_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…an 8-month co-op building data pipelines for our clinics platform."
+  }
+ },
+ {
+  "id": "sample06",
+  "source": "greenhouse",
+  "employer_id": "harbour",
+  "employer": "Harbour Logistics (sample)",
+  "sector": "software",
+  "title": "Operations Student",
+  "url": "https://example.com/sample-posting",
+  "location_raw": "Halifax, NS",
+  "province": "NS",
+  "provinces": [
+   "NS"
+  ],
+  "remote": "onsite",
+  "term": null,
+  "terms": [],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "track": "business_ops",
+  "first_seen": "2026-10-20",
+  "last_seen": "2026-11-03",
+  "evidence": {}
+ }
+]
