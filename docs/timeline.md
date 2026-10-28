@@ -2,7 +2,7 @@
 
 Phase-by-phase schedule for Co-op Radar Canada, built from the targets and hour estimates in [`brief.md`](brief.md) section 7. Budget: about 3 hours of project time a week. Each phase ships before the next starts; when behind, cut from that phase's cut list instead of moving the date.
 
-Status as of **2026-10-28**: Phase 0 in progress.
+Status as of **2026-10-28**: Phase 0 in progress. The decision run is waiting on the seed list reaching 100 boards and on network access to the job-board APIs. v1 code that every Phase 0 outcome needs was built ahead of schedule (see "Built ahead" in the v1 section); none of it has run against live data yet.
 
 ## At a glance
 
@@ -65,6 +65,21 @@ Six weeks at ~3 h a week. Two things have long lead times and must start early: 
 | 5 | Dec 2 – 8 | Finish labelling (all Canadian student postings, up to 200). Evaluation with counts and 95% Wilson intervals in `docs/evaluation.md` and the README. `build_site_data.py`. Daily Action must be green from Dec 6 at the latest | 3 |
 | 6 | Dec 9 – 13 | Static site: search, filters, posting cards with provenance labels, program-watch panel, About page with the coverage gap. Deploy. **Launch Dec 13** to Seneca students and on LinkedIn | 2–3 |
 
+**Built ahead (Oct 28, offline, with tests; not yet run on live data):**
+
+| Item | Where | Remaining |
+|---|---|---|
+| Pydantic records | `pipeline/models.py` | — |
+| Greenhouse, Lever, Ashby sources with polite client | `pipeline/sources/` | First live run |
+| Raw storage on the `data` branch | `pipeline/storage.py` | Measured size for ADR 0002 |
+| Closed-status guard (failed and empty fetches) | `pipeline/postings.py` | — |
+| Term, duration, province, track, student extractors | `pipeline/extract/` | Tune on real postings during labelling |
+| Program watch: main text, noise removal, change log, robots.txt | `pipeline/program_watch.py` | Verify the URLs in `config/programs.yaml`; 7-day dry run |
+| Daily workflow | `.github/workflows/daily.yml` | First run after merge to main |
+| Labelling sheet and evaluation with Wilson intervals | `pipeline/evaluate.py` | Label postings (week 5) |
+
+With this done, weeks 1–3 mostly become live testing and fixing, which frees time for labelling and the site.
+
 **Acceptance criteria** (from the brief):
 
 - Daily Action green for 7 consecutive days.
@@ -120,4 +135,5 @@ Seven weeks, ~21 h. Holidays may add time; the plan does not assume it.
 | 0003 | Workday out of scope | Done |
 | 0004 | LinkedIn and other forbidden sites as link-outs only | Done |
 | 0005 | Hosting: GitHub Pages or Vercel | Week 1 of v1 (Nov 10) |
+| 0006 | Multi-value term and province, in-Canada flag | Done |
 | later | Google News RSS terms check; each new source from brief 5.5; rules vs model for news | v2 weeks 1 and 7 |

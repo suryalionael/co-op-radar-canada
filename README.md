@@ -79,16 +79,35 @@ docs/decisions/    architecture decision records (one per decision)
 
 ## Running locally
 
-Requires Python 3.12. For now, the runnable pieces are the Phase 0 scripts in `scripts/`.
+Requires Python 3.12.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-pytest                                   # counting-rule tests
+pytest
+```
+
+Phase 0:
+
+```bash
 python scripts/coverage_spike.py         # fetch every seed board once, save to data/coverage/
 ```
 
 `scripts/check_board_tokens.py` checks which platform a candidate board token lives on, for adding employers to `config/employers.yaml`.
+
+Pipeline (the daily Action runs the same commands; `data-branch/` is a checkout of the `data` branch):
+
+```bash
+git worktree add data-branch data        # or: git worktree add --orphan -b data data-branch
+python -m pipeline.cli fetch-postings   --data-root data-branch
+python -m pipeline.cli fetch-programs   --data-root data-branch
+python -m pipeline.cli process-postings --data-root data-branch   # writes data/processed/postings.parquet
+python -m pipeline.cli process-programs --data-root data-branch
+python -m pipeline.cli label-sheet      --data-root data-branch   # rows to hand-label in data/labels/
+python -m pipeline.cli evaluate         --data-root data-branch   # precision and recall with 95% intervals
+```
+
+Program watch only fetches pages in `config/programs.yaml` whose URL has been checked by hand (`verified` set).
 
 ## Design decisions
 
