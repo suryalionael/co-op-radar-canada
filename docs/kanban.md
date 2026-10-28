@@ -8,12 +8,12 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| V1-10 | Site: `build_site_data.py` and Next.js static site (search, filters, posting cards, program-watch panel, About page); first draft by Claude, then review and polish | Lio | 2 h | Dec 12 |
 
 ## Review
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
+| V1-10 | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
 
 ## This week (Oct 28 – Nov 3)
 
@@ -73,3 +73,6 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | P0-0 | Coverage spike script with tests; CI | Lio | Oct 28 |
 | V1-0 | Pipeline built ahead: models, sources, raw storage, closed-status guard, extractors, program watch, evaluation tooling, daily workflow | Lio | Oct 28 |
 | ADR | 0002 (draft), 0003, 0004, 0005 (Vercel), 0006 | Lio | Oct 28 |
+| V1-0 | Site data build (DuckDB → JSON), evidence quotes in the pipeline, DESIGN.md | Lio | Oct 28 |
+| V1-0 | Labeller agreement tool (Cohen's kappa) for V1-8 | Lio | Oct 28 |
+| TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |

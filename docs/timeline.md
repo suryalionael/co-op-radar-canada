@@ -76,9 +76,13 @@ Six weeks at ~3 h a week. Two things have long lead times and must start early: 
 | Term, duration, province, track, student extractors | `pipeline/extract/` | Tune on real postings during labelling |
 | Program watch: main text, noise removal, change log, robots.txt | `pipeline/program_watch.py` | Verify the URLs in `config/programs.yaml`; 7-day dry run |
 | Daily workflow | `.github/workflows/daily.yml` | First run after merge to main |
-| Labelling sheet and evaluation with Wilson intervals | `pipeline/evaluate.py` | Label postings (week 5) |
+| Labelling sheet and evaluation with Wilson intervals; labeller agreement | `pipeline/evaluate.py` | Label postings (week 5) |
+| Site data build (DuckDB → JSON) | `pipeline/build_site_data.py` | — |
+| Static site in the evidence-ledger design, Vercel Analytics | `site/`, `DESIGN.md` | Review (V1-10), deploy (V1-2), phone QA (V1-12) |
 
-With this done, weeks 1–3 mostly become live testing and fixing, which frees time for labelling and the site.
+With this done, weeks 1–3 mostly become live testing and fixing, and week 6 becomes review and launch instead of building the site.
+
+Owners for every remaining task are on the [kanban board](kanban.md) (Lio about 80%, Ei Htoo about 20%).
 
 **Acceptance criteria** (from the brief):
 
