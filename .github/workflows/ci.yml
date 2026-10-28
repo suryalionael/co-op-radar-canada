@@ -2,6 +2,7 @@ name: CI
 
 on:
   push:
+    branches-ignore: [data] # raw snapshots only, no code
   pull_request:
 
 jobs:
