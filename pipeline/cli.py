@@ -7,6 +7,7 @@
     python -m pipeline.cli build-site-data  # data/processed -> site/public/data
     python -m pipeline.cli label-sheet      --data-root data-branch
     python -m pipeline.cli evaluate         --data-root data-branch
+    python -m pipeline.cli agreement        # postings.csv vs postings_second.csv
 
 Fetch commands write raw snapshots to the data root (a checkout of the `data`
 branch). Process commands rebuild data/processed/ from every snapshot. Each
@@ -26,7 +27,7 @@ from typing import Any
 import yaml
 
 from pipeline import build_site_data, program_watch
-from pipeline.evaluate import markdown_table, read_labels, score, write_label_sheet
+from pipeline.evaluate import agreement, agreement_table, markdown_table, read_labels, score, write_label_sheet
 from pipeline.postings import build_postings, write_postings
 from pipeline.sources import fetch_board
 from pipeline.sources.http import PoliteClient
@@ -38,6 +39,7 @@ PROGRAMS = ROOT / "config" / "programs.yaml"
 PROCESSED = ROOT / "data" / "processed"
 RUN_LOG = ROOT / "data" / "run_log.jsonl"
 LABELS = ROOT / "data" / "labels" / "postings.csv"
+SECOND_LABELS = ROOT / "data" / "labels" / "postings_second.csv"  # second labeller, for agreement
 
 
 def log_run(entry: dict[str, Any]) -> None:
@@ -155,6 +157,7 @@ def main(argv: list[str] | None = None) -> int:
             "build-site-data",
             "label-sheet",
             "evaluate",
+            "agreement",
         ],
     )
     parser.add_argument("--data-root", type=Path, default=ROOT / "data-branch", help="checkout of the data branch")
@@ -176,6 +179,10 @@ def main(argv: list[str] | None = None) -> int:
         return label_sheet(args.data_root)
     if args.command == "evaluate":
         return evaluate(args.data_root)
+    if args.command == "agreement":
+        first, second = read_labels(LABELS), read_labels(SECOND_LABELS)
+        print(agreement_table(agreement(first, second)))
+        return 0
     return process_programs(args.data_root)
 
 

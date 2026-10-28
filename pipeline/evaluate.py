@@ -28,7 +28,8 @@ from __future__ import annotations
 
 import csv
 import math
-from collections.abc import Callable, Iterable
+from collections import Counter
+from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -140,6 +141,45 @@ def score(labels: list[dict[str, str]], postings: dict[str, Posting]) -> list[Fi
             FieldScore(name, labelled, Ratio(correct_predicted, predicted), Ratio(correct_labelled, labelled))
         )
     return scores
+
+
+@dataclass
+class Agreement:
+    field: str
+    both_labelled: int
+    agree: Ratio
+    kappa: float | None  # Cohen's kappa; None when chance agreement is 1 (every label the same)
+
+
+def cohens_kappa(pairs: Sequence[tuple[object, object]]) -> float | None:
+    """Agreement beyond chance between two labellers. "No value" counts as its own category."""
+    n = len(pairs)
+    if n == 0:
+        return None
+    observed = sum(a == b for a, b in pairs) / n
+    first = Counter(a for a, _ in pairs)
+    second = Counter(b for _, b in pairs)
+    expected = sum(first[k] * second.get(k, 0) for k in first) / (n * n)
+    return None if expected == 1 else (observed - expected) / (1 - expected)
+
+
+def agreement(first: list[dict[str, str]], second: list[dict[str, str]]) -> list[Agreement]:
+    """Compare two people's labels on the postings both of them labelled (V1-8)."""
+    by_id = {r["id"]: r for r in second}
+    shared = [(r, by_id[r["id"]]) for r in first if r["id"] in by_id]
+    out = []
+    for name, (get_label, _) in FIELDS.items():
+        pairs = [(get_label(a), get_label(b)) for a, b in shared]
+        out.append(Agreement(name, len(pairs), Ratio(sum(a == b for a, b in pairs), len(pairs)), cohens_kappa(pairs)))
+    return out
+
+
+def agreement_table(rows: Iterable[Agreement]) -> str:
+    lines = ["| Field | Postings labelled by both | Agreement | Cohen's kappa |", "|---|---|---|---|"]
+    for a in rows:
+        kappa = "—" if a.kappa is None else f"{a.kappa:.2f}"
+        lines.append(f"| {a.field} | {a.both_labelled} | {a.agree} | {kappa} |")
+    return "\n".join(lines) + "\n"
 
 
 def markdown_table(scores: Iterable[FieldScore]) -> str:

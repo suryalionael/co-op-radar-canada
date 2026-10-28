@@ -7,6 +7,7 @@ How the extractors are measured, and the results. **No results yet:** the labell
 1. `python -m pipeline.cli label-sheet --data-root data-branch` adds postings to `data/labels/postings.csv`: every open Canadian student posting, up to 200; if there are fewer, other Canadian postings fill the rest (they still test province and track). The sheet does **not** include the extractor's answers, so labels are not anchored on them.
 2. Each row is labelled by hand from the original posting (open the URL). Column rules are in the docstring of `pipeline/evaluate.py`. A duration the posting gives only as dates ("May to August") is labelled as stated.
 3. `python -m pipeline.cli evaluate --data-root data-branch` prints the table below.
+4. **Second labeller.** Ei Htoo independently labels 40 of the same postings in `data/labels/postings_second.csv`, without seeing the first labels or the extractor output. `python -m pipeline.cli agreement` reports per-field agreement (with a Wilson interval) and Cohen's kappa. Disagreements are counted first, then resolved by discussion; the resolved labels are what the extractors are scored against.
 
 Per field:
 
@@ -28,6 +29,12 @@ A value is correct only if it matches the label exactly: for duration, the whole
 | Province | not yet measured | — | — |
 | Track | not yet measured | — | — |
 | Student role | not yet measured | — | — |
+
+### Labeller agreement
+
+| Field | Postings labelled by both | Agreement | Cohen's kappa |
+|---|---|---|---|
+| all fields | not yet measured | — | — |
 
 ## Known limits
 

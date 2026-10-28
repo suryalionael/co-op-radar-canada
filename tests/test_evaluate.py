@@ -78,3 +78,24 @@ def test_label_sheet_append_skips_labelled(tmp_path: Path) -> None:
 def test_interval_contains_point_estimate(k: int, n: int) -> None:
     low, high = wilson_interval(k, n)
     assert low <= k / n <= high
+
+
+def test_cohens_kappa_known_values() -> None:
+    from pipeline.evaluate import cohens_kappa
+
+    assert cohens_kappa([("a", "a"), ("b", "b")]) == 1.0
+    assert cohens_kappa([("a", "a"), ("a", "a")]) is None  # no variation: kappa undefined
+    # 20 items, observed 0.7, expected 0.5 -> kappa 0.4
+    pairs = [("y", "y")] * 7 + [("n", "n")] * 7 + [("y", "n")] * 3 + [("n", "y")] * 3
+    assert abs((cohens_kappa(pairs) or 0) - 0.4) < 1e-9
+
+
+def test_agreement_on_shared_postings() -> None:
+    from pipeline.evaluate import agreement
+
+    first = [label("1", "4", "Summer 2027", "ON"), label("2", "8", "", "BC"), label("3", "4", "", "ON")]
+    second = [label("1", "4", "Summer 2027", "ON"), label("2", "", "", "BC")]  # 3 not double-labelled
+    rows = {a.field: a for a in agreement(first, second)}
+    assert rows["duration"].both_labelled == 2
+    assert (rows["duration"].agree.k, rows["duration"].agree.n) == (1, 2)
+    assert (rows["province"].agree.k, rows["province"].agree.n) == (2, 2)
