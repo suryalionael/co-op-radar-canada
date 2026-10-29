@@ -75,28 +75,64 @@ tests/             pytest suite
 site/              Next.js static site
 docs/brief.md      full project brief
 docs/decisions/    architecture decision records (one per decision)
+docs/timeline.md   phase-by-phase schedule
+docs/kanban.md     task board
 ```
 
 ## Running locally
 
-Requires Python 3.12. For now, the runnable pieces are the Phase 0 scripts in `scripts/`.
+Requires Python 3.12.
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
-pytest                                   # counting-rule tests
+pytest
+```
+
+Phase 0:
+
+```bash
 python scripts/coverage_spike.py         # fetch every seed board once, save to data/coverage/
 ```
 
 `scripts/check_board_tokens.py` checks which platform a candidate board token lives on, for adding employers to `config/employers.yaml`.
 
+Pipeline (the daily Action runs the same commands; `data-branch/` is a checkout of the `data` branch):
+
+```bash
+git worktree add data-branch data        # or: git worktree add --orphan -b data data-branch
+python -m pipeline.cli fetch-postings   --data-root data-branch
+python -m pipeline.cli fetch-programs   --data-root data-branch
+python -m pipeline.cli process-postings --data-root data-branch   # writes data/processed/postings.parquet
+python -m pipeline.cli process-programs --data-root data-branch
+python -m pipeline.cli label-sheet      --data-root data-branch   # rows to hand-label in data/labels/
+python -m pipeline.cli evaluate         --data-root data-branch   # precision and recall with 95% intervals
+```
+
+Program watch only fetches pages in `config/programs.yaml` whose URL has been checked by hand (`verified` set).
+
+Site (Next.js static export, deployed on Vercel; see [`docs/deploy.md`](docs/deploy.md)):
+
+```bash
+python -m pipeline.cli build-site-data   # data/processed -> site/public/data
+cd site && npm install
+npm run dev:sample                        # fictional sample data, clearly bannered
+npm run dev                               # real data
+```
+
+The design system is in [`DESIGN.md`](DESIGN.md).
+
 ## Design decisions
 
 Every meaningful choice (which sources to use, how raw data is stored, why Workday is out of scope) is written up as a short decision record in [`docs/decisions/`](docs/decisions/). The full project brief is in [`docs/brief.md`](docs/brief.md).
 
+## Team
+
+Built by Lionael Surya (lead) and Ei Htoo. Who does what is in [`docs/team.md`](docs/team.md); open work is on the [kanban board](docs/kanban.md) and in [`TODO.md`](TODO.md).
+
 ## Contributing
 
-A submission form for postings the pipeline can't reach is planned for v2. Until then, feel free to open an issue with suggestions for employers or student-program pages to track.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md). A submission form for postings the pipeline can't reach is planned for v2. Until then, feel free to open an issue with suggestions for employers or student-program pages to track.
 
 ## Disclaimer
 
@@ -104,7 +140,7 @@ Co-op Radar Canada is an independent student project. It is not affiliated with,
 
 ## Author
 
-Built by Lionael Surya (Lio), Honours Bachelor of Data Science & Analytics, Seneca Polytechnic, Toronto.
+Built by Lionael Surya (Lio), Honours Bachelor of Data Science & Analytics, Seneca Polytechnic, Toronto, with Ei Htoo.
 
 ## License
 

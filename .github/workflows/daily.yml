@@ -1,0 +1,107 @@
+name: Daily
+
+# Fetch postings and program pages, store raw snapshots on the orphan `data`
+# branch (ADR 0002), then rebuild data/processed/ on main from every snapshot.
+# A failing source is logged in data/run_log.jsonl and never blocks the others;
+# the run is marked failed at the end so the failure is visible. A commit to
+# main with new site data triggers the Vercel deploy (ADR 0005).
+
+on:
+  schedule:
+    - cron: "17 10 * * *" # 10:17 UTC, early morning in Canada
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-writes-${{ github.ref }} # shared with phase0.yml, so pushes never race
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -e .
+
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Check out the data branch (create it on the first run)
+        run: |
+          if git ls-remote --exit-code --heads origin data >/dev/null; then
+            git fetch --depth=1 origin data
+            git worktree add -B data data-branch origin/data
+          else
+            git worktree add --orphan -b data data-branch
+          fi
+
+      - name: Fetch postings
+        id: postings
+        continue-on-error: true
+        run: python -m pipeline.cli fetch-postings --data-root data-branch
+
+      - name: Fetch program pages
+        id: programs
+        continue-on-error: true
+        run: python -m pipeline.cli fetch-programs --data-root data-branch
+
+      - name: Commit raw snapshots to the data branch
+        working-directory: data-branch
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No new raw data."
+          else
+            git commit -q -m "Raw snapshot $(date -u +%F)"
+            git push origin data
+          fi
+
+      - name: Process postings
+        id: process_postings
+        continue-on-error: true
+        run: python -m pipeline.cli process-postings --data-root data-branch
+
+      - name: Process program watch
+        id: process_programs
+        continue-on-error: true
+        run: python -m pipeline.cli process-programs --data-root data-branch
+
+      - name: Build site data
+        id: site_data
+        continue-on-error: true
+        run: python -m pipeline.cli build-site-data
+
+      - name: Commit processed outputs and site data to main
+        run: |
+          for path in data/processed data/run_log.jsonl site/public/data; do
+            if [ -e "$path" ]; then git add -A "$path"; fi
+          done
+          if git diff --cached --quiet; then
+            echo "Processed outputs unchanged."
+          else
+            git commit -q -m "Daily data $(date -u +%F)"
+            git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Fail the run if any step failed
+        if: >-
+          steps.postings.outcome == 'failure' || steps.programs.outcome == 'failure' ||
+          steps.process_postings.outcome == 'failure' || steps.process_programs.outcome == 'failure' ||
+          steps.site_data.outcome == 'failure'
+        run: |
+          echo "postings=${{ steps.postings.outcome }} programs=${{ steps.programs.outcome }}"
+          echo "process_postings=${{ steps.process_postings.outcome }} process_programs=${{ steps.process_programs.outcome }}"
+          echo "site_data=${{ steps.site_data.outcome }}"
+          exit 1

@@ -1,0 +1,60 @@
+{
+ "programs": [
+  {
+   "program_id": "sample_bank",
+   "employer_id": "fernhill",
+   "name": "Fernhill Bank student programs (sample)",
+   "url": "https://example.com/students",
+   "last_checked": "2026-11-03",
+   "last_fetch_ok": true,
+   "last_changed": "2026-11-02",
+   "change_excerpt": "Applications for Summer 2027 student roles are now open. Apply by December 1.",
+   "expected_open": null,
+   "expected_open_src": null
+  },
+  {
+   "program_id": "sample_gov",
+   "employer_id": "gov",
+   "name": "Provincial summer student program (sample)",
+   "url": "https://example.com/gov",
+   "last_checked": "2026-11-03",
+   "last_fetch_ok": true,
+   "last_changed": null,
+   "change_excerpt": null,
+   "expected_open": "2026-12-01",
+   "expected_open_src": "https://example.com/gov"
+  },
+  {
+   "program_id": "sample_util",
+   "employer_id": "util",
+   "name": "Northern Hydro co-op students (sample)",
+   "url": "https://example.com/hydro",
+   "last_checked": "2026-11-03",
+   "last_fetch_ok": false,
+   "last_changed": "2026-10-15",
+   "change_excerpt": "Fall 2027 co-op dates announced.",
+   "expected_open": null,
+   "expected_open_src": null
+  }
+ ],
+ "changes": [
+  {
+   "program_id": "sample_bank",
+   "changed_on": "2026-11-02",
+   "change_excerpt": "Applications for Summer 2027 student roles are now open. Apply by December 1.",
+   "kind": "content_change"
+  },
+  {
+   "program_id": "sample_gov",
+   "changed_on": "2026-10-28",
+   "change_excerpt": "Page says applications open December 1.",
+   "kind": "manual_note"
+  },
+  {
+   "program_id": "sample_util",
+   "changed_on": "2026-10-15",
+   "change_excerpt": "Fall 2027 co-op dates announced.",
+   "kind": "content_change"
+  }
+ ]
+}

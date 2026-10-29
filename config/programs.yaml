@@ -1,0 +1,114 @@
+# Student-program pages for program watch (brief section 5.2).
+#
+# Priority: employers the posting pipeline cannot reach (Workday, government).
+#
+# EVERY URL BELOW IS UNVERIFIED. They were drafted without network access and
+# some will be wrong or redirect. Program watch skips any entry whose `verified`
+# is empty, so nothing is fetched until you open the page, confirm it is the
+# student-program page, and set `verified` to that date.
+#
+# Optional fields:
+#   expected_open / expected_open_src   a stated opening date and the page that states it
+#   note / note_date                    a manual entry for the change history
+
+programs:
+  - id: fswep
+    employer_id: government_of_canada
+    name: "Federal Student Work Experience Program (FSWEP)"
+    url: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-experience.html
+    verified: null
+  - id: ops_students
+    employer_id: ontario_public_service
+    name: "Ontario Public Service student jobs"
+    url: https://www.ontario.ca/page/ontario-public-service-student-jobs
+    verified: null
+  - id: bank_of_canada_students
+    employer_id: bank_of_canada
+    name: "Bank of Canada students and recent graduates"
+    url: https://www.bankofcanada.ca/careers/students/
+    verified: null
+  - id: rbc_students
+    employer_id: rbc
+    name: "RBC students and new grads"
+    url: https://jobs.rbc.com/ca/en/students
+    verified: null
+  - id: td_students
+    employer_id: td
+    name: "TD students and new grads"
+    url: https://jobs.td.com/en-CA/students/
+    verified: null
+  - id: bmo_students
+    employer_id: bmo
+    name: "BMO students and grads"
+    url: https://jobs.bmo.com/ca/en/students
+    verified: null
+  - id: scotiabank_students
+    employer_id: scotiabank
+    name: "Scotiabank students and new grads"
+    url: https://www.scotiabank.com/careers/en/careers/students-and-new-grads.html
+    verified: null
+  - id: cibc_students
+    employer_id: cibc
+    name: "CIBC students and new grads"
+    url: https://www.cibc.com/en/about-cibc/careers/students-and-new-grads.html
+    verified: null
+  - id: bdc_students
+    employer_id: bdc
+    name: "BDC student jobs"
+    url: https://www.bdc.ca/en/about/careers/students
+    verified: null
+  - id: manitoba_hydro_students
+    employer_id: manitoba_hydro
+    name: "Manitoba Hydro summer students"
+    url: https://www.hydro.mb.ca/careers/students/
+    verified: null
+  - id: bc_hydro_students
+    employer_id: bc_hydro
+    name: "BC Hydro students and new grads"
+    url: https://www.bchydro.com/work-with-us/careers/students-new-grads.html
+    verified: null
+  - id: hydro_quebec_students
+    employer_id: hydro_quebec
+    name: "Hydro-Québec students"
+    url: https://www.hydroquebec.com/careers/students.html
+    verified: null
+  - id: hydro_one_students
+    employer_id: hydro_one
+    name: "Hydro One students"
+    url: https://www.hydroone.com/about/careers/students
+    verified: null
+  - id: opg_students
+    employer_id: opg
+    name: "Ontario Power Generation students"
+    url: https://www.opg.com/careers/students/
+    verified: null
+  - id: bci_students
+    employer_id: bci
+    name: "BCI students"
+    url: https://www.bci.ca/careers/students/
+    verified: null
+  - id: deloitte_ca_students
+    employer_id: deloitte_canada
+    name: "Deloitte Canada students"
+    url: https://www.deloitte.com/ca/en/careers/students.html
+    verified: null
+  - id: pwc_ca_students
+    employer_id: pwc_canada
+    name: "PwC Canada students"
+    url: https://www.pwc.com/ca/en/careers/students.html
+    verified: null
+  - id: ey_ca_students
+    employer_id: ey_canada
+    name: "EY Canada students"
+    url: https://www.ey.com/en_ca/careers/students
+    verified: null
+  - id: kpmg_ca_students
+    employer_id: kpmg_canada
+    name: "KPMG Canada students"
+    url: https://kpmg.com/ca/en/home/careers/students.html
+    verified: null
+  - id: city_of_toronto_students
+    employer_id: city_of_toronto
+    name: "City of Toronto student jobs"
+    url: https://www.toronto.ca/home/jobs/student-jobs/
+    verified: null

@@ -18,8 +18,8 @@ The pipeline keeps every fetch as an immutable raw snapshot, so processing can b
 
 Option 3.
 
-1. **Loose Canada filter at fetch time.** Keep a posting if its location, title or description mentions Canada, a province or territory, a Canadian city, or "remote". This is a deliberate superset of what the site shows, so a better province extractor later never lacks data. The filter is `passes_loose_filter` in `scripts/coverage_spike.py`; the v1 pipeline will reuse the same rule.
-2. **Metadata daily, descriptions once.** Each day writes `raw/postings/YYYY-MM-DD.jsonl.gz`: one line per posting with every API field except the description, plus `description_hash`. Each distinct description is written once to `raw/descriptions/{hash}.html.gz`.
+1. **Loose Canada filter at fetch time.** Keep a posting if its location, title or description mentions Canada, a province or territory, a Canadian city, or "remote". This is a deliberate superset of what the site shows, so a better province extractor later never lacks data. The rule is `passes_loose_filter` in `pipeline/geo.py`, used by the daily fetch. (`scripts/coverage_spike.py` keeps its own frozen copy so Phase 0 numbers stay comparable.)
+2. **Metadata daily, descriptions once.** Each day writes `raw/postings/YYYY-MM-DD.jsonl.gz`: one line per posting with every API field except the description, plus `description_hash`, and `raw/boards/YYYY-MM-DD.json`: whether each board fetch succeeded and how many jobs it returned, which the closed-status guard needs when processing replays history. Each distinct description is written once to `raw/descriptions/{hash}.html.gz`.
 3. **Raw lives on an orphan `data` branch.** The daily Action checks out both branches. `main` holds code, config, labels, small processed outputs (overwritten each run) and the site.
 4. **Size budget: 1 GB a year.** If the measured rate projects past that, roll each month into one Parquet file and squash that month's daily commits on the `data` branch, recorded in a new ADR.
 
