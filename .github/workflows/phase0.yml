@@ -1,0 +1,76 @@
+name: Phase 0 tools
+
+# Run the Phase 0 scripts on GitHub's runners, from the Actions tab
+# ("Run workflow"), with no local setup.
+#
+# - coverage-spike: fetch every seed board once (scripts/coverage_spike.py) and
+#   commit data/coverage/<date>.json and .md to the branch it ran on.
+# - check-tokens: check candidate board tokens (scripts/check_board_tokens.py)
+#   and show the hits as a table in the run summary, plus a hits.jsonl artifact.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tool:
+        description: Which script to run
+        type: choice
+        options: [coverage-spike, check-tokens]
+        default: coverage-spike
+      tokens_file:
+        description: "check-tokens only: file with one token per line"
+        default: scripts/candidate_tokens.txt
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repo-writes-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -e .
+
+      - name: Coverage spike
+        if: inputs.tool == 'coverage-spike'
+        run: |
+          python scripts/coverage_spike.py | tee -a "$GITHUB_STEP_SUMMARY"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/coverage
+          git commit -q -m "Coverage spike run $(date -u +%F)"
+          git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Check board tokens
+        if: inputs.tool == 'check-tokens'
+        run: |
+          python scripts/check_board_tokens.py "${{ inputs.tokens_file }}" > hits.jsonl
+          python - <<'EOF' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          hits = [json.loads(line) for line in open("hits.jsonl")]
+          print(f"### {len(hits)} boards found\n")
+          print("Add a board to config/employers.yaml only if canada_jobs > 0 and it is the right company.\n")
+          print("| Token | Platform | Board name | Jobs | Canadian jobs |")
+          print("|---|---|---|---|---|")
+          for h in sorted(hits, key=lambda h: (-h["canada_jobs"], h["token"])):
+              print(f"| {h['token']} | {h['platform']} | {h['board_name'] or ''} | {h['jobs']} | {h['canada_jobs']} |")
+          EOF
+          cat "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload token hits
+        if: inputs.tool == 'check-tokens'
+        uses: actions/upload-artifact@v4
+        with:
+          name: hits
+          path: hits.jsonl

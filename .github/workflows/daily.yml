@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: daily
+  group: repo-writes-${{ github.ref }} # shared with phase0.yml, so pushes never race
   cancel-in-progress: false
 
 jobs:
@@ -84,12 +84,14 @@ jobs:
 
       - name: Commit processed outputs and site data to main
         run: |
-          git add data/processed data/run_log.jsonl site/public/data
+          for path in data/processed data/run_log.jsonl site/public/data; do
+            if [ -e "$path" ]; then git add -A "$path"; fi
+          done
           if git diff --cached --quiet; then
             echo "Processed outputs unchanged."
           else
             git commit -q -m "Daily data $(date -u +%F)"
-            git pull --rebase -q origin "${GITHUB_REF_NAME}"
+            git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
