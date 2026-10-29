@@ -1,1 +1,1470 @@
-[]
+[
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Write efficient,…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Extension Excellence - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "019791be2ebe529f",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Extension Excellence - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/7f1732a6-5317-4319-82b9-67c62e88d491"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Contribute to the…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Vault Team - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "07a4761515fc6137",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Vault Team - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/b2726ac7-dd0d-42f3-93a5-139e18c90779"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern, Backend (Summer 2027 - Toronto)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "0c33e9d8bc096695",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Software Engineer Intern, Backend (Summer 2027 - Toronto)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8767710002?gh_jid=8767710002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Stripe",
+  "employer_id": "stripe",
+  "evidence": {
+   "term": "summer 2028",
+   "term_context": "…etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing language (such as…"
+  },
+  "first_seen": "2026-10-29",
+  "id": "14765a714e7f8c52",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Summer 2028",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2028"
+  ],
+  "title": "PhD Data Scientist, Intern",
+  "track": "data_science",
+  "url": "https://stripe.com/jobs/search?gh_jid=8194285"
+ },
+ {
+  "duration_options_months": [
+   3.0,
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Databricks",
+  "employer_id": "databricks",
+  "evidence": {
+   "duration": "16-week | 12-week",
+   "duration_context": "…one of the following programs through this application: Summer 16-week co-op, or Summer 12-week internship. Co-ops are only available to…",
+   "term": "summer 2027",
+   "term_context": "…products. You will have a dedicated mentor and will join our summer 2027 intern cohort where you'll connect with engineers, other interns,…"
+  },
+  "first_seen": "2026-10-29",
+  "id": "147d9e10a6beeb00",
+  "last_seen": "2026-10-29",
+  "location_raw": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada / Mountain View, California",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Fall 2027",
+   "Spring 2028"
+  ],
+  "title": "Software Engineering Intern (2027)",
+  "track": "software",
+  "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What you can expect: You have a passion…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Data Security - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "196b2bc1ecb3cd0a",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Data Security - Winter 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.ashbyhq.com/1password/8af1359a-c8a2-492b-b567-ae8ae184a8a1"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Ship features and…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Developer Interfaces - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "2ff95c2863cab403",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Developer Interfaces - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/00f861d4-2b4a-4159-b6dc-8aed0cde6e39"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "été 2027",
+   "term_context": "Stagiaire en ingénierie de la qualité terrain, matériel (été 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "37773045e35aa743",
+  "last_seen": "2026-10-29",
+  "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Stagiaire en ingénierie de la qualité terrain, matériel (été 2027)",
+  "track": "other",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8862007002?gh_jid=8862007002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Kepler Communications",
+  "employer_id": "kepler_communications",
+  "evidence": {
+   "duration": "4 months | 4-month",
+   "duration_context": "IT Intern (January 2027) (4 months)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "3da2cd34351796ce",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "aerospace",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "IT Intern (January 2027) (4 months)",
+  "track": "software",
+  "url": "https://jobs.lever.co/kepler/ccb93343-3e2f-485d-bccf-5e34512bf4cb"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "4555ac8e946a1713",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8797859002?gh_jid=8797859002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Develop deep…",
+   "term": "Winter 2027",
+   "term_context": "Product Management Intern, End User Experience - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "5018b302c3a389ec",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Product Management Intern, End User Experience - Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "été 2027",
+   "term_context": "Stagiaire en ingénierie d'industrialisation (été 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "518ad23e9671dad9",
+  "last_seen": "2026-10-29",
+  "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Stagiaire en ingénierie d'industrialisation (été 2027)",
+  "track": "other",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8817932002?gh_jid=8817932002"
+ },
+ {
+  "duration_options_months": [
+   4.0,
+   6.0
+  ],
+  "duration_status": "stated",
+  "employer": "Cohere",
+  "employer_id": "cohere",
+  "evidence": {
+   "duration": "4-6 months",
+   "duration_context": "…You need to be available for a full-time internship that lasts for 4-6 months. As a Cohere Research Intern, you will: Conduct cutting-edge…",
+   "term": "Winter 2027",
+   "term_context": "Research Internship (Winter 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "5aef43857a1b3172",
+  "last_seen": "2026-10-29",
+  "location_raw": "Canada / San Francisco / Europe / London / United States / United Kingdom / Toronto / Montreal",
+  "province": "ON",
+  "provinces": [
+   "ON",
+   "QC"
+  ],
+  "remote": "remote",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Research Internship (Winter 2027)",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/cohere/73bd3e2b-6597-4124-b64b-1e5dbc32e785"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern, Test Automation (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "647ff56f14830548",
+  "last_seen": "2026-10-29",
+  "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Software Engineer Intern, Test Automation (Summer 2027)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Pinterest",
+  "employer_id": "pinterest",
+  "evidence": {},
+  "first_seen": "2026-10-29",
+  "id": "6551999a74291408",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, ON, CA / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "media",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineering Intern 2027 (Toronto)",
+  "track": "software",
+  "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138039"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Contribute to…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Provisioning - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "6a61234617e01cec",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Provisioning - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/c5289ef1-e919-4672-85c5-ee3112f9ddb9"
+ },
+ {
+  "duration_options_months": [
+   3.0,
+   6.0
+  ],
+  "duration_status": "stated",
+  "employer": "Cohere",
+  "employer_id": "cohere",
+  "evidence": {
+   "duration": "3-6 month",
+   "duration_context": "…enrolled in a post-secondary program and available for a full-time 3-6 month internship, co-op, or research work term. As a Software Engineering…",
+   "term": "Winter 2027",
+   "term_context": "Software Engineer Intern (Winter 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "6a6272020faf485c",
+  "last_seen": "2026-10-29",
+  "location_raw": "Canada / Dubai / London / United States / United Kingdom",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Engineer Intern (Winter 2027)",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Data Science Intern, Algorithms (Summer 2027 - Toronto)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "6a9ab99b66109f15",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027"
+  ],
+  "title": "Data Science Intern, Algorithms (Summer 2027 - Toronto)",
+  "track": "data_science",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8767697002?gh_jid=8767697002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Ticket intake and…",
+   "term": "Winter 2027",
+   "term_context": "IT Intern, IT Support - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "6b6c40cb51d2e433",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "IT Intern, IT Support - Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "UX Research Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "72a0c71680e9e969",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "UX Research Intern (Summer 2027)",
+  "track": "data_analytics",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8797069002?gh_jid=8797069002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Content Design Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "7369006c3d80c2c1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Content Design Intern (Summer 2027)",
+  "track": "ml_ai",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8817900002?gh_jid=8817900002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Business Systems Engineer Intern, Finance Technology (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "78930bbe3223db3c",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Business Systems Engineer Intern, Finance Technology (Summer 2027)",
+  "track": "business_ops",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8802222002?gh_jid=8802222002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Analyze incoming…",
+   "term": "Winter 2027",
+   "term_context": "Security Intern, Threat Operations - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "8a71ec46d3a2e6d1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Security Intern, Threat Operations - Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.ashbyhq.com/1password/aac7eea6-ed7c-4871-bbf2-7cb2d5138847"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Fullscript",
+  "employer_id": "fullscript",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "…week) in Canada (preferably Ottawa, ON) for at least a 4 month term (Winter 2027). We’re looking for curious, motivated, dependable students who…"
+  },
+  "first_seen": "2026-10-29",
+  "id": "8e28eb7cac331b95",
+  "last_seen": "2026-10-29",
+  "location_raw": "Ottawa, ON / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "remote",
+  "sector": "healthtech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer (Co-op Opportunities)",
+  "track": "software",
+  "url": "https://jobs.lever.co/fullscript/f2682bc2-454c-4bcd-b71c-639236d09a8e"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Later",
+  "employer_id": "later",
+  "evidence": {
+   "duration": "4-month",
+   "duration_context": "…the perfect opportunity for you to learn and grow. This will be an 4-month term with a potential of extension. Technical Qualifications: In…",
+   "term": "starting January 2027",
+   "term_context": "…. About this position: Later is looking for a full-time co-op starting January 2027 to help support the product team; you will be working on new product…",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "8f635b280b9966d1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Data Science Co-op",
+  "track": "data_science",
+  "url": "https://job-boards.greenhouse.io/later/jobs/8889650002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Hardware Field Quality Engineer Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "9a3c60880c35810b",
+  "last_seen": "2026-10-29",
+  "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Hardware Field Quality Engineer Intern (Summer 2027)",
+  "track": "data_analytics",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8862215002?gh_jid=8862215002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…opportunity within Canada or the US. This position will be for 4 months - January to April 2027. What you can expect: Assist our team in…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Front-End Platform - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "9c58f122bcf18b6e",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Front-End Platform - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/71a3afd1-12b3-4f55-a3bd-fc4e7c46ee37"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: You’ll participate…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Credential Brokering - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "9d855fe05dd4a9b4",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Credential Brokering - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/67bfbd8b-aba9-42b1-a8a8-833367888fba"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Industrialization Engineer Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "9f81a5d75e504e25",
+  "last_seen": "2026-10-29",
+  "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Industrialization Engineer Intern (Summer 2027)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8817930002?gh_jid=8817930002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "1Password",
+  "employer_id": "1password",
+  "evidence": {
+   "duration": "4 months | 4 month",
+   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Code, test, debug,…",
+   "term": "Winter 2027",
+   "term_context": "Developer Intern, Machine Identity - Winter 2027",
+   "term_dates": "January to April 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "a218387a945b01ae",
+  "last_seen": "2026-10-29",
+  "location_raw": "Remote (United States | Canada)",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "security",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Developer Intern, Machine Identity - Winter 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/1password/6a6869a7-98d2-43e3-b9b5-b68fa4daeb9f"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Later",
+  "employer_id": "later",
+  "evidence": {
+   "term": "Spring 2027",
+   "term_context": "AI Automation Co-op (Spring 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "a90052befc0cd127",
+  "last_seen": "2026-10-29",
+  "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Spring 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Spring 2027"
+  ],
+  "title": "AI Automation Co-op (Spring 2027)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/later/jobs/8604889002"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Kepler Communications",
+  "employer_id": "kepler_communications",
+  "evidence": {
+   "duration": "4 months",
+   "duration_context": "People & Culture Intern (January 2027) (4 months)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "acb729dd3fb58c58",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "aerospace",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "People & Culture Intern (January 2027) (4 months)",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/kepler/d3762d72-05c4-4bfa-96c7-4cd40871756c"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Data Engineer Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "ae3fc07c3ad011b1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Data Engineer Intern (Summer 2027)",
+  "track": "data_eng",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8797376002?gh_jid=8797376002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Pinterest",
+  "employer_id": "pinterest",
+  "evidence": {},
+  "first_seen": "2026-10-29",
+  "id": "b1949a038291eae1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, ON, CA / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "media",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Machine Learning Intern 2027 (Toronto)",
+  "track": "ml_ai",
+  "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138080"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Stripe",
+  "employer_id": "stripe",
+  "evidence": {
+   "term": "summer 2028",
+   "term_context": "…etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools to accelerate model…"
+  },
+  "first_seen": "2026-10-29",
+  "id": "b9c52250b631b583",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Summer 2028",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2028"
+  ],
+  "title": "Data Analyst, Intern",
+  "track": "data_analytics",
+  "url": "https://stripe.com/jobs/search?gh_jid=8194287"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "été 2027",
+   "term_context": "Développeur Logiciels (Stagiaire), Backend (l'été 2027 - Montreal)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "b9e7cceb23277778",
+  "last_seen": "2026-10-29",
+  "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Développeur Logiciels (Stagiaire), Backend (l'été 2027 - Montreal)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8796052002?gh_jid=8796052002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "ba80139f0da63d34",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto)",
+  "track": "ml_ai",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8802332002?gh_jid=8802332002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Magnet Forensics",
+  "employer_id": "magnet_forensics",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Software Developer Co-op (Winter 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "ccb9c4f453859d02",
+  "last_seen": "2026-10-29",
+  "location_raw": "Waterloo / Ottawa / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "security",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer Co-op (Winter 2027)",
+  "track": "software",
+  "url": "https://jobs.lever.co/magnetforensics/6eba87dc-f110-47b2-8015-31311ca60f52"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Magnet Forensics",
+  "employer_id": "magnet_forensics",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Finance Co-op (Winter 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "d2cd5cea1837b415",
+  "last_seen": "2026-10-29",
+  "location_raw": "Waterloo / Ottawa / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "security",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Finance Co-op (Winter 2027)",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/magnetforensics/944c2a58-e2bd-40a8-94aa-959024eb0744"
+ },
+ {
+  "duration_options_months": [
+   3.0,
+   6.0
+  ],
+  "duration_status": "stated",
+  "employer": "Cohere",
+  "employer_id": "cohere",
+  "evidence": {
+   "duration": "3-6 month",
+   "duration_context": "…enrolled in a post-secondary program, available for a full-time 3-6 month internship, co-op, or research work term. As a Machine Learning…",
+   "term": "Winter 2027",
+   "term_context": "Machine Learning Intern/Co-op (Winter 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "d3264c45622979d7",
+  "last_seen": "2026-10-29",
+  "location_raw": "Canada / Europe / United States / United Kingdom",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Machine Learning Intern/Co-op  (Winter 2027)",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/cohere/36d1f52f-8270-4652-adf5-5303a0ff341b"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern, Backend (Summer 2027 - Montreal)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "de6350f745224661",
+  "last_seen": "2026-10-29",
+  "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Software Engineer Intern, Backend (Summer 2027 - Montreal)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8796054002?gh_jid=8796054002"
+ },
+ {
+  "duration_options_months": [
+   4.0,
+   16.0
+  ],
+  "duration_status": "stated",
+  "employer": "Kepler Communications",
+  "employer_id": "kepler_communications",
+  "evidence": {
+   "duration": "4-16 months",
+   "duration_context": "…Available for a full-time internship beginning Jan 2027 for 4-16 months. Opportunity to work out of our new Toronto office! This position…"
+  },
+  "first_seen": "2026-10-29",
+  "id": "deb3c12435abd2a7",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "aerospace",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineering Intern (January 2027)",
+  "track": "software",
+  "url": "https://jobs.lever.co/kepler/5514238a-8301-49f1-8116-26d38ea0900c"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "AlayaCare",
+  "employer_id": "alayacare",
+  "evidence": {
+   "term": "Winter Semester 2027",
+   "term_context": "Intern, Security Analyst - Winter Semester 2027"
+  },
+  "first_seen": "2026-10-29",
+  "id": "e6a6b0e7204b35d1",
+  "last_seen": "2026-10-29",
+  "location_raw": "Montréal, Quebec, Canada / Montreal, Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "healthtech",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern, Security Analyst - Winter Semester 2027",
+  "track": "business_ops",
+  "url": "https://alayacare.com/open-positions?gh_jid=8811336002"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Stripe",
+  "employer_id": "stripe",
+  "evidence": {},
+  "first_seen": "2026-10-29",
+  "id": "e7189473b4506a27",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineer, Intern (Summer or Winter)",
+  "track": "software",
+  "url": "https://stripe.com/jobs/search?gh_jid=8130805"
+ },
+ {
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Cohere",
+  "employer_id": "cohere",
+  "evidence": {
+   "duration": "4 months",
+   "duration_context": "…what the data means and why it matters. Position Details Duration: 4 months Start date: January 4 Location: Toronto or New York",
+   "term": "Winter, 2027",
+   "term_context": "Revenue Operations Intern (Winter, 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "f7f5f440bd76265f",
+  "last_seen": "2026-10-29",
+  "location_raw": "Toronto / New York / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Revenue Operations Intern (Winter, 2027)",
+  "track": "business_ops",
+  "url": "https://jobs.ashbyhq.com/cohere/f3290fb2-66f1-44c7-9824-3f416f44af5a"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Lyft",
+  "employer_id": "lyft",
+  "evidence": {
+   "term": "été 2027",
+   "term_context": "Développeur Logiciels (Stagiaire), Automatisation des tests (l'été 2027)"
+  },
+  "first_seen": "2026-10-29",
+  "id": "ff21e2e6eb033364",
+  "last_seen": "2026-10-29",
+  "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "transportation",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Summer 2028"
+  ],
+  "title": "Développeur Logiciels (Stagiaire), Automatisation des tests (l'été 2027)",
+  "track": "software",
+  "url": "https://app.careerpuck.com/job-board/lyft/job/8767536002?gh_jid=8767536002"
+ }
+]

@@ -1,0 +1,5 @@
+{"boards": 70, "boards_failed": 0, "command": "fetch-postings", "day": "2026-10-29", "failed": [], "new_description_gz_bytes": 17598608, "postings_gz_bytes": 813668, "postings_kept": 5062}
+{"command": "fetch-programs", "day": "2026-10-29", "failed": [], "pages": 0}
+{"command": "process-postings", "open_canadian_student": 46, "postings": 5062, "with_stated_duration": 20}
+{"changes": 0, "command": "process-programs", "pages": 0}
+{"command": "build-site-data", "duration_from_dates": 0, "duration_stated": 20, "employer_boards_tracked": 70, "employers_with_postings": 11, "open_student_postings": 46, "programs_watched": 0}
