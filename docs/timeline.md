@@ -2,7 +2,7 @@
 
 Phase-by-phase schedule for Co-op Radar Canada, built from the targets and hour estimates in [`brief.md`](brief.md) section 7. Budget: about 3 hours of project time a week. Each phase ships before the next starts; when behind, cut from that phase's cut list instead of moving the date.
 
-Status as of **2026-10-28**: Phase 0 in progress. The decision run is waiting on the seed list reaching 100 boards and on network access to the job-board APIs. v1 code that every Phase 0 outcome needs was built ahead of schedule (see "Built ahead" in the v1 section); none of it has run against live data yet.
+Status as of **2026-10-29**: Phase 0 in progress. Everything is merged to `main` and running on GitHub. The first live coverage run (informational: 70 boards, below ADR 0001's minimum of 100) found **46 Canadian student postings**. The first Daily run published them to the site data. The Phase 0 decision run waits on the seed list reaching 100 boards ([#4](https://github.com/suryalionael/co-op-radar-canada/issues/4)). Work is tracked in GitHub issues; the order is in [#3](https://github.com/suryalionael/co-op-radar-canada/issues/3).
 
 ## At a glance
 
@@ -34,6 +34,7 @@ Answers the project's biggest unknown: how many Canadian student postings do Gre
 | Oct 28 | ADR 0001 thresholds and counting rules committed before any results | Done |
 | Oct 28 | Repository laid out as in the brief; `scripts/coverage_spike.py` with tests; CI | Done |
 | Oct 28 | ADR 0003 (Workday out of scope), ADR 0004 (forbidden sites as link-outs only), ADR 0002 drafted | Done |
+| Oct 29 | First live coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Done |
 | Oct 29 – Nov 1 | Grow seed list to at least 100 responding boards (ADR 0001 validity rule): run `scripts/check_board_tokens.py` on `scripts/candidate_tokens.txt`, add the hits | To do |
 | Nov 2 | Decision run of `coverage_spike.py`; add results table and decision to ADR 0001 in a **separate commit** | To do |
 | Nov 3 | Put the measured bytes per day into ADR 0002 and accept it | To do |
