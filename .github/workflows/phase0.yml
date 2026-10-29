@@ -54,8 +54,10 @@ jobs:
 
       - name: Check board tokens
         if: inputs.tool == 'check-tokens'
+        env:
+          TOKENS_FILE: ${{ inputs.tokens_file }} # via env, never interpolated into the script
         run: |
-          python scripts/check_board_tokens.py "${{ inputs.tokens_file }}" > hits.jsonl
+          python scripts/check_board_tokens.py "$TOKENS_FILE" > hits.jsonl
           python - <<'EOF' >> "$GITHUB_STEP_SUMMARY"
           import json
           hits = [json.loads(line) for line in open("hits.jsonl")]
