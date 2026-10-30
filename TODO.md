@@ -38,7 +38,7 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 ## Ei Htoo (~7 h)
 
 ### Phase 0 — by Nov 1
-- [ ] **[P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4)** On GitHub: Actions → Phase 0 tools → Run workflow → `check-tokens` (or locally: `python scripts/check_board_tokens.py scripts/candidate_tokens.txt > hits.jsonl`). The run summary lists the hits. For each hit with `canada_jobs > 0` that is the right company, add an entry to `config/employers.yaml` (copy an existing entry's format). Goal: 100+ boards. Open a PR.
+- [x] **[P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4)** (Oct 30: 135 boards, all responding) On GitHub: Actions → Phase 0 tools → Run workflow → `check-tokens` (or locally: `python scripts/check_board_tokens.py scripts/candidate_tokens.txt > hits.jsonl`). The run summary lists the hits. For each hit with `canada_jobs > 0` that is the right company, add an entry to `config/employers.yaml` (copy an existing entry's format). Goal: 100+ boards. Open a PR.
 
 ### v1 — by Dec 13
 - [ ] **[V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9)** For each page in `config/programs.yaml`: open it, confirm it is the student-program page, fix the URL if needed, set `verified: YYYY-MM-DD`. Add pages until there are ~30 (priority: banks, insurers, utilities, governments). Due Nov 15.
@@ -47,6 +47,6 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 - [ ] **[V1-14](https://github.com/suryalionael/co-op-radar-canada/issues/17)** Share the launch with Seneca classmates and clubs. Dec 13.
 
 ### v2 — by Jan 31
-- [ ] **V2-1a** `.github/ISSUE_TEMPLATE/submit-posting.yml`: employer, title, URL, location, term, duration, deadline, where the info came from. Due Dec 18.
+- [x] **V2-1a** `.github/ISSUE_TEMPLATE/submit-posting.yml`: employer, title, URL, location, term, duration, deadline, where the info came from. Due Dec 18.
 - [ ] **V2-5a** 30+ headlines that mention an employer name but are not about that employer, with the expected "no match". Due Jan 7.
 - [ ] **V2-6a** Label 100 news headlines. Due Jan 20.

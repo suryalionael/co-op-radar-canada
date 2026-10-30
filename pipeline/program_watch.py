@@ -6,8 +6,8 @@ For each page in config/programs.yaml:
    headers, footers, forms, and anything whose id or class looks like a cookie
    or consent banner, a carousel, or an alert bar.
 2. Normalize away content that changes without the program changing: dates,
-   times, "last updated" lines, copyright years, and long numbers (view counts,
-   cache busters).
+   times, "last updated" lines, copyright years, long numbers (view counts,
+   cache busters), and session tokens (long hex strings, UUIDs).
 3. Hash what is left. A new hash on a successful fetch is a change; a failed
    fetch is never a change.
 
@@ -54,6 +54,10 @@ VOLATILE = [
     re.compile(r"\b\d{4}-\d{2}-\d{2}(?:[t ]\d{2}:\d{2}(?::\d{2})?(?:\.\d+)?(?:z|[+-]\d{2}:?\d{2})?)?\b", re.IGNORECASE),
     re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?\s*(?:am|pm|a\.m\.|p\.m\.)?\b", re.IGNORECASE),
     re.compile(rf"\b{MONTH}\.?\s+\d{{1,2}},?\s+\d{{4}}\b", re.IGNORECASE),
+    # session and CSRF tokens (UUIDs, and 16+ hex characters with a digit and a letter);
+    # before the long-number rule, which would otherwise split them
+    re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b", re.IGNORECASE),
+    re.compile(r"\b(?=[0-9a-f]*\d)(?=[0-9a-f]*[a-f])[0-9a-f]{16,}\b", re.IGNORECASE),
     re.compile(r"\b\d{6,}\b"),
 ]
 

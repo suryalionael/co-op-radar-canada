@@ -10,7 +10,7 @@ ashby,telus-digital,TELUS Digital,reference-list,yes,,56,15,keep,15 job(s) in Ca
 ashby,veeda-ai,Veeda AI,reference-list,yes,,8,8,keep,8 job(s) in Canada; in tech scope (manual review)
 ashby,yotta,Yotta Labs,reference-list,yes,,4,3,keep,3 job(s) in Canada; in tech scope (manual review)
 ashby,zip,Zip,reference-list,yes,,101,16,keep,16 job(s) in Canada; in tech scope (manual review)
-greenhouse,,Block,reference-list,no,,0,0,drop,token unknown: link hides the board token
+greenhouse,,Block,reference-list,no,,0,0,drop,token unknown: link hides the board token; the board (greenhouse/block) was added separately in P0-1 on 2026-10-30
 greenhouse,,Global Relay,reference-list,no,,0,0,drop,token unknown: link hides the board token
 greenhouse,,Tower Research Capital,reference-list,no,,0,0,drop,token unknown: link hides the board token
 greenhouse,anthropic,Anthropic,reference-list,yes,Anthropic,675,8,keep,8 job(s) in Canada; in tech scope (manual review)
