@@ -13,7 +13,6 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10) | Extractors tuned on real postings: graduation dates skipped, month-and-year terms, duration ranges shown as "4–16 months"; each case has a test | Lio | 2 h | Dec 1 |
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
 | [V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9) | 30 program pages verified Oct 30 (PR open); done when the next Daily run shows `pages: 30` | Ei | 1.5 h | Nov 15 |
 
@@ -21,8 +20,8 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [P0-2](https://github.com/suryalionael/co-op-radar-canada/issues/5) | Phase 0 decision run; add results and decision to ADR 0001 in a separate commit | Lio | 0.5 h | Nov 2 |
-| [P0-3](https://github.com/suryalionael/co-op-radar-canada/issues/6) | Put the measured bytes per day into ADR 0002 and accept it | Lio | 0.25 h | Nov 3 |
+| [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Check the first Daily run with 171 boards (Oct 31): green, new columns in `postings.parquet`, `pages: 30` for program watch. Then re-run `reference-recall` and update `docs/evaluation.md` | Lio | 0.5 h | Nov 1 |
+| [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
 
 ## Backlog
 
@@ -30,8 +29,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
-| [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Daily Action: 7 consecutive green days (must start by Dec 6) | Lio | 0.5 h | Dec 12 |
+| [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Daily Action: 7 consecutive green days (must start by Dec 6); re-measure storage for ADR 0002 by Nov 7 | Lio | 0.5 h | Dec 12 |
 | [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Review the 7-day program-watch dry run; fix noisy pages | Lio | 1 h | Nov 24 |
 | [V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12) | Hand-label postings (all Canadian student postings, up to 200) | Lio | 3 h | Dec 6 |
 | [V1-8](https://github.com/suryalionael/co-op-radar-canada/issues/13) | Second labeller: independently label 40 postings for the agreement check | Ei | 1 h | Dec 6 |
@@ -83,3 +81,8 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | P0-1b | 36 more boards from the curated internship list and coop-watcher's Lever slugs (171 total), each check logged in `data/coverage/token_check_log.csv` (ADR 0007) | Lio | Oct 30 |
 | V2-1a | Issue form for posting submissions, `.github/ISSUE_TEMPLATE/submit-posting.yml` (#20) | Ei | Oct 30 |
 | TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |
+| ADR | 0007 (curated list for seeding and evaluation), 0008 (job-type fields, role type, term status), 0009 (platform coverage evidence) | Lio | Oct 30 |
+| V1-6 | Extractors tuned on real postings: role type from the board's own field, whole-word rules, month-and-year terms, Spring as ambiguous, graduation dates skipped, duration ranges on the site (#22, #23) | Lio | Oct 30 |
+| EVAL | `reference-recall` command: 23/26 = 0.88 recall on boards in the latest snapshot; naive baseline in `evaluate` (#22) | Lio | Oct 30 |
+| P0-2 | Phase 0 decision run: 171/171 boards, 177 Canadian student postings (126 from boards found through the curated list); decision in ADR 0001: build v1 | Lio | Oct 30 |
+| P0-3 | Storage measured and ADR 0002 accepted: about 0.83 GB a year at 171 boards | Lio | Oct 30 |
