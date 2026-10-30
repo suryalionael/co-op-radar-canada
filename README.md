@@ -2,7 +2,7 @@
 
 Free tracker for Canadian co-op and internship postings, with verified term, duration and province, plus alerts when student programs open. Public sources only, $0 to run.
 
-> **Status: early development (Phase 0).** There is no public site yet. The project is currently measuring how many Canadian student postings its sources actually provide before building anything on top of them. Everything below describes the plan unless it says otherwise. No metrics are reported until they have been measured.
+> **Status: building v1 (launch target Dec 13, 2026).** There is no public site yet. Phase 0 is done: on 2026-10-30, 171 employer job boards had **177 Canadian student postings** under the counting rules in [ADR 0001](docs/decisions/0001-coverage-thresholds.md), so v1 goes ahead as planned. The daily pipeline is running; extractor precision and recall are not measured yet. No metric is reported until it has been measured.
 
 ---
 
@@ -59,7 +59,7 @@ Full method and results will live in [`docs/evaluation.md`](docs/evaluation.md).
 
 | Phase | Target | Scope |
 |---|---|---|
-| Phase 0 | Nov 2026 | Coverage check: how many Canadian student postings do the sources provide? Decision recorded in an ADR |
+| Phase 0 | Done Oct 30, 2026 | Coverage check: 177 Canadian student postings on 171 boards; decision in ADR 0001: build v1 |
 | v1 | Dec 2026 | Daily postings pipeline, evaluated extractors, program watch, public static site |
 | v2 | Jan 2027 | Posting submissions, employer pages, student-opportunity news, weekly digest and RSS |
 | v3 | Spring 2027 | Market view, recruiting calendar, season write-up |

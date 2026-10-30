@@ -14,6 +14,14 @@ pip install -e ".[dev]"
 pytest
 ```
 
+For pipeline work on real data, check out the raw snapshots (the `data` branch) next to the code. The folder is gitignored:
+
+```bash
+git fetch origin data
+git worktree add data-branch origin/data
+python -m pipeline.cli process-postings --data-root data-branch
+```
+
 For the site:
 
 ```bash
@@ -30,6 +38,7 @@ npm run dev        # http://localhost:3000, uses the sample data in site/public/
 4. Before pushing, run what CI runs:
    ```bash
    ruff check . && ruff format --check . && mypy && pytest
+   cd site && npm run typecheck && npm run build:sample   # if you touched site/
    ```
 5. Open a pull request. Move your card to **Review** and tick the box in `TODO.md` in the same PR.
 6. Lio reviews and merges. Nobody pushes to `main` directly.

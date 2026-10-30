@@ -2,7 +2,7 @@
 
 Phase-by-phase schedule for Co-op Radar Canada, built from the targets and hour estimates in [`brief.md`](brief.md) section 7. Budget: about 3 hours of project time a week. Each phase ships before the next starts; when behind, cut from that phase's cut list instead of moving the date.
 
-Status as of **2026-10-29**: Phase 0 in progress. Everything is merged to `main` and running on GitHub. The first live coverage run (informational: 70 boards, below ADR 0001's minimum of 100) found **46 Canadian student postings**. The first Daily run published them to the site data. The Phase 0 decision run waits on the seed list reaching 100 boards ([#4](https://github.com/suryalionael/co-op-radar-canada/issues/4)). Work is tracked in GitHub issues; the order is in [#3](https://github.com/suryalionael/co-op-radar-canada/issues/3).
+Status as of **2026-10-30**: **Phase 0 is complete.** The seed list grew to 171 boards (Ei Htoo's #19, plus 36 boards found through a curated internship list, ADR 0007). The decision run had 171 of 171 boards respond and found **177 Canadian student postings**, so ADR 0001's decision is to build v1 as planned. 126 of the 177 come from the boards found through the curated list. ADR 0002 is accepted at about 0.83 GB a year. Ahead of schedule on v1: extractor tuning (V1-6) and a recall check against the curated list are merged (#22, #23), and 30 program pages are verified (#21). Next: the first Daily run with 171 boards (Oct 31), then Vercel (V1-2). Work is tracked in GitHub issues; the order is in [#3](https://github.com/suryalionael/co-op-radar-canada/issues/3).
 
 ## At a glance
 
@@ -36,8 +36,8 @@ Answers the project's biggest unknown: how many Canadian student postings do Gre
 | Oct 28 | ADR 0003 (Workday out of scope), ADR 0004 (forbidden sites as link-outs only), ADR 0002 drafted | Done |
 | Oct 29 | First live coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Done |
 | Oct 29 – Nov 1 | Grow seed list to at least 100 responding boards (ADR 0001 validity rule): run `scripts/check_board_tokens.py` on `scripts/candidate_tokens.txt`, add the hits | Done Oct 30 (135 boards; 171 after adding boards found through the curated list, ADR 0007) |
-| Nov 2 | Decision run of `coverage_spike.py`; add results table and decision to ADR 0001 in a **separate commit** | To do |
-| Nov 3 | Put the measured bytes per day into ADR 0002 and accept it | To do |
+| Nov 2 | Decision run of `coverage_spike.py`; add results table and decision to ADR 0001 in a **separate commit** | Done Oct 30: 177 Canadian student postings, build v1 as planned |
+| Nov 3 | Put the measured bytes per day into ADR 0002 and accept it | Done Oct 30: about 0.83 GB a year; re-measure by Nov 7 |
 
 **Acceptance:** ADR 0001 has thresholds committed before results, plus the results table and decision; storage estimate in ADR 0002.
 

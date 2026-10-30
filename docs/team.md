@@ -17,12 +17,12 @@ Hours are estimates for the remaining Phase 0, v1 and v2 work (v3 is a stretch g
 
 | ID | Task | Est. | Due | Why it matters |
 |---|---|---|---|---|
-| P0-1 | Check `scripts/candidate_tokens.txt` with the token checker; add verified hits to `config/employers.yaml` until 100+ boards respond | 1 h | Nov 1 | Unblocks the Phase 0 decision run |
-| V1-1 | Verify every URL in `config/programs.yaml` (open it, confirm it is the student-program page, fix or replace, set `verified`); add pages to reach ~30 | 1.5 h | Nov 15 | Program watch watches nothing until URLs are verified; the 7-day dry run must start by Nov 17 |
+| P0-1 | Check `scripts/candidate_tokens.txt` with the token checker; add verified hits to `config/employers.yaml` until 100+ boards respond. **Done Oct 30** (#19, 135 boards) | 1 h | Nov 1 | Unblocks the Phase 0 decision run |
+| V1-1 | Verify every URL in `config/programs.yaml` (open it, confirm it is the student-program page, fix or replace, set `verified`); add pages to reach ~30. **30 verified Oct 30** (#21); done when a Daily run shows `pages: 30` | 1.5 h | Nov 15 | Program watch watches nothing until URLs are verified; the 7-day dry run must start by Nov 17 |
 | V1-8 | Second labeller: independently label 40 postings from the label sheet, without looking at Lio's labels | 1 h | Dec 6 | Gives an inter-annotator agreement figure, so the evaluation is not one person's opinion |
 | V1-12 | Site QA on a real phone: load time, filters, every card links to its posting, honest labels; file issues | 0.5 h | Dec 12 | v1 acceptance: "loads and filters in under 2 s on a phone" |
 | V1-14 | Share the launch with Seneca classmates and clubs | 0.25 h | Dec 13 | Real users |
-| V2-1a | Write the GitHub issue form template for posting submissions (`.github/ISSUE_TEMPLATE/submit-posting.yml`) | 1 h | Dec 18 | Lets anyone add postings the pipeline can't reach |
+| V2-1a | Write the GitHub issue form template for posting submissions (`.github/ISSUE_TEMPLATE/submit-posting.yml`). **Done Oct 30** (#20) | 1 h | Dec 18 | Lets anyone add postings the pipeline can't reach |
 | V2-5a | Build the known-false-match test set for employer matching (headlines like "Apple pie recipe") | 0.5 h | Jan 7 | Protects matching precision |
 | V2-6a | Label 100 of the 400 news headlines | 1.5 h | Jan 20 | Shares the largest manual task |
 
