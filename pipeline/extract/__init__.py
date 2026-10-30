@@ -6,10 +6,11 @@ from typing import Any
 
 from pipeline.extract.duration import extract_duration
 from pipeline.extract.province import extract_location
-from pipeline.extract.student import is_student_role
+from pipeline.extract.role_type import extract_role_type
 from pipeline.extract.term import extract_term
 from pipeline.extract.track import extract_track
 from pipeline.models import RawPosting
+from pipeline.sources import job_fields
 from pipeline.text import html_to_text
 
 CONTEXT_CHARS = 70
@@ -40,6 +41,7 @@ def quote_context(span: str, *texts: str, width: int = CONTEXT_CHARS) -> str | N
 def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
     """Every extracted Posting field for one raw posting."""
     description = html_to_text(description_html)
+    job = job_fields(raw)
     evidence: dict[str, str] = {}
 
     term = extract_term(raw.title, description)
@@ -47,6 +49,8 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         evidence["term"] = term.evidence
     if term.dates_evidence:
         evidence["term_dates"] = term.dates_evidence
+    if term.ambiguous:
+        evidence["term_ambiguous"] = " | ".join(term.ambiguous)
 
     duration = extract_duration(raw.title, description, term.start, term.end, term.dates_evidence)
     if duration.evidence:
@@ -69,9 +73,10 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
     if track_evidence:
         evidence["track"] = track_evidence
 
-    student, student_evidence = is_student_role(raw.title)
-    if student_evidence:
-        evidence["is_student_role"] = student_evidence
+    role = extract_role_type(raw.title, description, job.employment_type_raw)
+    if role.evidence and role.field:
+        evidence["is_student_role"] = role.evidence  # the exact span
+        evidence["role_type_field"] = role.field  # employment_type, title or description
 
     return {
         "in_canada": location.in_canada,
@@ -80,11 +85,19 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         "remote": location.remote,
         "term": term.term,
         "terms": term.terms,
+        "term_status": term.status,
         "term_start": term.start,
         "term_end": term.end,
         "duration_options_months": duration.options_months,
+        "duration_is_range": duration.is_range,
         "duration_status": duration.status,
         "track": track,
-        "is_student_role": student,
+        "is_student_role": role.is_student_role,
+        "role_type": role.role_type,
         "evidence": evidence,
+        "employment_type_raw": job.employment_type_raw,
+        "department": job.department,
+        "team": job.team,
+        "workplace_type_raw": job.workplace_type_raw,
+        "posted_on": job.posted_on,
     }

@@ -21,6 +21,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 from pipeline.extract import extract_posting
+from pipeline.extract.term import term_in_past
 from pipeline.models import BoardFetch, Posting, RawPosting, Status
 from pipeline.storage import posting_days, read_description, read_postings_day
 
@@ -88,6 +89,8 @@ def build_postings(data_root: Path) -> list[Posting]:
     for pid, t in sorted(ledger.postings.items()):
         p = t.latest
         fields = extract_posting(p, read_description(data_root, p.description_hash))
+        posted = fields["posted_on"] or t.first_seen
+        fields["flag_term_in_past"] = term_in_past(fields["terms"], fields["term_end"], posted)
         out.append(
             Posting(
                 id=pid,
@@ -113,7 +116,7 @@ def postings_table(postings: list[Posting]) -> pa.Table:
     for p in postings:
         row = p.model_dump()
         row["evidence"] = json.dumps(row["evidence"], ensure_ascii=False, sort_keys=True)
-        for key in ("source", "province", "remote", "duration_status", "track", "status"):
+        for key in ("source", "province", "remote", "term_status", "duration_status", "track", "role_type", "status"):
             row[key] = str(row[key])
         row["provinces"] = [str(v) for v in row["provinces"]]
         rows.append(row)
@@ -132,19 +135,28 @@ def postings_table(postings: list[Posting]) -> pa.Table:
             ("remote", pa.string()),
             ("term", pa.string()),
             ("terms", pa.list_(pa.string())),
+            ("term_status", pa.string()),
             ("term_start", pa.date32()),
             ("term_end", pa.date32()),
             ("duration_options_months", pa.list_(pa.float64())),
+            ("duration_is_range", pa.bool_()),
             ("duration_status", pa.string()),
             ("track", pa.string()),
             ("is_student_role", pa.bool_()),
+            ("role_type", pa.string()),
             ("evidence", pa.string()),  # JSON object: field -> text span
             ("description_hash", pa.string()),
             ("first_seen", pa.date32()),
             ("last_seen", pa.date32()),
             ("missed_fetches", pa.int32()),
             ("status", pa.string()),
+            ("flag_term_in_past", pa.bool_()),
             ("deadline", pa.date32()),
+            ("employment_type_raw", pa.string()),
+            ("department", pa.string()),
+            ("team", pa.string()),
+            ("workplace_type_raw", pa.string()),
+            ("posted_on", pa.date32()),
         ]
     )
     return pa.Table.from_pylist(rows, schema=schema)

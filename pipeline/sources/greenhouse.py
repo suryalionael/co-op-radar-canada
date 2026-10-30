@@ -2,14 +2,45 @@
 
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from pipeline.models import RawPosting, Source
-from pipeline.sources.common import join_locations, without
+from pipeline.sources.common import JobFields, iso_date, join_locations, text_or_none, without
+
+# Greenhouse has no standard employment-type field. Some employers add a custom
+# field to their job posts ("metadata"); these are the names seen for it.
+EMPLOYMENT_TYPE_FIELD = re.compile(
+    r"^\s*(?:employment|job|position|worker|contract)\s+(?:type|status)\s*$|^\s*type of employment\s*$|"
+    r"^\s*commitment\s*$",
+    re.IGNORECASE,
+)
+WORKPLACE_FIELD = re.compile(
+    r"^\s*(?:working conditions|workplace(?: type)?|work location type|remote status)\s*$", re.I
+)
 
 
 def board_url(token: str) -> str:
     return f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true"
+
+
+def _metadata(j: dict[str, Any], pattern: re.Pattern[str]) -> str | None:
+    for field in j.get("metadata") or []:
+        if isinstance(field, dict) and pattern.search(str(field.get("name") or "")):
+            value = text_or_none(field.get("value"))
+            if value:
+                return value
+    return None
+
+
+def job_fields(j: dict[str, Any]) -> JobFields:
+    departments = [d.get("name") for d in j.get("departments") or [] if isinstance(d, dict)]
+    return JobFields(
+        employment_type_raw=_metadata(j, EMPLOYMENT_TYPE_FIELD),
+        department=text_or_none(" / ".join(d for d in departments if d)),
+        workplace_type_raw=_metadata(j, WORKPLACE_FIELD),
+        posted_on=iso_date(j.get("first_published")),
+    )
 
 
 def parse(payload: Any, employer_id: str, token: str) -> list[RawPosting]:

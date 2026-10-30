@@ -8,10 +8,11 @@ import pytest
 
 from pipeline.extract.duration import extract_duration, find_stated
 from pipeline.extract.province import extract_location
+from pipeline.extract.role_type import extract_role_type
 from pipeline.extract.student import is_student_role
-from pipeline.extract.term import extract_term
+from pipeline.extract.term import extract_term, term_end_date, term_in_past
 from pipeline.extract.track import extract_track
-from pipeline.models import DurationStatus, Province, Remote, Track
+from pipeline.models import DurationStatus, Province, Remote, RoleType, Track
 
 # --- Term -----------------------------------------------------------------------
 
@@ -31,6 +32,60 @@ from pipeline.models import DurationStatus, Province, Remote, Track
 )
 def test_terms(title: str, description: str, terms: list[str]) -> None:
     assert extract_term(title, description).terms == terms
+
+
+@pytest.mark.parametrize(
+    ("title", "description", "terms"),
+    [
+        # Start months map to the school calendar: Jan–Apr Winter, May–Aug Summer, Sep–Dec Fall.
+        ("May 2027 GIS Co-op", "", ["Summer 2027"]),
+        ("Co-op Student", "The co-op starts May 2027.", ["Summer 2027"]),
+        ("Co-op Student", "Starting May 2027, you will join the team.", ["Summer 2027"]),
+        ("Intern", "This work term runs January–April 2027.", ["Winter 2027"]),
+        ("Co-op (Jan 2027)", "", ["Winter 2027"]),
+        ("Intern (Winter/January 2027, 8 Months)", "", ["Winter 2027"]),
+        ("Developer Co-op", "Our September 2027 co-op cohort.", ["Fall 2027"]),
+        ("Co-op Student", "Placement: December 2027.", ["Fall 2027"]),
+        # A month and year in the description that is a deadline or a date, not a term.
+        ("Co-op Student", "Please apply by May 2027.", []),
+        ("Co-op Student", "Applications close January 2027 for this co-op.", []),
+        ("Intern", "Open to students graduating in May 2027.", []),
+        ("Analyst", "Our office opened in May 2019.", []),
+    ],
+)
+def test_month_and_year_terms(title: str, description: str, terms: list[str]) -> None:
+    assert extract_term(title, description).terms == terms
+
+
+def test_spring_is_ambiguous_and_not_mapped() -> None:
+    r = extract_term("Software Intern (Spring 2027)", "")
+    assert r.terms == [] and r.term is None
+    assert r.status == "ambiguous"
+    assert r.ambiguous == ["Spring 2027"]
+
+
+def test_spring_beside_a_clear_term() -> None:
+    r = extract_term("Co-op, Spring 2027", "Also open for Summer 2027.")
+    assert r.terms == ["Summer 2027"]
+    assert r.status == "stated"
+    assert r.ambiguous == ["Spring 2027"]
+
+
+def test_term_end_dates() -> None:
+    assert term_end_date("Winter 2026") == dt.date(2026, 4, 30)
+    assert term_end_date("Summer 2027") == dt.date(2027, 8, 31)
+    assert term_end_date("Fall 2027") == dt.date(2027, 12, 31)
+    assert term_end_date("Spring 2027") is None
+
+
+def test_term_in_past_flag() -> None:
+    october = dt.date(2026, 10, 15)
+    assert term_in_past(["Winter 2026"], None, october)  # stated term ended before it was posted
+    assert not term_in_past(["Winter 2027"], None, october)
+    assert not term_in_past(["Fall 2026"], None, october)  # still running
+    assert not term_in_past(["Winter 2026", "Winter 2027"], None, october)  # one option is still ahead
+    assert not term_in_past([], None, october)
+    assert not term_in_past(["Winter 2026"], None, None)
 
 
 def test_title_term_comes_first() -> None:
@@ -130,6 +185,24 @@ def test_duration_not_stated() -> None:
     assert (r.status, r.options_months, r.evidence) == (DurationStatus.not_stated, [], None)
 
 
+@pytest.mark.parametrize(
+    ("text", "months", "is_range"),
+    [
+        ("This is a 4 months co-op.", [4.0], False),
+        ("An 8-month co-op term.", [8.0], False),
+        ("A 16months co-op placement.", [16.0], False),
+        ("Internship length: 12 Months.", [12.0], False),
+        ("Data Analyst Intern (8–12 months)", [8.0, 12.0], True),
+        ("Co-op term of 8 to 12 months.", [8.0, 12.0], True),
+        ("Co-op terms of 4 or 8 months.", [4.0, 8.0], False),
+        ("Co-op terms of 4, 8 or 12 months.", [4.0, 8.0, 12.0], False),
+    ],
+)
+def test_duration_patterns_and_ranges(text: str, months: list[float], is_range: bool) -> None:
+    r = extract_duration(text, "")
+    assert (r.options_months, r.status, r.is_range) == (months, DurationStatus.stated, is_range)
+
+
 # --- Location and remote --------------------------------------------------------
 
 
@@ -219,6 +292,63 @@ def test_track_falls_back_to_description() -> None:
 )
 def test_student_role(title: str, student: bool) -> None:
     assert is_student_role(title)[0] is student
+
+
+# --- Role type (ADR 0008) --------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("title", "employment_type", "role_type"),
+    [
+        # Regression cases: substring matching would call these student roles.
+        ("Internal Audit Analyst", None, RoleType.none),
+        ("International Payments Analyst", None, RoleType.none),
+        ("Cooperative Housing Coordinator", None, RoleType.none),
+        ("Early Stage Investment Associate", None, RoleType.none),
+        ("Student Success Manager", None, RoleType.none),
+        ("Manager, Services for Students", None, RoleType.none),
+        # Real student titles still match.
+        ("Data Science Intern", "", RoleType.intern),
+        ("Data Science Intern", None, RoleType.intern),
+        ("Software Developer (Co-op Opportunities)", None, RoleType.coop),
+        ("Internal Communications Co-op", None, RoleType.coop),
+        ("Coop Software Developer", None, RoleType.coop),
+        ("Engineering Interns", None, RoleType.intern),
+        ("Stage en développement logiciel", None, RoleType.intern),
+        ("Summer Student - Operations", None, RoleType.student),
+        ("Student, IT Support", None, RoleType.student),
+        # The structured employment type is the first signal.
+        ("Data Analyst", "Coop Student", RoleType.coop),
+        ("Platform Engineer", "Intern", RoleType.intern),
+        ("Analyst", "Intern/Student", RoleType.intern),
+        ("Analyst", "Student", RoleType.student),
+        ("Software Engineering Intern", "Full-time", RoleType.intern),  # a default "Full-time" is no signal
+        ("Senior Engineer", "FullTime", RoleType.none),
+        # Ashby's fixed list has no co-op value, so a co-op title refines "Intern".
+        ("Software Engineer, Backend (Co-op)", "Intern", RoleType.coop),
+    ],
+)
+def test_role_type(title: str, employment_type: str | None, role_type: RoleType) -> None:
+    assert extract_role_type(title, "", employment_type).role_type is role_type
+
+
+def test_role_type_records_the_field_that_matched() -> None:
+    structured = extract_role_type("Data Analyst", "", "Coop Student")
+    assert (structured.field, structured.evidence) == ("employment_type", "Coop")
+    titled = extract_role_type("Data Science Intern", "", "")
+    assert (titled.field, titled.evidence) == ("title", "Intern")
+
+
+def test_description_only_refines_a_student_role() -> None:
+    co_op = "This is a 4-month co-op work term."
+    refined = extract_role_type("Summer Student, Engineering", co_op)
+    assert (refined.role_type, refined.field, refined.evidence) == (RoleType.coop, "description", "co-op")
+    # A senior role that mentions the co-op program is not a student role.
+    assert (
+        extract_role_type("Senior Software Engineer", "You will mentor our co-op students.").role_type is RoleType.none
+    )
+    # An intern title is not overridden by the description.
+    assert extract_role_type("Data Intern", "Open to co-op students.").role_type is RoleType.intern
 
 
 # --- Evidence quotes ------------------------------------------------------------

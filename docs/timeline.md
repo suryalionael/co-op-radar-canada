@@ -35,7 +35,7 @@ Answers the project's biggest unknown: how many Canadian student postings do Gre
 | Oct 28 | Repository laid out as in the brief; `scripts/coverage_spike.py` with tests; CI | Done |
 | Oct 28 | ADR 0003 (Workday out of scope), ADR 0004 (forbidden sites as link-outs only), ADR 0002 drafted | Done |
 | Oct 29 | First live coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Done |
-| Oct 29 – Nov 1 | Grow seed list to at least 100 responding boards (ADR 0001 validity rule): run `scripts/check_board_tokens.py` on `scripts/candidate_tokens.txt`, add the hits | Done Oct 30 (135 boards) |
+| Oct 29 – Nov 1 | Grow seed list to at least 100 responding boards (ADR 0001 validity rule): run `scripts/check_board_tokens.py` on `scripts/candidate_tokens.txt`, add the hits | Done Oct 30 (135 boards; 171 after adding boards found through the curated list, ADR 0007) |
 | Nov 2 | Decision run of `coverage_spike.py`; add results table and decision to ADR 0001 in a **separate commit** | To do |
 | Nov 3 | Put the measured bytes per day into ADR 0002 and accept it | To do |
 
@@ -141,4 +141,7 @@ Seven weeks, ~21 h. Holidays may add time; the plan does not assume it.
 | 0004 | LinkedIn and other forbidden sites as link-outs only | Done |
 | 0005 | Hosting: Vercel free tier with Web Analytics | Done |
 | 0006 | Multi-value term and province, in-Canada flag | Done |
+| 0007 | Curated internship list for seeding and evaluation only | Done |
+| 0008 | Structured job-type fields, role type, term status | Done |
+| 0009 | Phase 0 coverage evidence from the curated list's platforms | Done |
 | later | Google News RSS terms check; each new source from brief 5.5; rules vs model for news | v2 weeks 1 and 7 |

@@ -46,7 +46,7 @@ npm run dev        # http://localhost:3000, uses the sample data in site/public/
 
 The easiest way to check tokens: on GitHub, open **Actions → Phase 0 tools → Run workflow**, choose `check-tokens`, and read the table in the run summary. To check your own list, commit a file of tokens on your branch and give its path.
 
-Copy an existing entry in `config/employers.yaml`. Only add a board if the token checker found it, it has at least one Canadian job, and it is clearly the right company (check the Greenhouse `board_name` or open a job link). Set `verified` to the date you checked. `pytest` checks the file for duplicate ids and boards.
+Copy an existing entry in `config/employers.yaml`. Only add a board if the token checker found it, it has at least one Canadian job, and it is clearly the right company (check the Greenhouse `board_name` or open a job link). Set `verified` to the date you checked. If the candidate came from an outside list, add `source: [reference-list]`, `[coop-watcher]` or both (ADR 0007), and record the check in `data/coverage/token_check_log.csv` (`python scripts/check_board_tokens.py --pairs pairs.csv --log ...`). `pytest` checks the file for duplicate ids and boards.
 
 ## Verifying a program page (V1-1)
 

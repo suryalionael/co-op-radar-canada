@@ -48,6 +48,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 |---|---|---|---|---|
 | V2-0 | Google News RSS terms check; approve with an ADR or drop | Lio | 0.5 h | Dec 18 |
 | V2-1b | Action that validates submissions | Lio | 1 h | Dec 20 |
+| V2-1c | Action that opens a pull request from an accepted submission issue, so a reviewed submission lands as a normal PR. Same Issue form → Action → PR pattern the curated internship list uses; $0 on GitHub Actions | Lio | 1 h | Dec 20 |
 | V2-2 | Employer pages: postings, program watch, news, LinkedIn link-out | Lio | 2 h | Dec 27 |
 | V2-3 | Weekly digest page and RSS | Lio | 2 h | Jan 10 |
 | V2-4 | Daily news pull, dedupe, pre-filter | Lio | 3 h | Jan 3 |
@@ -60,6 +61,10 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 ### v3 (stretch, Feb – May): not split yet
 
 Weekly market page · StatCan vacancy chart · coverage-over-season chart · recruiting calendar · lead-lag analysis · season write-up.
+
+| ID | Card | Owner | Est. | Due |
+|---|---|---|---|---|
+| V3-1 | Recruiting calendar, seeded from the curated list's 2026 and 2027 files (ADR 0007): for each employer, the month its first posting appeared and how fast its roles closed (posting date to "Closed🔒"). Publish per-employer aggregates only, never the listings; add our own snapshots' `first_seen` and closed dates as they accumulate | — | 3 h | Apr |
 
 ## Done
 
@@ -75,5 +80,6 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | V1-3 | Merged to `main`; first live Daily run green: 70/70 boards, 46 open Canadian student postings published | Lio | Oct 29 |
 | OPS-1 | First coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Lio | Oct 29 |
 | [P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4) | Seed list grown to 135 boards (65 added), all with a Canadian job on Oct 30 | Ei | Oct 30 |
+| P0-1b | 36 more boards from the curated internship list and coop-watcher's Lever slugs (171 total), each check logged in `data/coverage/token_check_log.csv` (ADR 0007) | Lio | Oct 30 |
 | V2-1a | Issue form for posting submissions, `.github/ISSUE_TEMPLATE/submit-posting.yml` (#20) | Ei | Oct 30 |
 | TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |

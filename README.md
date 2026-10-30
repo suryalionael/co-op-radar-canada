@@ -40,6 +40,8 @@ A scheduled job runs once a day:
 
 Most large Canadian banks, insurers and pension funds post jobs on Workday, which has no public posting API. Their postings will not appear automatically. The site covers these employers through program watch and links to their own career pages instead, and says so on its About page.
 
+How big the gap is: in a curated list of Canadian tech internships, about a quarter of the open 2027 listings (70 of 295) and a third of the companies (34 of 107) were on Greenhouse, Lever or Ashby, the platforms this project reads. Workday alone held 37% of the listings; iCIMS, Oracle, Eightfold and employers' own career sites most of the rest. Details and caveats are in [ADR 0009](docs/decisions/0009-reference-list-platform-coverage.md).
+
 ## Evaluation
 
 The extractors and the news classifier will be evaluated against hand-labelled data, and the results published here with counts and confidence intervals. A wrong duration is treated as worse than "not stated", so the target is precision of at least 0.95 on duration, with recall reported as measured.
@@ -107,6 +109,7 @@ python -m pipeline.cli process-postings --data-root data-branch   # writes data/
 python -m pipeline.cli process-programs --data-root data-branch
 python -m pipeline.cli label-sheet      --data-root data-branch   # rows to hand-label in data/labels/
 python -m pipeline.cli evaluate         --data-root data-branch   # precision and recall with 95% intervals
+python -m pipeline.cli reference-recall --data-root data-branch   # recall against a curated list (ADR 0007)
 ```
 
 Program watch only fetches pages in `config/programs.yaml` whose URL has been checked by hand (`verified` set).
@@ -133,6 +136,11 @@ Built by Lionael Surya (lead) and Ei Htoo. Who does what is in [`docs/team.md`](
 ## Contributing
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). A submission form for postings the pipeline can't reach is planned for v2. Until then, feel free to open an issue with suggestions for employers or student-program pages to track.
+
+## Related projects
+
+- [negarprh/Canadian-Tech-Internships-2027](https://github.com/negarprh/Canadian-Tech-Internships-2027), a hand-curated list of Canadian tech internships. We use it for seeding and evaluation only: its links helped find employer job boards, and it is the reference for our recall check and platform breakdown. We never republish its listings ([ADR 0007](docs/decisions/0007-curated-reference-list.md)).
+- [HamzaPM58/coop-watcher](https://github.com/HamzaPM58/coop-watcher), a script that sorts Lever co-op postings. It inspired our use of each board's structured job-type field as a co-op signal, and the "Internal Audit" regression cases in our role detection. No code is copied from it ([ADR 0008](docs/decisions/0008-structured-job-type-fields.md)).
 
 ## Disclaimer
 

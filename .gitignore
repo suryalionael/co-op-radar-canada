@@ -7,3 +7,4 @@ __pycache__/
 .ruff_cache/
 node_modules/
 data-branch/
+data/reference/raw/

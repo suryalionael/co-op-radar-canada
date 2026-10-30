@@ -5,8 +5,18 @@ from pathlib import Path
 
 import pytest
 
-from pipeline.evaluate import Ratio, read_labels, score, wilson_interval, write_label_sheet
-from pipeline.models import DurationStatus, Posting, Province, Remote, Source, Status, Track
+from pipeline.evaluate import (
+    Ratio,
+    baseline_is_student,
+    baseline_is_summer_2027,
+    baseline_table,
+    compare_with_baseline,
+    read_labels,
+    score,
+    wilson_interval,
+    write_label_sheet,
+)
+from pipeline.models import DurationStatus, Posting, Province, Remote, RoleType, Source, Status, TermStatus, Track
 
 
 def test_wilson_interval_matches_known_values() -> None:
@@ -26,11 +36,12 @@ def posting(pid: str, durations: list[float], term: str | None, provinces: list[
     return Posting(
         id=pid, source=Source.greenhouse, board_token="a", employer_id="a", title="Co-op", url="https://x",
         location_raw="Toronto", in_canada=True, province=provinces[0] if provinces else Province.UNKNOWN,
-        provinces=provinces, remote=Remote.unknown, term=term, terms=[term] if term else [], term_start=None,
-        term_end=None, duration_options_months=durations,
+        provinces=provinces, remote=Remote.unknown, term=term, terms=[term] if term else [],
+        term_status=TermStatus.stated if term else TermStatus.not_stated, term_start=None,
+        term_end=None, duration_options_months=durations, duration_is_range=False,
         duration_status=DurationStatus.stated if durations else DurationStatus.not_stated, track=Track.software,
-        is_student_role=True, evidence={}, description_hash="h", first_seen=dt.date(2026, 11, 1),
-        last_seen=dt.date(2026, 11, 1), missed_fetches=0, status=Status.open,
+        is_student_role=True, role_type=RoleType.coop, evidence={}, description_hash="h",
+        first_seen=dt.date(2026, 11, 1), last_seen=dt.date(2026, 11, 1), missed_fetches=0, status=Status.open,
     )  # fmt: skip
 
 
@@ -99,3 +110,42 @@ def test_agreement_on_shared_postings() -> None:
     assert rows["duration"].both_labelled == 2
     assert (rows["duration"].agree.k, rows["duration"].agree.n) == (1, 2)
     assert (rows["province"].agree.k, rows["province"].agree.n) == (2, 2)
+
+
+# --- Naive baseline --------------------------------------------------------------
+
+
+def test_baseline_counts_substrings_ours_does_not() -> None:
+    audit = posting("a", [], None, [Province.ON]).model_copy(
+        update={"title": "Internal Audit Analyst", "is_student_role": False, "role_type": RoleType.none}
+    )
+    assert baseline_is_student(audit) is True  # the substring trap
+    assert audit.is_student_role is False
+    commitment = audit.model_copy(update={"title": "Data Analyst", "employment_type_raw": "Coop Student"})
+    assert baseline_is_student(commitment) is True
+    assert baseline_is_summer_2027(audit.model_copy(update={"title": "May 2027 GIS Co-op"})) is True
+
+
+def test_compare_with_baseline_on_the_same_rows() -> None:
+    rows = [
+        # (id, title, ours: student?, ours: terms, label: student?, label: term)
+        ("1", "Data Co-op (Summer 2027)", True, ["Summer 2027"], "yes", "Summer 2027"),
+        ("2", "Internal Audit Analyst", False, [], "no", ""),
+        ("3", "International Payments Analyst", False, [], "no", ""),
+        ("4", "Software Intern", True, ["Summer 2027"], "yes", "Summer 2027"),  # term from the description
+        ("5", "Senior Engineer", False, [], "no", ""),
+    ]
+    postings, labels = {}, []
+    for pid, title, ours_student, terms, label_student, label_term in rows:
+        postings[pid] = posting(pid, [], terms[0] if terms else None, [Province.ON]).model_copy(
+            update={"title": title, "is_student_role": ours_student, "terms": terms}
+        )
+        labels.append({**label(pid, "", label_term, "ON"), "is_student_role": label_student})
+    by_question = {c.question: c for c in compare_with_baseline(labels, postings)}
+    student, summer = by_question["student role"], by_question["Summer 2027"]
+    assert (str(student.ours_precision), str(student.ours_recall)) == (str(Ratio(2, 2)), str(Ratio(2, 2)))
+    assert str(student.baseline_precision) == str(Ratio(2, 4))  # "Internal", "International" counted
+    assert str(student.baseline_recall) == str(Ratio(2, 2))
+    assert str(summer.ours_recall) == str(Ratio(2, 2))
+    assert str(summer.baseline_recall) == str(Ratio(1, 2))  # the baseline reads titles only
+    assert "Naive baseline: precision" in baseline_table([student, summer])

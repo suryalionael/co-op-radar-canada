@@ -7,12 +7,22 @@ Finds, in the title first and then the description:
 - a month range: "May–August 2027", "January to April 2027",
   "September 2026 - April 2027"
 - a start month: "May 2027 start", "starting January 2027", "start date: May 2027"
+- a month and year on their own: "May 2027 GIS Co-op", "(Winter/January 2027)",
+  "Jan 2027". In the title this always counts. In the description it counts only
+  when the same sentence names the work term (co-op, internship, term, start...)
+  and no deadline word comes right before it ("apply by May 2027" is not a term).
 
 Canadian co-op terms follow the school calendar: Winter is January to April,
 Summer is May to August, Fall is September to December. A month range or start
 month is named after the term its first month falls in.
 
+"Spring" means different months at different schools (May to August at some,
+a shorter April to June term at others), so "Spring 2027" is never mapped to a
+term. It is reported as `ambiguous` with its evidence kept.
+
 Nothing is guessed: a posting that says "summer co-op" with no year gets no term.
+A term that ended before the posting was published ("Winter 2026" on a role
+posted in October 2026) is kept exactly as stated; `term_in_past` flags it.
 """
 
 from __future__ import annotations
@@ -52,6 +62,9 @@ MONTHS |= {
     "décembre": 12,
 }
 
+AMBIGUOUS_SEASONS = {"Spring"}
+TERM_STATUS_STATED, TERM_STATUS_AMBIGUOUS, TERM_STATUS_NOT_STATED = "stated", "ambiguous", "not_stated"
+
 _SEASON = r"(?P<season>" + "|".join(SEASONS) + r")"
 _SEASON2 = r"(?P<season2>" + "|".join(SEASONS) + r")"
 _MONTH = "|".join(sorted(MONTHS, key=len, reverse=True))
@@ -75,6 +88,19 @@ START_MONTH = re.compile(
     re.IGNORECASE,
 )
 
+MONTH_YEAR = re.compile(rf"\b(?P<m1>{_MONTH})\.?\s*,?\s*(?P<y1>{_YEAR})\b", re.IGNORECASE)
+WORK_TERM_WORDS = re.compile(
+    r"\b(?:co-?op|co op|intern(?:ship)?s?|stages?|stagiaires?|terms?|work terms?|placements?|start(?:s|ing)?|"
+    r"begin(?:s|ning)?|commenc\w*|from|duration|session|semester|cohort)\b",
+    re.IGNORECASE,
+)
+DEADLINE_BEFORE = re.compile(
+    r"(?:apply|applications?|submit\w*|deadline|closes?|closing|due|posted|before|until|by|graduat\w*|"
+    r"expected to graduate|class of)\W*(?:\w+\W+){0,2}$",
+    re.IGNORECASE,
+)
+SENTENCE_END = re.compile(r"[.!?;\n•]")
+
 
 def season_for_month(month: int) -> str:
     if month <= 4:
@@ -96,13 +122,43 @@ class TermResult:
     end: dt.date | None = None
     evidence: str | None = None  # text of the first match
     dates_evidence: str | None = None  # text the dates came from
+    ambiguous: list[str] = field(default_factory=list)  # e.g. "Spring 2027": kept as evidence, never mapped
 
     @property
     def term(self) -> str | None:
         return self.terms[0] if self.terms else None
 
+    @property
+    def status(self) -> str:
+        if self.terms:
+            return TERM_STATUS_STATED
+        return TERM_STATUS_AMBIGUOUS if self.ambiguous else TERM_STATUS_NOT_STATED
 
-def _scan(text: str, result: TermResult) -> None:
+
+def _sentence_before(text: str, at: int) -> str:
+    before = text[max(0, at - 120) : at]
+    cuts = list(SENTENCE_END.finditer(before))
+    return before[cuts[-1].end() :] if cuts else before
+
+
+def _sentence_after(text: str, at: int) -> str:
+    after = text[at : at + 120]
+    cut = SENTENCE_END.search(after)
+    return after[: cut.start()] if cut else after
+
+
+def _plain_month_counts(text: str, m: re.Match[str], in_title: bool) -> bool:
+    """A month and year with no "start" or range around it: always in a title; in a
+    description only beside work-term words and not right after a deadline word."""
+    if in_title:
+        return True
+    before, after = _sentence_before(text, m.start()), _sentence_after(text, m.end())
+    if DEADLINE_BEFORE.search(before):
+        return False
+    return bool(WORK_TERM_WORDS.search(before) or WORK_TERM_WORDS.search(after))
+
+
+def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
     hits: list[tuple[int, str, str]] = []  # (position, term, matched text)
 
     for m in MONTH_RANGE.finditer(text):
@@ -121,6 +177,7 @@ def _scan(text: str, result: TermResult) -> None:
     for m in START_MONTH.finditer(text):
         if any(a <= m.start() < b for a, b in taken):
             continue
+        taken.append((m.start(), m.end()))
         month = MONTHS[(m["m1"] or m["m2"]).lower()]
         year = int(m["y1"] or m["y2"])
         hits.append((m.start(), f"{season_for_month(month)} {year}", m.group(0)))
@@ -128,8 +185,21 @@ def _scan(text: str, result: TermResult) -> None:
             result.start = dt.date(year, month, 1)
             result.dates_evidence = m.group(0)
 
+    for m in MONTH_YEAR.finditer(text):
+        if any(a <= m.start() < b for a, b in taken) or not _plain_month_counts(text, m, in_title):
+            continue
+        month, year = MONTHS[m["m1"].lower()], int(m["y1"])
+        hits.append((m.start(), f"{season_for_month(month)} {year}", m.group(0)))
+        if result.start is None:
+            result.start = dt.date(year, month, 1)
+            result.dates_evidence = m.group(0)
+
     for m in SEASON_YEAR.finditer(text):
         season = SEASONS[(m["season"] or m["season2"]).lower()]
+        if season in AMBIGUOUS_SEASONS:
+            if m.group(0) not in result.ambiguous:
+                result.ambiguous.append(m.group(0))
+            continue
         hits.append((m.start(), f"{season} {_year(m['year'] or m['year2'])}", m.group(0)))
 
     for _, term, matched in sorted(hits):
@@ -142,6 +212,28 @@ def _scan(text: str, result: TermResult) -> None:
 def extract_term(title: str, description: str) -> TermResult:
     """Terms from the title come first; the description adds any others."""
     result = TermResult()
-    _scan(title, result)
+    _scan(title, result, in_title=True)
     _scan(description, result)
     return result
+
+
+TERM_END_MONTH = {"Winter": 4, "Summer": 8, "Fall": 12}
+
+
+def term_end_date(term: str) -> dt.date | None:
+    """Last day of a named term on the school calendar: "Winter 2026" ends 2026-04-30."""
+    season, _, year = term.partition(" ")
+    month = TERM_END_MONTH.get(season)
+    if month is None or not year.isdigit():
+        return None
+    return dt.date(int(year), month, calendar.monthrange(int(year), month)[1])
+
+
+def term_in_past(terms: list[str], term_end: dt.date | None, posted: dt.date | None) -> bool:
+    """True when every stated term had ended before the posting date. The term itself is never changed."""
+    if posted is None or not terms:
+        return False
+    ends = [term_end_date(t) for t in terms]
+    if term_end is not None:
+        ends[0] = max(term_end, ends[0]) if ends[0] else term_end
+    return all(end is not None and end < posted for end in ends)

@@ -47,6 +47,12 @@ class Remote(StrEnum):
     unknown = "unknown"
 
 
+class TermStatus(StrEnum):
+    stated = "stated"
+    ambiguous = "ambiguous"  # e.g. "Spring 2027": evidence kept, never mapped to a term
+    not_stated = "not_stated"
+
+
 class DurationStatus(StrEnum):
     stated = "stated"
     inferred_from_dates = "inferred_from_dates"
@@ -61,6 +67,13 @@ class Track(StrEnum):
     software = "software"
     business_ops = "business_ops"
     other = "other"
+
+
+class RoleType(StrEnum):
+    coop = "coop"
+    intern = "intern"
+    student = "student"  # a student role that does not say co-op or internship ("Summer Student")
+    none = "none"
 
 
 class Status(StrEnum):
@@ -126,19 +139,29 @@ class Posting(BaseModel):
     remote: Remote
     term: str | None
     terms: list[str]
+    term_status: TermStatus
     term_start: dt.date | None
     term_end: dt.date | None
     duration_options_months: list[float]
+    duration_is_range: bool
     duration_status: DurationStatus
     track: Track
     is_student_role: bool
+    role_type: RoleType
     evidence: dict[str, str]
     description_hash: str
     first_seen: dt.date
     last_seen: dt.date
     missed_fetches: int
     status: Status
+    flag_term_in_past: bool = False  # every stated term ended before the posting date; the term is kept as stated
     deadline: dt.date | None = None
+    # The board's own structured fields, verbatim (ADR 0008).
+    employment_type_raw: str | None = None
+    department: str | None = None
+    team: str | None = None
+    workplace_type_raw: str | None = None
+    posted_on: dt.date | None = None
 
 
 class ProgramWatch(BaseModel):
