@@ -14,7 +14,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
-| V2-1a | Issue form `.github/ISSUE_TEMPLATE/submit-posting.yml` drafted (PR open); needs a `submission` label in the repo | Ei | 1 h | Dec 18 |
+| [V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9) | 30 program pages verified Oct 30 (PR open); done when the next Daily run shows `pages: 30` | Ei | 1.5 h | Nov 15 |
 
 ## This week (Oct 28 – Nov 3)
 
@@ -29,7 +29,6 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9) | Verify every URL in `config/programs.yaml`, set `verified`, add pages to reach ~30 | Ei | 1.5 h | Nov 15 |
 | [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
 | [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Daily Action: 7 consecutive green days (must start by Dec 6) | Lio | 0.5 h | Dec 12 |
 | [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Review the 7-day program-watch dry run; fix noisy pages | Lio | 1 h | Nov 24 |
@@ -76,4 +75,5 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | V1-3 | Merged to `main`; first live Daily run green: 70/70 boards, 46 open Canadian student postings published | Lio | Oct 29 |
 | OPS-1 | First coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Lio | Oct 29 |
 | [P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4) | Seed list grown to 135 boards (65 added), all with a Canadian job on Oct 30 | Ei | Oct 30 |
+| V2-1a | Issue form for posting submissions, `.github/ISSUE_TEMPLATE/submit-posting.yml` (#20) | Ei | Oct 30 |
 | TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |

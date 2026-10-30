@@ -60,6 +60,20 @@ def test_noise_does_not_change_the_hash() -> None:
     assert content_hash(main_text(noisy)) == content_hash(main_text(page()))
 
 
+def test_session_tokens_do_not_change_the_hash() -> None:
+    # Some careers sites (jobs.rbc.com, jobs.bmo.com) print a fresh 32-character hex token on every request.
+    def tokened(token: str) -> str:
+        return f"<main><h1>Campus</h1><p>Students apply here.</p><p>{token}</p></main>"
+
+    a = main_text(tokened("66b7a57ae4fa47b2a60de83fdefeeb78"))
+    b = main_text(tokened("62a26cb4403b4207ad92e533eedcf184"))
+    assert a == b
+    assert main_text(tokened("123e4567-e89b-12d3-a456-426614174000")) == a
+    assert "Students apply here." in a
+    # ordinary words made only of hex letters are kept
+    assert "facade" in main_text("<main><p>The facade is decaf.</p></main>")
+
+
 def test_real_change_changes_the_hash() -> None:
     assert main_text(page(status="are now open")) != main_text(page())
 
