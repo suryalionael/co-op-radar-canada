@@ -1,6 +1,6 @@
 # 0001: Coverage thresholds and Phase 0 results
 
-- **Status:** Thresholds accepted. Results pending.
+- **Status:** Accepted. Thresholds 2026-10-28; results and decision 2026-10-30.
 - **Date:** 2026-10-28
 - **Deciders:** Lionael Surya
 
@@ -48,24 +48,41 @@ Late October is near the peak for Summer 2027 postings, so this run is close to 
 
 ## Results
 
-Not yet run. To be added in a separate commit after the thresholds above are committed.
+Decision run on 2026-10-30 with `scripts/coverage_spike.py`. Output: `data/coverage/2026-10-30.json` and `.md`, committed just before this section.
 
 | Measure | Value |
 |---|---|
-| Run date | — |
-| Boards in seed list | — |
-| Boards responding successfully | — |
-| Boards failed or 404 | — |
-| Total postings | — |
-| Postings in Canada | — |
-| **Canadian student postings (headline)** | — |
-| Student postings, remote with no country | — |
-| Canadian student postings mentioning a term | — |
-| Canadian student postings mentioning a duration | — |
+| Run date | 2026-10-30 |
+| Boards in seed list | 171 |
+| Boards responding successfully | 171 |
+| Boards failed or 404 | 0 |
+| Total postings | 16,453 |
+| Postings in Canada | 3,274 |
+| **Canadian student postings (headline)** | **177** |
+| Student postings, remote with no country | 0 |
+| Canadian student postings mentioning a term | 76 |
+| Canadian student postings mentioning a duration | 63 |
+
+The run is valid for the decision: at least 100 boards responded (171 of 171). A dry check of every board earlier the same day also found no failures and no empty boards.
+
+**Where the 177 come from.** The seed list grew from 70 to 171 boards on 2026-10-30, in two ways:
+
+| Boards | Count | Canadian student postings |
+|---|---|---|
+| Original seed list (verified 2026-10-28) | 70 | 48 |
+| Added from our own candidate lists (P0-1, #19) | 61 | 3 |
+| Added because a curated internship list linked to them (ADR 0007) | 40 | 126 |
+
+The last group was chosen *because* those employers had student roles listed, so it pulls the headline up. Without it, the count would be 51, in the "40 to 99" row. The postings are also concentrated: 43 boards have at least one, and the top five (Equitable Bank 19, Lyft 16, Kensington Tours 15, Astera Labs 13, Geotab's internship board 12) hold 75 of the 177.
 
 ## Decision
 
-Pending the results.
+**Build v1 as planned** (the "100 or more" row). The count was taken with the rules and the table committed before any results, across every seed board, as this ADR set out. It is not near a boundary.
+
+Two notes, so the number is not over-read:
+
+- **The "40 to 99" row's extra step, employer discovery, has in effect already happened.** The 40 list-found boards *are* employer discovery (brief section 5.5, lever 1). The headline therefore measures the seed list after discovery, not a random sample of Canadian employers. A student-facing claim should use the site's own counts, not 177.
+- **The v1 extractors are stricter than these counting rules.** The Daily pipeline published 48 open student postings from the 70 original boards. The first Daily run with all 171 boards (2026-10-31) will give the comparable v1 number.
 
 ## Consequences
 
