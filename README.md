@@ -40,6 +40,8 @@ A scheduled job runs once a day:
 
 Most large Canadian banks, insurers and pension funds post jobs on Workday, which has no public posting API. Their postings will not appear automatically. The site covers these employers through program watch and links to their own career pages instead, and says so on its About page.
 
+How big the gap is: in a curated list of Canadian tech internships, about a quarter of the open 2027 listings (70 of 295) and a third of the companies (34 of 107) were on Greenhouse, Lever or Ashby, the platforms this project reads. Workday alone held 37% of the listings; iCIMS, Oracle, Eightfold and employers' own career sites most of the rest. Details and caveats are in [ADR 0009](docs/decisions/0009-reference-list-platform-coverage.md).
+
 ## Evaluation
 
 The extractors and the news classifier will be evaluated against hand-labelled data, and the results published here with counts and confidence intervals. A wrong duration is treated as worse than "not stated", so the target is precision of at least 0.95 on duration, with recall reported as measured.

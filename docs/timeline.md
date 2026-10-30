@@ -141,4 +141,7 @@ Seven weeks, ~21 h. Holidays may add time; the plan does not assume it.
 | 0004 | LinkedIn and other forbidden sites as link-outs only | Done |
 | 0005 | Hosting: Vercel free tier with Web Analytics | Done |
 | 0006 | Multi-value term and province, in-Canada flag | Done |
+| 0007 | Curated internship list for seeding and evaluation only | Done |
+| 0008 | Structured job-type fields, role type, term status | Done |
+| 0009 | Phase 0 coverage evidence from the curated list's platforms | Done |
 | later | Google News RSS terms check; each new source from brief 5.5; rules vs model for news | v2 weeks 1 and 7 |
