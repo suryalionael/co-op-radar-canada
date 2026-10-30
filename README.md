@@ -140,7 +140,8 @@ Co-op Radar Canada is an independent student project. It is not affiliated with,
 
 ## Author
 
-Built by Lionael Surya (Lio), Honours Bachelor of Data Science & Analytics, Seneca Polytechnic, Toronto, with Ei Htoo.
+Built by Lionael Surya (Lio), Honours Bachelor of Data Science & Analytics, Seneca Polytechnic, Toronto, 
+with Ei Htoo Khaing (E2), Honours Bachelor of Data Science & Analytics, Seneca Polytechnic, Toronto.
 
 ## License
 
