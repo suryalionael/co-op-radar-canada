@@ -7,6 +7,7 @@ Every source the project reads, its terms, its status, and what is stored. A sou
 | Greenhouse job board API | Postings (v1) | `boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true`, public JSON | Approved | Posting metadata daily; each distinct description once (ADR 0002) |
 | Lever postings API | Postings (v1) | `api.lever.co/v0/postings/{company}?mode=json`, public JSON | Approved | Same as Greenhouse |
 | Ashby posting API | Postings (v1) | `api.ashbyhq.com/posting-api/job-board/{board}`, public JSON | Approved | Same as Greenhouse |
+| Curated internship list ([negarprh/Canadian-Tech-Internships-2027](https://github.com/negarprh/Canadian-Tech-Internships-2027)) | Seeding employers, recall check, platform breakdown (not postings) | `raw.githubusercontent.com`, two README files; no license, so read-only at run time (ADR 0007) | Approved for seeding and evaluation only | Raw copies gitignored; only aggregate counts and our own token lists committed |
 | Student-program pages | Program watch (v1) | Public pages listed in `config/programs.yaml`; each URL verified by hand before it is watched | Approved | Main page text (boilerplate removed) daily on the `data` branch; a short excerpt of added lines on change |
 | GitHub issue form | Submissions (v2) | Issues labelled `submission` | Planned | Submitted fields after review |
 | GDELT DOC 2.0 API | News (v2) | Public API | Approved | Headline, outlet, date, URL, query, matched terms only |

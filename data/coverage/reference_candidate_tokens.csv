@@ -1,0 +1,48 @@
+platform,token,company,seasons,listings,in_employers_yaml
+ashby,1password,1Password,2027,7,yes
+ashby,ami,AMI,2027,1,no
+ashby,bree,Bree,2027,2,no
+ashby,cohere,Cohere,2026,3,yes
+ashby,georgian,Georgian Partners Growth,2027,1,no
+ashby,human-computer-lab,Human Computer Lab,2026,1,no
+ashby,pebl,Pebl,2027,1,no
+ashby,sardine,Sardine,2027,1,no
+ashby,steel,Steel,2027,1,no
+ashby,telus-digital,TELUS Digital,2027,1,no
+ashby,veeda-ai,Veeda AI,2027,1,no
+ashby,yotta,Yotta Labs,2026,1,no
+ashby,zip,Zip,2027,1,no
+greenhouse,,Alayacare,2027,1,yes
+greenhouse,,Block,2026,1,no
+greenhouse,,D2L,2026;2027,4,yes
+greenhouse,,Global Relay,2026,3,no
+greenhouse,,Lyft,2027,7,yes
+greenhouse,,Pinterest,2027,2,yes
+greenhouse,,Stripe,2027,3,yes
+greenhouse,,Tower Research Capital,2027,2,no
+greenhouse,anthropic,Anthropic,2026,3,no
+greenhouse,aperaaiinc,Apera AI,2027,2,no
+greenhouse,asteraearlycareer2027,Astera Labs,2027,7,no
+greenhouse,brave,Brave,2026,1,no
+greenhouse,cresta,Cresta,2026,2,no
+greenhouse,doordashcanada,DoorDash,2027,1,no
+greenhouse,drweng,DRW,2026,2,no
+greenhouse,heygen,HeyGen,2027,1,no
+greenhouse,instalilyai,InstaLILY,2026,1,no
+greenhouse,internshiplist2000,Geotab,2027,3,no
+greenhouse,kensingtontours,Kensington,2027,1,no
+greenhouse,later,Later,2027,1,yes
+greenhouse,momentenergy,Moment Energy,2027,3,no
+greenhouse,studiokraftonboard,KRAFTON,2027,1,no
+greenhouse,tenstorrentuniversity,Tenstorrent,2027,3,no
+greenhouse,thebrattlegroup,The Brattle Group,2027,1,no
+greenhouse,tribalscale,TribalScale,2026,1,no
+lever,acceldata,Acceldata,2026,1,no
+lever,bhvr,Behaviour Interactive,2027,1,no
+lever,bosonai,Boson Ai,2027,1,no
+lever,eqbank,Equitable Bank,2027,5,no
+lever,gomaterials,GoMaterials,2027,1,no
+lever,kepler,Kepler Communications,2027,1,yes
+lever,magnetforensics,Magnet Forensics,2027,1,yes
+lever,shyftlabs,ShyftLabs,2026,1,no
+lever,waabi,Waabi,2027,1,no
