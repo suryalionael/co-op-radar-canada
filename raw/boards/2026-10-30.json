@@ -1,0 +1,702 @@
+[
+ {
+  "board_token": "1password",
+  "employer_id": "1password",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:41.008272Z",
+  "job_count": 87,
+  "kept_count": 87,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "amplitude",
+  "employer_id": "amplitude",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:44.299744Z",
+  "job_count": 48,
+  "kept_count": 48,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "benevity",
+  "employer_id": "benevity",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:47.285671Z",
+  "job_count": 23,
+  "kept_count": 23,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "cohere",
+  "employer_id": "cohere",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:49.336034Z",
+  "job_count": 121,
+  "kept_count": 121,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "float",
+  "employer_id": "float",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:02.688971Z",
+  "job_count": 20,
+  "kept_count": 20,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "hopper",
+  "employer_id": "hopper",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:06.541672Z",
+  "job_count": 18,
+  "kept_count": 18,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "jane",
+  "employer_id": "jane_app",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:07.717725Z",
+  "job_count": 27,
+  "kept_count": 27,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "jobber",
+  "employer_id": "jobber",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:07.777010Z",
+  "job_count": 39,
+  "kept_count": 38,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "klue",
+  "employer_id": "klue",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:38.018995Z",
+  "job_count": 7,
+  "kept_count": 7,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "lightspeedhq",
+  "employer_id": "lightspeed",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:38.231620Z",
+  "job_count": 120,
+  "kept_count": 120,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "loopio",
+  "employer_id": "loopio",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:39.176647Z",
+  "job_count": 16,
+  "kept_count": 16,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "miovision",
+  "employer_id": "miovision",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:53.976534Z",
+  "job_count": 19,
+  "kept_count": 19,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "neofinancial",
+  "employer_id": "neo_financial",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:55.163232Z",
+  "job_count": 63,
+  "kept_count": 63,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "procurify",
+  "employer_id": "procurify",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:00.626420Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ramp",
+  "employer_id": "ramp",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:00.747905Z",
+  "job_count": 168,
+  "kept_count": 168,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "sentry",
+  "employer_id": "sentry",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:04.599434Z",
+  "job_count": 41,
+  "kept_count": 9,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "snowflake",
+  "employer_id": "snowflake",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:04.705457Z",
+  "job_count": 363,
+  "kept_count": 72,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "thinkific",
+  "employer_id": "thinkific",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:10.035320Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "trulioo",
+  "employer_id": "trulioo",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:10.127144Z",
+  "job_count": 25,
+  "kept_count": 25,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "visier",
+  "employer_id": "visier",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:13.194450Z",
+  "job_count": 3,
+  "kept_count": 2,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "wealthsimple",
+  "employer_id": "wealthsimple",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:16.274507Z",
+  "job_count": 39,
+  "kept_count": 39,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ada18",
+  "employer_id": "ada",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:41.224755Z",
+  "job_count": 7,
+  "kept_count": 7,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "affirm",
+  "employer_id": "affirm",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:41.420135Z",
+  "job_count": 244,
+  "kept_count": 244,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "airbnb",
+  "employer_id": "airbnb",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:42.690259Z",
+  "job_count": 201,
+  "kept_count": 106,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "alayacare",
+  "employer_id": "alayacare",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:43.914553Z",
+  "job_count": 22,
+  "kept_count": 22,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "appdirect",
+  "employer_id": "appdirect",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:44.480115Z",
+  "job_count": 69,
+  "kept_count": 60,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "asana",
+  "employer_id": "asana",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:45.368987Z",
+  "job_count": 110,
+  "kept_count": 38,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "auviknetworks",
+  "employer_id": "auvik",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:46.606150Z",
+  "job_count": 13,
+  "kept_count": 13,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "brex",
+  "employer_id": "brex",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:47.320419Z",
+  "job_count": 260,
+  "kept_count": 247,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "clutch",
+  "employer_id": "clutch",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:48.641194Z",
+  "job_count": 75,
+  "kept_count": 75,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "coinbase",
+  "employer_id": "coinbase",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:49.583659Z",
+  "job_count": 242,
+  "kept_count": 242,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "d2l",
+  "employer_id": "d2l",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:50.762735Z",
+  "job_count": 19,
+  "kept_count": 19,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "databricks",
+  "employer_id": "databricks",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:51.309598Z",
+  "job_count": 901,
+  "kept_count": 317,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "datadog",
+  "employer_id": "datadog",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:54.724267Z",
+  "job_count": 395,
+  "kept_count": 95,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "doordashusa",
+  "employer_id": "doordash",
+  "error": null,
+  "fetched_at": "2026-10-30T16:42:55.760693Z",
+  "job_count": 444,
+  "kept_count": 444,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "dropbox",
+  "employer_id": "dropbox",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:00.061992Z",
+  "job_count": 24,
+  "kept_count": 24,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "elastic",
+  "employer_id": "elastic",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:00.149673Z",
+  "job_count": 402,
+  "kept_count": 83,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "faire",
+  "employer_id": "faire",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:02.482257Z",
+  "job_count": 67,
+  "kept_count": 67,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "geotab",
+  "employer_id": "geotab",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:03.228957Z",
+  "job_count": 61,
+  "kept_count": 36,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "gitlab",
+  "employer_id": "gitlab",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:03.748514Z",
+  "job_count": 237,
+  "kept_count": 237,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "gusto",
+  "employer_id": "gusto",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:05.293382Z",
+  "job_count": 86,
+  "kept_count": 86,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "hootsuite",
+  "employer_id": "hootsuite",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:05.829091Z",
+  "job_count": 4,
+  "kept_count": 1,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "instacart",
+  "employer_id": "instacart",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:06.761943Z",
+  "job_count": 95,
+  "kept_count": 95,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "later",
+  "employer_id": "later",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:38.062835Z",
+  "job_count": 38,
+  "kept_count": 38,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "lyft",
+  "employer_id": "lyft",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:40.125462Z",
+  "job_count": 171,
+  "kept_count": 76,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "mongodb",
+  "employer_id": "mongodb",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:54.036835Z",
+  "job_count": 369,
+  "kept_count": 68,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "okta",
+  "employer_id": "okta",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:55.241672Z",
+  "job_count": 388,
+  "kept_count": 133,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "pagerduty",
+  "employer_id": "pagerduty",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:56.283456Z",
+  "job_count": 47,
+  "kept_count": 47,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "pinterest",
+  "employer_id": "pinterest",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:56.395810Z",
+  "job_count": 165,
+  "kept_count": 99,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "poka",
+  "employer_id": "poka",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:59.991933Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "robinhood",
+  "employer_id": "robinhood",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:01.813826Z",
+  "job_count": 163,
+  "kept_count": 48,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "samsara",
+  "employer_id": "samsara",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:02.263955Z",
+  "job_count": 322,
+  "kept_count": 322,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "scaleai",
+  "employer_id": "scale_ai",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:04.052005Z",
+  "job_count": 169,
+  "kept_count": 25,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "stackadapt",
+  "employer_id": "stackadapt",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:06.393111Z",
+  "job_count": 76,
+  "kept_count": 76,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "stripe",
+  "employer_id": "stripe",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:06.530188Z",
+  "job_count": 747,
+  "kept_count": 188,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tailscale",
+  "employer_id": "tailscale",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:08.800775Z",
+  "job_count": 52,
+  "kept_count": 52,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tenstorrent",
+  "employer_id": "tenstorrent",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:08.907630Z",
+  "job_count": 122,
+  "kept_count": 79,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "twilio",
+  "employer_id": "twilio",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:11.095587Z",
+  "job_count": 133,
+  "kept_count": 133,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "unbounce",
+  "employer_id": "unbounce",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:11.562530Z",
+  "job_count": 1,
+  "kept_count": 1,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "varicent",
+  "employer_id": "varicent",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:12.138036Z",
+  "job_count": 23,
+  "kept_count": 23,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "workleap",
+  "employer_id": "workleap",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:16.323895Z",
+  "job_count": 9,
+  "kept_count": 9,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "fullscript",
+  "employer_id": "fullscript",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:02.754218Z",
+  "job_count": 15,
+  "kept_count": 15,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "kabam",
+  "employer_id": "kabam",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:08.958635Z",
+  "job_count": 23,
+  "kept_count": 23,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "kepler",
+  "employer_id": "kepler_communications",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:09.218022Z",
+  "job_count": 25,
+  "kept_count": 25,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "magnetforensics",
+  "employer_id": "magnet_forensics",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:40.468475Z",
+  "job_count": 40,
+  "kept_count": 24,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "plooto",
+  "employer_id": "plooto",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:57.785750Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "pointclickcare",
+  "employer_id": "pointclickcare",
+  "error": null,
+  "fetched_at": "2026-10-30T16:43:57.810133Z",
+  "job_count": 72,
+  "kept_count": 72,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "policyme",
+  "employer_id": "policyme",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:00.040333Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "wattpad",
+  "employer_id": "wattpad",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:13.216378Z",
+  "job_count": 16,
+  "kept_count": 7,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "waveapps",
+  "employer_id": "wave",
+  "error": null,
+  "fetched_at": "2026-10-30T16:44:16.173860Z",
+  "job_count": 8,
+  "kept_count": 8,
+  "ok": true,
+  "source": "lever"
+ }
+]
