@@ -1,5 +1,69 @@
 [
  {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Stripe",
+  "employer_id": "stripe",
+  "evidence": {
+   "term": "summer of 2027",
+   "term_context": "…to offer Master's machine learning engineering internships for the summer of 2027. This is an exceptional opportunity to contribute to critical…"
+  },
+  "first_seen": "2026-10-30",
+  "id": "36ae68470273a9e5",
+  "last_seen": "2026-10-30",
+  "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Winter 2027",
+   "Summer 2028"
+  ],
+  "title": "Master's Machine Learning Engineer, Intern",
+  "track": "ml_ai",
+  "url": "https://stripe.com/jobs/search?gh_jid=8333122"
+ },
+ {
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Stripe",
+  "employer_id": "stripe",
+  "evidence": {
+   "term": "summer of 2027",
+   "term_context": "…to offer PhD machine learning engineering internships for the summer of 2027. This is an exceptional opportunity to contribute to critical…"
+  },
+  "first_seen": "2026-10-30",
+  "id": "552a49e8ca55e48b",
+  "last_seen": "2026-10-30",
+  "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027",
+   "Winter 2027",
+   "Summer 2028"
+  ],
+  "title": "PhD Machine Learning Engineer, Intern",
+  "track": "ml_ai",
+  "url": "https://stripe.com/jobs/search?gh_jid=8328664"
+ },
+ {
   "duration_options_months": [
    4.0
   ],
@@ -15,7 +79,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "019791be2ebe529f",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -50,7 +114,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "07a4761515fc6137",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -80,7 +144,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "0c33e9d8bc096695",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -111,7 +175,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "14765a714e7f8c52",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -146,7 +210,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "147d9e10a6beeb00",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada / Mountain View, California",
   "province": "BC",
   "provinces": [
@@ -183,7 +247,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "196b2bc1ecb3cd0a",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -218,7 +282,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "2ff95c2863cab403",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -248,7 +312,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "37773045e35aa743",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -281,7 +345,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "3da2cd34351796ce",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -309,7 +373,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "4555ac8e946a1713",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -345,7 +409,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "5018b302c3a389ec",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -375,7 +439,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "518ad23e9671dad9",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -411,7 +475,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "5aef43857a1b3172",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Canada / San Francisco / Europe / London / United States / United Kingdom / Toronto / Montreal",
   "province": "ON",
   "provinces": [
@@ -442,7 +506,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "647ff56f14830548",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -470,7 +534,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "6551999a74291408",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -503,7 +567,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a61234617e01cec",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -538,7 +602,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a6272020faf485c",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Canada / Dubai / London / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -568,7 +632,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a9ab99b66109f15",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -603,7 +667,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6b6c40cb51d2e433",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -633,7 +697,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "72a0c71680e9e969",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -664,7 +728,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "7369006c3d80c2c1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -695,7 +759,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "78930bbe3223db3c",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -731,7 +795,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8a71ec46d3a2e6d1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -761,7 +825,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8e28eb7cac331b95",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Ottawa, ON / Canada",
   "province": "ON",
   "provinces": [
@@ -796,7 +860,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8f635b280b9966d1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -826,7 +890,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9a3c60880c35810b",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -862,7 +926,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9c58f122bcf18b6e",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -897,7 +961,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9d855fe05dd4a9b4",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -927,7 +991,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9f81a5d75e504e25",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -963,7 +1027,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "a218387a945b01ae",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -993,7 +1057,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "a90052befc0cd127",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1025,7 +1089,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "acb729dd3fb58c58",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1053,7 +1117,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ae3fc07c3ad011b1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -1081,7 +1145,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "b1949a038291eae1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -1109,7 +1173,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "b9c52250b631b583",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -1139,7 +1203,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "b9e7cceb23277778",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -1170,7 +1234,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ba80139f0da63d34",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -1201,7 +1265,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ccb9c4f453859d02",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1231,7 +1295,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "d2cd5cea1837b415",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1266,7 +1330,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "d3264c45622979d7",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Canada / Europe / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -1296,7 +1360,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "de6350f745224661",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -1330,7 +1394,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "deb3c12435abd2a7",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1358,7 +1422,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "e6a6b0e7204b35d1",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Montréal, Quebec, Canada / Montreal, Canada",
   "province": "QC",
   "provinces": [
@@ -1385,7 +1449,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "e7189473b4506a27",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -1417,7 +1481,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "f7f5f440bd76265f",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Toronto / New York / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1447,7 +1511,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ff21e2e6eb033364",
-  "last_seen": "2026-10-29",
+  "last_seen": "2026-10-30",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
