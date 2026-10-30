@@ -6,7 +6,7 @@ from typing import Any
 
 from pipeline.extract.duration import extract_duration
 from pipeline.extract.province import extract_location
-from pipeline.extract.student import is_student_role
+from pipeline.extract.role_type import extract_role_type
 from pipeline.extract.term import extract_term
 from pipeline.extract.track import extract_track
 from pipeline.models import RawPosting
@@ -71,9 +71,10 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
     if track_evidence:
         evidence["track"] = track_evidence
 
-    student, student_evidence = is_student_role(raw.title)
-    if student_evidence:
-        evidence["is_student_role"] = student_evidence
+    role = extract_role_type(raw.title, description, job.employment_type_raw)
+    if role.evidence and role.field:
+        evidence["is_student_role"] = role.evidence  # the exact span
+        evidence["role_type_field"] = role.field  # employment_type, title or description
 
     return {
         "in_canada": location.in_canada,
@@ -87,7 +88,8 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         "duration_options_months": duration.options_months,
         "duration_status": duration.status,
         "track": track,
-        "is_student_role": student,
+        "is_student_role": role.is_student_role,
+        "role_type": role.role_type,
         "evidence": evidence,
         "employment_type_raw": job.employment_type_raw,
         "department": job.department,

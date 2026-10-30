@@ -29,8 +29,23 @@ Greenhouse custom fields whose names are questions ("Under which category should
 - Add `employment_type_raw`, `department`, `team`, `workplace_type_raw` and `posted_on` to `Posting` and `data/processed/postings.parquet`. Values are the board's text verbatim, with whitespace collapsed. `None` means the board did not say.
 - Each source module has a `job_fields()` function that reads them from the stored API record, so every existing snapshot gets them on the next processing run, with no re-fetch.
 - These fields are evidence in their own right: the board's structured answer, not text we parsed. When the role-type extractor uses one, the evidence names the field (for example `employment_type: Coop Student`).
-- Order of signals for role type: structured employment type, then title, then description. The role-type extractor that applies this order is described in a section added below.
+- Order of signals for role type: structured employment type, then title, then description. The role-type section below gives the details.
 - `posted_on` is used to flag terms that ended before the posting was published. When a board gives no date, `first_seen` is used instead.
+
+## Role type
+
+`pipeline/extract/role_type.py` sets a new `role_type` field (`coop`, `intern`, `student`, `none`). `is_student_role` becomes `role_type != none`.
+
+1. **Signals in order:** structured employment type, then title, then description. Between the first two, the more specific type wins (co-op over intern over student), and ties go to the structured field. Ashby's fixed list has `Intern` but no co-op value, so a title saying "Co-op" refines it to co-op.
+2. **A structured value that names no student type** ("Full-time", "FullTime") is no signal. Many boards leave it at its default for intern roles.
+3. **The description only refines.** It can turn a generic `student` ("Summer Student") into `coop` or `intern`. It never makes a role a student role on its own, so a senior posting that mentions "our co-op students" stays `none`.
+4. **Whole-word rules only:**
+   - co-op: `\bco[-‐‑ ]?ops?\b`, so "Cooperative" does not match.
+   - intern: `\binterns?\b`, `\binternships?\b`, "stagiaire", and French "stage" before en/de/du/d'/à. "Internal", "International" and "Early Stage" do not match.
+   - student: "student(s)" except where it names a service for students ("Student Success", "Student Services") or follows for/to/with.
+5. **Evidence:** `evidence["is_student_role"]` is the exact matched span, and `evidence["role_type_field"]` names where it matched (`employment_type`, `title` or `description`).
+
+[coop-watcher](https://github.com/HamzaPM58/coop-watcher) once matched "intern" as a substring, so "Internal Audit" counted as a student role. It fixed that by dropping "intern" from title matching altogether, which loses real intern titles. Whole-word matching keeps both right. The regression tests in `tests/test_extract.py` cover these cases.
 
 ## Consequences
 

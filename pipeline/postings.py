@@ -113,7 +113,7 @@ def postings_table(postings: list[Posting]) -> pa.Table:
     for p in postings:
         row = p.model_dump()
         row["evidence"] = json.dumps(row["evidence"], ensure_ascii=False, sort_keys=True)
-        for key in ("source", "province", "remote", "duration_status", "track", "status"):
+        for key in ("source", "province", "remote", "duration_status", "track", "role_type", "status"):
             row[key] = str(row[key])
         row["provinces"] = [str(v) for v in row["provinces"]]
         rows.append(row)
@@ -138,6 +138,7 @@ def postings_table(postings: list[Posting]) -> pa.Table:
             ("duration_status", pa.string()),
             ("track", pa.string()),
             ("is_student_role", pa.bool_()),
+            ("role_type", pa.string()),
             ("evidence", pa.string()),  # JSON object: field -> text span
             ("description_hash", pa.string()),
             ("first_seen", pa.date32()),

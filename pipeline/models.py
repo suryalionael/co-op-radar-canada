@@ -63,6 +63,13 @@ class Track(StrEnum):
     other = "other"
 
 
+class RoleType(StrEnum):
+    coop = "coop"
+    intern = "intern"
+    student = "student"  # a student role that does not say co-op or internship ("Summer Student")
+    none = "none"
+
+
 class Status(StrEnum):
     open = "open"
     closed = "closed"
@@ -132,6 +139,7 @@ class Posting(BaseModel):
     duration_status: DurationStatus
     track: Track
     is_student_role: bool
+    role_type: RoleType
     evidence: dict[str, str]
     description_hash: str
     first_seen: dt.date

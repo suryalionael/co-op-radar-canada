@@ -8,10 +8,11 @@ import pytest
 
 from pipeline.extract.duration import extract_duration, find_stated
 from pipeline.extract.province import extract_location
+from pipeline.extract.role_type import extract_role_type
 from pipeline.extract.student import is_student_role
 from pipeline.extract.term import extract_term
 from pipeline.extract.track import extract_track
-from pipeline.models import DurationStatus, Province, Remote, Track
+from pipeline.models import DurationStatus, Province, Remote, RoleType, Track
 
 # --- Term -----------------------------------------------------------------------
 
@@ -219,6 +220,63 @@ def test_track_falls_back_to_description() -> None:
 )
 def test_student_role(title: str, student: bool) -> None:
     assert is_student_role(title)[0] is student
+
+
+# --- Role type (ADR 0008) --------------------------------------------------------
+
+
+@pytest.mark.parametrize(
+    ("title", "employment_type", "role_type"),
+    [
+        # Regression cases: substring matching would call these student roles.
+        ("Internal Audit Analyst", None, RoleType.none),
+        ("International Payments Analyst", None, RoleType.none),
+        ("Cooperative Housing Coordinator", None, RoleType.none),
+        ("Early Stage Investment Associate", None, RoleType.none),
+        ("Student Success Manager", None, RoleType.none),
+        ("Manager, Services for Students", None, RoleType.none),
+        # Real student titles still match.
+        ("Data Science Intern", "", RoleType.intern),
+        ("Data Science Intern", None, RoleType.intern),
+        ("Software Developer (Co-op Opportunities)", None, RoleType.coop),
+        ("Internal Communications Co-op", None, RoleType.coop),
+        ("Coop Software Developer", None, RoleType.coop),
+        ("Engineering Interns", None, RoleType.intern),
+        ("Stage en développement logiciel", None, RoleType.intern),
+        ("Summer Student - Operations", None, RoleType.student),
+        ("Student, IT Support", None, RoleType.student),
+        # The structured employment type is the first signal.
+        ("Data Analyst", "Coop Student", RoleType.coop),
+        ("Platform Engineer", "Intern", RoleType.intern),
+        ("Analyst", "Intern/Student", RoleType.intern),
+        ("Analyst", "Student", RoleType.student),
+        ("Software Engineering Intern", "Full-time", RoleType.intern),  # a default "Full-time" is no signal
+        ("Senior Engineer", "FullTime", RoleType.none),
+        # Ashby's fixed list has no co-op value, so a co-op title refines "Intern".
+        ("Software Engineer, Backend (Co-op)", "Intern", RoleType.coop),
+    ],
+)
+def test_role_type(title: str, employment_type: str | None, role_type: RoleType) -> None:
+    assert extract_role_type(title, "", employment_type).role_type is role_type
+
+
+def test_role_type_records_the_field_that_matched() -> None:
+    structured = extract_role_type("Data Analyst", "", "Coop Student")
+    assert (structured.field, structured.evidence) == ("employment_type", "Coop")
+    titled = extract_role_type("Data Science Intern", "", "")
+    assert (titled.field, titled.evidence) == ("title", "Intern")
+
+
+def test_description_only_refines_a_student_role() -> None:
+    co_op = "This is a 4-month co-op work term."
+    refined = extract_role_type("Summer Student, Engineering", co_op)
+    assert (refined.role_type, refined.field, refined.evidence) == (RoleType.coop, "description", "co-op")
+    # A senior role that mentions the co-op program is not a student role.
+    assert (
+        extract_role_type("Senior Software Engineer", "You will mentor our co-op students.").role_type is RoleType.none
+    )
+    # An intern title is not overridden by the description.
+    assert extract_role_type("Data Intern", "Open to co-op students.").role_type is RoleType.intern
 
 
 # --- Evidence quotes ------------------------------------------------------------
