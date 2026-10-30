@@ -1,0 +1,156 @@
+name: Submit a posting
+description: Add a Canadian co-op or internship posting that Co-op Radar can't collect on its own (for example, one on Workday or a company career site).
+title: "[Submission] <employer>: <job title>"
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding a posting. Every submission is checked against the original posting before it appears on the site.
+
+        - Only link to the **employer's own posting** (their career site or job board). Links to LinkedIn, Indeed, Glassdoor or Reddit can't be used.
+        - Fill in only what the posting says. If it doesn't state something, choose **Not stated** instead of guessing.
+
+  - type: input
+    id: employer
+    attributes:
+      label: Employer
+      description: The company or organization hiring.
+      placeholder: "e.g. Royal Bank of Canada"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Job title
+      description: Exactly as it appears on the posting.
+      placeholder: "e.g. Data Analyst Co-op (Summer 2027)"
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Posting URL
+      description: Link to the posting on the employer's own site. It must start with https://
+      placeholder: "https://"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: As written on the posting.
+      placeholder: "e.g. Toronto, ON (hybrid)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: province
+    attributes:
+      label: Province or territory
+      description: Pick every one the posting lists.
+      multiple: true
+      options:
+        - Alberta
+        - British Columbia
+        - Manitoba
+        - New Brunswick
+        - Newfoundland and Labrador
+        - Northwest Territories
+        - Nova Scotia
+        - Nunavut
+        - Ontario
+        - Prince Edward Island
+        - Quebec
+        - Saskatchewan
+        - Yukon
+        - Remote (anywhere in Canada)
+        - Not stated
+    validations:
+      required: true
+
+  - type: dropdown
+    id: term
+    attributes:
+      label: Term
+      description: When the work term starts. Pick every term the posting offers.
+      multiple: true
+      options:
+        - Winter 2027 (January)
+        - Summer 2027 (May)
+        - Fall 2027 (September)
+        - Winter 2028 (January)
+        - Other (explain below)
+        - Not stated
+    validations:
+      required: true
+
+  - type: dropdown
+    id: duration
+    attributes:
+      label: Duration
+      description: Pick every length the posting offers (for example, "4 or 8 months" means pick both).
+      multiple: true
+      options:
+        - 4 months
+        - 8 months
+        - 12 months
+        - 16 months
+        - Other (explain below)
+        - Not stated
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Application deadline
+      description: As YYYY-MM-DD. Leave blank if the posting doesn't give one.
+      placeholder: "2026-12-15"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Where did this information come from?
+      options:
+        - The posting itself
+        - The employer's student or careers page
+        - My school's co-op job board
+        - Someone at the company told me
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Words from the posting
+      description: |
+        Copy the sentence(s) that state the term and duration, if there are any.
+        This is how a reviewer checks the details quickly.
+      placeholder: "e.g. \"This is a 4-month co-op position starting May 2027.\""
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Explain any "Other" choice above, or add context for the reviewer.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: The posting is open right now, and the link goes to the employer's own site.
+          required: true
+        - label: I only filled in details the posting states, and chose "Not stated" for the rest.
+          required: true

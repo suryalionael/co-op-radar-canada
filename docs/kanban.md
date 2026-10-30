@@ -14,6 +14,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
+| V2-1a | Issue form `.github/ISSUE_TEMPLATE/submit-posting.yml` drafted (PR open); needs a `submission` label in the repo | Ei | 1 h | Dec 18 |
 
 ## This week (Oct 28 – Nov 3)
 
@@ -47,7 +48,6 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
 | V2-0 | Google News RSS terms check; approve with an ADR or drop | Lio | 0.5 h | Dec 18 |
-| V2-1a | Issue form template for posting submissions | Ei | 1 h | Dec 18 |
 | V2-1b | Action that validates submissions | Lio | 1 h | Dec 20 |
 | V2-2 | Employer pages: postings, program watch, news, LinkedIn link-out | Lio | 2 h | Dec 27 |
 | V2-3 | Weekly digest page and RSS | Lio | 2 h | Jan 10 |

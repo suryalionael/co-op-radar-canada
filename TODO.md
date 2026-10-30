@@ -43,6 +43,6 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 - [ ] **[V1-14](https://github.com/suryalionael/co-op-radar-canada/issues/17)** Share the launch with Seneca classmates and clubs. Dec 13.
 
 ### v2 — by Jan 31
-- [ ] **V2-1a** `.github/ISSUE_TEMPLATE/submit-posting.yml`: employer, title, URL, location, term, duration, deadline, where the info came from. Due Dec 18.
+- [x] **V2-1a** `.github/ISSUE_TEMPLATE/submit-posting.yml`: employer, title, URL, location, term, duration, deadline, where the info came from. Due Dec 18.
 - [ ] **V2-5a** 30+ headlines that mention an employer name but are not about that employer, with the expected "no match". Due Jan 7.
 - [ ] **V2-6a** Label 100 news headlines. Due Jan 20.
