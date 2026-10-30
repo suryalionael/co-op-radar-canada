@@ -47,6 +47,12 @@ class Remote(StrEnum):
     unknown = "unknown"
 
 
+class TermStatus(StrEnum):
+    stated = "stated"
+    ambiguous = "ambiguous"  # e.g. "Spring 2027": evidence kept, never mapped to a term
+    not_stated = "not_stated"
+
+
 class DurationStatus(StrEnum):
     stated = "stated"
     inferred_from_dates = "inferred_from_dates"
@@ -133,9 +139,11 @@ class Posting(BaseModel):
     remote: Remote
     term: str | None
     terms: list[str]
+    term_status: TermStatus
     term_start: dt.date | None
     term_end: dt.date | None
     duration_options_months: list[float]
+    duration_is_range: bool
     duration_status: DurationStatus
     track: Track
     is_student_role: bool
@@ -146,6 +154,7 @@ class Posting(BaseModel):
     last_seen: dt.date
     missed_fetches: int
     status: Status
+    flag_term_in_past: bool = False  # every stated term ended before the posting date; the term is kept as stated
     deadline: dt.date | None = None
     # The board's own structured fields, verbatim (ADR 0008).
     employment_type_raw: str | None = None

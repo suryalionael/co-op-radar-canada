@@ -18,6 +18,7 @@ from pipeline.models import (
     RoleType,
     Source,
     Status,
+    TermStatus,
     Track,
 )  # fmt: skip
 from pipeline.postings import write_postings
@@ -29,7 +30,8 @@ def posting(pid: str, **changes: object) -> Posting:
         id=pid, source=Source.greenhouse, board_token="acme", employer_id="acme", title="Data Co-op",
         url=f"https://x/{pid}", location_raw="Toronto, ON", in_canada=True, province=Province.ON,
         provinces=[Province.ON], remote=Remote.hybrid, term="Summer 2027", terms=["Summer 2027"],
-        term_start=None, term_end=None, duration_options_months=[4.0], duration_status=DurationStatus.stated,
+        term_status=TermStatus.stated, term_start=None, term_end=None, duration_options_months=[4.0],
+        duration_is_range=False, duration_status=DurationStatus.stated,
         track=Track.data_science, is_student_role=True, role_type=RoleType.coop,
         evidence={"term": "Summer 2027", "duration": "4-month", "province": "Toronto"},
         description_hash="h", first_seen=dt.date(2026, 11, 2), last_seen=dt.date(2026, 11, 3),

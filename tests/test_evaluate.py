@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 from pipeline.evaluate import Ratio, read_labels, score, wilson_interval, write_label_sheet
-from pipeline.models import DurationStatus, Posting, Province, Remote, RoleType, Source, Status, Track
+from pipeline.models import DurationStatus, Posting, Province, Remote, RoleType, Source, Status, TermStatus, Track
 
 
 def test_wilson_interval_matches_known_values() -> None:
@@ -26,8 +26,9 @@ def posting(pid: str, durations: list[float], term: str | None, provinces: list[
     return Posting(
         id=pid, source=Source.greenhouse, board_token="a", employer_id="a", title="Co-op", url="https://x",
         location_raw="Toronto", in_canada=True, province=provinces[0] if provinces else Province.UNKNOWN,
-        provinces=provinces, remote=Remote.unknown, term=term, terms=[term] if term else [], term_start=None,
-        term_end=None, duration_options_months=durations,
+        provinces=provinces, remote=Remote.unknown, term=term, terms=[term] if term else [],
+        term_status=TermStatus.stated if term else TermStatus.not_stated, term_start=None,
+        term_end=None, duration_options_months=durations, duration_is_range=False,
         duration_status=DurationStatus.stated if durations else DurationStatus.not_stated, track=Track.software,
         is_student_role=True, role_type=RoleType.coop, evidence={}, description_hash="h",
         first_seen=dt.date(2026, 11, 1), last_seen=dt.date(2026, 11, 1), missed_fetches=0, status=Status.open,

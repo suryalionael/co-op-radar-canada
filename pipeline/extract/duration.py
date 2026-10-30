@@ -10,7 +10,10 @@ so this extractor is strict. A phrase like "4 months" counts only when:
   "within 3 months", "every 6 months", "at least 4 months", "up to 12 months".
 
 When a posting offers several lengths ("4, 8 or 12-month terms") every option
-is kept. Weeks are converted to months and rounded to the nearest whole month
+is kept. A range ("8–12 months", "8 to 12 months") keeps its two ends as options
+and sets `is_range`, so "8 or 12" and "anywhere from 8 to 12" stay distinguishable.
+
+Weeks are converted to months and rounded to the nearest whole month
 (16 weeks becomes 4); the original phrase stays in the evidence.
 
 If no duration is stated but the term extractor found start and end dates, the
@@ -77,6 +80,7 @@ NEGATIVE_BEFORE = re.compile(
     re.IGNORECASE,
 )
 SENTENCE_END = re.compile(r"[.!?;\n•]")
+RANGE_SPAN = re.compile(rf"^{_NUM}\s*(?:-|–|—|\bto\b|\bà\b)\s*{_NUM}\s*[-‐‑]?\s*\D", re.IGNORECASE)
 WEEKS_PER_MONTH = 52 / 12
 MAX_MONTHS = 24
 
@@ -86,6 +90,7 @@ class DurationResult:
     options_months: list[float] = field(default_factory=list)
     status: DurationStatus = DurationStatus.not_stated
     evidence: str | None = None
+    is_range: bool = False  # the options are the two ends of a stated range
 
 
 def _to_number(token: str) -> float:
@@ -149,7 +154,10 @@ def extract_duration(
         options += found
         evidence += spans
     if options:
-        return DurationResult(sorted(set(options)), DurationStatus.stated, " | ".join(dict.fromkeys(evidence)))
+        is_range = any(RANGE_SPAN.search(span) for span in evidence)
+        return DurationResult(
+            sorted(set(options)), DurationStatus.stated, " | ".join(dict.fromkeys(evidence)), is_range
+        )
 
     if term_start and term_end and term_end > term_start:
         months = round((term_end - term_start).days / (365.25 / 12))

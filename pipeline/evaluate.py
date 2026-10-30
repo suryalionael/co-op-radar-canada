@@ -5,7 +5,9 @@ Labelling sheet columns (one row per posting, filled in by hand from the posting
     id, employer_id, title, url, location_raw,          <- exported, do not edit
     term, duration_options_months, province, track, is_student_role, notes
 
-- term: e.g. "Summer 2027"; blank if the posting states none.
+- term: e.g. "Summer 2027"; blank if the posting states none, or only an
+  ambiguous one like "Spring 2027". Label the term as stated, even if it is
+  already over.
 - duration_options_months: options separated by ";" (e.g. "4;8"); blank if not stated.
   Count a duration the posting gives only as dates (May to August) as stated here.
 - province: ON, BC, ..., REMOTE_CA, or UNKNOWN; several separated by ";" in posting order.

@@ -47,6 +47,15 @@ Greenhouse custom fields whose names are questions ("Under which category should
 
 [coop-watcher](https://github.com/HamzaPM58/coop-watcher) once matched "intern" as a substring, so "Internal Audit" counted as a student role. It fixed that by dropping "intern" from title matching altogether, which loses real intern titles. Whole-word matching keeps both right. The regression tests in `tests/test_extract.py` cover these cases.
 
+## Term status, duration ranges and past terms
+
+Changes to the term and duration extractors that make them more honest about what a posting says:
+
+- **`term_status`** (`stated`, `ambiguous`, `not_stated`). "Spring 2027" means different months at different schools, so it is never mapped to a term. When it is all a posting says, `term` stays empty, `term_status` is `ambiguous`, and the span is kept in `evidence["term_ambiguous"]`.
+- **Plain month and year** ("May 2027 GIS Co-op", "(Winter/January 2027)", "Jan 2027") now give a term on the school calendar: January–April is Winter, May–August Summer, September–December Fall. In a title this always counts. In a description it counts only when the same sentence names the work term and no deadline word comes right before it, so "apply by May 2027" and "graduating in May 2027" give no term.
+- **`duration_is_range`.** "8–12 months" keeps 8 and 12 as `duration_options_months` and sets the flag. Site filters keep working, and "8 or 12" stays distinguishable from "8 to 12".
+- **`flag_term_in_past`.** True when every stated term ended before the posting date (`posted_on`, or `first_seen` when the board gives no date). The term is kept exactly as stated and never corrected. The curated list has real cases, such as a role posted in October 2026 whose title says "Winter 2026".
+
 ## Consequences
 
 - Greenhouse boards without a custom employment-type field still rely on the title. Most Greenhouse boards we checked have none.

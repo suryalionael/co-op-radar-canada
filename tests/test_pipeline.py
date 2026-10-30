@@ -312,3 +312,23 @@ def test_processed_postings_have_provenance_and_extraction(tmp_path: Path) -> No
     for row in rows:
         assert row["url"] and row["first_seen"], "every record needs a source URL and fetch date"
         assert json.loads(row["evidence"])
+
+
+def test_term_in_past_is_flagged_not_corrected(tmp_path: Path) -> None:
+    job = {
+        **GREENHOUSE_PAYLOAD["jobs"][0],
+        "id": 103,
+        "title": "Data Co-op (Winter 2026)",
+        "content": "&lt;p&gt;Join us.&lt;/p&gt;",
+        "first_published": "2026-10-05T09:00:00-04:00",
+    }
+    parsed = keep_canadian(greenhouse.parse({"jobs": [job]}, "acme", "acme"))
+    status = BoardFetch(
+        source=Source.greenhouse, board_token="acme", employer_id="acme",
+        fetched_at=dt.datetime(2026, 11, 1, 12, tzinfo=dt.UTC), ok=True, job_count=1, kept_count=1,
+    )  # fmt: skip
+    write_postings_day(tmp_path, DAY[0], [status], parsed)
+    [p] = build_postings(tmp_path)
+    assert p.term == "Winter 2026"  # kept exactly as stated
+    assert p.flag_term_in_past is True
+    assert p.term_status == "stated"

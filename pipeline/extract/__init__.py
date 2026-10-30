@@ -49,6 +49,8 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         evidence["term"] = term.evidence
     if term.dates_evidence:
         evidence["term_dates"] = term.dates_evidence
+    if term.ambiguous:
+        evidence["term_ambiguous"] = " | ".join(term.ambiguous)
 
     duration = extract_duration(raw.title, description, term.start, term.end, term.dates_evidence)
     if duration.evidence:
@@ -83,9 +85,11 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         "remote": location.remote,
         "term": term.term,
         "terms": term.terms,
+        "term_status": term.status,
         "term_start": term.start,
         "term_end": term.end,
         "duration_options_months": duration.options_months,
+        "duration_is_range": duration.is_range,
         "duration_status": duration.status,
         "track": track,
         "is_student_role": role.is_student_role,
