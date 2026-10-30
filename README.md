@@ -107,6 +107,7 @@ python -m pipeline.cli process-postings --data-root data-branch   # writes data/
 python -m pipeline.cli process-programs --data-root data-branch
 python -m pipeline.cli label-sheet      --data-root data-branch   # rows to hand-label in data/labels/
 python -m pipeline.cli evaluate         --data-root data-branch   # precision and recall with 95% intervals
+python -m pipeline.cli reference-recall --data-root data-branch   # recall against a curated list (ADR 0007)
 ```
 
 Program watch only fetches pages in `config/programs.yaml` whose URL has been checked by hand (`verified` set).

@@ -28,30 +28,12 @@ from pathlib import Path
 
 import yaml
 
-from pipeline.reference_list import FILES, TOKEN_PLATFORMS, ReferenceRow, classify_url, parse_readme, raw_url
-from pipeline.sources.http import PoliteClient
+from pipeline.reference_list import FILES, TOKEN_PLATFORMS, ReferenceRow, classify_url, fetch_raw, load_rows
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "reference" / "raw"
 OUT_DIR = ROOT / "data" / "coverage"
 EMPLOYERS = ROOT / "config" / "employers.yaml"
-
-
-def fetch_raw(raw_dir: Path = RAW_DIR) -> None:
-    raw_dir.mkdir(parents=True, exist_ok=True)
-    client = PoliteClient()
-    try:
-        for season, name in FILES.items():
-            (raw_dir / name).write_text(client.get(raw_url(season)).text, encoding="utf-8")
-    finally:
-        client.close()
-
-
-def load_rows(raw_dir: Path = RAW_DIR) -> list[ReferenceRow]:
-    rows: list[ReferenceRow] = []
-    for season, name in FILES.items():
-        rows += parse_readme((raw_dir / name).read_text(encoding="utf-8"), season)
-    return rows
 
 
 def platform_breakdown(rows: list[ReferenceRow]) -> list[dict[str, object]]:
@@ -128,8 +110,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--offline", action="store_true", help="reuse the raw copies in data/reference/raw/")
     args = parser.parse_args(argv)
     if not args.offline:
-        fetch_raw()
-    rows = load_rows()
+        fetch_raw(RAW_DIR)
+    rows = load_rows(RAW_DIR)
     if not rows:
         print("No listing rows parsed: has the table format changed?", file=sys.stderr)
         return 1

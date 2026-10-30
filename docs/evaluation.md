@@ -36,6 +36,34 @@ A value is correct only if it matches the label exactly: for duration, the whole
 |---|---|---|---|
 | all fields | not yet measured | — | — |
 
+## Pipeline recall against a curated reference list
+
+A second, independent check: of the internships a human curator found, how many does our pipeline hold? The curated list is [negarprh/Canadian-Tech-Internships-2027](https://github.com/negarprh/Canadian-Tech-Internships-2027), used for evaluation only (ADR 0007).
+
+```bash
+python -m pipeline.cli reference-recall --data-root data-branch   # add --offline to skip live board checks
+```
+
+**Reference set:** open rows of the 2027 list whose Apply link is on Greenhouse, Lever or Ashby and whose employer is in `config/employers.yaml`. A listing is **found** if our processed postings hold it (matched by the job id in the link, else by normalized URL) as an open, Canadian student posting. Each miss gets a likely reason from one live check of its board: gone from the board, filtered out as non-Canadian at fetch, employer added after our latest snapshot, or held but not counted (closed, location not read as Canadian, missed by role detection).
+
+**Result (2026-10-30, latest snapshot 2026-10-30):**
+
+| Reference set | Found |
+|---|---|
+| Listings on boards our latest snapshot fetched | 23/26 = 0.88 (95% CI 0.71–0.96) |
+| Listings at every employer now in the config | 23/67 = 0.34 (95% CI 0.24–0.46) |
+
+- All 3 misses on fetched boards are listings that are **no longer on the employer's board**: their job ids return 404, but the list still shows them as open. None was lost to our Canada filter or role detection.
+- The lower second figure is not a pipeline miss. 39 of its 44 misses are at the 40 employers added on 2026-10-30 from this same list (`data/coverage/token_check_log.csv`), which no snapshot has fetched yet. The other 5 are gone from their boards. Re-run after the next Daily run.
+
+**Caveats:**
+
+- The list is not exhaustive and leans toward software roles, so this measures recall on what one curator found, not on every Canadian student posting.
+- The reference set covers only employers we already track. It says nothing about employers we have not found, which is the coverage question in ADR 0001 and ADR 0009.
+- The curator's term labels (the parenthetical "(Winter 2027)") are annotations, not text from the posting. They are **not gold labels** and never go into `data/labels/`.
+
+**Term cross-check (not a score).** On matched postings where the curator gave a term, the curator's term is compared with ours: agree 10, disagree 0, we said "not stated" 0, we said "ambiguous" 0, out of 10. This is a sanity check on the term extractor, not an evaluation of it. The hand-labelled set above is the evaluation.
+
 ## Known limits
 
 - Rules only read the title, location fields and description text. Durations stated only in an image or a linked PDF are missed.

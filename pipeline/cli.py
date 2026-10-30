@@ -8,6 +8,7 @@
     python -m pipeline.cli label-sheet      --data-root data-branch
     python -m pipeline.cli evaluate         --data-root data-branch
     python -m pipeline.cli agreement        # postings.csv vs postings_second.csv
+    python -m pipeline.cli reference-recall --data-root data-branch   # recall vs the curated list (ADR 0007)
 
 Fetch commands write raw snapshots to the data root (a checkout of the `data`
 branch). Process commands rebuild data/processed/ from every snapshot. Each
@@ -26,12 +27,13 @@ from typing import Any
 
 import yaml
 
-from pipeline import build_site_data, program_watch
+from pipeline import build_site_data, program_watch, reference_recall
 from pipeline.evaluate import agreement, agreement_table, markdown_table, read_labels, score, write_label_sheet
 from pipeline.postings import build_postings, write_postings
+from pipeline.reference_list import fetch_raw, load_rows
 from pipeline.sources import fetch_board
 from pipeline.sources.http import PoliteClient
-from pipeline.storage import iter_programs_days, write_postings_day, write_programs_day
+from pipeline.storage import iter_programs_days, posting_days, read_postings_day, write_postings_day, write_programs_day
 
 ROOT = Path(__file__).resolve().parent.parent
 EMPLOYERS = ROOT / "config" / "employers.yaml"
@@ -40,6 +42,7 @@ PROCESSED = ROOT / "data" / "processed"
 RUN_LOG = ROOT / "data" / "run_log.jsonl"
 LABELS = ROOT / "data" / "labels" / "postings.csv"
 SECOND_LABELS = ROOT / "data" / "labels" / "postings_second.csv"  # second labeller, for agreement
+REFERENCE_RAW = ROOT / "data" / "reference" / "raw"  # gitignored (ADR 0007)
 
 
 def log_run(entry: dict[str, Any]) -> None:
@@ -145,6 +148,26 @@ def evaluate(data_root: Path) -> int:
     return 0
 
 
+def run_reference_recall(data_root: Path, offline: bool) -> int:
+    """Recall of our open Canadian student postings against the curated list's open 2027 rows."""
+    if not offline or not (REFERENCE_RAW / "README.md").exists():
+        fetch_raw(REFERENCE_RAW)
+    with EMPLOYERS.open(encoding="utf-8") as f:
+        employers = yaml.safe_load(f)["employers"]
+    candidates = reference_recall.reference_set(load_rows(REFERENCE_RAW), employers)
+    outcomes = reference_recall.match(candidates, build_postings(data_root))
+    days = posting_days(data_root)
+    fetched = {(b.source, b.board_token) for b in (read_postings_day(data_root, days[-1])[0] if days else []) if b.ok}
+    if not offline:
+        client = PoliteClient()
+        try:
+            reference_recall.explain_misses(outcomes, client, fetched)
+        finally:
+            client.close()
+    print(reference_recall.report(outcomes, reference_recall.term_cross_check(outcomes), fetched))
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m pipeline.cli")
     parser.add_argument(
@@ -158,10 +181,12 @@ def main(argv: list[str] | None = None) -> int:
             "label-sheet",
             "evaluate",
             "agreement",
+            "reference-recall",
         ],
     )
     parser.add_argument("--data-root", type=Path, default=ROOT / "data-branch", help="checkout of the data branch")
     parser.add_argument("--date", type=dt.date.fromisoformat, default=None, help="snapshot date (default: today, UTC)")
+    parser.add_argument("--offline", action="store_true", help="reference-recall: no live board checks")
     args = parser.parse_args(argv)
     day = args.date or dt.datetime.now(dt.UTC).date()
 
@@ -179,6 +204,8 @@ def main(argv: list[str] | None = None) -> int:
         return label_sheet(args.data_root)
     if args.command == "evaluate":
         return evaluate(args.data_root)
+    if args.command == "reference-recall":
+        return run_reference_recall(args.data_root, args.offline)
     if args.command == "agreement":
         first, second = read_labels(LABELS), read_labels(SECOND_LABELS)
         print(agreement_table(agreement(first, second)))

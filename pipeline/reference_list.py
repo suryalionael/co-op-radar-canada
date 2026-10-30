@@ -27,7 +27,10 @@ import html
 import re
 from dataclasses import dataclass
 from html.parser import HTMLParser
+from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
+
+from pipeline.sources.http import PoliteClient
 
 REPO = "negarprh/Canadian-Tech-Internships-2027"
 FILES = {2027: "README.md", 2026: "README-2026.md"}
@@ -200,6 +203,24 @@ def parse_readme(text: str, season: int) -> list[ReferenceRow]:
                 date_posted=_parse_date(date_raw),
             )
         )
+    return rows
+
+
+def fetch_raw(raw_dir: Path) -> None:
+    """Save both READMEs to raw_dir (gitignored: the listings are never committed, ADR 0007)."""
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    client = PoliteClient()
+    try:
+        for season, name in FILES.items():
+            (raw_dir / name).write_text(client.get(raw_url(season)).text, encoding="utf-8")
+    finally:
+        client.close()
+
+
+def load_rows(raw_dir: Path) -> list[ReferenceRow]:
+    rows: list[ReferenceRow] = []
+    for season, name in FILES.items():
+        rows += parse_readme((raw_dir / name).read_text(encoding="utf-8"), season)
     return rows
 
 
