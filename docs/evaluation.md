@@ -5,7 +5,7 @@ How the extractors are measured, and the results. **No results yet:** the labell
 ## Method
 
 1. `python -m pipeline.cli label-sheet --data-root data-branch` adds postings to `data/labels/postings.csv`: every open Canadian student posting, up to 200; if there are fewer, other Canadian postings fill the rest (they still test province and track). The sheet does **not** include the extractor's answers, so labels are not anchored on them.
-2. Each row is labelled by hand from the original posting (open the URL). Column rules are in the docstring of `pipeline/evaluate.py`. A duration the posting gives only as dates ("May to August") is labelled as stated.
+2. Each row is labelled by hand from the original posting (open the URL). Column rules are in the docstring of `pipeline/evaluate.py`. A duration the posting gives only as dates ("May to August") is labelled as stated. A duration given as a range ("4–16 months") is labelled by its two ends (`4;16`), matching how the extractor stores it with `duration_is_range` set (ADR 0008). Dates about the student's graduation ("graduating in spring 2028") are not a term.
 3. `python -m pipeline.cli evaluate --data-root data-branch` prints the table below.
 4. **Second labeller.** Ei Htoo independently labels 40 of the same postings in `data/labels/postings_second.csv`, without seeing the first labels or the extractor output. `python -m pipeline.cli agreement` reports per-field agreement (with a Wilson interval) and Cohen's kappa. Disagreements are counted first, then resolved by discussion; the resolved labels are what the extractors are scored against.
 
@@ -86,4 +86,5 @@ python -m pipeline.cli reference-recall --data-root data-branch   # add --offlin
 
 - Rules only read the title, location fields and description text. Durations stated only in an image or a linked PDF are missed.
 - The duration extractor rejects phrases near words like "experience", "probation", "within" or "at least". This trades recall for precision on purpose.
+- The term extractor skips any date with a graduation word ("graduation date", "graduating in", "diplôme") up to about 60 characters before it in the same sentence. A work term written in that same stretch of a sentence would be missed.
 - News classification (v2) uses headlines only, since article text is never stored.

@@ -6,6 +6,8 @@ import datetime as dt
 import json
 from pathlib import Path
 
+import pyarrow.parquet as pq
+
 from pipeline.build_site_data import build
 from pipeline.models import (
     ChangeKind,
@@ -110,3 +112,25 @@ def test_programs(tmp_path: Path) -> None:
     data = json.loads((out / "programs.json").read_text())
     assert data["programs"][0]["last_changed"] == "2026-11-02"
     assert data["changes"][0]["kind"] == "content_change"
+
+
+def test_duration_range_reaches_the_site(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    write_postings(
+        [posting("r", duration_options_months=[4.0, 16.0], duration_is_range=True), posting("o")],
+        processed / "postings.parquet",
+    )
+    build(processed, out, employers, tmp_path / "none.jsonl")
+    rows = {r["id"]: r for r in json.loads((out / "postings.json").read_text())}
+    assert (rows["r"]["duration_options_months"], rows["r"]["duration_is_range"]) == ([4.0, 16.0], True)
+    assert rows["o"]["duration_is_range"] is False
+
+
+def test_older_parquet_without_the_range_column_still_builds(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    write_postings([posting("a")], processed / "postings.parquet")
+    table = pq.read_table(processed / "postings.parquet")
+    pq.write_table(table.drop_columns(["duration_is_range"]), processed / "postings.parquet")
+    build(processed, out, employers, tmp_path / "none.jsonl")
+    [row] = json.loads((out / "postings.json").read_text())
+    assert row["duration_is_range"] is False

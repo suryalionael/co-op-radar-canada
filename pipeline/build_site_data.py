@@ -43,12 +43,15 @@ POSTING_FIELDS = [
     "term_start",
     "term_end",
     "duration_options_months",
+    "duration_is_range",
     "duration_status",
     "track",
     "first_seen",
     "last_seen",
     "evidence",
 ]
+
+DEFAULTS = {"duration_is_range": "FALSE"}  # columns added after the first processed files
 
 
 def _rows(con: duckdb.DuckDBPyConnection, sql: str) -> list[dict[str, Any]]:
@@ -89,10 +92,13 @@ def build_postings(con: duckdb.DuckDBPyConnection, processed: Path, employers: d
     path = processed / "postings.parquet"
     if not path.exists():
         return []
+    columns = {row["column_name"] for row in _rows(con, f"DESCRIBE SELECT * FROM read_parquet('{path.as_posix()}')")}
+    # A Parquet file written before a column existed still builds; the column reads as its default.
+    fields = [f if f in columns else f"{DEFAULTS[f]} AS {f}" for f in POSTING_FIELDS]
     rows = _rows(
         con,
         f"""
-        SELECT {", ".join(POSTING_FIELDS)}
+        SELECT {", ".join(fields)}
         FROM read_parquet('{path.as_posix()}')
         WHERE in_canada AND is_student_role AND status = 'open'
         ORDER BY first_seen DESC, id

@@ -57,6 +57,43 @@ def test_month_and_year_terms(title: str, description: str, terms: list[str]) ->
     assert extract_term(title, description).terms == terms
 
 
+@pytest.mark.parametrize(
+    ("title", "description", "terms"),
+    [
+        # Real wording from live postings (#10): graduation dates are not work terms.
+        (
+            "Software Engineer Intern, Backend (Summer 2027 - Toronto)",
+            "Currently pursuing a Bachelor's or Master's degree in Computer Science from a university in Canada "
+            "(required), with a graduation date between December 2027 and Summer 2028.",
+            ["Summer 2027"],
+        ),
+        (
+            "Software Engineering Intern (2027)",
+            "You will graduate in fall 2027 or spring 2028 with a degree in Computer Science, Engineering, "
+            "or a related subject.",
+            [],
+        ),
+        (
+            "Data Analyst, Intern",
+            "Pursuing a degree with the expectation of graduating in December 2027 or spring/summer 2028.",
+            [],
+        ),
+        (
+            "Développeur Logiciels (Stagiaire), Backend (l'été 2027 - Montreal)",
+            "Avec une date de graduation prévue entre décembre 2027 et l'été 2028.",
+            ["Summer 2027"],
+        ),
+        # A degree mentioned in passing does not hide a real term.
+        ("Intern", "Students pursuing a degree can join our Summer 2027 internship.", ["Summer 2027"]),
+        # No year, or a year with no season: no term (#10 item 4).
+        ("Software Engineer, Intern (Summer or Winter)", "", []),
+        ("Software Engineering Intern 2027 (Toronto)", "", []),
+    ],
+)
+def test_graduation_dates_are_not_terms(title: str, description: str, terms: list[str]) -> None:
+    assert extract_term(title, description).terms == terms
+
+
 def test_spring_is_ambiguous_and_not_mapped() -> None:
     r = extract_term("Software Intern (Spring 2027)", "")
     assert r.terms == [] and r.term is None
@@ -196,6 +233,8 @@ def test_duration_not_stated() -> None:
         ("Co-op term of 8 to 12 months.", [8.0, 12.0], True),
         ("Co-op terms of 4 or 8 months.", [4.0, 8.0], False),
         ("Co-op terms of 4, 8 or 12 months.", [4.0, 8.0, 12.0], False),
+        ("This internship is for 4-16 months.", [4.0, 16.0], True),  # Kepler, #10
+        ("A 3-6 month internship.", [3.0, 6.0], True),  # Cohere, #10
     ],
 )
 def test_duration_patterns_and_ranges(text: str, months: list[float], is_range: bool) -> None:
