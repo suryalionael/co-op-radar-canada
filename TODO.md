@@ -24,12 +24,16 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 ### v2 — by Jan 31
 - [ ] **V2-0** Google News RSS terms check → ADR or drop
 - [ ] **V2-1b** Submission validation Action
+- [ ] **V2-1c** Action that opens a PR from an accepted submission issue (Issue form → Action → PR, the curated list's pattern; $0)
 - [ ] **V2-2** Employer pages
 - [ ] **V2-3** Weekly digest page and RSS
 - [ ] **V2-4** News pull, dedupe, pre-filter
 - [ ] **V2-5** Employer and program matching
 - [ ] **V2-6** Label 300 headlines
 - [ ] **V2-7** Rules vs model comparison, evaluation, ADR
+
+### v3 — stretch (backlog, not split yet)
+- [ ] **V3-1** Recruiting calendar: per employer, first-posting month and how fast roles close, seeded from the curated list's 2026 and 2027 posting dates and closed flags (aggregates only, ADR 0007)
 
 ## Ei Htoo (~7 h)
 

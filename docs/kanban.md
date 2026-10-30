@@ -50,6 +50,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | V2-0 | Google News RSS terms check; approve with an ADR or drop | Lio | 0.5 h | Dec 18 |
 | V2-1a | Issue form template for posting submissions | Ei | 1 h | Dec 18 |
 | V2-1b | Action that validates submissions | Lio | 1 h | Dec 20 |
+| V2-1c | Action that opens a pull request from an accepted submission issue, so a reviewed submission lands as a normal PR. Same Issue form → Action → PR pattern the curated internship list uses; $0 on GitHub Actions | Lio | 1 h | Dec 20 |
 | V2-2 | Employer pages: postings, program watch, news, LinkedIn link-out | Lio | 2 h | Dec 27 |
 | V2-3 | Weekly digest page and RSS | Lio | 2 h | Jan 10 |
 | V2-4 | Daily news pull, dedupe, pre-filter | Lio | 3 h | Jan 3 |
@@ -62,6 +63,10 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 ### v3 (stretch, Feb – May): not split yet
 
 Weekly market page · StatCan vacancy chart · coverage-over-season chart · recruiting calendar · lead-lag analysis · season write-up.
+
+| ID | Card | Owner | Est. | Due |
+|---|---|---|---|---|
+| V3-1 | Recruiting calendar, seeded from the curated list's 2026 and 2027 files (ADR 0007): for each employer, the month its first posting appeared and how fast its roles closed (posting date to "Closed🔒"). Publish per-employer aggregates only, never the listings; add our own snapshots' `first_seen` and closed dates as they accumulate | — | 3 h | Apr |
 
 ## Done
 
