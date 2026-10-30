@@ -235,3 +235,5 @@ def test_seed_list_is_well_formed() -> None:
     for e in employers:
         assert e["board_type"] in cs.NORMALIZERS, e["id"]
         assert e["board_token"], e["id"]
+        # source, when present, names the outside list the board came from (ADR 0007)
+        assert set(e.get("source", [])) <= {"reference-list", "coop-watcher"}, e["id"]

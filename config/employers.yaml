@@ -1,8 +1,15 @@
 # Seed list of employers with a public Greenhouse, Lever or Ashby job board.
 #
-# Every entry below was checked on 2026-10-28 with scripts/check_board_tokens.py:
+# Every entry below was checked on its verified date with scripts/check_board_tokens.py:
 # the board responded and listed at least one job with a Canadian location.
-# hq_province is null for employers headquartered outside Canada.
+# hq_province is null for employers headquartered outside Canada. hq_country is null
+# where the headquarters was not checked.
+#
+# Entries verified on 2026-10-30 have a source field saying which outside list they
+# came from: reference-list (the curated internship list, ADR 0007), coop-watcher
+# (the Lever slugs in HamzaPM58/coop-watcher), or both. Entries without it came from
+# our own candidate lists. Every check, kept or dropped, with its reason, is in
+# data/coverage/token_check_log.csv.
 # aliases are for news matching in v2; fill them in as needed.
 
 employers:
@@ -15,6 +22,26 @@ employers:
     hq_province: ON
     sector: security
     verified: 2026-10-28
+  - id: acceldata
+    name: "Acceldata"
+    aliases: []
+    board_type: lever
+    board_token: acceldata
+    hq_country: US
+    hq_province: null
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list, coop-watcher]
+  - id: achievers
+    name: "Achievers"
+    aliases: []
+    board_type: lever
+    board_token: achievers
+    hq_country: CA
+    hq_province: ON
+    sector: software
+    verified: 2026-10-30
+    source: [coop-watcher]
   - id: ada
     name: "Ada"
     aliases: []
@@ -51,6 +78,26 @@ employers:
     hq_province: QC
     sector: healthtech
     verified: 2026-10-28
+  - id: altaml
+    name: "AltaML"
+    aliases: []
+    board_type: lever
+    board_token: altaml
+    hq_country: CA
+    hq_province: AB
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [coop-watcher]
+  - id: ami
+    name: "AMI"
+    aliases: []
+    board_type: ashby
+    board_token: ami
+    hq_country: null
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: amplitude
     name: "Amplitude"
     aliases: []
@@ -60,6 +107,26 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: anthropic
+    name: "Anthropic"
+    aliases: []
+    board_type: greenhouse
+    board_token: anthropic
+    hq_country: US
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
+  - id: apera-ai
+    name: "Apera AI"
+    aliases: []
+    board_type: greenhouse
+    board_token: aperaaiinc
+    hq_country: CA
+    hq_province: BC
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: appdirect
     name: "AppDirect"
     aliases: []
@@ -78,6 +145,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: astera-labs
+    name: "Astera Labs"
+    aliases: []
+    board_type: greenhouse
+    board_token: asteraearlycareer2027
+    hq_country: US
+    hq_province: null
+    sector: hardware
+    verified: 2026-10-30
+    source: [reference-list]
   - id: auvik
     name: "Auvik"
     aliases: []
@@ -87,6 +164,16 @@ employers:
     hq_province: ON
     sector: software
     verified: 2026-10-28
+  - id: behaviour-interactive
+    name: "Behaviour Interactive"
+    aliases: []
+    board_type: lever
+    board_token: bhvr
+    hq_country: CA
+    hq_province: QC
+    sector: gaming
+    verified: 2026-10-30
+    source: [reference-list]
   - id: benevity
     name: "Benevity"
     aliases: []
@@ -96,6 +183,46 @@ employers:
     hq_province: AB
     sector: software
     verified: 2026-10-28
+  - id: blackbird-interactive
+    name: "Blackbird Interactive"
+    aliases: []
+    board_type: lever
+    board_token: blackbirdinteractive
+    hq_country: CA
+    hq_province: BC
+    sector: gaming
+    verified: 2026-10-30
+    source: [coop-watcher]
+  - id: boson-ai
+    name: "Boson AI"
+    aliases: []
+    board_type: lever
+    board_token: bosonai
+    hq_country: CA
+    hq_province: ON
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
+  - id: brave
+    name: "Brave"
+    aliases: []
+    board_type: greenhouse
+    board_token: brave
+    hq_country: US
+    hq_province: null
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
+  - id: bree
+    name: "Bree"
+    aliases: []
+    board_type: ashby
+    board_token: bree
+    hq_country: CA
+    hq_province: ON
+    sector: fintech
+    verified: 2026-10-30
+    source: [reference-list]
   - id: brex
     name: "Brex"
     aliases: []
@@ -132,6 +259,16 @@ employers:
     hq_province: null
     sector: fintech
     verified: 2026-10-28
+  - id: cresta
+    name: "Cresta"
+    aliases: []
+    board_type: greenhouse
+    board_token: cresta
+    hq_country: US
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: d2l
     name: "D2L"
     aliases: []
@@ -168,6 +305,16 @@ employers:
     hq_province: null
     sector: ecommerce
     verified: 2026-10-28
+  - id: doordash-canada
+    name: "DoorDash"
+    aliases: []
+    board_type: greenhouse
+    board_token: doordashcanada
+    hq_country: US
+    hq_province: null
+    sector: ecommerce
+    verified: 2026-10-30
+    source: [reference-list]
   - id: dropbox
     name: "Dropbox"
     aliases: []
@@ -177,6 +324,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: drw
+    name: "DRW"
+    aliases: []
+    board_type: greenhouse
+    board_token: drweng
+    hq_country: US
+    hq_province: null
+    sector: fintech
+    verified: 2026-10-30
+    source: [reference-list]
   - id: elastic
     name: "Elastic"
     aliases: []
@@ -186,6 +343,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: equitable-bank
+    name: "Equitable Bank"
+    aliases: []
+    board_type: lever
+    board_token: eqbank
+    hq_country: CA
+    hq_province: ON
+    sector: fintech
+    verified: 2026-10-30
+    source: [reference-list, coop-watcher]
   - id: faire
     name: "Faire"
     aliases: []
@@ -213,6 +380,16 @@ employers:
     hq_province: ON
     sector: healthtech
     verified: 2026-10-28
+  - id: georgian
+    name: "Georgian"
+    aliases: []
+    board_type: ashby
+    board_token: georgian
+    hq_country: CA
+    hq_province: ON
+    sector: fintech
+    verified: 2026-10-30
+    source: [reference-list]
   - id: geotab
     name: "Geotab"
     aliases: []
@@ -222,6 +399,16 @@ employers:
     hq_province: ON
     sector: software
     verified: 2026-10-28
+  - id: geotab-internships
+    name: "Geotab"
+    aliases: []
+    board_type: greenhouse
+    board_token: internshiplist2000
+    hq_country: CA
+    hq_province: ON
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
   - id: gitlab
     name: "GitLab"
     aliases: []
@@ -231,6 +418,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: gomaterials
+    name: "GoMaterials"
+    aliases: []
+    board_type: lever
+    board_token: gomaterials
+    hq_country: CA
+    hq_province: ON
+    sector: ecommerce
+    verified: 2026-10-30
+    source: [reference-list, coop-watcher]
   - id: gusto
     name: "Gusto"
     aliases: []
@@ -240,6 +437,16 @@ employers:
     hq_province: null
     sector: fintech
     verified: 2026-10-28
+  - id: heygen
+    name: "HeyGen"
+    aliases: []
+    board_type: greenhouse
+    board_token: heygen
+    hq_country: US
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: hootsuite
     name: "Hootsuite"
     aliases: []
@@ -258,6 +465,16 @@ employers:
     hq_province: QC
     sector: travel
     verified: 2026-10-28
+  - id: human-computer-lab
+    name: "Human Computer Lab"
+    aliases: []
+    board_type: ashby
+    board_token: human-computer-lab
+    hq_country: null
+    hq_province: null
+    sector: hardware
+    verified: 2026-10-30
+    source: [reference-list]
   - id: instacart
     name: "Instacart"
     aliases: []
@@ -267,6 +484,16 @@ employers:
     hq_province: null
     sector: ecommerce
     verified: 2026-10-28
+  - id: instalily
+    name: "InstaLILY"
+    aliases: []
+    board_type: greenhouse
+    board_token: instalilyai
+    hq_country: US
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: jane_app
     name: "Jane App"
     aliases: []
@@ -294,6 +521,16 @@ employers:
     hq_province: BC
     sector: gaming
     verified: 2026-10-28
+  - id: kensington-tours
+    name: "Kensington Tours"
+    aliases: []
+    board_type: greenhouse
+    board_token: kensingtontours
+    hq_country: CA
+    hq_province: ON
+    sector: travel
+    verified: 2026-10-30
+    source: [reference-list]
   - id: kepler_communications
     name: "Kepler Communications"
     aliases: []
@@ -312,6 +549,16 @@ employers:
     hq_province: BC
     sector: software
     verified: 2026-10-28
+  - id: krafton-montreal
+    name: "KRAFTON Montréal Studio"
+    aliases: []
+    board_type: greenhouse
+    board_token: studiokraftonboard
+    hq_country: KR
+    hq_province: null
+    sector: gaming
+    verified: 2026-10-30
+    source: [reference-list]
   - id: later
     name: "Later"
     aliases: []
@@ -366,6 +613,16 @@ employers:
     hq_province: ON
     sector: hardware
     verified: 2026-10-28
+  - id: moment-energy
+    name: "Moment Energy"
+    aliases: []
+    board_type: greenhouse
+    board_token: momentenergy
+    hq_country: CA
+    hq_province: BC
+    sector: energy
+    verified: 2026-10-30
+    source: [reference-list]
   - id: mongodb
     name: "MongoDB"
     aliases: []
@@ -393,6 +650,16 @@ employers:
     hq_province: null
     sector: security
     verified: 2026-10-28
+  - id: osedea
+    name: "Osedea"
+    aliases: []
+    board_type: lever
+    board_token: osedea
+    hq_country: CA
+    hq_province: QC
+    sector: software
+    verified: 2026-10-30
+    source: [coop-watcher]
   - id: pagerduty
     name: "PagerDuty"
     aliases: []
@@ -402,6 +669,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: pebl
+    name: "Pebl"
+    aliases: []
+    board_type: ashby
+    board_token: pebl
+    hq_country: null
+    hq_province: null
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
   - id: pinterest
     name: "Pinterest"
     aliases: []
@@ -456,6 +733,16 @@ employers:
     hq_province: BC
     sector: software
     verified: 2026-10-28
+  - id: promise-robotics
+    name: "Promise Robotics"
+    aliases: []
+    board_type: lever
+    board_token: promiserobotics
+    hq_country: CA
+    hq_province: AB
+    sector: hardware
+    verified: 2026-10-30
+    source: [coop-watcher]
   - id: ramp
     name: "Ramp"
     aliases: []
@@ -483,6 +770,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: sardine
+    name: "Sardine"
+    aliases: []
+    board_type: ashby
+    board_token: sardine
+    hq_country: US
+    hq_province: null
+    sector: fintech
+    verified: 2026-10-30
+    source: [reference-list]
   - id: scale_ai
     name: "Scale AI"
     aliases: []
@@ -501,6 +798,16 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: shyftlabs
+    name: "ShyftLabs"
+    aliases: []
+    board_type: lever
+    board_token: shyftlabs
+    hq_country: CA
+    hq_province: ON
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list, coop-watcher]
   - id: snowflake
     name: "Snowflake"
     aliases: []
@@ -519,6 +826,16 @@ employers:
     hq_province: ON
     sector: adtech
     verified: 2026-10-28
+  - id: steel
+    name: "Steel"
+    aliases: []
+    board_type: ashby
+    board_token: steel
+    hq_country: null
+    hq_province: null
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
   - id: stripe
     name: "Stripe"
     aliases: []
@@ -528,6 +845,16 @@ employers:
     hq_province: null
     sector: fintech
     verified: 2026-10-28
+  - id: syntronic
+    name: "Syntronic"
+    aliases: []
+    board_type: lever
+    board_token: syntronic
+    hq_country: SE
+    hq_province: null
+    sector: hardware
+    verified: 2026-10-30
+    source: [coop-watcher]
   - id: tailscale
     name: "Tailscale"
     aliases: []
@@ -537,6 +864,26 @@ employers:
     hq_province: null
     sector: software
     verified: 2026-10-28
+  - id: telesat
+    name: "Telesat"
+    aliases: []
+    board_type: lever
+    board_token: telesat
+    hq_country: CA
+    hq_province: ON
+    sector: aerospace
+    verified: 2026-10-30
+    source: [coop-watcher]
+  - id: telus-digital
+    name: "TELUS Digital"
+    aliases: []
+    board_type: ashby
+    board_token: telus-digital
+    hq_country: CA
+    hq_province: BC
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
   - id: tenstorrent
     name: "Tenstorrent"
     aliases: []
@@ -546,6 +893,16 @@ employers:
     hq_province: ON
     sector: hardware
     verified: 2026-10-28
+  - id: tenstorrent-university
+    name: "Tenstorrent"
+    aliases: []
+    board_type: greenhouse
+    board_token: tenstorrentuniversity
+    hq_country: null
+    hq_province: null
+    sector: hardware
+    verified: 2026-10-30
+    source: [reference-list]
   - id: thinkific
     name: "Thinkific"
     aliases: []
@@ -555,6 +912,16 @@ employers:
     hq_province: BC
     sector: edtech
     verified: 2026-10-28
+  - id: tribalscale
+    name: "TribalScale"
+    aliases: []
+    board_type: greenhouse
+    board_token: tribalscale
+    hq_country: CA
+    hq_province: ON
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
   - id: trulioo
     name: "Trulioo"
     aliases: []
@@ -591,6 +958,16 @@ employers:
     hq_province: ON
     sector: software
     verified: 2026-10-28
+  - id: veeda-ai
+    name: "Veeda AI"
+    aliases: []
+    board_type: ashby
+    board_token: veeda-ai
+    hq_country: null
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
   - id: visier
     name: "Visier"
     aliases: []
@@ -600,6 +977,16 @@ employers:
     hq_province: BC
     sector: software
     verified: 2026-10-28
+  - id: waabi
+    name: "Waabi"
+    aliases: []
+    board_type: lever
+    board_token: waabi
+    hq_country: CA
+    hq_province: ON
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list, coop-watcher]
   - id: wattpad
     name: "Wattpad"
     aliases: []
@@ -636,6 +1023,26 @@ employers:
     hq_province: QC
     sector: software
     verified: 2026-10-28
+  - id: yotta-labs
+    name: "Yotta Labs"
+    aliases: []
+    board_type: ashby
+    board_token: yotta
+    hq_country: null
+    hq_province: null
+    sector: ml_ai
+    verified: 2026-10-30
+    source: [reference-list]
+  - id: zip
+    name: "Zip"
+    aliases: []
+    board_type: ashby
+    board_token: zip
+    hq_country: US
+    hq_province: null
+    sector: software
+    verified: 2026-10-30
+    source: [reference-list]
 
 # Unconfirmed: the board token exists, but on 2026-10-28 it listed no jobs with a
 # Canadian location (or no jobs at all). It may be the wrong company or just empty.

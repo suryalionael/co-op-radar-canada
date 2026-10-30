@@ -33,7 +33,7 @@ files = ["pipeline", "scripts", "tests"]
 plugins = ["pydantic.mypy"]
 
 [[tool.mypy.overrides]]
-module = ["coverage_spike", "reference_list_coverage", "pyarrow", "pyarrow.*", "duckdb"]
+module = ["coverage_spike", "reference_list_coverage", "check_board_tokens", "pyarrow", "pyarrow.*", "duckdb"]
 ignore_missing_imports = true
 
 [tool.setuptools.packages.find]

@@ -1,0 +1,60 @@
+platform,token,company,source,resolved,board_name,jobs,canada_jobs,decision,reason
+ashby,ami,AMI,reference-list,yes,,6,5,keep,5 job(s) in Canada; in tech scope (manual review)
+ashby,bree,Bree,reference-list,yes,,13,12,keep,12 job(s) in Canada; in tech scope (manual review)
+ashby,georgian,Georgian Partners Growth,reference-list,yes,,2,2,keep,2 job(s) in Canada; in tech scope (manual review)
+ashby,human-computer-lab,Human Computer Lab,reference-list,yes,,14,11,keep,11 job(s) in Canada; in tech scope (manual review)
+ashby,pebl,Pebl,reference-list,yes,,29,3,keep,3 job(s) in Canada; in tech scope (manual review)
+ashby,sardine,Sardine,reference-list,yes,,43,20,keep,20 job(s) in Canada; in tech scope (manual review)
+ashby,steel,Steel,reference-list,yes,,3,3,keep,3 job(s) in Canada; in tech scope (manual review)
+ashby,telus-digital,TELUS Digital,reference-list,yes,,56,15,keep,15 job(s) in Canada; in tech scope (manual review)
+ashby,veeda-ai,Veeda AI,reference-list,yes,,8,8,keep,8 job(s) in Canada; in tech scope (manual review)
+ashby,yotta,Yotta Labs,reference-list,yes,,4,3,keep,3 job(s) in Canada; in tech scope (manual review)
+ashby,zip,Zip,reference-list,yes,,101,16,keep,16 job(s) in Canada; in tech scope (manual review)
+greenhouse,,Block,reference-list,no,,0,0,drop,token unknown: link hides the board token
+greenhouse,,Global Relay,reference-list,no,,0,0,drop,token unknown: link hides the board token
+greenhouse,,Tower Research Capital,reference-list,no,,0,0,drop,token unknown: link hides the board token
+greenhouse,anthropic,Anthropic,reference-list,yes,Anthropic,675,8,keep,8 job(s) in Canada; in tech scope (manual review)
+greenhouse,aperaaiinc,Apera AI,reference-list,yes,Apera AI Inc,10,5,keep,5 job(s) in Canada; in tech scope (manual review)
+greenhouse,asteraearlycareer2027,Astera Labs,reference-list,yes,Astera Labs Early Career - North America 2027,93,12,keep,12 job(s) in Canada; in tech scope (manual review)
+greenhouse,brave,Brave,reference-list,yes,Brave,10,1,keep,1 job(s) in Canada; in tech scope (manual review)
+greenhouse,cresta,Cresta,reference-list,yes,Cresta,90,15,keep,15 job(s) in Canada; in tech scope (manual review)
+greenhouse,doordashcanada,DoorDash,reference-list,yes,DoorDash Canada,39,39,keep,39 job(s) in Canada; in tech scope (manual review)
+greenhouse,drweng,DRW,reference-list,yes,DRW ,164,8,keep,8 job(s) in Canada; in tech scope (manual review)
+greenhouse,heygen,HeyGen,reference-list,yes,HeyGen,19,9,keep,9 job(s) in Canada; in tech scope (manual review)
+greenhouse,instalilyai,InstaLILY,reference-list,yes,INSTALILY.AI,22,2,keep,2 job(s) in Canada; in tech scope (manual review)
+greenhouse,internshiplist2000,Geotab,reference-list,yes,Internship List,12,12,keep,12 job(s) in Canada; in tech scope (manual review)
+greenhouse,kensingtontours,Kensington,reference-list,yes,Kensington,33,25,keep,25 job(s) in Canada; in tech scope (manual review)
+greenhouse,momentenergy,Moment Energy,reference-list,yes,Moment Energy,26,25,keep,25 job(s) in Canada; in tech scope (manual review)
+greenhouse,studiokraftonboard,KRAFTON,reference-list,yes,KRAFTON Montréal Studio,5,5,keep,5 job(s) in Canada; in tech scope (manual review)
+greenhouse,tenstorrentuniversity,Tenstorrent,reference-list,yes,Tenstorrent University Jobs,15,7,keep,7 job(s) in Canada; in tech scope (manual review)
+greenhouse,thebrattlegroup,The Brattle Group,reference-list,yes,The Brattle Group,57,3,drop,"3 jobs in Canada, all economics consulting (associate, energy economics analyst): not a tech-student employer (manual review)"
+greenhouse,tribalscale,TribalScale,reference-list,yes,TribalScale,14,7,keep,7 job(s) in Canada; in tech scope (manual review)
+lever,acceldata,Acceldata,reference-list;coop-watcher,yes,,36,10,keep,10 job(s) in Canada; in tech scope (manual review)
+lever,bhvr,Behaviour Interactive,reference-list,yes,,26,26,keep,26 job(s) in Canada; in tech scope (manual review)
+lever,bosonai,Boson Ai,reference-list,yes,,10,4,keep,4 job(s) in Canada; in tech scope (manual review)
+lever,eqbank,Equitable Bank,reference-list;coop-watcher,yes,,82,81,keep,81 job(s) in Canada; in tech scope (manual review)
+lever,gomaterials,GoMaterials,reference-list;coop-watcher,yes,,6,5,keep,5 job(s) in Canada; in tech scope (manual review)
+lever,shyftlabs,ShyftLabs,reference-list;coop-watcher,yes,,31,23,keep,23 job(s) in Canada; in tech scope (manual review)
+lever,waabi,Waabi,reference-list;coop-watcher,yes,,93,57,keep,57 job(s) in Canada; in tech scope (manual review)
+lever,achievers,Achievers,coop-watcher,yes,,15,13,keep,13 job(s) in Canada; in tech scope (manual review)
+lever,evr,EVR (Elk Valley Resources),coop-watcher,yes,,52,52,drop,"board resolves with 52 jobs in Canada, but they are mining operations, trades and admin roles (Elk Valley Resources): not a tech-student employer (manual review)"
+lever,telesat,Telesat,coop-watcher,yes,,53,46,keep,46 job(s) in Canada; in tech scope (manual review)
+lever,syntronic,Syntronic,coop-watcher,yes,,35,30,keep,30 job(s) in Canada; in tech scope (manual review)
+lever,osedea,Osedea,coop-watcher,yes,,24,24,keep,24 job(s) in Canada; in tech scope (manual review)
+lever,altaml,AltaML,coop-watcher,yes,,7,7,keep,7 job(s) in Canada; in tech scope (manual review)
+lever,promiserobotics,Promise Robotics,coop-watcher,yes,,18,15,keep,15 job(s) in Canada; in tech scope (manual review)
+lever,blackbirdinteractive,Blackbird Interactive,coop-watcher,yes,,3,3,keep,3 job(s) in Canada; in tech scope (manual review)
+ashby,1password,1Password,reference-list,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+ashby,cohere,Cohere,reference-list,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+greenhouse,,Alayacare,reference-list,,,,,already configured,"token unknown, but this employer is already in config/employers.yaml under its own board"
+greenhouse,,D2L,reference-list,,,,,already configured,"token unknown, but this employer is already in config/employers.yaml under its own board"
+greenhouse,,Lyft,reference-list,,,,,already configured,"token unknown, but this employer is already in config/employers.yaml under its own board"
+greenhouse,,Pinterest,reference-list,,,,,already configured,"token unknown, but this employer is already in config/employers.yaml under its own board"
+greenhouse,,Stripe,reference-list,,,,,already configured,"token unknown, but this employer is already in config/employers.yaml under its own board"
+greenhouse,later,Later,reference-list,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,kepler,Kepler Communications,reference-list;coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,magnetforensics,Magnet Forensics,reference-list;coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,fullscript,Fullscript,coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,kabam,Kabam,coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,pointclickcare,PointClickCare,coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
+lever,waveapps,Wave,coop-watcher,,,,,already configured,already in config/employers.yaml before this check; not re-checked
