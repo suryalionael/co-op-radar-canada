@@ -2,113 +2,190 @@
 #
 # Priority: employers the posting pipeline cannot reach (Workday, government).
 #
-# EVERY URL BELOW IS UNVERIFIED. They were drafted without network access and
-# some will be wrong or redirect. Program watch skips any entry whose `verified`
-# is empty, so nothing is fetched until you open the page, confirm it is the
-# student-program page, and set `verified` to that date.
+# Every entry was opened and checked by hand on its `verified` date: it is the
+# employer's own page about student, co-op, intern or new-grad hiring, the URL
+# is the final one after redirects, robots.txt allows it, and the pipeline's
+# own fetcher (pipeline.program_watch.fetch_program) gets a stable main text
+# from it. Program watch skips any entry whose `verified` is empty.
 #
 # Optional fields:
 #   expected_open / expected_open_src   a stated opening date and the page that states it
 #   note / note_date                    a manual entry for the change history
 
 programs:
+  # Federal government
   - id: fswep
     employer_id: government_of_canada
     name: "Federal Student Work Experience Program (FSWEP)"
-    url: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-experience.html
-    verified: null
-  - id: ops_students
-    employer_id: ontario_public_service
-    name: "Ontario Public Service student jobs"
-    url: https://www.ontario.ca/page/ontario-public-service-student-jobs
-    verified: null
+    url: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/federal-student-work-program.html
+    verified: 2026-10-30
+  - id: gc_coop_internship
+    employer_id: government_of_canada
+    name: "Federal Post-Secondary Co-op/Internship Program"
+    url: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/coop-internship.html
+    verified: 2026-10-30
+  - id: gc_research_affiliate
+    employer_id: government_of_canada
+    name: "Federal Research Affiliate Program (RAP)"
+    url: https://www.canada.ca/en/public-service-commission/jobs/services/recruitment/students/research-affiliate-program.html
+    verified: 2026-10-30
+  - id: cra_students
+    employer_id: cra
+    name: "Canada Revenue Agency student and graduate hiring"
+    url: https://www.canada.ca/en/revenue-agency/corporate/careers-cra/browse-job-types/student-graduate-hiring.html
+    verified: 2026-10-30
+  - id: health_canada_students
+    employer_id: health_canada
+    name: "Health Canada and PHAC student and graduate programs"
+    url: https://www.canada.ca/en/health-canada/campaigns/jobs-health-canada-public-health-agency-canada/student-graduate-employment-programs.html
+    verified: 2026-10-30
+  - id: nrcan_students
+    employer_id: nrcan
+    name: "Natural Resources Canada programs for post-secondary students"
+    url: https://natural-resources.canada.ca/corporate/careers/programs-post-secondary-students-youth
+    verified: 2026-10-30
+  - id: justice_coop
+    employer_id: justice_canada
+    name: "Department of Justice Canada co-op/internship program"
+    url: https://justice.gc.ca/eng/abt-apd/recru/coop.html
+    verified: 2026-10-30
   - id: bank_of_canada_students
     employer_id: bank_of_canada
     name: "Bank of Canada students and recent graduates"
     url: https://www.bankofcanada.ca/careers/students/
-    verified: null
+    verified: 2026-10-30
+  - id: edc_students
+    employer_id: edc
+    name: "Export Development Canada student programs"
+    url: https://www.edc.ca/en/about-us/careers/students.html
+    verified: 2026-10-30
+
+  # Provincial and municipal government
+  - id: ops_students
+    employer_id: ontario_public_service
+    name: "Ontario Public Service Summer Employment Opportunities"
+    url: https://www.ontario.ca/page/careers-summer-employment-opportunities
+    verified: 2026-10-30
+  - id: bcps_coop
+    employer_id: bc_public_service
+    name: "BC Public Service Co-op Employment Program"
+    url: https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/internship-co-op-opportunities/co-op
+    verified: 2026-10-30
+  - id: bcps_students
+    employer_id: bc_public_service
+    name: "BC Public Service Student Employment Program"
+    url: https://www2.gov.bc.ca/gov/content/careers-myhr/job-seekers/internship-co-op-opportunities/student-employment-program
+    verified: 2026-10-30
+  - id: alberta_ps_summer
+    employer_id: alberta_public_service
+    name: "Alberta Public Service summer student opportunities"
+    url: https://www.alberta.ca/summer-student-opportunities
+    verified: 2026-10-30
+  - id: quebec_ps_students
+    employer_id: quebec_public_service
+    name: "Fonction publique du Québec: emplois étudiants et stages"
+    url: https://www.quebec.ca/gouvernement/travailler-gouvernement/emplois-fonction-publique/emplois-etudiants-stages
+    verified: 2026-10-30
+  - id: ttc_summer_students
+    employer_id: ttc
+    name: "TTC summer student opportunities"
+    url: https://pw.ttc.ca/Jobs/Featured-jobs/Summer-Student-Opportunities
+    verified: 2026-10-30
+
+  # Banks, insurers, pension funds, payments
   - id: rbc_students
     employer_id: rbc
-    name: "RBC students and new grads"
-    url: https://jobs.rbc.com/ca/en/students
-    verified: null
-  - id: td_students
-    employer_id: td
-    name: "TD students and new grads"
-    url: https://jobs.td.com/en-CA/students/
-    verified: null
+    name: "RBC students and graduates"
+    url: https://jobs.rbc.com/ca/en/students-graduates
+    verified: 2026-10-30
   - id: bmo_students
     employer_id: bmo
-    name: "BMO students and grads"
-    url: https://jobs.bmo.com/ca/en/students
-    verified: null
+    name: "BMO campus recruiting"
+    url: https://jobs.bmo.com/ca/en/campus
+    verified: 2026-10-30
   - id: scotiabank_students
     employer_id: scotiabank
     name: "Scotiabank students and new grads"
-    url: https://www.scotiabank.com/careers/en/careers/students-and-new-grads.html
-    verified: null
+    url: https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads.html
+    verified: 2026-10-30
   - id: cibc_students
     employer_id: cibc
-    name: "CIBC students and new grads"
-    url: https://www.cibc.com/en/about-cibc/careers/students-and-new-grads.html
-    verified: null
-  - id: bdc_students
-    employer_id: bdc
-    name: "BDC student jobs"
-    url: https://www.bdc.ca/en/about/careers/students
-    verified: null
-  - id: manitoba_hydro_students
-    employer_id: manitoba_hydro
-    name: "Manitoba Hydro summer students"
-    url: https://www.hydro.mb.ca/careers/students/
-    verified: null
-  - id: bc_hydro_students
-    employer_id: bc_hydro
-    name: "BC Hydro students and new grads"
-    url: https://www.bchydro.com/work-with-us/careers/students-new-grads.html
-    verified: null
-  - id: hydro_quebec_students
-    employer_id: hydro_quebec
-    name: "Hydro-Québec students"
-    url: https://www.hydroquebec.com/careers/students.html
-    verified: null
+    name: "CIBC internships and co-op students"
+    url: https://www.cibc.com/en/about-cibc/careers/students-and-graduates/internships-and-co-op-students.html
+    verified: 2026-10-30
+  - id: canada_life_students
+    employer_id: canada_life
+    name: "Canada Life students and new graduates"
+    url: https://www.careers.canadalife.com/students-new-graduates.html
+    verified: 2026-10-30
+  - id: omers_students
+    employer_id: omers
+    name: "OMERS students and new grads"
+    url: https://www.omers.com/students-and-new-grads
+    verified: 2026-10-30
+  - id: interac_students
+    employer_id: interac
+    name: "Interac student work program"
+    url: https://www.interac.ca/en/company/careers/student-life-at-interac/
+    verified: 2026-10-30
+
+  # Utilities and resources
   - id: hydro_one_students
     employer_id: hydro_one
-    name: "Hydro One students"
-    url: https://www.hydroone.com/about/careers/students
-    verified: null
-  - id: opg_students
-    employer_id: opg
-    name: "Ontario Power Generation students"
-    url: https://www.opg.com/careers/students/
-    verified: null
-  - id: bci_students
-    employer_id: bci
-    name: "BCI students"
-    url: https://www.bci.ca/careers/students/
-    verified: null
+    name: "Hydro One student jobs"
+    url: https://jobs.hydroone.com/go/Student-Jobs/826900/
+    verified: 2026-10-30
+  - id: bc_hydro_students
+    employer_id: bc_hydro
+    name: "BC Hydro co-operative education program"
+    url: https://www.bchydro.com/toolbar/careers/apprenticeships-training/cooperative.html
+    verified: 2026-10-30
+  - id: manitoba_hydro_students
+    employer_id: manitoba_hydro
+    name: "Manitoba Hydro students"
+    url: https://www.hydro.mb.ca/careers/streams/students/
+    verified: 2026-10-30
+  - id: evr_students
+    employer_id: evr
+    name: "Elk Valley Resources student careers"
+    url: https://jobs.evr.com/students
+    verified: 2026-10-30
+
+  # Professional services
   - id: deloitte_ca_students
     employer_id: deloitte_canada
     name: "Deloitte Canada students"
-    url: https://www.deloitte.com/ca/en/careers/students.html
-    verified: null
+    url: https://www.deloitte.com/ca/en/careers/explore-your-fit/students.html
+    verified: 2026-10-30
   - id: pwc_ca_students
     employer_id: pwc_canada
-    name: "PwC Canada students"
-    url: https://www.pwc.com/ca/en/careers/students.html
-    verified: null
+    name: "PwC Canada campus careers"
+    url: https://www.pwc.com/ca/en/careers/campus.html
+    verified: 2026-10-30
   - id: ey_ca_students
     employer_id: ey_canada
-    name: "EY Canada students"
-    url: https://www.ey.com/en_ca/careers/students
-    verified: null
+    name: "EY Canada early careers"
+    url: https://www.ey.com/en_ca/careers/student-programs
+    verified: 2026-10-30
   - id: kpmg_ca_students
     employer_id: kpmg_canada
-    name: "KPMG Canada students"
-    url: https://kpmg.com/ca/en/home/careers/students.html
-    verified: null
-  - id: city_of_toronto_students
-    employer_id: city_of_toronto
-    name: "City of Toronto student jobs"
-    url: https://www.toronto.ca/home/jobs/student-jobs/
-    verified: null
+    name: "KPMG Canada student careers"
+    url: https://kpmg.com/ca/en/careers/students.html
+    verified: 2026-10-30
+
+# Not watchable on 2026-10-30. Each has a real student page, but the pipeline
+# cannot read it. Re-check before adding any of these back.
+#
+#   TD:              careers.td.com/student-new-grads/early-talent-programs/ (text loads by JavaScript; 57 characters reach the fetcher)
+#   BDC:             bdc.ca/en/careers/students (text loads by JavaScript)
+#   Hydro-Québec:    emploi.hydroquebec.com (403 to non-browser clients)
+#   OPG:             opg.com/careers/students/ (Cloudflare challenge, 403)
+#   Sun Life:        sunlife.ca/en/careers/student-and-new-graduate-programs/co-op-and-summer-internship-opportunities/ (403)
+#   Manulife:        careers.manulife.com (403)
+#   Intact:          intact.ca/en/careers (human-verification page)
+#   CPP Investments: cppinvestments.com/careers (202 bot challenge, empty body)
+#   OSFI:            osfi-bsif.gc.ca careers (403)
+#   TELUS, City of Vancouver: Cloudflare challenge (403)
+#
+# Removed: BCI (no student page found; /careers/students/ redirects to an image)
+# and City of Toronto (no student-jobs page; only the general jobs portal).
