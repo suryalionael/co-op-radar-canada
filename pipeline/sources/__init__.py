@@ -9,6 +9,7 @@ from typing import Any
 from pipeline.geo import passes_loose_filter
 from pipeline.models import BoardFetch, RawPosting, Source
 from pipeline.sources import ashby, greenhouse, lever
+from pipeline.sources.common import JobFields
 from pipeline.sources.http import FetchError, PoliteClient
 from pipeline.text import content_hash, html_to_text
 
@@ -19,6 +20,18 @@ PLATFORMS: dict[Source, tuple[Callable[[str], str], Parser]] = {
     Source.lever: (lever.board_url, lever.parse),
     Source.ashby: (ashby.board_url, ashby.parse),
 }
+
+JOB_FIELDS: dict[Source, Callable[[dict[str, Any]], JobFields]] = {
+    Source.greenhouse: greenhouse.job_fields,
+    Source.lever: lever.job_fields,
+    Source.ashby: ashby.job_fields,
+}
+
+
+def job_fields(raw: RawPosting) -> JobFields:
+    """Structured job-type fields from the API record kept in `raw.raw` (submissions have none)."""
+    reader = JOB_FIELDS.get(raw.source)
+    return reader(raw.raw) if reader else JobFields()
 
 
 def keep_canadian(postings: list[RawPosting]) -> list[RawPosting]:

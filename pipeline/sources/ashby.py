@@ -5,11 +5,21 @@ from __future__ import annotations
 from typing import Any
 
 from pipeline.models import RawPosting, Source
-from pipeline.sources.common import join_locations, without
+from pipeline.sources.common import JobFields, iso_date, join_locations, text_or_none, without
 
 
 def board_url(token: str) -> str:
     return f"https://api.ashbyhq.com/posting-api/job-board/{token}?includeCompensation=true"
+
+
+def job_fields(j: dict[str, Any]) -> JobFields:
+    return JobFields(
+        employment_type_raw=text_or_none(j.get("employmentType")),  # FullTime, PartTime, Intern, Contract, Temporary
+        department=text_or_none(j.get("department")),
+        team=text_or_none(j.get("team")),
+        workplace_type_raw=text_or_none(j.get("workplaceType")),
+        posted_on=iso_date(j.get("publishedAt")),
+    )
 
 
 def parse(payload: Any, employer_id: str, token: str) -> list[RawPosting]:

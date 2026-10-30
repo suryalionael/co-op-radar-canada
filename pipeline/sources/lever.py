@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+import datetime as dt
 from typing import Any
 
 from pipeline.models import RawPosting, Source
-from pipeline.sources.common import join_locations, without
+from pipeline.sources.common import JobFields, join_locations, text_or_none, without
 
 DESCRIPTION_FIELDS = (
     "description",
@@ -30,6 +31,19 @@ def _description_html(j: dict[str, Any]) -> str:
         parts.append(f"<h3>{section.get('text', '')}</h3><ul>{section.get('content', '')}</ul>")
     parts.append(j.get("additional") or "")
     return "\n".join(p for p in parts if p)
+
+
+def job_fields(j: dict[str, Any]) -> JobFields:
+    cats = j.get("categories") or {}
+    created = j.get("createdAt")  # milliseconds since the epoch
+    posted = dt.datetime.fromtimestamp(created / 1000, dt.UTC).date() if isinstance(created, int | float) else None
+    return JobFields(
+        employment_type_raw=text_or_none(cats.get("commitment")),  # free text: "Intern", "Coop Student", ...
+        department=text_or_none(cats.get("department")),
+        team=text_or_none(cats.get("team")),
+        workplace_type_raw=text_or_none(j.get("workplaceType")),
+        posted_on=posted,
+    )
 
 
 def parse(payload: Any, employer_id: str, token: str) -> list[RawPosting]:

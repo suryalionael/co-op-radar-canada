@@ -10,6 +10,7 @@ from pipeline.extract.student import is_student_role
 from pipeline.extract.term import extract_term
 from pipeline.extract.track import extract_track
 from pipeline.models import RawPosting
+from pipeline.sources import job_fields
 from pipeline.text import html_to_text
 
 CONTEXT_CHARS = 70
@@ -40,6 +41,7 @@ def quote_context(span: str, *texts: str, width: int = CONTEXT_CHARS) -> str | N
 def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
     """Every extracted Posting field for one raw posting."""
     description = html_to_text(description_html)
+    job = job_fields(raw)
     evidence: dict[str, str] = {}
 
     term = extract_term(raw.title, description)
@@ -87,4 +89,9 @@ def extract_posting(raw: RawPosting, description_html: str) -> dict[str, Any]:
         "track": track,
         "is_student_role": student,
         "evidence": evidence,
+        "employment_type_raw": job.employment_type_raw,
+        "department": job.department,
+        "team": job.team,
+        "workplace_type_raw": job.workplace_type_raw,
+        "posted_on": job.posted_on,
     }

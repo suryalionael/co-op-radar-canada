@@ -139,6 +139,12 @@ class Posting(BaseModel):
     missed_fetches: int
     status: Status
     deadline: dt.date | None = None
+    # The board's own structured fields, verbatim (ADR 0008).
+    employment_type_raw: str | None = None
+    department: str | None = None
+    team: str | None = None
+    workplace_type_raw: str | None = None
+    posted_on: dt.date | None = None
 
 
 class ProgramWatch(BaseModel):

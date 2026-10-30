@@ -145,6 +145,11 @@ def postings_table(postings: list[Posting]) -> pa.Table:
             ("missed_fetches", pa.int32()),
             ("status", pa.string()),
             ("deadline", pa.date32()),
+            ("employment_type_raw", pa.string()),
+            ("department", pa.string()),
+            ("team", pa.string()),
+            ("workplace_type_raw", pa.string()),
+            ("posted_on", pa.date32()),
         ]
     )
     return pa.Table.from_pylist(rows, schema=schema)
