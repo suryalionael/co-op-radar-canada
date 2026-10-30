@@ -28,6 +28,7 @@ export interface Posting {
   term_start: string | null;
   term_end: string | null;
   duration_options_months: number[];
+  duration_is_range?: boolean; // the options are the two ends of a stated range ("4–16 months")
   duration_status: DurationStatus;
   track: string;
   first_seen: string;

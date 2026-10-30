@@ -13,6 +13,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
+| [V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10) | Extractors tuned on real postings: graduation dates skipped, month-and-year terms, duration ranges shown as "4–16 months"; each case has a test | Lio | 2 h | Dec 1 |
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
 | [V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9) | 30 program pages verified Oct 30 (PR open); done when the next Daily run shows `pages: 30` | Ei | 1.5 h | Nov 15 |
 
@@ -32,7 +33,6 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
 | [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Daily Action: 7 consecutive green days (must start by Dec 6) | Lio | 0.5 h | Dec 12 |
 | [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Review the 7-day program-watch dry run; fix noisy pages | Lio | 1 h | Nov 24 |
-| [V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10) | Tune extractors on real postings; add each fixed case as a test | Lio | 2 h | Dec 1 |
 | [V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12) | Hand-label postings (all Canadian student postings, up to 200) | Lio | 3 h | Dec 6 |
 | [V1-8](https://github.com/suryalionael/co-op-radar-canada/issues/13) | Second labeller: independently label 40 postings for the agreement check | Ei | 1 h | Dec 6 |
 | [V1-9](https://github.com/suryalionael/co-op-radar-canada/issues/14) | Publish evaluation (counts, Wilson intervals, agreement) in README and `docs/evaluation.md` | Lio | 0.5 h | Dec 8 |

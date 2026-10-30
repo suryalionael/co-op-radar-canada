@@ -13,7 +13,7 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 - [x] **V1-3** Merge to `main`, run the Daily workflow by hand once (Oct 29: green, 46 postings published)
 - [ ] **[V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7)** 7 consecutive green Daily runs (start no later than Dec 6)
 - [ ] **[V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11)** Review the program-watch dry run (needs Ei's V1-1 first)
-- [ ] **[V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10)** Tune extractors on real postings; every fix gets a test
+- [x] **[V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10)** Tune extractors on real postings; every fix gets a test (Oct 30: graduation dates, month-and-year terms, duration ranges on the site)
 - [ ] **[V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12)** Label postings: `python -m pipeline.cli label-sheet`, then fill `data/labels/postings.csv`
 - [ ] **[V1-9](https://github.com/suryalionael/co-op-radar-canada/issues/14)** `python -m pipeline.cli evaluate`; publish in README and `docs/evaluation.md`, with agreement from V1-8
 - [ ] **[V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15)** Review and polish the site draft (`cd site && npm install && npm run dev:sample`)

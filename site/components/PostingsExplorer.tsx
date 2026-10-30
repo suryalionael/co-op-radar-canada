@@ -3,7 +3,7 @@
 import MiniSearch from "minisearch";
 import { useEffect, useMemo, useState } from "react";
 import { PostingEntry } from "./PostingEntry";
-import { compareTerms, daysBetween, PROVINCES, REMOTE_LABELS, TRACKS } from "@/lib/format";
+import { compareTerms, daysBetween, offersDuration, PROVINCES, REMOTE_LABELS, TRACKS } from "@/lib/format";
 import type { Posting, RemoteMode } from "@/lib/types";
 
 interface Filters {
@@ -38,8 +38,7 @@ function writeUrl(f: Filters) {
 function matches(p: Posting, f: Filters, dataDate: string | null): boolean {
   if (f.term && !p.terms.includes(f.term)) return false;
   if (f.duration === "not_stated" && p.duration_options_months.length) return false;
-  if (f.duration && f.duration !== "not_stated" && !p.duration_options_months.includes(Number(f.duration)))
-    return false;
+  if (f.duration && f.duration !== "not_stated" && !offersDuration(p, Number(f.duration))) return false;
   // A remote-in-Canada posting is open to students in every province.
   if (f.province && !p.provinces.includes(f.province) && !p.provinces.includes("REMOTE_CA")) return false;
   if (f.track && p.track !== f.track) return false;

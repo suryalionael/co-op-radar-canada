@@ -10,6 +10,8 @@ Labelling sheet columns (one row per posting, filled in by hand from the posting
   already over.
 - duration_options_months: options separated by ";" (e.g. "4;8"); blank if not stated.
   Count a duration the posting gives only as dates (May to August) as stated here.
+  A range ("4-16 months") is labelled by its two ends ("4;16"), the same way the
+  extractor stores it with duration_is_range set (ADR 0008).
 - province: ON, BC, ..., REMOTE_CA, or UNKNOWN; several separated by ";" in posting order.
 - track: data_science | data_analytics | data_eng | ml_ai | software | business_ops | other
 - is_student_role: yes or no

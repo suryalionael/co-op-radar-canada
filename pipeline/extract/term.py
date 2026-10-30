@@ -20,6 +20,11 @@ month is named after the term its first month falls in.
 a shorter April to June term at others), so "Spring 2027" is never mapped to a
 term. It is reported as `ambiguous` with its evidence kept.
 
+Dates about the student's graduation are not work terms: "with a graduation date
+between December 2027 and Summer 2028" or "you will graduate in fall 2027" add no
+term. Any date with a graduation word shortly before it in the same sentence is
+skipped.
+
 Nothing is guessed: a posting that says "summer co-op" with no year gets no term.
 A term that ended before the posting was published ("Winter 2026" on a role
 posted in October 2026) is kept exactly as stated; `term_in_past` flags it.
@@ -100,6 +105,12 @@ DEADLINE_BEFORE = re.compile(
     re.IGNORECASE,
 )
 SENTENCE_END = re.compile(r"[.!?;\n•]")
+# A graduation word up to ~60 characters before a date, in the same sentence.
+GRADUATION_BEFORE = re.compile(
+    r"\b(?:graduat\w*|convocation|diplôm\w*|expected to (?:complete|finish)|complet\w* (?:your|their|a) degree)\b"
+    r"[^.!?;\n•]{0,60}$",
+    re.IGNORECASE,
+)
 
 
 def season_for_month(month: int) -> str:
@@ -147,6 +158,10 @@ def _sentence_after(text: str, at: int) -> str:
     return after[: cut.start()] if cut else after
 
 
+def _about_graduation(text: str, at: int) -> bool:
+    return bool(GRADUATION_BEFORE.search(_sentence_before(text, at)))
+
+
 def _plain_month_counts(text: str, m: re.Match[str], in_title: bool) -> bool:
     """A month and year with no "start" or range around it: always in a title; in a
     description only beside work-term words and not right after a deadline word."""
@@ -162,6 +177,8 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
     hits: list[tuple[int, str, str]] = []  # (position, term, matched text)
 
     for m in MONTH_RANGE.finditer(text):
+        if _about_graduation(text, m.start()):
+            continue
         m1, m2 = MONTHS[m["m1"].lower()], MONTHS[m["m2"].lower()]
         y2 = int(m["y2"])
         y1 = int(m["y1"]) if m["y1"] else (y2 - 1 if m1 > m2 else y2)
@@ -175,7 +192,7 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
     taken = [(m.start(), m.end()) for m in MONTH_RANGE.finditer(text)]
 
     for m in START_MONTH.finditer(text):
-        if any(a <= m.start() < b for a, b in taken):
+        if any(a <= m.start() < b for a, b in taken) or _about_graduation(text, m.start()):
             continue
         taken.append((m.start(), m.end()))
         month = MONTHS[(m["m1"] or m["m2"]).lower()]
@@ -186,7 +203,11 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
             result.dates_evidence = m.group(0)
 
     for m in MONTH_YEAR.finditer(text):
-        if any(a <= m.start() < b for a, b in taken) or not _plain_month_counts(text, m, in_title):
+        if (
+            any(a <= m.start() < b for a, b in taken)
+            or _about_graduation(text, m.start())
+            or not _plain_month_counts(text, m, in_title)
+        ):
             continue
         month, year = MONTHS[m["m1"].lower()], int(m["y1"])
         hits.append((m.start(), f"{season_for_month(month)} {year}", m.group(0)))
@@ -195,6 +216,8 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
             result.dates_evidence = m.group(0)
 
     for m in SEASON_YEAR.finditer(text):
+        if _about_graduation(text, m.start()):
+            continue
         season = SEASONS[(m["season"] or m["season2"]).lower()]
         if season in AMBIGUOUS_SEASONS:
             if m.group(0) not in result.ambiguous:

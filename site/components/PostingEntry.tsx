@@ -4,7 +4,7 @@ import type { Posting } from "@/lib/types";
 
 export function PostingEntry({ posting: p, isNew }: { posting: Posting; isNew: boolean }) {
   const termText = p.terms.length ? p.terms.join(" / ") : "Term not stated";
-  const durationText = p.duration_options_months.length ? formatDuration(p.duration_options_months) : null;
+  const durationText = p.duration_options_months.length ? formatDuration(p.duration_options_months, p.duration_is_range) : null;
   const remote = REMOTE_LABELS[p.remote];
   const durationSpan = p.evidence.duration?.split(" | ")[0];
   const durationContext = p.duration_status === "stated" ? p.evidence.duration_context : undefined;
