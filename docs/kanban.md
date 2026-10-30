@@ -19,7 +19,6 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4) | Check candidate board tokens; add verified hits to `config/employers.yaml` until 100+ boards respond | Ei | 1 h | Nov 1 |
 | [P0-2](https://github.com/suryalionael/co-op-radar-canada/issues/5) | Phase 0 decision run; add results and decision to ADR 0001 in a separate commit | Lio | 0.5 h | Nov 2 |
 | [P0-3](https://github.com/suryalionael/co-op-radar-canada/issues/6) | Put the measured bytes per day into ADR 0002 and accept it | Lio | 0.25 h | Nov 3 |
 
@@ -76,4 +75,5 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | V1-0 | Labeller agreement tool (Cohen's kappa) for V1-8 | Lio | Oct 28 |
 | V1-3 | Merged to `main`; first live Daily run green: 70/70 boards, 46 open Canadian student postings published | Lio | Oct 29 |
 | OPS-1 | First coverage run (informational, 70 boards): 46 Canadian student postings, `data/coverage/2026-10-29.md` | Lio | Oct 29 |
+| [P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4) | Seed list grown to 135 boards (65 added), all with a Canadian job on Oct 30 | Ei | Oct 30 |
 | TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |
