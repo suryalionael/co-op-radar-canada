@@ -28,7 +28,16 @@ from typing import Any
 import yaml
 
 from pipeline import build_site_data, program_watch, reference_recall
-from pipeline.evaluate import agreement, agreement_table, markdown_table, read_labels, score, write_label_sheet
+from pipeline.evaluate import (
+    agreement,
+    agreement_table,
+    baseline_table,
+    compare_with_baseline,
+    markdown_table,
+    read_labels,
+    score,
+    write_label_sheet,
+)
 from pipeline.postings import build_postings, write_postings
 from pipeline.reference_list import fetch_raw, load_rows
 from pipeline.sources import fetch_board
@@ -145,6 +154,8 @@ def evaluate(data_root: Path) -> int:
     labels = [r for r in read_labels(LABELS) if any((r.get(c) or "").strip() for c in ("track", "is_student_role"))]
     print(f"{len(labels)} labelled rows\n")
     print(markdown_table(score(labels, postings)))
+    print("Our extractors vs a naive substring baseline, on the same rows:\n")
+    print(baseline_table(compare_with_baseline(labels, postings)))
     return 0
 
 

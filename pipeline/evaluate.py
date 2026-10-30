@@ -24,6 +24,19 @@ Per field:
 
 Every figure is reported with its counts and a 95% Wilson interval (brief
 section 9), e.g. "57/59 = 0.97 (95% CI 0.88–0.99)".
+
+Naive baseline. To show what the stricter rules add, `compare_with_baseline`
+scores two yes/no questions for our extractors and for a deliberately naive
+classifier on the same labelled rows:
+
+- student role: does the employment type or title contain "co-op", "coop",
+  "intern" or "student" as a plain substring? ("Internal Audit" says yes.)
+- Summer 2027: does the title contain "summer 2027" or "may 2027"?
+
+It is our own few lines, modelled on the approach of HamzaPM58/coop-watcher, not
+its code. Both questions are scored on the positive class: precision is right
+"yes" answers over all "yes" answers, recall is right "yes" answers over all
+rows labelled "yes".
 """
 
 from __future__ import annotations
@@ -122,6 +135,79 @@ FIELDS: dict[str, tuple[Getter, Predictor]] = {
         lambda p: p.is_student_role,
     ),
 }
+
+
+STUDENT_SUBSTRINGS = ("co-op", "coop", "intern", "student")
+
+
+def baseline_is_student(p: Posting) -> bool:
+    text = f"{p.employment_type_raw or ''} {p.title}".lower()
+    return any(s in text for s in STUDENT_SUBSTRINGS)
+
+
+def baseline_is_summer_2027(p: Posting) -> bool:
+    title = p.title.lower()
+    return "summer 2027" in title or "may 2027" in title
+
+
+# Each yes/no question: how to read it from a label row (None = not labelled), from our
+# extractors, and from the naive baseline.
+YesNo = Callable[[Posting], bool]
+BASELINE_QUESTIONS: dict[str, tuple[Callable[[dict[str, str]], bool | None], YesNo, YesNo]] = {
+    "student role": (
+        lambda r: {"yes": True, "no": False}.get((r["is_student_role"] or "").strip().lower()),
+        lambda p: p.is_student_role,
+        baseline_is_student,
+    ),
+    "Summer 2027": (
+        lambda r: (r["term"] or "").strip() == "Summer 2027",
+        lambda p: "Summer 2027" in p.terms,
+        baseline_is_summer_2027,
+    ),
+}
+
+
+@dataclass
+class BaselineComparison:
+    question: str
+    labelled: int
+    ours_precision: Ratio
+    ours_recall: Ratio
+    baseline_precision: Ratio
+    baseline_recall: Ratio
+
+
+def _positive_class(pairs: list[tuple[bool, bool]]) -> tuple[Ratio, Ratio]:
+    """Precision and recall of the "yes" answers, from (truth, guess) pairs."""
+    true_positive = sum(t and g for t, g in pairs)
+    return Ratio(true_positive, sum(g for _, g in pairs)), Ratio(true_positive, sum(t for t, _ in pairs))
+
+
+def compare_with_baseline(labels: list[dict[str, str]], postings: dict[str, Posting]) -> list[BaselineComparison]:
+    out = []
+    for question, (get_label, ours, baseline) in BASELINE_QUESTIONS.items():
+        rows: list[tuple[bool, Posting]] = []
+        for r in labels:
+            truth = get_label(r)
+            if truth is not None and r["id"] in postings:
+                rows.append((truth, postings[r["id"]]))
+        our_p, our_r = _positive_class([(truth, ours(p)) for truth, p in rows])
+        base_p, base_r = _positive_class([(truth, baseline(p)) for truth, p in rows])
+        out.append(BaselineComparison(question, len(rows), our_p, our_r, base_p, base_r))
+    return out
+
+
+def baseline_table(rows: Iterable[BaselineComparison]) -> str:
+    lines = [
+        "| Question | Labelled | Ours: precision | Ours: recall | Naive baseline: precision | Naive baseline: recall |",
+        "|---|---|---|---|---|---|",
+    ]
+    for c in rows:
+        lines.append(
+            f"| {c.question} | {c.labelled} | {c.ours_precision} | {c.ours_recall} | "
+            f"{c.baseline_precision} | {c.baseline_recall} |"
+        )
+    return "\n".join(lines) + "\n"
 
 
 def score(labels: list[dict[str, str]], postings: dict[str, Posting]) -> list[FieldScore]:

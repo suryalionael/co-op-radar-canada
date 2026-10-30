@@ -30,6 +30,24 @@ A value is correct only if it matches the label exactly: for duration, the whole
 | Track | not yet measured | — | — |
 | Student role | not yet measured | — | — |
 
+### Against a naive baseline
+
+`python -m pipeline.cli evaluate` also scores a deliberately naive classifier on the same labelled rows, to show what the stricter rules add. A posting is a student role if its employment type or title contains "co-op", "coop", "intern" or "student" as a plain substring, and is Summer 2027 if its title contains "summer 2027" or "may 2027". These are our own few lines, modelled on the approach of [HamzaPM58/coop-watcher](https://github.com/HamzaPM58/coop-watcher), not its code. Both questions are scored on the "yes" class.
+
+| Question | Labelled | Ours: precision | Ours: recall | Naive baseline: precision | Naive baseline: recall |
+|---|---|---|---|---|---|
+| Student role | not yet measured | — | — | — | — |
+| Summer 2027 | not yet measured | — | — | — | — |
+
+**Disagreements before labelling (not a score).** On the 2,018 open postings in Canada in the 2026-10-30 snapshot:
+
+- The baseline calls 58 of them student roles; our extractor calls 48.
+- All 14 that only the baseline counts are titles with "Internal" or "International": internal auditors, internal-tools engineers, "Engineering Manager, International", and similar.
+- The 4 that only we count are French titles with "Stagiaire".
+- 21 of our 48 were decided by the board's structured employment-type field, and 27 by the title.
+
+These counts show where the two methods differ. They are not precision or recall, which need the labelled set.
+
 ### Labeller agreement
 
 | Field | Postings labelled by both | Agreement | Cohen's kappa |
