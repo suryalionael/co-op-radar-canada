@@ -1,6 +1,6 @@
 # 0002: Raw storage design, Canada filter and size budget
 
-- **Status:** Proposed. Waiting on the Phase 0 size measurement.
+- **Status:** Accepted (2026-10-30), to be re-measured after seven Daily runs at 171 boards.
 - **Date:** 2026-10-28
 - **Deciders:** Lionael Surya
 
@@ -25,16 +25,32 @@ Option 3.
 
 ## Size estimate
 
-To be filled in from the Phase 0 decision run (`data/coverage/<date>.json`, fields `loose_filter_bytes` and `loose_filter_gzip_bytes`).
+Two measurements, both from 2026-10-30.
+
+**Upper bound, from the Phase 0 decision run** (`data/coverage/2026-10-30.json`, 171 boards):
 
 | Measure | Value |
 |---|---|
-| Postings kept by the loose filter | — |
-| Bytes per day, JSON lines, descriptions included | — |
-| Bytes per day, gzipped | — |
-| Upper bound per year (gzipped × 365, no description de-duplication) | — |
+| Postings kept by the loose filter | 8,878 |
+| Bytes per day, JSON lines, descriptions included | 122.96 MB |
+| Bytes per day, gzipped | 13.21 MB |
+| Upper bound per year (gzipped × 365, no description de-duplication) | 4.82 GB |
 
-The upper bound is pessimistic: with descriptions stored once, most days only add metadata lines plus the descriptions of new or edited postings.
+**Realistic rate, from the Daily runs** (`data/run_log.jsonl`, 70 boards, 5,062–5,103 postings kept). Each day writes the metadata snapshot plus only the descriptions not stored before:
+
+| Measure | 70 boards (measured) | 171 boards (scaled by postings kept, ×1.74) |
+|---|---|---|
+| Metadata snapshot per day, gzipped | 0.82 MB | 1.43 MB |
+| New descriptions per day, gzipped (after the first day) | 0.37–0.59 MB | about 0.83 MB |
+| Total per day | about 1.3 MB | about 2.26 MB |
+| Per year | about 0.47 GB | **about 0.83 GB** |
+| One-time first-day descriptions | 17.6 MB | about 13 MB more for the new boards |
+
+The 171-board column is an estimate scaled from 70 boards. It is under the 1 GB budget, but with little room: most of it is the daily metadata snapshot, which repeats unchanged postings.
+
+## Acceptance
+
+Accepted on 2026-10-30 with the estimate above. Re-measure from `data/run_log.jsonl` after the first seven Daily runs at 171 boards (by 2026-11-07). If the measured rate projects past 1 GB a year, switch to the monthly roll-up in decision point 4 and record it in a new ADR. Storing only the postings that changed each day, instead of a full snapshot, is the first alternative to look at.
 
 ## Consequences
 
