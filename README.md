@@ -137,6 +137,11 @@ Built by Lionael Surya (lead) and Ei Htoo. Who does what is in [`docs/team.md`](
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md). A submission form for postings the pipeline can't reach is planned for v2. Until then, feel free to open an issue with suggestions for employers or student-program pages to track.
 
+## Related projects
+
+- [negarprh/Canadian-Tech-Internships-2027](https://github.com/negarprh/Canadian-Tech-Internships-2027), a hand-curated list of Canadian tech internships. We use it for seeding and evaluation only: its links helped find employer job boards, and it is the reference for our recall check and platform breakdown. We never republish its listings ([ADR 0007](docs/decisions/0007-curated-reference-list.md)).
+- [HamzaPM58/coop-watcher](https://github.com/HamzaPM58/coop-watcher), a script that sorts Lever co-op postings. It inspired our use of each board's structured job-type field as a co-op signal, and the "Internal Audit" regression cases in our role detection. No code is copied from it ([ADR 0008](docs/decisions/0008-structured-job-type-fields.md)).
+
 ## Disclaimer
 
 Co-op Radar Canada is an independent student project. It is not affiliated with, endorsed by, or sponsored by any employer, job board, school, or government listed on the site. Always confirm details on the original posting before applying.
