@@ -1,5 +1,3888 @@
 [
  {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "KRAFTON Montréal Studio",
+  "employer_id": "krafton_montreal",
+  "evidence": {
+   "term": "Hiver 2027",
+   "term_context": "Stage rémunéré | Sur place (pas de télétravail) | [Hiver 2027] À propos de Krafton Montréal Nous sommes un studio de…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "00b96890ed191aa4",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montréal",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "gaming",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Stagiaire en soutien technique TI / IT Support Intern",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/studiokraftonboard/jobs/8902681002"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Intern, Product Marketing Student supports the planning,…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Product Marketing Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "026629a2c64243e6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Product Marketing Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/d2a1c83a-dc7a-4b4f-a159-98b21e6e0616"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "ShyftLabs",
+  "employer_id": "shyftlabs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "046e6b40a5b015be",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Business Development Intern",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/shyftlabs/402f57f4-ef06-49e2-8ec6-07bc1ea7c4ba"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "053caea8f3fc1f13",
+  "last_seen": "2026-10-31",
+  "location_raw": "Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / Toronto, Ontario, Canada / Santa Clara / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "GTM (FAE & Customer Success) and Product Intern",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5274249007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The successful candidate will work within the portfolio management…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Credit Risk, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "0847f9423d6b4cf3",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Credit Risk, Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/138a3759-3f62-4e02-bfec-67eb06d92523"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "DRW",
+  "employer_id": "drw",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "0942c7a495939036",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal / Montreal, QC, Canada / Montréal",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI/ML Research Intern",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/drweng/jobs/7991171"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Bree",
+  "employer_id": "bree",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…it carefully, and learn from the outcome after release. This is an 8-month co-op term. (January - August 2027) At Bree, co-ops are full members…",
+   "term": "January - August 2027",
+   "term_context": "…from the outcome after release. This is an 8-month co-op term. (January - August 2027) At Bree, co-ops are full members of the Engineering team. You’ll…",
+   "term_dates": "January - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "09bfcd5102318579",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / ON / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Engineer, Product (Co-op)",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/bree/17d8dd15-5f97-4003-8d6c-170dca13ff88"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Acceldata",
+  "employer_id": "acceldata",
+  "evidence": {
+   "duration": "4 month",
+   "duration_context": "…drives business outcomes, this Co-Op is built for you. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "0b5bd27afd7274ff",
+  "last_seen": "2026-10-31",
+  "location_raw": "Kitchener / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Field Engineering Co-Op",
+  "track": "software",
+  "url": "https://jobs.lever.co/acceldata/d69a1a62-284c-47d1-b74f-ea02dffad32f"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "HeyGen",
+  "employer_id": "heygen",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Software Engineer Intern (Winter 2027)"
+  },
+  "first_seen": "2026-10-31",
+  "id": "0d87d4998c02d36c",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Los Angeles, San Francisco, Toronto, Singapore / Los Angeles, California, United States / San Francisco, California, United States / Los Angeles / San Francisco",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Engineer Intern (Winter 2027)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/heygen/jobs/4540716007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "TribalScale",
+  "employer_id": "tribalscale",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "0d9587679215bcee",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Agile Software Engineer - Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/tribalscale/jobs/4687337006"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Documentation Specialist Intern - Internship Winter 2027 | Stagiaire Spécialiste en documentation - Stage Hiver 2027",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "0e3edb8cc565558e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Documentation Specialist Intern - Internship Winter 2027 | Stagiaire Spécialiste en documentation - Stage Hiver 2027",
+  "track": "software",
+  "url": "https://jobs.lever.co/bhvr/7a460983-43ca-4cb3-ba59-f363dc3ec353"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {
+   "term": "starting in January 2027",
+   "term_context": "…seeking a Software Engineering Co-op to join our Engineering team starting in January 2027. In this role, you will support the development of the cloud…",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "10558c5183b39734",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Engineering Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4434577009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12 Months | 12-month",
+   "duration_context": "Corporate Compliance Intern (Winter/January 2027, 12 Months)",
+   "term": "January 2027",
+   "term_context": "Corporate Compliance Intern (Winter/January 2027, 12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "1247a4b253f6f8a5",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Corporate Compliance Intern (Winter/January 2027, 12 Months)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5309952008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {
+   "term": "starting in January 2027",
+   "term_context": "…seeking an Electrical Engineering Co-op to join our Engineering team starting in January 2027. In this role, you will support the development and testing of our…",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "12697a76f70befcb",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Electrical Engineering Co-op",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4434560009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "13dc3f42b10f8bc1",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Francisco / Toronto / California / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Mechanical Engineer",
+  "track": "other",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/63a06836-54f4-4475-9e03-007ce5afc04c"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 . The Core Responsibilities of the Job: Support the digital banking…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Acquisition Strategy, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "14c28d7445912d5f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Acquisition Strategy, Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/2132199e-09af-4cf4-99b8-3e20744a0c8e"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "1512773c8a526b1d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Canada / Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Analog Mixed Signal Engineer Intern (Toronto)",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739756005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Bree",
+  "employer_id": "bree",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…to move from experimentation to reliable implementation. This is an 8-month co-op term. At Bree, co-ops are full members of the Engineering…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "1929ec1bbfff6ddc",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / ON / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Machine Learning Engineering, Intern",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/bree/5e79b2fd-164c-4e72-91ef-1b8fd1c5518a"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Cresta",
+  "employer_id": "cresta",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "1ce824468c334008",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Product Design Intern for AI and Human Agents Platform",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/4476000008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0,
+   8.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "4, 8 or 12months",
+   "duration_context": "…We can’t wait to get to know you! Work Term: January 2027 (4, 8 or 12months) The Office Experience & Facilities Intern supports the Office…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Office Experience and Facilities Winter 2027",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "1de370e60a4872dd",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Office Experience and Facilities Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/a2cca7b8-e9a2-435d-a231-38a8b914933d"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "1e6c17afb91b2e2b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, British Columbia, Canada / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Platform Applications Engineer Intern/Co-op (Tools & Validation Infrastructure)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732319005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "211636b44b4441fb",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Francisco / Toronto / California / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Controls Engineer",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/3ceb956a-f231-4238-bb2e-365515b930a7"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {
+   "duration": "8 months | 8-month",
+   "duration_context": "…Location: Vancouver, British Columbia, Canada (Onsite) Duration: 8 months Employment type: Internship / co-op About the role At Astera Labs,…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "22840d509d44154c",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Jose, CA / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "System Validation Engineer Intern (Vancouver)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4729021005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "22897e327e16feaf",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada / Toronto, Ontario, Canada / Vancouver, British Columbia, Canada / Toronto / Vancouver",
+  "province": "ON",
+  "provinces": [
+   "ON",
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Systems Intern - Validation, Software, Design, Architecture & Packaging (Canada)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5264407007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "22f801a708c7720d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, British Columbia, Canada / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Platform Applications Engineer Intern/Co-op (Tools Development Engineer – COSMOS Platform Software)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4733856005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "23c8d52d0c8850f8",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Marketing Performance",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5279540007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Intern, Credit Risk Scoring, supports the development,…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Credit Risk, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "243e127c8983cb06",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Credit Risk, Winter 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/eqbank/de711d74-f78a-4cdd-a4a1-fdaa6e6602c3"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "25e6b25f5fc09d5f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Partnership Marketing",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270025007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "GoMaterials",
+  "employer_id": "gomaterials",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Data Quality Intern - Winter 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "26d3d9f97cae9ce4",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "ecommerce",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Data Quality Intern - Winter 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/gomaterials/be3fb0e8-54a1-43de-b998-99dd071eed19"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Boson AI",
+  "employer_id": "boson_ai",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…declined. We are hiring MScAC students for the program's 8-month applied research internship, starting in May 2027; an earlier start…",
+   "term": "starting in May 2027",
+   "term_context": "…students for the program's 8-month applied research internship, starting in May 2027; an earlier start is possible. You will join one of the projects…",
+   "term_dates": "starting in May 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "2c2da8b0d3265204",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "lever",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": "2027-05-01",
+  "terms": [
+   "Summer 2027"
+  ],
+  "title": "Internship - MScAC 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/bosonai/3b66f322-55eb-4c4b-9b36-028dfcdd85e9"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Influencer Manager Coordinator - Dead by Daylight - Internship Winter 2027",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "32aa98c5e98584be",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Influencer Manager Coordinator - Dead by Daylight - Internship Winter 2027",
+  "track": "software",
+  "url": "https://jobs.lever.co/bhvr/ed120a60-b1ed-4c07-a6e4-f3f0772c161c"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Waabi",
+  "employer_id": "waabi",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "338eb528a18d4d9c",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "ml_ai",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "2027 Intern, PhD Research Scientist",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/waabi/62700386-b9db-4c78-aec3-5ef59cbe841e"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Product Development Coordinator - Internship Winter 2027 | Coordonnateur·trice au développement de produits – Stage Hiver 2027",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "34b686ea4e806da6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Product Development Coordinator - Internship Winter 2027 | Coordonnateur·trice au développement de produits – Stage Hiver 2027",
+  "track": "software",
+  "url": "https://jobs.lever.co/bhvr/15e6239a-4066-43d0-8eb7-d5aa8512118a"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Intern - Sales Operations & Strategy Associate Winter 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "360fd8dfa9b44611",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Sales Operations & Strategy Associate Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/5d1f6afc-24f2-4591-8986-acc67037cae7"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "37abea2df8d42c3f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Ottawa, Canada / Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Firmware Engineer Intern (Ottawa)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731406005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "38cb5b33966f7259",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Luxury Events & Content Marketing",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270052007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Veeda AI",
+  "employer_id": "veeda_ai",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "3d886b28f1efe98d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Internship - Software Engineering",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/veeda-ai/84dfad5c-d790-4c4a-9411-40b676b1abbb"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Brave",
+  "employer_id": "brave",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "424e83e94283455f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Canada / Brave Canada",
+  "province": "UNKNOWN",
+  "provinces": [],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineering Intern - Waterloo University",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/brave/jobs/8161945"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "45949c51e86b1b4d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Business Operations & Program Management Intern",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5271796007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Veeda AI",
+  "employer_id": "veeda_ai",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "46ad1a7a752ef380",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Zürich / Seattle / California / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Internship",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/veeda-ai/31d097db-83ac-4a6d-9520-8dc29a8dbe08"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "47f2c902bff5202e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Test Engineering Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4455115009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Waabi",
+  "employer_id": "waabi",
+  "evidence": {
+   "term": "June 2027",
+   "term_context": "…further review. - The Summer Internship is expected to start May/June 2027 and continue on a full-time basis (40 hours/week) to…",
+   "term_dates": "June 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "4d669df24ba1f6e8",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "lever",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": "2027-06-01",
+  "terms": [
+   "Summer 2027",
+   "Fall 2027"
+  ],
+  "title": "Safety Methodologies Internship/Co-op 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/waabi/480d9d41-33d0-429a-8883-7f9ec305a30f"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Cresta",
+  "employer_id": "cresta",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "50abc28bc7d803d4",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Canada (Hybrid)",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Forward Deployed Engineering Intern (AI Agent)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/5106468008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "4 Months | 4-month | 4 month",
+   "duration_context": "Software Developer Intern, Geotab Vitality (Winter/January 2027, 4 Months)",
+   "term": "January 2027",
+   "term_context": "Software Developer Intern, Geotab Vitality (Winter/January 2027, 4 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "5157bcce90f6c172",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer Intern, Geotab Vitality (Winter/January 2027, 4 Months)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5376578008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Intern - Commercial Lending AI Engineer supports the design,…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Commercial Lending AI Engineer, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "52accd83e8ecfa9b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Commercial Lending AI Engineer, Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/54045eae-334a-4486-8e97-96e49e6a1487"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   8.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "8 - 12 month",
+   "duration_context": "…that can function 24/7 with no down time. The opportunity: 8 - 12 month work-term beginning Jan 2027. Full-time, paid internship: Monday -…",
+   "term": "January 2027",
+   "term_context": "Software Developer Intern, MyAdmin (Winter/January 2027, 8+ Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "53d7d5cb7a357c51",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Waterloo, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer Intern, MyAdmin (Winter/January 2027, 8+ Months)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5361630008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Intern – Retail Lending AI Engineer supports the design,…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Retail Lending AI Engineer, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "55254b1751770d81",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Retail Lending AI Engineer, Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/1c46930a-7ffe-4760-9d31-e08ea191ddea"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "56838365b05df110",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Tours",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Sales Support (FAM)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5265094007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "574af7346c16d8d8",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Firmware Engineer Intern Summer Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739957005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "58faf2dfd0d430c6",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Francisco / Toronto / California / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Industrial Designer",
+  "track": "other",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/9aa0a361-9807-404b-a87e-1460699a296d"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Waabi",
+  "employer_id": "waabi",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "5ba8676e49855a2e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON / San Francisco, CA / Remote US / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "remote",
+  "sector": "ml_ai",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Research Internship/Co-op",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/waabi/0fd4e30b-9bd1-4b53-9043-6088457363cb"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Technical Animator - 7 Days to Die - Internship Winter 2027 | Animateur·trice technique - 7 Days to Die - Stage Hiver 2027",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "605de79f55b5e917",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Technical Animator - 7 Days to Die - Internship Winter 2027 | Animateur·trice technique - 7 Days to Die - Stage Hiver 2027",
+  "track": "software",
+  "url": "https://jobs.lever.co/bhvr/2ea4517a-0730-4f28-bcb0-7a643ad62d97"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   8.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12 Months | 8 - 12 month",
+   "duration_context": "Solutions Delivery Intern, Maintenance Domain, (Winter/ January 2027, 12 Months)",
+   "term": "January 2027",
+   "term_context": "Solutions Delivery Intern, Maintenance Domain, (Winter/ January 2027, 12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "60fc5aa1bae67877",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Solutions Delivery Intern, Maintenance Domain, (Winter/ January 2027, 12 Months)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5367565008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "ShyftLabs",
+  "employer_id": "shyftlabs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "64604f13369444b0",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI Engineer Intern",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/shyftlabs/4f389ea7-9b98-4ed0-99c2-b25ea8cc2dcd"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0,
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "GoMaterials",
+  "employer_id": "gomaterials",
+  "evidence": {
+   "duration": "4-month | 8-month",
+   "duration_context": "…field. Availability: Able to work full-time (37.5 hours/week); both 4-month and 8-month contracts are available for the right candidate.…",
+   "term": "Winter 2027",
+   "term_context": "Supply Chain Operations Intern - Winter 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "677df86842e11342",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "ecommerce",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Supply Chain Operations Intern - Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/gomaterials/eeb48651-bf40-439e-8274-315afd1161fe"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "6a2aaa09ca3f180b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Tours",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Sales Support",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5264871007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "6b10b33a923cfe63",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Jose, CA or Toronto, Ontario, Canada / California / San Jose",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "DFT Engineering Intern",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4728387005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "6dc6ed50bb46fb71",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Marketing Analytics",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270002007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "6e3f63c33d42ab7b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Integrated Marketing",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270032007"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   12.0,
+   16.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12-16 months | 12-16 month",
+   "duration_context": "…Developer Intern, Engine Data Reliability ( Winter/ January 2027, 12-16 months)",
+   "term": "January 2027",
+   "term_context": "Embedded Developer Intern, Engine Data Reliability ( Winter/ January 2027, 12-16 months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "70d5d03e4db2c084",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Embedded Developer Intern, Engine Data Reliability ( Winter/ January 2027, 12-16 months)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5396891008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "KRAFTON Montréal Studio",
+  "employer_id": "krafton_montreal",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "720d0843c25ad062",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montréal",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "gaming",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Stagiaire en programmation UI / UI programming intern",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/studiokraftonboard/jobs/8906470002"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "ShyftLabs",
+  "employer_id": "shyftlabs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "73d79f67f880ae9d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Graphic Design Intern",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/shyftlabs/b9de405d-1a6b-401e-b093-6a6f81d1ecde"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "741bfd617d246a11",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Tours",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Sales Strategy & Analytics",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5264881007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "TELUS Digital",
+  "employer_id": "telus_digital",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineering Intern/Co-op (Canada) - Summer 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "75d20dbaf5e6f769",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver / British Columbia / Canada",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "hybrid",
+  "sector": "software",
+  "source": "ashby",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027"
+  ],
+  "title": "Software Engineering Intern/Co-op (Canada) - Summer 2027",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/telus-digital/63b0654a-9849-4d74-bc3f-94b2ccceb2c2"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Pebl",
+  "employer_id": "pebl",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "791c6ae907927d2d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "software",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineering, Intern",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/pebl/49d8b355-620b-4dde-be4b-5489abf4c9cf"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Bree",
+  "employer_id": "bree",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…We’re looking for a Backend Engineering Co-op to join us for an 8-month term. You’ll work closely with experienced engineers on scoped…",
+   "term": "January - August 2027",
+   "term_context": "…tools thoughtfully along the way. This is an 8-month co-op term. (January - August 2027) At Bree, co-ops are full members of the Engineering team. You’ll…",
+   "term_dates": "January - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "79264dd3ce090b9b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / ON / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Engineer, Backend (Co-op)",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/bree/42fe78c1-e73f-4918-bf71-776b8142112b"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Apera AI",
+  "employer_id": "apera_ai",
+  "evidence": {
+   "duration": "8 months | 8-month",
+   "duration_context": "…in a supportive, fast-learning environment. This co-op role requires 8 months term commitment (Jan 2027 - August 2027). This is an opportunity to…",
+   "term": "Jan 2027 - August 2027",
+   "term_context": "…environment. This co-op role requires 8 months term commitment (Jan 2027 - August 2027). This is an opportunity to apply what you’ve learned in school to…",
+   "term_dates": "Jan 2027 - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "812780ac6cf43d93",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer (Cloud Infrastructure) – Co-Op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5240274007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "886f834a1e242806",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver. BC, Canada / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Firmware Engineer Intern Fall Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739956005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12 Months | 12-month",
+   "duration_context": "Data Analyst Intern (Winter/January 2027, 12 Months)",
+   "term": "January 2027",
+   "term_context": "Data Analyst Intern (Winter/January 2027, 12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "8b62c186b6c3ec80",
+  "last_seen": "2026-10-31",
+  "location_raw": "Burnaby, British Columbia - Canada; Oakville, Ontario - Canada; Toronto, Ontario - Canada / Burnaby / Oakville",
+  "province": "BC",
+  "provinces": [
+   "BC",
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Data Analyst Intern (Winter/January 2027, 12 Months)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5444306008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 As part of a growing and dynamic Commercial Portfolio Management…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Commercial Portfolio Management, BES, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "901972d31f9109ff",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Commercial Portfolio Management, BES, Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/3688d6b9-8f17-406c-a89e-4e49fb408793"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January 2027 - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January 2027 - April 2027 The Work: We are seeking a Modern Workplace Analyst Intern to…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Modern Workplace Analyst, Winter 2027",
+   "term_dates": "January 2027 - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "9095bbb639cdedc2",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Modern Workplace Analyst, Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/53d0826c-baeb-4ba6-87e5-7d6d416c1da7"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Product Graphic Designer - Internship Winter 2027 | Designer Graphique Produit – Stage Hiver 2027",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "9660e4b12b6bdfbf",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Product Graphic Designer - Internship Winter 2027 | Designer Graphique Produit – Stage Hiver 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/bhvr/3b2070c4-972a-485b-a2ee-f7f6cff3c116"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "AMI",
+  "employer_id": "ami",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "9668a6b4a297f6ed",
+  "last_seen": "2026-10-31",
+  "location_raw": "Paris / Singapore / New York / Montreal / France",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "onsite",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AMI Scientist/Interns - Geometry and 3D Vision",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/ami/0d7332d8-b8e7-40d3-89b6-dfc02b40bfa2"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "99818f1d4c42e611",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Francisco / Toronto / California / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Electrical Engineer",
+  "track": "other",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/004ff3a2-7e38-4959-8bd7-48489cbc78f4"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Apera AI",
+  "employer_id": "apera_ai",
+  "evidence": {
+   "duration": "8 months",
+   "duration_context": "…AI is seeking a Machine Learning Applied Scientist (Co-op) for the 8 months term period (Jan 2027 - August 2027) to support the development of…",
+   "term": "Jan 2027 - August 2027",
+   "term_context": "…Learning Applied Scientist (Co-op) for the 8 months term period (Jan 2027 - August 2027) to support the development of our 4D Vision Technology used by…",
+   "term_dates": "Jan 2027 - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "9d9709a7ba21ec19",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Machine Learning Applied Scientist (Co-op)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5239440007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "9e3ef444d22b16fc",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Physical Design Engineer Intern (Toronto)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731401005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Co-op Student, F2F Sales Enablement supports the Operations &…",
+   "term": "Winter 2027",
+   "term_context": "Intern - F2F Sales Enablement, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "9ebe1735afb6812e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - F2F Sales Enablement, Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/528e532d-af6d-4af8-bd1c-9177efc1c5e4"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Yotta Labs",
+  "employer_id": "yotta_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "9efb00d401390612",
+  "last_seen": "2026-10-31",
+  "location_raw": "United States / Hong Kong / Canada / Singapore",
+  "province": "REMOTE_CA",
+  "provinces": [
+   "REMOTE_CA"
+  ],
+  "remote": "remote",
+  "sector": "ml_ai",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Research Engineer Intern - AI Systems",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/yotta/09821a51-fbe6-42a7-a566-0d2b5d40fae3"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "9f5a2e68b3fea647",
+  "last_seen": "2026-10-31",
+  "location_raw": "San Francisco / Toronto / California / United States",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Software/ML Engineer",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Intern - Credit Risk Acquisitions supports the development,…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Credit Risk, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "9fc5dbd338bd75fc",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Credit Risk, Winter 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/eqbank/a1340690-3adc-4aae-9b91-26e474fe1958"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a27f3c8b30358716",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Platform",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern  - Partner Relations  (Procurement)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5262686007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a3131011cb1aa7b0",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, B.C. / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Product Applications Engineer Intern (Scorpio)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4732364005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a54586870245b7f1",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Design Verification Engineer Intern (Toronto)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731392005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "8 Months | 8 month",
+   "duration_context": "Content Marketing Coordinator Intern (Winter/January 2027, 8 Months)",
+   "term": "January 2027",
+   "term_context": "Content Marketing Coordinator Intern (Winter/January 2027, 8 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "a56c2f8a1ed4bcde",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada / Oakville / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Content Marketing Coordinator Intern (Winter/January 2027, 8 Months)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5384593008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Acceldata",
+  "employer_id": "acceldata",
+  "evidence": {
+   "duration": "4 month",
+   "duration_context": "…unlock the full potential of the open-source community. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "a65997a6286cf931",
+  "last_seen": "2026-10-31",
+  "location_raw": "Kitchener / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineering Co-op",
+  "track": "software",
+  "url": "https://jobs.lever.co/acceldata/3b6d3dfe-5e49-41c9-98a5-f732fa63fdf4"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Apera AI",
+  "employer_id": "apera_ai",
+  "evidence": {
+   "duration": "8 months | 8-month",
+   "duration_context": "…Apera AI is seeking a Full Stack Software Developer (Co-op) for the 8 months term period (Jan 2027 - August 2027) to join the team behind Apera…",
+   "term": "Jan 2027 - August 2027",
+   "term_context": "…Full Stack Software Developer (Co-op) for the 8 months term period (Jan 2027 - August 2027) to join the team behind Apera Forge, our web-based simulation and…",
+   "term_dates": "Jan 2027 - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "a66d418149ec2889",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Software Developer - Full Stack (Co-op)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/aperaaiinc/jobs/5240259007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "DRW",
+  "employer_id": "drw",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a67e2a975e6753e9",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal / Montreal, QC, Canada / Montréal",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Developer Intern",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/drweng/jobs/7991196"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Cresta",
+  "employer_id": "cresta",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a867a65904068ed4",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI Quality Assurance Intern",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/5047247008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "a91f67903167b2ab",
+  "last_seen": "2026-10-31",
+  "location_raw": "Ottawa, Ontario, Canada; Toronto, Ontario, Canada / Ottawa, Ontario, Canada / Toronto, Ontario, Canada / Ottawa / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Hardware Intern - AI HW & SoC (Canada)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5256568007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…co-op experience Strong preference for students available for an 8-month co-op term Experience with 3D CAD software (SolidWorks, Inventor, or…",
+   "term": "starting in January 2027",
+   "term_context": "…seeking a Mechanical Engineering Co-op to join our Engineering team starting in January 2027. In this role, you will support the design, development, and testing…",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "af681646938ed56b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Mechanical Engineering Co-op",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4434573009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "b106166dd1924143",
+  "last_seen": "2026-10-31",
+  "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / North America",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "IP Sales and Operations Intern",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5274169007"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   8.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "8-12 Months | 8 - 12 month",
+   "duration_context": "…Coordinator Intern, Geotab Fleet Card (Winter/January 2027, 8-12 Months)",
+   "term": "January 2027",
+   "term_context": "Business Development Coordinator Intern, Geotab Fleet Card (Winter/January 2027, 8-12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "b340442095f9beab",
+  "last_seen": "2026-10-31",
+  "location_raw": "Atlanta, Georgia - USA; Burnaby, British Columbia - Canada; Oakville, Ontario - Canada; Remote - USA; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / North America",
+  "province": "BC",
+  "provinces": [
+   "BC",
+   "ON"
+  ],
+  "remote": "remote",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Business Development Coordinator Intern, Geotab Fleet Card (Winter/January 2027, 8-12 Months)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5455475008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "8-month",
+   "duration_context": "…you! The Core Responsibilities of the Job Over the course of this 8-month term, you’ll have the opportunity to work with frontend and backend…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Software Engineer, Winter 2027",
+   "term_dates": "January - August 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "b35c53178c0e1acb",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-08-31",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Software Engineer, Winter 2027",
+  "track": "software",
+  "url": "https://jobs.lever.co/eqbank/c924506b-22ad-4906-aea5-61d9b79163f3"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Human Computer Lab",
+  "employer_id": "human_computer_lab",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "b3fd0d193980ceb6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / San Francisco / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "hardware",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Mechatronics Engineer",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/human-computer-lab/1363a714-0195-4620-9fbd-bbf2e4fdf9ae"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Cresta",
+  "employer_id": "cresta",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "b80f83425ff7bae6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Canada (Hybrid)",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Machine Learning Engineering Intern",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/4123863008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {
+   "term": "starting in January 2027",
+   "term_context": "…a Manufacturing Engineer Co-op to join our Manufacturing team starting in January 2027. In this role, you will support the development and optimization of…",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "b90af6d6e09b61dd",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Manufacturing Engineering Co-op",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4420541009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Steel",
+  "employer_id": "steel",
+  "evidence": {
+   "term": "Summer 2027",
+   "term_context": "Software Engineer Intern (Summer 2027)"
+  },
+  "first_seen": "2026-10-31",
+  "id": "b91a251cf63771d2",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "ashby",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Summer 2027"
+  ],
+  "title": "Software Engineer Intern (Summer 2027)",
+  "track": "software",
+  "url": "https://jobs.ashbyhq.com/steel/5fbdbebf-ddb2-4264-a941-3ab6d475208c"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "bca5aedeac980293",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI Software Intern (Canada)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5259347007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…We can’t wait to get to know you! The Work Work Term: January - April 2027 The Technology Workplace Services (TWS) Intern manages the…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Technology Workplace Services, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "c10beb7a4c4b052e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Technology Workplace Services, Winter 2027",
+  "track": "other",
+  "url": "https://jobs.lever.co/eqbank/50a9450b-42ce-4839-9b43-9e3402cf222d"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "c1122af9d29da6fe",
+  "last_seen": "2026-10-31",
+  "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Firmware Engineer Intern Spring Co-Op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739544005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "InstaLILY",
+  "employer_id": "instalily",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "c1ac8a9b13a11759",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Toronto, Ontario, Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineer I, Toronto Co-op",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/instalilyai/jobs/4342089009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Block",
+  "employer_id": "block",
+  "evidence": {
+   "duration": "8 months",
+   "duration_context": "…Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate student (MS or PhD,…",
+   "term": "Winter 2026",
+   "term_context": "…— Block Applied R&D Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate…",
+   "term_dates": "start September 2026"
+  },
+  "first_seen": "2026-10-31",
+  "id": "c975acc509358f66",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario , Canada / CA - ON - Toronto - Remote",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "remote",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Winter 2026",
+  "term_end": null,
+  "term_start": "2026-09-01",
+  "terms": [
+   "Winter 2026",
+   "Fall 2026"
+  ],
+  "title": "Applied Research Intern, Proactive Intelligence & Customer World Models (PhD / Graduate Co-op)",
+  "track": "ml_ai",
+  "url": "http://block.xyz/careers/jobs/5108009008?gh_jid=5108009008"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   5.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Epic Games",
+  "employer_id": "epic_games",
+  "evidence": {
+   "duration": "5-12 months",
+   "duration_context": "…experience in either C++ or C# Internship Details Duration : 5-12 months initially (depending on your location), with flexible start-dates…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "c9c454b4688b79cc",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal,Quebec,Canada / Manchester, England, United Kingdom / Manchester",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "unknown",
+  "sector": "gaming",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Machine Learning Intern",
+  "track": "ml_ai",
+  "url": "https://epicgames.com/careers/jobs/6138140004?gh_jid=6138140004"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Tenstorrent",
+  "employer_id": "tenstorrent_university",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "cc27e70d3f364e9e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI Software Intern - Cloud, Infrastructure & Data Centre Deployment (Canada)",
+  "track": "ml_ai",
+  "url": "https://job-boards.greenhouse.io/tenstorrentuniversity/jobs/5256579007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Block",
+  "employer_id": "block",
+  "evidence": {
+   "duration": "8 months",
+   "duration_context": "…Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate student (MS or PhD,…",
+   "term": "Winter 2026",
+   "term_context": "…— Block Applied R&D Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate…",
+   "term_dates": "start September 2026"
+  },
+  "first_seen": "2026-10-31",
+  "id": "d426584e1fb9b986",
+  "last_seen": "2026-10-31",
+  "location_raw": "Bay Area, CA, United States of America / CA - ON - Toronto - Remote",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "remote",
+  "sector": "fintech",
+  "source": "greenhouse",
+  "term": "Winter 2026",
+  "term_end": null,
+  "term_start": "2026-09-01",
+  "terms": [
+   "Winter 2026",
+   "Fall 2026"
+  ],
+  "title": "Applied Research Intern, Proactive Intelligence & Customer World Models (PhD / Graduate Co-op)",
+  "track": "ml_ai",
+  "url": "http://block.xyz/careers/jobs/5108007008?gh_jid=5108007008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "d5afdfdac08fcfb6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Platform",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Revenue Optimization",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5262690007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   8.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "8 Months | 8 month",
+   "duration_context": "Customer Marketing Intern (Winter/January 2027, 8 Months)",
+   "term": "January 2027",
+   "term_context": "Customer Marketing Intern (Winter/January 2027, 8 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "d634e4b7ed1a28e1",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Customer Marketing Intern (Winter/January 2027, 8 Months)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5383289008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Steel",
+  "employer_id": "steel",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Marketing Intern (Winter 2027)"
+  },
+  "first_seen": "2026-10-31",
+  "id": "d6bcea7e3a6d9458",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "ashby",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": null,
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Marketing Intern (Winter 2027)",
+  "track": "business_ops",
+  "url": "https://jobs.ashbyhq.com/steel/8b6c641d-f98d-4138-8ca9-f7a00cea2298"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12 Months | 12 month",
+   "duration_context": "Marketing Intern, Latin America (Winter/January 2027, 12 Months)",
+   "term": "January 2027",
+   "term_context": "Marketing Intern, Latin America (Winter/January 2027, 12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "d71db94bafac318a",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Marketing Intern, Latin America (Winter/January 2027, 12 Months)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5358560008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Georgian",
+  "employer_id": "georgian",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "d81b6d01c375ab8f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto Headquarters / Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "ashby",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "AI/ML Engineer Intern (2027)",
+  "track": "ml_ai",
+  "url": "https://jobs.ashbyhq.com/georgian/2ae71a4b-dd9d-4068-8ef2-81351ee74cab"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "d90bf112d3ae6718",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Design",
+  "track": "other",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5270140007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "d9bc62c505244bcc",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Agency",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Business Analyst",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5267284007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 This internship will provide a unique opportunity to learn and…",
+   "term": "Winter 2027",
+   "term_context": "Intern, Business Analyst (PC Insurance), Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "da89b9daa0548bb6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern, Business Analyst (PC Insurance), Winter 2027",
+  "track": "data_analytics",
+  "url": "https://jobs.lever.co/eqbank/d9af4fcc-f814-4eee-97c2-1f84aa12842b"
+ },
+ {
+  "duration_is_range": true,
+  "duration_options_months": [
+   8.0,
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "8-12 Months | 8 - 12 month",
+   "duration_context": "Integrated Marketing Intern (Winter/ January 2027, 8-12 Months)",
+   "term": "January 2027",
+   "term_context": "Integrated Marketing Intern (Winter/ January 2027, 8-12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "dde3657375106f06",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Integrated Marketing Intern (Winter/ January 2027, 8-12 Months)",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5368704008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Moment Energy",
+  "employer_id": "moment_energy",
+  "evidence": {
+   "term": "starting in January 2027",
+   "term_context": "…are looking for a Data Scientist Co-op to join our Engineering team starting in January 2027. In this role, you will support the development of advanced models…",
+   "term_dates": "starting in January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "e4b7b407a242bde8",
+  "last_seen": "2026-10-31",
+  "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "unknown",
+  "sector": "energy",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Data Scientist Co-op",
+  "track": "data_science",
+  "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4421775009"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 Reporting to the Director, Risk Reporting, the Risk Analyst…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Risk Analyst, Enterprise Risk Governance & Transformation, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "e60dcc2357b86370",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Risk Analyst, Enterprise Risk Governance & Transformation, Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/eaa019f9-0c17-4020-8aeb-e0969a89117e"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
+  "employer": "Acceldata",
+  "employer_id": "acceldata",
+  "evidence": {
+   "duration": "4 month",
+   "duration_context": "…to unlock the full potential of data observability. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
+  },
+  "first_seen": "2026-10-31",
+  "id": "e6f27645f4410c7d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Kitchener / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "software",
+  "source": "lever",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Sales Engineering Co-Op",
+  "track": "software",
+  "url": "https://jobs.lever.co/acceldata/ffd01330-b32f-4868-9390-3af135335ab0"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Behaviour Interactive",
+  "employer_id": "behaviour_interactive",
+  "evidence": {
+   "term": "Winter 2027",
+   "term_context": "Product Management Intern - 7 Days to Die - Internship Winter 2027 | Stagiaire Gestionnaire de produit - Stage Hiver 2027",
+   "term_dates": "starting January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "e74117bdd4e61b8d",
+  "last_seen": "2026-10-31",
+  "location_raw": "Montreal, QC / Canada",
+  "province": "QC",
+  "provinces": [
+   "QC"
+  ],
+  "remote": "hybrid",
+  "sector": "gaming",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Product Management Intern - 7 Days to Die -  Internship Winter 2027 | Stagiaire Gestionnaire de produit - Stage Hiver 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/bhvr/540b00d3-8693-4c2b-9e98-10e33cb0ce62"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "eb912b2c61ff47c4",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Platform",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Hotel Partner Relations & Procurement",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5262699007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The Strategic Sourcing & Third-Party Management (SS&TM) team is…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Strategic Sourcing & Third-Party Management , Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "f077b2ad2d0f7900",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Strategic Sourcing & Third-Party Management , Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/46175add-4a8e-4427-b269-8c84517b2556"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The EQ Bank Public Relations & Communications team is seeking a…",
+   "term": "Winter 2027",
+   "term_context": "Intern - Public Relations (External Comms) Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "f1302c4f73e00a3a",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - Public Relations (External Comms) Winter 2027",
+  "track": "ml_ai",
+  "url": "https://jobs.lever.co/eqbank/4c22ff71-0543-4e3d-9cf9-79afc1d4e5a5"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   12.0
+  ],
+  "duration_status": "stated",
+  "employer": "Geotab",
+  "employer_id": "geotab_internships",
+  "evidence": {
+   "duration": "12 Months | 12 month",
+   "duration_context": "Events Intern (Winter/January 2027, 12 Months)",
+   "term": "January 2027",
+   "term_context": "Events Intern (Winter/January 2027, 12 Months)",
+   "term_dates": "January 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "f4853a8149533b7e",
+  "last_seen": "2026-10-31",
+  "location_raw": "Oakville, Ontario - Canada / Oakville",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "software",
+  "source": "greenhouse",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Events Intern (Winter/January 2027, 12 Months)",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5452423008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "f55441d1f406612f",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Back Office",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Strategy Intern",
+  "track": "business_ops",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5259079007"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "inferred_from_dates",
+  "employer": "Equitable Bank",
+  "employer_id": "equitable_bank",
+  "evidence": {
+   "duration": "January - April 2027",
+   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The PC Mastercard team is seeking a Co-op Student to support its…",
+   "term": "Winter 2027",
+   "term_context": "Intern - PC Mastercard Lifecycle Management & Partnerships, Winter 2027",
+   "term_dates": "January - April 2027"
+  },
+  "first_seen": "2026-10-31",
+  "id": "fa3c218905a22ba1",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "sector": "fintech",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": "2027-04-30",
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Intern - PC Mastercard Lifecycle Management & Partnerships, Winter 2027",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/eqbank/b8cab018-3e0d-439e-ba11-963aa4920af7"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Cresta",
+  "employer_id": "cresta",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "fb92bf0fa7ab65d8",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ml_ai",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Software Engineer Intern",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/cresta/jobs/4123841008"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Astera Labs",
+  "employer_id": "astera_labs",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "fba32629c509357b",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "hardware",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Digital Design Engineer Intern (Toronto)",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4731399005"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   3.0
+  ],
+  "duration_status": "stated",
+  "employer": "DoorDash",
+  "employer_id": "doordash_canada",
+  "evidence": {
+   "duration": "12-week",
+   "duration_context": "…to our mission of attracting and retaining top talent. During our 12-week Software Engineer internship, interns are completely immersed in…",
+   "term": "Summer 2027",
+   "term_context": "Software Engineer, Intern (Summer 2027) - TOR",
+   "term_dates": "June 2027 start"
+  },
+  "first_seen": "2026-10-31",
+  "id": "fbb23206b786d9db",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON / Toronto",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "ecommerce",
+  "source": "greenhouse",
+  "term": "Summer 2027",
+  "term_end": null,
+  "term_start": "2027-06-01",
+  "terms": [
+   "Summer 2027",
+   "Summer 2024"
+  ],
+  "title": "Software Engineer, Intern (Summer 2027) - TOR",
+  "track": "software",
+  "url": "https://job-boards.greenhouse.io/doordashcanada/jobs/8170944"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "employer": "Kensington Tours",
+  "employer_id": "kensington_tours",
+  "evidence": {},
+  "first_seen": "2026-10-31",
+  "id": "fc1efdbe7e6623d6",
+  "last_seen": "2026-10-31",
+  "location_raw": "Toronto, ON, Canada / Kensington Platform",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "unknown",
+  "sector": "travel",
+  "source": "greenhouse",
+  "term": null,
+  "term_end": null,
+  "term_start": null,
+  "terms": [],
+  "title": "Intern - Analytics",
+  "track": "data_analytics",
+  "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5262680007"
+ },
+ {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Stripe",
@@ -10,7 +3893,7 @@
   },
   "first_seen": "2026-10-30",
   "id": "36ae68470273a9e5",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -23,15 +3906,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Winter 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Master's Machine Learning Engineer, Intern",
   "track": "ml_ai",
   "url": "https://stripe.com/jobs/search?gh_jid=8333122"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Stripe",
@@ -42,7 +3924,7 @@
   },
   "first_seen": "2026-10-30",
   "id": "552a49e8ca55e48b",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -55,15 +3937,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Winter 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "PhD Machine Learning Engineer, Intern",
   "track": "ml_ai",
   "url": "https://stripe.com/jobs/search?gh_jid=8328664"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -79,7 +3960,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "019791be2ebe529f",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -99,6 +3980,7 @@
   "url": "https://jobs.ashbyhq.com/1password/7f1732a6-5317-4319-82b9-67c62e88d491"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -114,7 +3996,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "07a4761515fc6137",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -134,6 +4016,7 @@
   "url": "https://jobs.ashbyhq.com/1password/b2726ac7-dd0d-42f3-93a5-139e18c90779"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -144,7 +4027,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "0c33e9d8bc096695",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -157,25 +4040,22 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineer Intern, Backend (Summer 2027 - Toronto)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8767710002?gh_jid=8767710002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Stripe",
   "employer_id": "stripe",
-  "evidence": {
-   "term": "summer 2028",
-   "term_context": "…etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL and a scientific computing language (such as…"
-  },
+  "evidence": {},
   "first_seen": "2026-10-29",
   "id": "14765a714e7f8c52",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -184,17 +4064,16 @@
   "remote": "unknown",
   "sector": "fintech",
   "source": "greenhouse",
-  "term": "Summer 2028",
+  "term": null,
   "term_end": null,
   "term_start": null,
-  "terms": [
-   "Summer 2028"
-  ],
+  "terms": [],
   "title": "PhD Data Scientist, Intern",
   "track": "data_science",
   "url": "https://stripe.com/jobs/search?gh_jid=8194285"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    3.0,
    4.0
@@ -210,7 +4089,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "147d9e10a6beeb00",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada / Mountain View, California",
   "province": "BC",
   "provinces": [
@@ -223,15 +4102,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Fall 2027",
-   "Spring 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineering Intern (2027)",
   "track": "software",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -247,7 +4125,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "196b2bc1ecb3cd0a",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -267,6 +4145,7 @@
   "url": "https://jobs.ashbyhq.com/1password/8af1359a-c8a2-492b-b567-ae8ae184a8a1"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -282,7 +4161,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "2ff95c2863cab403",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -302,6 +4181,7 @@
   "url": "https://jobs.ashbyhq.com/1password/00f861d4-2b4a-4159-b6dc-8aed0cde6e39"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -312,7 +4192,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "37773045e35aa743",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -333,6 +4213,7 @@
   "url": "https://app.careerpuck.com/job-board/lyft/job/8862007002?gh_jid=8862007002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -341,11 +4222,14 @@
   "employer_id": "kepler_communications",
   "evidence": {
    "duration": "4 months | 4-month",
-   "duration_context": "IT Intern (January 2027) (4 months)"
+   "duration_context": "IT Intern (January 2027) (4 months)",
+   "term": "January 2027",
+   "term_context": "IT Intern (January 2027) (4 months)",
+   "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
   "id": "3da2cd34351796ce",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -354,15 +4238,18 @@
   "remote": "onsite",
   "sector": "aerospace",
   "source": "lever",
-  "term": null,
+  "term": "Winter 2027",
   "term_end": null,
-  "term_start": null,
-  "terms": [],
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
   "title": "IT Intern (January 2027) (4 months)",
   "track": "software",
   "url": "https://jobs.lever.co/kepler/ccb93343-3e2f-485d-bccf-5e34512bf4cb"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -373,7 +4260,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "4555ac8e946a1713",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -386,14 +4273,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8797859002?gh_jid=8797859002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -409,7 +4296,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "5018b302c3a389ec",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -429,6 +4316,7 @@
   "url": "https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -439,7 +4327,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "518ad23e9671dad9",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -460,6 +4348,7 @@
   "url": "https://app.careerpuck.com/job-board/lyft/job/8817932002?gh_jid=8817932002"
  },
  {
+  "duration_is_range": true,
   "duration_options_months": [
    4.0,
    6.0
@@ -475,7 +4364,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "5aef43857a1b3172",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Canada / San Francisco / Europe / London / United States / United Kingdom / Toronto / Montreal",
   "province": "ON",
   "provinces": [
@@ -496,6 +4385,7 @@
   "url": "https://jobs.ashbyhq.com/cohere/73bd3e2b-6597-4124-b64b-1e5dbc32e785"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -506,7 +4396,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "647ff56f14830548",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -519,14 +4409,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineer Intern, Test Automation (Summer 2027)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8767534002?gh_jid=8767534002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Pinterest",
@@ -534,7 +4424,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "6551999a74291408",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -552,6 +4442,7 @@
   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138039"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -567,7 +4458,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a61234617e01cec",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -587,6 +4478,7 @@
   "url": "https://jobs.ashbyhq.com/1password/c5289ef1-e919-4672-85c5-ee3112f9ddb9"
  },
  {
+  "duration_is_range": true,
   "duration_options_months": [
    3.0,
    6.0
@@ -602,7 +4494,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a6272020faf485c",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Canada / Dubai / London / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -622,6 +4514,7 @@
   "url": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -632,7 +4525,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6a9ab99b66109f15",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -652,6 +4545,7 @@
   "url": "https://app.careerpuck.com/job-board/lyft/job/8767697002?gh_jid=8767697002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -667,7 +4561,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "6b6c40cb51d2e433",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -687,6 +4581,7 @@
   "url": "https://jobs.ashbyhq.com/1password/71e986eb-3b58-4c3c-adff-aebdb49a34b7"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -697,7 +4592,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "72a0c71680e9e969",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -710,14 +4605,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "UX Research Intern (Summer 2027)",
   "track": "data_analytics",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8797069002?gh_jid=8797069002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -728,7 +4623,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "7369006c3d80c2c1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -741,14 +4636,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Content Design Intern (Summer 2027)",
   "track": "ml_ai",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8817900002?gh_jid=8817900002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -759,7 +4654,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "78930bbe3223db3c",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -772,14 +4667,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Business Systems Engineer Intern, Finance Technology (Summer 2027)",
   "track": "business_ops",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8802222002?gh_jid=8802222002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -795,7 +4690,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8a71ec46d3a2e6d1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -815,6 +4710,7 @@
   "url": "https://jobs.ashbyhq.com/1password/aac7eea6-ed7c-4871-bbf2-7cb2d5138847"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Fullscript",
@@ -825,7 +4721,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8e28eb7cac331b95",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Ottawa, ON / Canada",
   "province": "ON",
   "provinces": [
@@ -845,6 +4741,7 @@
   "url": "https://jobs.lever.co/fullscript/f2682bc2-454c-4bcd-b71c-639236d09a8e"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -860,7 +4757,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "8f635b280b9966d1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -880,6 +4777,7 @@
   "url": "https://job-boards.greenhouse.io/later/jobs/8889650002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -890,7 +4788,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9a3c60880c35810b",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -903,14 +4801,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Hardware Field Quality Engineer Intern (Summer 2027)",
   "track": "data_analytics",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8862215002?gh_jid=8862215002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -926,7 +4824,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9c58f122bcf18b6e",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -946,6 +4844,7 @@
   "url": "https://jobs.ashbyhq.com/1password/71a3afd1-12b3-4f55-a3bd-fc4e7c46ee37"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -961,7 +4860,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9d855fe05dd4a9b4",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -981,6 +4880,7 @@
   "url": "https://jobs.ashbyhq.com/1password/67bfbd8b-aba9-42b1-a8a8-833367888fba"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -991,7 +4891,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "9f81a5d75e504e25",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -1004,14 +4904,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Industrialization Engineer Intern (Summer 2027)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8817930002?gh_jid=8817930002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -1027,7 +4927,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "a218387a945b01ae",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -1047,17 +4947,19 @@
   "url": "https://jobs.ashbyhq.com/1password/6a6869a7-98d2-43e3-b9b5-b68fa4daeb9f"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Later",
   "employer_id": "later",
   "evidence": {
-   "term": "Spring 2027",
-   "term_context": "AI Automation Co-op (Spring 2027)"
+   "term": "January 2027",
+   "term_context": "…being supported and coached throughout. This role will begin in January 2027. You'll work closely with Later's AI Automation team and get direct…",
+   "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
   "id": "a90052befc0cd127",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1066,17 +4968,18 @@
   "remote": "unknown",
   "sector": "software",
   "source": "greenhouse",
-  "term": "Spring 2027",
+  "term": "Winter 2027",
   "term_end": null,
-  "term_start": null,
+  "term_start": "2027-01-01",
   "terms": [
-   "Spring 2027"
+   "Winter 2027"
   ],
   "title": "AI Automation Co-op (Spring 2027)",
   "track": "ml_ai",
   "url": "https://job-boards.greenhouse.io/later/jobs/8604889002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -1085,11 +4988,14 @@
   "employer_id": "kepler_communications",
   "evidence": {
    "duration": "4 months",
-   "duration_context": "People & Culture Intern (January 2027) (4 months)"
+   "duration_context": "People & Culture Intern (January 2027) (4 months)",
+   "term": "January 2027",
+   "term_context": "People & Culture Intern (January 2027) (4 months)",
+   "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
   "id": "acb729dd3fb58c58",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1098,15 +5004,18 @@
   "remote": "onsite",
   "sector": "aerospace",
   "source": "lever",
-  "term": null,
+  "term": "Winter 2027",
   "term_end": null,
-  "term_start": null,
-  "terms": [],
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
   "title": "People & Culture Intern (January 2027) (4 months)",
   "track": "business_ops",
   "url": "https://jobs.lever.co/kepler/d3762d72-05c4-4bfa-96c7-4cd40871756c"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -1117,7 +5026,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ae3fc07c3ad011b1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -1130,14 +5039,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Data Engineer Intern (Summer 2027)",
   "track": "data_eng",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8797376002?gh_jid=8797376002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Pinterest",
@@ -1145,7 +5054,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "b1949a038291eae1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -1163,17 +5072,15 @@
   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138080"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Stripe",
   "employer_id": "stripe",
-  "evidence": {
-   "term": "summer 2028",
-   "term_context": "…etc.) with the expectation of graduating in December 2027 or spring/summer 2028 Experience with SQL Proficiency with AI tools to accelerate model…"
-  },
+  "evidence": {},
   "first_seen": "2026-10-29",
   "id": "b9c52250b631b583",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -1182,17 +5089,16 @@
   "remote": "unknown",
   "sector": "fintech",
   "source": "greenhouse",
-  "term": "Summer 2028",
+  "term": null,
   "term_end": null,
   "term_start": null,
-  "terms": [
-   "Summer 2028"
-  ],
+  "terms": [],
   "title": "Data Analyst, Intern",
   "track": "data_analytics",
   "url": "https://stripe.com/jobs/search?gh_jid=8194287"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -1203,7 +5109,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "b9e7cceb23277778",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -1216,14 +5122,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Développeur Logiciels (Stagiaire), Backend (l'été 2027 - Montreal)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8796052002?gh_jid=8796052002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -1234,7 +5140,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ba80139f0da63d34",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -1247,14 +5153,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto)",
   "track": "ml_ai",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8802332002?gh_jid=8802332002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Magnet Forensics",
@@ -1265,7 +5171,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ccb9c4f453859d02",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1285,6 +5191,7 @@
   "url": "https://jobs.lever.co/magnetforensics/6eba87dc-f110-47b2-8015-31311ca60f52"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Magnet Forensics",
@@ -1295,7 +5202,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "d2cd5cea1837b415",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1315,6 +5222,7 @@
   "url": "https://jobs.lever.co/magnetforensics/944c2a58-e2bd-40a8-94aa-959024eb0744"
  },
  {
+  "duration_is_range": true,
   "duration_options_months": [
    3.0,
    6.0
@@ -1330,7 +5238,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "d3264c45622979d7",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Canada / Europe / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -1350,6 +5258,7 @@
   "url": "https://jobs.ashbyhq.com/cohere/36d1f52f-8270-4652-adf5-5303a0ff341b"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -1360,7 +5269,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "de6350f745224661",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -1373,14 +5282,14 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Software Engineer Intern, Backend (Summer 2027 - Montreal)",
   "track": "software",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8796054002?gh_jid=8796054002"
  },
  {
+  "duration_is_range": true,
   "duration_options_months": [
    4.0,
    16.0
@@ -1390,11 +5299,14 @@
   "employer_id": "kepler_communications",
   "evidence": {
    "duration": "4-16 months",
-   "duration_context": "…Available for a full-time internship beginning Jan 2027 for 4-16 months. Opportunity to work out of our new Toronto office! This position…"
+   "duration_context": "…Available for a full-time internship beginning Jan 2027 for 4-16 months. Opportunity to work out of our new Toronto office! This position…",
+   "term": "January 2027",
+   "term_context": "Software Engineering Intern (January 2027)",
+   "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
   "id": "deb3c12435abd2a7",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1403,15 +5315,18 @@
   "remote": "hybrid",
   "sector": "aerospace",
   "source": "lever",
-  "term": null,
+  "term": "Winter 2027",
   "term_end": null,
-  "term_start": null,
-  "terms": [],
+  "term_start": "2027-01-01",
+  "terms": [
+   "Winter 2027"
+  ],
   "title": "Software Engineering Intern (January 2027)",
   "track": "software",
   "url": "https://jobs.lever.co/kepler/5514238a-8301-49f1-8116-26d38ea0900c"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "AlayaCare",
@@ -1422,7 +5337,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "e6a6b0e7204b35d1",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Montréal, Quebec, Canada / Montreal, Canada",
   "province": "QC",
   "provinces": [
@@ -1442,6 +5357,7 @@
   "url": "https://alayacare.com/open-positions?gh_jid=8811336002"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Stripe",
@@ -1449,7 +5365,7 @@
   "evidence": {},
   "first_seen": "2026-10-29",
   "id": "e7189473b4506a27",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -1467,6 +5383,7 @@
   "url": "https://stripe.com/jobs/search?gh_jid=8130805"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [
    4.0
   ],
@@ -1481,7 +5398,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "f7f5f440bd76265f",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Toronto / New York / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1501,6 +5418,7 @@
   "url": "https://jobs.ashbyhq.com/cohere/f3290fb2-66f1-44c7-9824-3f416f44af5a"
  },
  {
+  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -1511,7 +5429,7 @@
   },
   "first_seen": "2026-10-29",
   "id": "ff21e2e6eb033364",
-  "last_seen": "2026-10-30",
+  "last_seen": "2026-10-31",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -1524,8 +5442,7 @@
   "term_end": null,
   "term_start": null,
   "terms": [
-   "Summer 2027",
-   "Summer 2028"
+   "Summer 2027"
   ],
   "title": "Développeur Logiciels (Stagiaire), Automatisation des tests (l'été 2027)",
   "track": "software",
