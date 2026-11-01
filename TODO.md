@@ -11,8 +11,8 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 ### v1 — by Dec 13
 - [ ] **[V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8)** Vercel project: follow [docs/deploy.md](docs/deploy.md)
 - [x] **V1-3** Merge to `main`, run the Daily workflow by hand once (Oct 29: green, 46 postings published)
-- [ ] **[V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7)** 7 consecutive green Daily runs (start no later than Dec 6). First run with 171 boards: Oct 31. After it, re-run `python -m pipeline.cli reference-recall --data-root data-branch` and update `docs/evaluation.md`; by Nov 7, re-measure storage for ADR 0002
-- [ ] **[V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11)** Review the program-watch dry run (needs Ei's V1-1 first)
+- [ ] **[V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7)** 7 consecutive green Daily runs (start no later than Dec 6). Oct 31 and Nov 1 green with 171 boards; recall re-run Nov 1 (64/70 = 0.91). By Nov 7, re-measure storage for ADR 0002
+- [ ] **[V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11)** Review the program-watch dry run: day 1 Oct 31, review on Nov 7. Fix or drop the 2 BC Public Service pages, which fail from GitHub's runners
 - [x] **[V1-6](https://github.com/suryalionael/co-op-radar-canada/issues/10)** Tune extractors on real postings; every fix gets a test (Oct 30: graduation dates, month-and-year terms, duration ranges on the site)
 - [ ] **[V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12)** Label postings: `python -m pipeline.cli label-sheet`, then fill `data/labels/postings.csv`
 - [ ] **[V1-9](https://github.com/suryalionael/co-op-radar-canada/issues/14)** `python -m pipeline.cli evaluate`; publish in README and `docs/evaluation.md`, with agreement from V1-8
@@ -41,7 +41,7 @@ Checklists per person. Each item links to its GitHub issue; the order of work is
 - [x] **[P0-1](https://github.com/suryalionael/co-op-radar-canada/issues/4)** (Oct 30: 135 boards, all responding) On GitHub: Actions → Phase 0 tools → Run workflow → `check-tokens` (or locally: `python scripts/check_board_tokens.py scripts/candidate_tokens.txt > hits.jsonl`). The run summary lists the hits. For each hit with `canada_jobs > 0` that is the right company, add an entry to `config/employers.yaml` (copy an existing entry's format). Goal: 100+ boards. Open a PR.
 
 ### v1 — by Dec 13
-- [ ] **[V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9)** (Oct 30: 30 pages verified, #21 merged; done when the next Daily run shows `pages: 30`) For each page in `config/programs.yaml`: open it, confirm it is the student-program page, fix the URL if needed, set `verified: YYYY-MM-DD`. Add pages until there are ~30 (priority: banks, insurers, utilities, governments). Due Nov 15.
+- [x] **[V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9)** (Done: 30 pages verified, #21 merged; Daily runs on Oct 31 and Nov 1 show `pages: 30`) For each page in `config/programs.yaml`: open it, confirm it is the student-program page, fix the URL if needed, set `verified: YYYY-MM-DD`. Add pages until there are ~30 (priority: banks, insurers, utilities, governments). Due Nov 15.
 - [ ] **[V1-8](https://github.com/suryalionael/co-op-radar-canada/issues/13)** Label 40 postings that Lio picks, in a separate file `data/labels/postings_second.csv` (same columns as `postings.csv`), without opening Lio's labels. Lio then runs `python -m pipeline.cli agreement`. Due Dec 6.
 - [ ] **[V1-12](https://github.com/suryalionael/co-op-radar-canada/issues/16)** Phone QA of the site: under 2 s to load and filter; every card links to its posting and says "verified from posting text" or "duration not stated". File an issue per problem. Due Dec 12.
 - [ ] **[V1-14](https://github.com/suryalionael/co-op-radar-canada/issues/17)** Share the launch with Seneca classmates and clubs. Dec 13.
