@@ -13,13 +13,7 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| V1-6 | [#27](https://github.com/suryalionael/co-op-radar-canada/pull/27): "Fall/Winter 2026" read as Fall 2026 + Winter 2027 (was "Winter 2026"); degree-completion dates further back are graduation dates | Lio | — | Nov 3 |
-| V1-10 | [#28](https://github.com/suryalionael/co-op-radar-canada/pull/28): a program page that has never loaded says "Not read yet", not "No change" | Lio | — | Nov 3 |
-| V1-10 | [#29](https://github.com/suryalionael/co-op-radar-canada/pull/29): "Term unclear" for Spring-only postings; warning when the stated term had already ended | Lio | — | Nov 3 |
-| V1-11 | [#30](https://github.com/suryalionael/co-op-radar-canada/pull/30): About page gives the measured coverage gap (ADR 0009) | Lio | — | Nov 3 |
-| V1-7 | [#31](https://github.com/suryalionael/co-op-radar-canada/pull/31): blank label sheets (200 rows, 40 for Ei), shuffled so the order hides our student-role call | Lio | — | Nov 3 |
-| CFG | [#26](https://github.com/suryalionael/co-op-radar-canada/pull/26): quote `ON` in `employers.yaml` (YAML read it as true for 41 employers) | Lio | — | Nov 3 |
-| [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
+| [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state). Reviewed with real data on Nov 2 (fixes in #27–#30); polish what is left | Lio | 2 h | Dec 12 |
 
 ## This week (Oct 28 – Nov 3)
 
@@ -93,3 +87,9 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | V1-4a | First two Daily runs with 171 boards green (Oct 31, Nov 1): 0 boards failed, 176 open Canadian student postings | Lio | Nov 1 |
 | P0-2 | Phase 0 decision run: 171/171 boards, 177 Canadian student postings (126 from boards found through the curated list); decision in ADR 0001: build v1 | Lio | Oct 30 |
 | P0-3 | Storage measured and ADR 0002 accepted: about 0.83 GB a year at 171 boards | Lio | Oct 30 |
+| CFG | Quote `ON` in `employers.yaml` (YAML read it as true for 41 employers) ([#26](https://github.com/suryalionael/co-op-radar-canada/pull/26)) | Lio | Nov 2 |
+| V1-6 | "Fall/Winter 2026" read as Fall 2026 + Winter 2027 (was "Winter 2026"); degree-completion dates further back are graduation dates ([#27](https://github.com/suryalionael/co-op-radar-canada/pull/27)) | Lio | Nov 2 |
+| V1-10 | A program page that has never loaded says "Not read yet", not "No change" ([#28](https://github.com/suryalionael/co-op-radar-canada/pull/28)) | Lio | Nov 2 |
+| V1-10 | "Term unclear" for Spring-only postings; warning when the stated term had already ended ([#29](https://github.com/suryalionael/co-op-radar-canada/pull/29)) | Lio | Nov 2 |
+| V1-11 | About page gives the measured coverage gap (ADR 0009) ([#30](https://github.com/suryalionael/co-op-radar-canada/pull/30)) | Lio | Nov 2 |
+| V1-7 | Blank label sheets (200 rows, 40 for Ei), shuffled so the order hides our student-role call ([#31](https://github.com/suryalionael/co-op-radar-canada/pull/31)) | Lio | Nov 2 |
