@@ -11,6 +11,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import coverage_spike as cs  # noqa: E402
 
+from pipeline.models import Province  # noqa: E402
+
+PROVINCE_CODES = {p.value for p in Province} - {"REMOTE_CA", "UNKNOWN"}
+
 
 @pytest.mark.parametrize(
     "location",
@@ -237,3 +241,5 @@ def test_seed_list_is_well_formed() -> None:
         assert e["board_token"], e["id"]
         # source, when present, names the outside list the board came from (ADR 0007)
         assert set(e.get("source", [])) <= {"reference-list", "coop-watcher"}, e["id"]
+        # an unquoted ON is read by YAML as true, so the code must be quoted
+        assert e.get("hq_province") in {None, *PROVINCE_CODES}, e["id"]
