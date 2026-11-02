@@ -4,6 +4,10 @@ Finds, in the title first and then the description:
 
 - a season and year: "Summer 2027", "Fall term 2026", "Winter '27", "2027 Summer",
   "été 2027"
+- two seasons sharing one year: "Summer/Fall 2027", "Fall/Winter 2026". The year
+  belongs to the first season; a later season that comes earlier in the calendar
+  year is the next year's, so "Fall/Winter 2026" is Fall 2026 and Winter 2027 (an
+  8-month term starting in September), never Winter 2026.
 - a month range: "May–August 2027", "January to April 2027",
   "September 2026 - April 2027"
 - a start month: "May 2027 start", "starting January 2027", "start date: May 2027"
@@ -81,6 +85,12 @@ SEASON_YEAR = re.compile(
     rf"|\b(?P<year2>{_YEAR})\s+{_SEASON2}\b",
     re.IGNORECASE,
 )
+SEASON_PAIR = re.compile(
+    rf"\b{_SEASON}\s*(?:/|&|\+|-|–|and|et)\s*{_SEASON2}\s*(?:term|session|semester|co-?op|internship)?s?\s*"
+    rf"(?:of\s+)?[,'’-]?\s*(?P<year>{_YEAR}|['’]\d\d)\b",
+    re.IGNORECASE,
+)
+CALENDAR_ORDER = {"Winter": 0, "Spring": 1, "Summer": 2, "Fall": 3}
 MONTH_RANGE = re.compile(
     rf"\b(?P<m1>{_MONTH})\.?\s*(?P<y1>{_YEAR})?\s*(?:-|–|—|to|through|until|à|au)\s*"
     rf"(?P<m2>{_MONTH})\.?\s*,?\s*(?P<y2>{_YEAR})\b",
@@ -105,10 +115,12 @@ DEADLINE_BEFORE = re.compile(
     re.IGNORECASE,
 )
 SENTENCE_END = re.compile(r"[.!?;\n•]")
-# A graduation word up to ~60 characters before a date, in the same sentence.
+# A graduation word up to ~60 characters before a date, in the same sentence. A degree
+# being completed may sit up to ~160 characters back, after a list of fields: "on track to complete a
+# Bachelor's degree in Computer Science, Mathematics, ... or Data Science between Fall 2028".
 GRADUATION_BEFORE = re.compile(
-    r"\b(?:graduat\w*|convocation|diplôm\w*|expected to (?:complete|finish)|complet\w* (?:your|their|a) degree)\b"
-    r"[^.!?;\n•]{0,60}$",
+    r"\b(?:graduat\w*|convocation|diplôm\w*|expected to (?:complete|finish))\b[^.!?;\n•]{0,60}$"
+    r"|\b(?:complet\w*|finish\w*|earn\w*) (?:a |an |your |their )?(?:\w+['’]?s? )?degree\b[^.!?;\n•]{0,160}$",
     re.IGNORECASE,
 )
 
@@ -146,8 +158,8 @@ class TermResult:
         return TERM_STATUS_AMBIGUOUS if self.ambiguous else TERM_STATUS_NOT_STATED
 
 
-def _sentence_before(text: str, at: int) -> str:
-    before = text[max(0, at - 120) : at]
+def _sentence_before(text: str, at: int, reach: int = 120) -> str:
+    before = text[max(0, at - reach) : at]
     cuts = list(SENTENCE_END.finditer(before))
     return before[cuts[-1].end() :] if cuts else before
 
@@ -159,7 +171,7 @@ def _sentence_after(text: str, at: int) -> str:
 
 
 def _about_graduation(text: str, at: int) -> bool:
-    return bool(GRADUATION_BEFORE.search(_sentence_before(text, at)))
+    return bool(GRADUATION_BEFORE.search(_sentence_before(text, at, reach=250)))
 
 
 def _plain_month_counts(text: str, m: re.Match[str], in_title: bool) -> bool:
@@ -215,8 +227,23 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
             result.start = dt.date(year, month, 1)
             result.dates_evidence = m.group(0)
 
-    for m in SEASON_YEAR.finditer(text):
+    pairs = []
+    for m in SEASON_PAIR.finditer(text):
+        pairs.append((m.start(), m.end()))
         if _about_graduation(text, m.start()):
+            continue
+        first, second = SEASONS[m["season"].lower()], SEASONS[m["season2"].lower()]
+        if {first, second} & AMBIGUOUS_SEASONS:
+            if m.group(0) not in result.ambiguous:
+                result.ambiguous.append(m.group(0))
+            continue
+        year = _year(m["year"])
+        hits.append((m.start(), f"{first} {year}", m.group(0)))
+        rolls = CALENDAR_ORDER[second] < CALENDAR_ORDER[first]
+        hits.append((m.start(), f"{second} {year + 1 if rolls else year}", m.group(0)))
+
+    for m in SEASON_YEAR.finditer(text):
+        if any(a <= m.start() < b for a, b in pairs) or _about_graduation(text, m.start()):
             continue
         season = SEASONS[(m["season"] or m["season2"]).lower()]
         if season in AMBIGUOUS_SEASONS:
@@ -225,7 +252,7 @@ def _scan(text: str, result: TermResult, in_title: bool = False) -> None:
             continue
         hits.append((m.start(), f"{season} {_year(m['year'] or m['year2'])}", m.group(0)))
 
-    for _, term, matched in sorted(hits):
+    for _, term, matched in sorted(hits, key=lambda h: h[0]):  # stable: a pair keeps its order
         if term not in result.terms:
             result.terms.append(term)
             if result.evidence is None:

@@ -87,6 +87,13 @@ def test_month_and_year_terms(title: str, description: str, terms: list[str]) ->
         ("Intern", "Students pursuing a degree can join our Summer 2027 internship.", ["Summer 2027"]),
         # No year, or a year with no season: no term (#10 item 4).
         ("Software Engineer, Intern (Summer or Winter)", "", []),
+        (
+            "Software Engineering Internship",
+            "Currently a junior-year student on track to complete a Bachelor’s degree in Computer Science, "
+            "Mathematics, Software Engineering, Physics, or Data Science "
+            "between Spring/Summer/Fall 2028 or Winter 2029.",
+            [],
+        ),
         ("Software Engineering Intern 2027 (Toronto)", "", []),
     ],
 )
@@ -106,6 +113,32 @@ def test_spring_beside_a_clear_term() -> None:
     assert r.terms == ["Summer 2027"]
     assert r.status == "stated"
     assert r.ambiguous == ["Spring 2027"]
+
+
+@pytest.mark.parametrize(
+    ("title", "description", "terms"),
+    [
+        # one year shared by two seasons belongs to the first; a season earlier in the year rolls over
+        (
+            "Research Intern",
+            "Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026",
+            ["Fall 2026", "Winter 2027"],
+        ),
+        ("Co-op (Summer/Fall 2027)", "", ["Summer 2027", "Fall 2027"]),
+        ("Co-op (Winter & Summer 2027)", "", ["Winter 2027", "Summer 2027"]),
+        ("Stagiaire, automne et hiver 2026", "", ["Fall 2026", "Winter 2027"]),
+        ("Intern, Fall 2026 / Winter 2027", "", ["Fall 2026", "Winter 2027"]),  # two full terms, unchanged
+        ("Intern (Winter/January 2027)", "", ["Winter 2027"]),  # a month, not a second season
+    ],
+)
+def test_season_pairs(title: str, description: str, terms: list[str]) -> None:
+    assert extract_term(title, description).terms == terms
+
+
+def test_season_pair_with_spring_is_ambiguous() -> None:
+    r = extract_term("Co-op (Spring/Summer 2027)", "")
+    assert r.terms == []
+    assert r.ambiguous == ["Spring/Summer 2027"]
 
 
 def test_term_end_dates() -> None:
