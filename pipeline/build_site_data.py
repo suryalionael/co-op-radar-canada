@@ -40,6 +40,8 @@ POSTING_FIELDS = [
     "remote",
     "term",
     "terms",
+    "term_status",
+    "flag_term_in_past",
     "term_start",
     "term_end",
     "duration_options_months",
@@ -51,7 +53,11 @@ POSTING_FIELDS = [
     "evidence",
 ]
 
-DEFAULTS = {"duration_is_range": "FALSE"}  # columns added after the first processed files
+DEFAULTS = {  # columns added after the first processed files
+    "duration_is_range": "FALSE",
+    "term_status": "NULL",
+    "flag_term_in_past": "FALSE",
+}
 
 
 def _rows(con: duckdb.DuckDBPyConnection, sql: str) -> list[dict[str, Any]]:
@@ -115,7 +121,7 @@ def build_postings(con: duckdb.DuckDBPyConnection, processed: Path, employers: d
                 "sector": employer.get("sector"),
                 "evidence": {
                     k: evidence[k]
-                    for k in ("term", "term_context", "term_dates", "duration", "duration_context")
+                    for k in ("term", "term_context", "term_dates", "term_ambiguous", "duration", "duration_context")
                     if k in evidence
                 },
             }

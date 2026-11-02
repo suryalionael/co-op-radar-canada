@@ -187,5 +187,66 @@
   "first_seen": "2026-10-20",
   "last_seen": "2026-11-03",
   "evidence": {}
+ },
+ {
+  "id": "sample07",
+  "source": "greenhouse",
+  "employer_id": "harbourline",
+  "employer": "Harbourline Robotics (sample)",
+  "sector": "software",
+  "title": "Firmware Co-op (Spring 2027)",
+  "url": "https://example.com/sample-spring",
+  "location_raw": "Vancouver, BC",
+  "province": "BC",
+  "provinces": [
+   "BC"
+  ],
+  "remote": "hybrid",
+  "term": null,
+  "terms": [],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "track": "software",
+  "first_seen": "2026-11-03",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term_ambiguous": "Spring 2027"
+  },
+  "term_status": "ambiguous",
+  "flag_term_in_past": false
+ },
+ {
+  "id": "sample08",
+  "source": "greenhouse",
+  "employer_id": "mapleledger",
+  "employer": "Maple Ledger (sample)",
+  "sector": "software",
+  "title": "Finance Intern (Winter 2026)",
+  "url": "https://example.com/sample-past",
+  "location_raw": "Toronto, ON",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "hybrid",
+  "term": "Winter 2026",
+  "terms": [
+   "Winter 2026"
+  ],
+  "term_start": null,
+  "term_end": null,
+  "duration_options_months": [],
+  "duration_status": "not_stated",
+  "track": "other",
+  "first_seen": "2026-11-03",
+  "last_seen": "2026-11-03",
+  "evidence": {
+   "term": "Winter 2026",
+   "term_context": "Finance Intern (Winter 2026)"
+  },
+  "term_status": "stated",
+  "flag_term_in_past": true
  }
 ]

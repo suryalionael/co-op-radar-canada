@@ -130,7 +130,29 @@ def test_older_parquet_without_the_range_column_still_builds(tmp_path: Path) -> 
     processed, out, employers = setup(tmp_path)
     write_postings([posting("a")], processed / "postings.parquet")
     table = pq.read_table(processed / "postings.parquet")
-    pq.write_table(table.drop_columns(["duration_is_range"]), processed / "postings.parquet")
+    pq.write_table(
+        table.drop_columns(["duration_is_range", "term_status", "flag_term_in_past"]), processed / "postings.parquet"
+    )
     build(processed, out, employers, tmp_path / "none.jsonl")
     [row] = json.loads((out / "postings.json").read_text())
     assert row["duration_is_range"] is False
+    assert row["term_status"] is None and row["flag_term_in_past"] is False
+
+
+def test_unclear_and_past_terms_reach_the_site(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    write_postings(
+        [
+            posting(
+                "spring", term=None, terms=[], term_status=TermStatus.ambiguous,
+                evidence={"term_ambiguous": "Spring 2027", "province": "Toronto"},
+            ),
+            posting("past", term="Winter 2026", terms=["Winter 2026"], flag_term_in_past=True),
+        ],
+        processed / "postings.parquet",
+    )  # fmt: skip
+    build(processed, out, employers, tmp_path / "none.jsonl")
+    rows = {r["id"]: r for r in json.loads((out / "postings.json").read_text())}
+    assert rows["spring"]["term_status"] == "ambiguous"
+    assert rows["spring"]["evidence"] == {"term_ambiguous": "Spring 2027"}  # province evidence stays out
+    assert rows["past"]["flag_term_in_past"] is True
