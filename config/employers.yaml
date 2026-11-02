@@ -19,7 +19,7 @@ employers:
     board_type: ashby
     board_token: 1password
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: security
     verified: 2026-10-28
   - id: acceldata
@@ -38,7 +38,7 @@ employers:
     board_type: lever
     board_token: achievers
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
     source: [coop-watcher]
@@ -48,7 +48,7 @@ employers:
     board_type: greenhouse
     board_token: ada18
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-28
   - id: adyen
@@ -206,7 +206,7 @@ employers:
     board_type: greenhouse
     board_token: auviknetworks
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-28
   - id: behaviour_interactive
@@ -253,7 +253,7 @@ employers:
     board_type: lever
     board_token: bosonai
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: ml_ai
     verified: 2026-10-30
     source: [reference-list]
@@ -282,7 +282,7 @@ employers:
     board_type: ashby
     board_token: bree
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-30
     source: [reference-list]
@@ -328,7 +328,7 @@ employers:
     board_type: ashby
     board_token: clearco
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-30
   - id: clickup
@@ -346,7 +346,7 @@ employers:
     board_type: greenhouse
     board_token: clutch
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: ecommerce
     verified: 2026-10-28
   - id: cohere
@@ -355,7 +355,7 @@ employers:
     board_type: ashby
     board_token: cohere
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: ml_ai
     verified: 2026-10-28
   - id: coinbase
@@ -419,7 +419,7 @@ employers:
     board_type: greenhouse
     board_token: d2l
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: edtech
     verified: 2026-10-28
   - id: databricks
@@ -446,7 +446,7 @@ employers:
     board_type: lever
     board_token: deepgenomics
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-30
   - id: domino_data_lab
@@ -520,7 +520,7 @@ employers:
     board_type: lever
     board_token: eqbank
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-30
     source: [reference-list, coop-watcher]
@@ -539,7 +539,7 @@ employers:
     board_type: ashby
     board_token: felix
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-30
   - id: fivetran
@@ -557,7 +557,7 @@ employers:
     board_type: ashby
     board_token: float
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-28
   - id: fullscript
@@ -566,7 +566,7 @@ employers:
     board_type: lever
     board_token: fullscript
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-28
   - id: gearbox
@@ -584,7 +584,7 @@ employers:
     board_type: ashby
     board_token: georgian
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-30
     source: [reference-list]
@@ -594,7 +594,7 @@ employers:
     board_type: greenhouse
     board_token: geotab
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-28
   - id: geotab_internships
@@ -603,7 +603,7 @@ employers:
     board_type: greenhouse
     board_token: internshiplist2000
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
     source: [reference-list]
@@ -622,7 +622,7 @@ employers:
     board_type: lever
     board_token: gomaterials
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: ecommerce
     verified: 2026-10-30
     source: [reference-list, coop-watcher]
@@ -779,7 +779,7 @@ employers:
     board_type: greenhouse
     board_token: kensingtontours
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: travel
     verified: 2026-10-30
     source: [reference-list]
@@ -789,7 +789,7 @@ employers:
     board_type: lever
     board_token: kepler
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: aerospace
     verified: 2026-10-28
   - id: khan_academy
@@ -834,7 +834,7 @@ employers:
     board_type: greenhouse
     board_token: konradgroup
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
   - id: krafton_montreal
@@ -871,7 +871,7 @@ employers:
     board_type: greenhouse
     board_token: leagueinc
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-30
   - id: lightspeed
@@ -889,7 +889,7 @@ employers:
     board_type: ashby
     board_token: loopio
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-28
   - id: lyft
@@ -907,7 +907,7 @@ employers:
     board_type: lever
     board_token: magnetforensics
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: security
     verified: 2026-10-28
   - id: maple
@@ -916,7 +916,7 @@ employers:
     board_type: lever
     board_token: getmaple
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-30
   - id: mercury
@@ -934,7 +934,7 @@ employers:
     board_type: ashby
     board_token: miovision
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: hardware
     verified: 2026-10-28
   - id: mobsquad
@@ -1108,7 +1108,7 @@ employers:
     board_type: lever
     board_token: plooto
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-28
   - id: pointclickcare
@@ -1117,7 +1117,7 @@ employers:
     board_type: lever
     board_token: pointclickcare
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: healthtech
     verified: 2026-10-28
   - id: poka
@@ -1135,7 +1135,7 @@ employers:
     board_type: lever
     board_token: policyme
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: insurtech
     verified: 2026-10-28
   - id: procurify
@@ -1199,7 +1199,7 @@ employers:
     board_type: ashby
     board_token: rewind
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
   - id: ripple
@@ -1290,7 +1290,7 @@ employers:
     board_type: lever
     board_token: shyftlabs
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
     source: [reference-list, coop-watcher]
@@ -1336,7 +1336,7 @@ employers:
     board_type: greenhouse
     board_token: stackadapt
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: adtech
     verified: 2026-10-28
   - id: steel
@@ -1383,7 +1383,7 @@ employers:
     board_type: lever
     board_token: telesat
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: aerospace
     verified: 2026-10-30
     source: [coop-watcher]
@@ -1412,7 +1412,7 @@ employers:
     board_type: greenhouse
     board_token: tenstorrent
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: hardware
     verified: 2026-10-28
   - id: tenstorrent_university
@@ -1449,7 +1449,7 @@ employers:
     board_type: greenhouse
     board_token: tribalscale
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-30
     source: [reference-list]
@@ -1486,7 +1486,7 @@ employers:
     board_type: greenhouse
     board_token: varicent
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: software
     verified: 2026-10-28
   - id: veeda_ai
@@ -1514,7 +1514,7 @@ employers:
     board_type: lever
     board_token: waabi
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: ml_ai
     verified: 2026-10-30
     source: [reference-list, coop-watcher]
@@ -1524,7 +1524,7 @@ employers:
     board_type: lever
     board_token: wattpad
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: media
     verified: 2026-10-28
   - id: wave
@@ -1533,7 +1533,7 @@ employers:
     board_type: lever
     board_token: waveapps
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-28
   - id: wealthsimple
@@ -1542,7 +1542,7 @@ employers:
     board_type: ashby
     board_token: wealthsimple
     hq_country: CA
-    hq_province: ON
+    hq_province: "ON"
     sector: fintech
     verified: 2026-10-28
   - id: webflow
