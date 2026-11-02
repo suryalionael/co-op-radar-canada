@@ -43,6 +43,8 @@ export interface ProgramStatus {
   url: string;
   last_checked: string | null;
   last_fetch_ok: boolean;
+  /** False while no check has ever loaded the page, so there is nothing to compare yet. Absent in older data. */
+  ever_read?: boolean;
   last_changed: string | null;
   change_excerpt: string | null;
   expected_open: string | null;

@@ -7,6 +7,7 @@
    "url": "https://example.com/students",
    "last_checked": "2026-11-03",
    "last_fetch_ok": true,
+   "ever_read": true,
    "last_changed": "2026-11-02",
    "change_excerpt": "Applications for Summer 2027 student roles are now open. Apply by December 1.",
    "expected_open": null,
@@ -19,6 +20,7 @@
    "url": "https://example.com/gov",
    "last_checked": "2026-11-03",
    "last_fetch_ok": true,
+   "ever_read": true,
    "last_changed": null,
    "change_excerpt": null,
    "expected_open": "2026-12-01",
@@ -31,8 +33,22 @@
    "url": "https://example.com/hydro",
    "last_checked": "2026-11-03",
    "last_fetch_ok": false,
+   "ever_read": true,
    "last_changed": "2026-10-15",
    "change_excerpt": "Fall 2027 co-op dates announced.",
+   "expected_open": null,
+   "expected_open_src": null
+  },
+  {
+   "program_id": "sample_never",
+   "employer_id": "prov",
+   "name": "Provincial co-op program (sample, page never loaded)",
+   "url": "https://example.com/prov",
+   "last_checked": "2026-11-03",
+   "last_fetch_ok": false,
+   "ever_read": false,
+   "last_changed": null,
+   "change_excerpt": null,
    "expected_open": null,
    "expected_open_src": null
   }
