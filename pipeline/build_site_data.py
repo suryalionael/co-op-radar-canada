@@ -130,7 +130,8 @@ def build_programs(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[str,
         programs = _rows(
             con,
             f"""
-            SELECT program_id, employer_id, name, url, last_checked, last_fetch_ok, last_changed,
+            SELECT program_id, employer_id, name, url, last_checked, last_fetch_ok,
+                   last_hash IS NOT NULL AS ever_read, last_changed,
                    change_excerpt, expected_open, expected_open_src
             FROM read_parquet('{watch_path.as_posix()}')
             ORDER BY last_changed DESC NULLS LAST, name

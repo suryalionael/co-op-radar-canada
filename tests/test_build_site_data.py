@@ -99,7 +99,12 @@ def test_programs(tmp_path: Path) -> None:
             program_id="fswep", employer_id="goc", name="FSWEP", url="https://x", last_hash="h",
             last_checked=dt.date(2026, 11, 3), last_fetch_ok=True, last_changed=dt.date(2026, 11, 2),
             change_excerpt="Applications open", expected_open=None, expected_open_src=None,
-        )
+        ),
+        ProgramWatch(
+            program_id="blocked", employer_id="prov", name="Blocked", url="https://y", last_hash=None,
+            last_checked=dt.date(2026, 11, 3), last_fetch_ok=False, last_changed=None,
+            change_excerpt=None, expected_open=None, expected_open_src=None,
+        ),
     ]  # fmt: skip
     changes = [
         ProgramChange(
@@ -111,6 +116,8 @@ def test_programs(tmp_path: Path) -> None:
     build(processed, out, employers, tmp_path / "none.jsonl")
     data = json.loads((out / "programs.json").read_text())
     assert data["programs"][0]["last_changed"] == "2026-11-02"
+    # a page that has never loaded is not "unchanged": the site needs to tell the two apart
+    assert {p["program_id"]: p["ever_read"] for p in data["programs"]} == {"fswep": True, "blocked": False}
     assert data["changes"][0]["kind"] == "content_change"
 
 

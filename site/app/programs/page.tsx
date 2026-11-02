@@ -50,7 +50,9 @@ export default function ProgramsPage() {
                   </a>
                 </h3>
                 <p className="facts mt-2 text-base">
-                  {p.last_changed ? (
+                  {p.ever_read === false ? (
+                    <span className="text-warning">Not read yet: the page has not loaded since we started watching</span>
+                  ) : p.last_changed ? (
                     <span className={recent(p.last_changed) ? "text-accent" : undefined}>
                       Changed {p.last_changed}
                       {recent(p.last_changed) ? " · this week" : ""}
@@ -63,7 +65,7 @@ export default function ProgramsPage() {
                 {p.change_excerpt && <EvidenceQuote context={p.change_excerpt} />}
                 <p className="mt-2 flex flex-wrap gap-x-3 text-sm">
                   <span className="font-mono text-muted tabular">last checked {p.last_checked ?? "never"}</span>
-                  {!p.last_fetch_ok && p.last_checked && (
+                  {!p.last_fetch_ok && p.last_checked && p.ever_read !== false && (
                     <span className="text-warning">Last check failed; showing the last good result</span>
                   )}
                   {p.expected_open_src && (
