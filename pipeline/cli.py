@@ -137,12 +137,14 @@ def label_sheet(data_root: Path, limit: int = 200) -> int:
     Every open Canadian student posting first, up to `limit`. If there are fewer,
     the rest is filled with other Canadian postings, which still exercise the
     province and track extractors. Posting ids are hashes, so ordering by id is
-    an unbiased shuffle that stays the same between runs.
+    an unbiased shuffle that stays the same between runs. The chosen rows are
+    written in that shuffled order too, so the sheet does not show the labeller
+    which rows the pipeline counted as student roles.
     """
     postings = [p for p in build_postings(data_root) if p.in_canada and p.status == "open"]
     student = sorted((p for p in postings if p.is_student_role), key=lambda p: p.id)
     others = sorted((p for p in postings if not p.is_student_role), key=lambda p: p.id)
-    chosen = (student + others)[:limit]
+    chosen = sorted((student + others)[:limit], key=lambda p: p.id)
     already = {r["id"] for r in read_labels(LABELS)} if LABELS.exists() else set()
     added = write_label_sheet(chosen, LABELS, already)
     print(f"Added {added} rows to {LABELS.relative_to(ROOT)} ({len(student)} Canadian student postings open).")
