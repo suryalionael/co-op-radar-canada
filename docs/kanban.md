@@ -13,13 +13,19 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
+| V1-6 | [#27](https://github.com/suryalionael/co-op-radar-canada/pull/27): "Fall/Winter 2026" read as Fall 2026 + Winter 2027 (was "Winter 2026"); degree-completion dates further back are graduation dates | Lio | — | Nov 3 |
+| V1-10 | [#28](https://github.com/suryalionael/co-op-radar-canada/pull/28): a program page that has never loaded says "Not read yet", not "No change" | Lio | — | Nov 3 |
+| V1-10 | [#29](https://github.com/suryalionael/co-op-radar-canada/pull/29): "Term unclear" for Spring-only postings; warning when the stated term had already ended | Lio | — | Nov 3 |
+| V1-11 | [#30](https://github.com/suryalionael/co-op-radar-canada/pull/30): About page gives the measured coverage gap (ADR 0009) | Lio | — | Nov 3 |
+| V1-7 | [#31](https://github.com/suryalionael/co-op-radar-canada/pull/31): blank label sheets (200 rows, 40 for Ei), shuffled so the order hides our student-role call | Lio | — | Nov 3 |
+| CFG | [#26](https://github.com/suryalionael/co-op-radar-canada/pull/26): quote `ON` in `employers.yaml` (YAML read it as true for 41 employers) | Lio | — | Nov 3 |
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
 
 ## This week (Oct 28 – Nov 3)
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Program-watch dry run: day 1 was Oct 31 (`pages: 30`), so day 7 is Nov 6. Then review every change. The 2 BC Public Service pages fail from GitHub's runners every day (server disconnects; they load fine locally): fix or drop them | Lio | 1 h | Nov 7 |
+| [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Program-watch dry run: day 1 was Oct 31 (`pages: 30`), so day 7 is Nov 6. Then review every change. The 2 BC Public Service pages have failed every run from GitHub's runners (Oct 31 to Nov 2, server disconnects) but load fine from a home connection with the same client, so the site is most likely refusing cloud servers: replace them with another BC page or drop them | Lio | 1 h | Nov 7 |
 | [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
 
 ## Backlog
@@ -30,10 +36,10 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 |---|---|---|---|---|
 | [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Daily Action: 7 consecutive green days (must start by Dec 6); re-measure storage for ADR 0002 by Nov 7 | Lio | 0.5 h | Dec 12 |
 | [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Review the 7-day program-watch dry run; fix noisy pages | Lio | 1 h | Nov 24 |
-| [V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12) | Hand-label postings (all Canadian student postings, up to 200) | Lio | 3 h | Dec 6 |
-| [V1-8](https://github.com/suryalionael/co-op-radar-canada/issues/13) | Second labeller: independently label 40 postings for the agreement check | Ei | 1 h | Dec 6 |
+| [V1-7](https://github.com/suryalionael/co-op-radar-canada/issues/12) | Hand-label postings: fill the 200 rows in `data/labels/postings.csv` (sheet in #31). Label soon: postings close | Lio | 3 h | Dec 6 |
+| [V1-8](https://github.com/suryalionael/co-op-radar-canada/issues/13) | Second labeller: independently label the 40 rows in `data/labels/postings_second.csv` (sheet in #31) | Ei | 1 h | Dec 6 |
 | [V1-9](https://github.com/suryalionael/co-op-radar-canada/issues/14) | Publish evaluation (counts, Wilson intervals, agreement) in README and `docs/evaluation.md` | Lio | 0.5 h | Dec 8 |
-| [V1-11](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Final About page wording (coverage gap, sources, disclaimer) | Lio | 0.25 h | Dec 11 |
+| [V1-11](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Final About page wording. Coverage gap added in #30; still to check: "How accurate is it?" must match what V1-9 publishes | Lio | 0.25 h | Dec 11 |
 | [V1-12](https://github.com/suryalionael/co-op-radar-canada/issues/16) | Site QA on a real phone; file issues for anything broken | Ei | 0.5 h | Dec 12 |
 | [V1-13](https://github.com/suryalionael/co-op-radar-canada/issues/17) | Launch: LinkedIn post about the project | Lio | 0.5 h | Dec 13 |
 | [V1-14](https://github.com/suryalionael/co-op-radar-canada/issues/17) | Share the launch with Seneca classmates and clubs | Ei | 0.25 h | Dec 13 |
