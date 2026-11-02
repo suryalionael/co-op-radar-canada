@@ -1,5 +1,6 @@
 // Shapes of the JSON written by pipeline/build_site_data.py. Keep in sync with it.
 
+export type TermStatus = "stated" | "ambiguous" | "not_stated";
 export type DurationStatus = "stated" | "inferred_from_dates" | "not_stated";
 export type RemoteMode = "onsite" | "hybrid" | "remote" | "unknown";
 
@@ -7,6 +8,7 @@ export interface Evidence {
   term?: string;
   term_context?: string;
   term_dates?: string;
+  term_ambiguous?: string; // e.g. "Spring 2027": named in the posting but means different months at different schools
   duration?: string;
   duration_context?: string;
 }
@@ -25,6 +27,8 @@ export interface Posting {
   remote: RemoteMode;
   term: string | null;
   terms: string[];
+  term_status?: TermStatus | null; // absent in older data
+  flag_term_in_past?: boolean; // every stated term had ended before the posting date
   term_start: string | null;
   term_end: string | null;
   duration_options_months: number[];

@@ -3,7 +3,8 @@ import { durationNote, formatDuration, REMOTE_LABELS, SOURCES } from "@/lib/form
 import type { Posting } from "@/lib/types";
 
 export function PostingEntry({ posting: p, isNew }: { posting: Posting; isNew: boolean }) {
-  const termText = p.terms.length ? p.terms.join(" / ") : "Term not stated";
+  const ambiguous = !p.terms.length && p.term_status === "ambiguous" ? p.evidence.term_ambiguous : undefined;
+  const termText = p.terms.length ? p.terms.join(" / ") : ambiguous ? "Term unclear" : "Term not stated";
   const durationText = p.duration_options_months.length ? formatDuration(p.duration_options_months, p.duration_is_range) : null;
   const remote = REMOTE_LABELS[p.remote];
   const durationSpan = p.evidence.duration?.split(" | ")[0];
@@ -33,13 +34,24 @@ export function PostingEntry({ posting: p, isNew }: { posting: Posting; isNew: b
       </p>
 
       <p className="facts mt-3 text-base">
-        <span>{termText}</span>
+        <span className={ambiguous ? "text-warning" : undefined}>{termText}</span>
         <span aria-hidden="true" className="text-muted">
           {" · "}
         </span>
         <span className={durationText ? undefined : "text-warning"}>{durationText ?? "Duration not stated"}</span>
       </p>
       {showTermQuote && <EvidenceQuote context={termContext} span={p.evidence.term} />}
+      {ambiguous && (
+        <p className="mt-1 text-sm text-muted">
+          The posting says &ldquo;{ambiguous.split(" | ")[0]}&rdquo;, which means different months at different
+          schools. Check the dates with the employer.
+        </p>
+      )}
+      {p.flag_term_in_past && (
+        <p className="mt-1 text-sm text-warning">
+          The term named here had already ended when this was posted. Check the dates with the employer.
+        </p>
+      )}
       {durationContext && <EvidenceQuote context={durationContext} span={durationSpan} />}
       {datesContext && <EvidenceQuote context={datesContext} span={datesContext} />}
 
