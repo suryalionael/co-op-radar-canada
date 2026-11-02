@@ -60,6 +60,18 @@ export default function AboutPage() {
           career pages instead.
         </p>
         <p className="mt-2">
+          How big the gap is: in a hand-curated list of Canadian tech internships checked on October 30, 2026, about a
+          quarter of the open listings (70 of 295) and a third of the companies (34 of 107) were on the job boards we
+          read. Workday alone held 37% of the listings.{" "}
+          <a
+            className="text-accent underline"
+            href={`${REPO}/blob/main/docs/decisions/0009-reference-list-platform-coverage.md`}
+          >
+            How we measured this
+          </a>
+          .
+        </p>
+        <p className="mt-2">
           We never collect anything from LinkedIn, Indeed, Glassdoor or Reddit; their terms don&rsquo;t allow it.
         </p>
       </section>
