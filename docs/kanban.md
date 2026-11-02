@@ -14,13 +14,12 @@ Columns: **Backlog** → **This week** → **In progress** → **Review** (PR op
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
 | [V1-10](https://github.com/suryalionael/co-op-radar-canada/issues/15) | Site draft is built (search, filters in the URL, evidence quotes, program watch, About, analytics, empty state): review it with `npm run dev:sample`, then polish | Lio | 2 h | Dec 12 |
-| [V1-1](https://github.com/suryalionael/co-op-radar-canada/issues/9) | 30 program pages verified Oct 30 (PR open); done when the next Daily run shows `pages: 30` | Ei | 1.5 h | Nov 15 |
 
 ## This week (Oct 28 – Nov 3)
 
 | ID | Card | Owner | Est. | Due |
 |---|---|---|---|---|
-| [V1-4](https://github.com/suryalionael/co-op-radar-canada/issues/7) | Check the first Daily run with 171 boards (Oct 31): green, new columns in `postings.parquet`, `pages: 30` for program watch. Then re-run `reference-recall` and update `docs/evaluation.md` | Lio | 0.5 h | Nov 1 |
+| [V1-5](https://github.com/suryalionael/co-op-radar-canada/issues/11) | Program-watch dry run: day 1 was Oct 31 (`pages: 30`), so day 7 is Nov 6. Then review every change. The 2 BC Public Service pages fail from GitHub's runners every day (server disconnects; they load fine locally): fix or drop them | Lio | 1 h | Nov 7 |
 | [V1-2](https://github.com/suryalionael/co-op-radar-canada/issues/8) | Create the Vercel project (root `site/`), connect the repo, turn on Web Analytics | Lio | 0.5 h | Nov 10 |
 
 ## Backlog
@@ -83,6 +82,8 @@ Weekly market page · StatCan vacancy chart · coverage-over-season chart · rec
 | TEAM | Team split, kanban board, to-do lists, contributing guide, deploy guide | Lio | Oct 28 |
 | ADR | 0007 (curated list for seeding and evaluation), 0008 (job-type fields, role type, term status), 0009 (platform coverage evidence) | Lio | Oct 30 |
 | V1-6 | Extractors tuned on real postings: role type from the board's own field, whole-word rules, month-and-year terms, Spring as ambiguous, graduation dates skipped, duration ranges on the site (#22, #23) | Lio | Oct 30 |
-| EVAL | `reference-recall` command: 23/26 = 0.88 recall on boards in the latest snapshot; naive baseline in `evaluate` (#22) | Lio | Oct 30 |
+| EVAL | `reference-recall` command and naive baseline in `evaluate` (#22). Re-run Nov 1 with all 171 boards fetched: 64/70 = 0.91 recall; 5 of 6 misses gone from their boards | Lio | Nov 1 |
+| V1-1 | 30 program pages verified; Daily runs on Oct 31 and Nov 1 show `pages: 30` (#9) | Ei | Oct 31 |
+| V1-4a | First two Daily runs with 171 boards green (Oct 31, Nov 1): 0 boards failed, 176 open Canadian student postings | Lio | Nov 1 |
 | P0-2 | Phase 0 decision run: 171/171 boards, 177 Canadian student postings (126 from boards found through the curated list); decision in ADR 0001: build v1 | Lio | Oct 30 |
 | P0-3 | Storage measured and ADR 0002 accepted: about 0.83 GB a year at 171 boards | Lio | Oct 30 |
