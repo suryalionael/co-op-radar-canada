@@ -5,6 +5,44 @@
    4.0
   ],
   "duration_status": "stated",
+  "employer": "Kepler Communications",
+  "employer_id": "kepler_communications",
+  "evidence": {
+   "duration": "4 months",
+   "duration_context": "Supply Chain Intern (Jan 2027) (4 months)",
+   "term": "Jan 2027",
+   "term_context": "Supply Chain Intern (Jan 2027) (4 months)",
+   "term_dates": "Jan 2027"
+  },
+  "first_seen": "2026-11-03",
+  "flag_term_in_past": false,
+  "id": "e4979eaa1ac0a670",
+  "last_seen": "2026-11-03",
+  "location_raw": "Toronto, Ontario / Canada",
+  "province": "ON",
+  "provinces": [
+   "ON"
+  ],
+  "remote": "onsite",
+  "sector": "aerospace",
+  "source": "lever",
+  "term": "Winter 2027",
+  "term_end": null,
+  "term_start": "2027-01-01",
+  "term_status": "stated",
+  "terms": [
+   "Winter 2027"
+  ],
+  "title": "Supply Chain Intern (Jan 2027) (4 months)",
+  "track": "business_ops",
+  "url": "https://jobs.lever.co/kepler/708c94ba-478f-4b2f-88dd-8fa808ca2866"
+ },
+ {
+  "duration_is_range": false,
+  "duration_options_months": [
+   4.0
+  ],
+  "duration_status": "stated",
   "employer": "Clutch",
   "employer_id": "clutch",
   "evidence": {
@@ -15,8 +53,9 @@
    "term_dates": "January–April 2027"
   },
   "first_seen": "2026-11-02",
+  "flag_term_in_past": false,
   "id": "6b3254a6f730c22d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Mississauga, Ontario, Canada / Mississauga",
   "province": "ON",
   "provinces": [
@@ -28,6 +67,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027",
    "Summer 2027"
@@ -44,8 +84,9 @@
   "employer_id": "moment_energy",
   "evidence": {},
   "first_seen": "2026-11-02",
+  "flag_term_in_past": false,
   "id": "e12cc68b911a3cf1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -57,6 +98,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Certification Engineer Co-op",
   "track": "software",
@@ -73,8 +115,9 @@
    "term_context": "Stage rémunéré | Sur place (pas de télétravail) | [Hiver 2027] À propos de Krafton Montréal Nous sommes un studio de…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "00b96890ed191aa4",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montréal",
   "province": "QC",
   "provinces": [
@@ -86,6 +129,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -109,8 +153,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "026629a2c64243e6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -122,6 +167,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -137,8 +183,9 @@
   "employer_id": "shyftlabs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "046e6b40a5b015be",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -150,6 +197,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Business Development Intern",
   "track": "business_ops",
@@ -163,8 +211,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "053caea8f3fc1f13",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / Toronto, Ontario, Canada / Santa Clara / Toronto",
   "province": "ON",
   "provinces": [
@@ -176,6 +225,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "GTM (FAE & Customer Success) and Product Intern",
   "track": "business_ops",
@@ -197,8 +247,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0847f9423d6b4cf3",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -210,6 +261,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -225,8 +277,9 @@
   "employer_id": "drw",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0942c7a495939036",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal / Montreal, QC, Canada / Montréal",
   "province": "QC",
   "provinces": [
@@ -238,6 +291,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI/ML Research Intern",
   "track": "ml_ai",
@@ -259,8 +313,9 @@
    "term_dates": "January - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "09bfcd5102318579",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -272,6 +327,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -292,8 +348,9 @@
    "duration_context": "…drives business outcomes, this Co-Op is built for you. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0b5bd27afd7274ff",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -305,6 +362,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Field Engineering Co-Op",
   "track": "software",
@@ -321,8 +379,9 @@
    "term_context": "Software Engineer Intern (Winter 2027)"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0d87d4998c02d36c",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Los Angeles, San Francisco, Toronto, Singapore / Los Angeles, California, United States / San Francisco, California, United States / Los Angeles / San Francisco",
   "province": "ON",
   "provinces": [
@@ -334,6 +393,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -349,8 +409,9 @@
   "employer_id": "tribalscale",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0d9587679215bcee",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -362,6 +423,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Agile Software Engineer - Co-op",
   "track": "software",
@@ -379,8 +441,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "0e3edb8cc565558e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -392,6 +455,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -411,8 +475,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "10558c5183b39734",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -424,6 +489,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -447,8 +513,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1247a4b253f6f8a5",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -460,6 +527,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -479,8 +547,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "12697a76f70befcb",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -492,6 +561,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -507,8 +577,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "13dc3f42b10f8bc1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -520,6 +591,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Mechanical Engineer",
   "track": "other",
@@ -541,8 +613,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "14c28d7445912d5f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -554,6 +627,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -569,8 +643,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1512773c8a526b1d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -582,6 +657,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Analog Mixed Signal Engineer Intern (Toronto)",
   "track": "other",
@@ -600,8 +676,9 @@
    "duration_context": "…to move from experimentation to reliable implementation. This is an 8-month co-op term. At Bree, co-ops are full members of the Engineering…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1929ec1bbfff6ddc",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -613,6 +690,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Machine Learning Engineering, Intern",
   "track": "ml_ai",
@@ -626,8 +704,9 @@
   "employer_id": "cresta",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1ce824468c334008",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada",
   "province": "ON",
   "provinces": [
@@ -639,6 +718,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Product Design Intern for AI and Human Agents Platform",
   "track": "ml_ai",
@@ -662,8 +742,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1de370e60a4872dd",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -675,6 +756,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -690,8 +772,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "1e6c17afb91b2e2b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -703,6 +786,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Platform Applications Engineer Intern/Co-op (Tools & Validation Infrastructure)",
   "track": "software",
@@ -716,8 +800,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "211636b44b4441fb",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -729,6 +814,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Controls Engineer",
   "track": "software",
@@ -747,8 +833,9 @@
    "duration_context": "…Location: Vancouver, British Columbia, Canada (Onsite) Duration: 8 months Employment type: Internship / co-op About the role At Astera Labs,…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "22840d509d44154c",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Jose, CA / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -760,6 +847,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "System Validation Engineer Intern (Vancouver)",
   "track": "software",
@@ -773,8 +861,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "22897e327e16feaf",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada / Toronto, Ontario, Canada / Vancouver, British Columbia, Canada / Toronto / Vancouver",
   "province": "ON",
   "provinces": [
@@ -787,6 +876,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Systems Intern - Validation, Software, Design, Architecture & Packaging (Canada)",
   "track": "software",
@@ -800,8 +890,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "22f801a708c7720d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -813,6 +904,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Platform Applications Engineer Intern/Co-op (Tools Development Engineer – COSMOS Platform Software)",
   "track": "software",
@@ -826,8 +918,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "23c8d52d0c8850f8",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -839,6 +932,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Marketing Performance",
   "track": "business_ops",
@@ -860,8 +954,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "243e127c8983cb06",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -873,6 +968,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -888,8 +984,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "25e6b25f5fc09d5f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -901,6 +998,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Partnership Marketing",
   "track": "business_ops",
@@ -917,8 +1015,9 @@
    "term_context": "Data Quality Intern - Winter 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "26d3d9f97cae9ce4",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -930,6 +1029,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -953,8 +1053,9 @@
    "term_dates": "starting in May 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "2c2da8b0d3265204",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -966,6 +1067,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": "2027-05-01",
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -985,8 +1087,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "32aa98c5e98584be",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON / Canada",
   "province": "ON",
   "provinces": [
@@ -998,6 +1101,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1013,8 +1117,9 @@
   "employer_id": "waabi",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "338eb528a18d4d9c",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
   "province": "ON",
   "provinces": [
@@ -1026,6 +1131,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "2027 Intern, PhD Research Scientist",
   "track": "ml_ai",
@@ -1043,8 +1149,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "34b686ea4e806da6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -1056,6 +1163,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1074,8 +1182,9 @@
    "term_context": "Intern - Sales Operations & Strategy Associate Winter 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "360fd8dfa9b44611",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1087,6 +1196,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1102,8 +1212,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "37abea2df8d42c3f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Ottawa, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -1115,6 +1226,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Firmware Engineer Intern (Ottawa)",
   "track": "software",
@@ -1128,8 +1240,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "38cb5b33966f7259",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1141,6 +1254,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Luxury Events & Content Marketing",
   "track": "business_ops",
@@ -1154,8 +1268,9 @@
   "employer_id": "veeda_ai",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "3d886b28f1efe98d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1167,6 +1282,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Internship - Software Engineering",
   "track": "software",
@@ -1180,8 +1296,9 @@
   "employer_id": "brave",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "424e83e94283455f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Canada / Brave Canada",
   "province": "UNKNOWN",
   "provinces": [],
@@ -1191,6 +1308,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineering Intern - Waterloo University",
   "track": "software",
@@ -1204,8 +1322,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "45949c51e86b1b4d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / United States",
   "province": "ON",
   "provinces": [
@@ -1217,6 +1336,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Business Operations & Program Management Intern",
   "track": "business_ops",
@@ -1230,8 +1350,9 @@
   "employer_id": "veeda_ai",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "46ad1a7a752ef380",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Zürich / Seattle / California / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1243,6 +1364,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Internship",
   "track": "ml_ai",
@@ -1256,8 +1378,9 @@
   "employer_id": "moment_energy",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "47f2c902bff5202e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -1269,6 +1392,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Test Engineering Co-op",
   "track": "software",
@@ -1286,8 +1410,9 @@
    "term_dates": "June 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "4d669df24ba1f6e8",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
   "province": "ON",
   "provinces": [
@@ -1299,6 +1424,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": "2027-06-01",
+  "term_status": "stated",
   "terms": [
    "Summer 2027",
    "Fall 2027"
@@ -1315,8 +1441,9 @@
   "employer_id": "cresta",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "50abc28bc7d803d4",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada (Hybrid)",
   "province": "ON",
   "provinces": [
@@ -1328,6 +1455,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Forward Deployed Engineering Intern (AI Agent)",
   "track": "ml_ai",
@@ -1349,8 +1477,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "5157bcce90f6c172",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
   "province": "ON",
   "provinces": [
@@ -1362,6 +1491,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1385,8 +1515,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "52accd83e8ecfa9b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1398,6 +1529,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1422,8 +1554,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "53d7d5cb7a357c51",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Waterloo, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -1435,6 +1568,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1458,8 +1592,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "55254b1751770d81",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1471,6 +1606,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1486,8 +1622,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "56838365b05df110",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Tours",
   "province": "ON",
   "provinces": [
@@ -1499,6 +1636,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Sales Support (FAM)",
   "track": "business_ops",
@@ -1512,8 +1650,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "574af7346c16d8d8",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1525,6 +1664,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Firmware Engineer Intern Summer Co-op",
   "track": "software",
@@ -1538,8 +1678,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "58faf2dfd0d430c6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -1551,6 +1692,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Industrial Designer",
   "track": "other",
@@ -1564,8 +1706,9 @@
   "employer_id": "waabi",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "5ba8676e49855a2e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON / San Francisco, CA / Remote US / Canada",
   "province": "ON",
   "provinces": [
@@ -1577,6 +1720,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Research Internship/Co-op",
   "track": "ml_ai",
@@ -1594,8 +1738,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "605de79f55b5e917",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -1607,6 +1752,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1631,8 +1777,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "60fc5aa1bae67877",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -1644,6 +1791,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1659,8 +1807,9 @@
   "employer_id": "shyftlabs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "64604f13369444b0",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1672,6 +1821,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI Engineer Intern",
   "track": "ml_ai",
@@ -1693,8 +1843,9 @@
    "term_context": "Supply Chain Operations Intern - Winter 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "677df86842e11342",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -1706,6 +1857,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1721,8 +1873,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "6a2aaa09ca3f180b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Tours",
   "province": "ON",
   "provinces": [
@@ -1734,6 +1887,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Sales Support",
   "track": "business_ops",
@@ -1747,8 +1901,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "6b10b33a923cfe63",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Jose, CA or Toronto, Ontario, Canada / California / San Jose",
   "province": "ON",
   "provinces": [
@@ -1760,6 +1915,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "DFT Engineering Intern",
   "track": "software",
@@ -1773,8 +1929,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "6dc6ed50bb46fb71",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1786,6 +1943,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Marketing Analytics",
   "track": "data_analytics",
@@ -1799,8 +1957,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "6e3f63c33d42ab7b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1812,6 +1971,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Integrated Marketing",
   "track": "business_ops",
@@ -1834,8 +1994,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "70d5d03e4db2c084",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -1847,6 +2008,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -1862,8 +2024,9 @@
   "employer_id": "krafton_montreal",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "720d0843c25ad062",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montréal",
   "province": "QC",
   "provinces": [
@@ -1875,6 +2038,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Stagiaire en programmation UI / UI programming intern",
   "track": "software",
@@ -1888,8 +2052,9 @@
   "employer_id": "shyftlabs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "73d79f67f880ae9d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1901,6 +2066,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Graphic Design Intern",
   "track": "data_analytics",
@@ -1914,8 +2080,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "741bfd617d246a11",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Tours",
   "province": "ON",
   "provinces": [
@@ -1927,6 +2094,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Sales Strategy & Analytics",
   "track": "data_analytics",
@@ -1943,8 +2111,9 @@
    "term_context": "Software Engineering Intern/Co-op (Canada) - Summer 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "75d20dbaf5e6f769",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver / British Columbia / Canada",
   "province": "BC",
   "provinces": [
@@ -1956,6 +2125,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -1971,8 +2141,9 @@
   "employer_id": "pebl",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "791c6ae907927d2d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1984,6 +2155,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineering, Intern",
   "track": "software",
@@ -2005,8 +2177,9 @@
    "term_dates": "January - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "79264dd3ce090b9b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -2018,6 +2191,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2041,8 +2215,9 @@
    "term_dates": "Jan 2027 - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "812780ac6cf43d93",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
   "province": "BC",
   "provinces": [
@@ -2054,6 +2229,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2069,8 +2245,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "886f834a1e242806",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver. BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -2082,47 +2259,11 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Firmware Engineer Intern Fall Co-op",
   "track": "software",
   "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739956005"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   12.0
-  ],
-  "duration_status": "stated",
-  "employer": "Geotab",
-  "employer_id": "geotab_internships",
-  "evidence": {
-   "duration": "12 Months | 12-month",
-   "duration_context": "Data Analyst Intern (Winter/January 2027, 12 Months)",
-   "term": "January 2027",
-   "term_context": "Data Analyst Intern (Winter/January 2027, 12 Months)",
-   "term_dates": "January 2027"
-  },
-  "first_seen": "2026-10-31",
-  "id": "8b62c186b6c3ec80",
-  "last_seen": "2026-11-01",
-  "location_raw": "Burnaby, British Columbia - Canada; Oakville, Ontario - Canada; Toronto, Ontario - Canada / Burnaby / Oakville",
-  "province": "BC",
-  "provinces": [
-   "BC",
-   "ON"
-  ],
-  "remote": "unknown",
-  "sector": "software",
-  "source": "greenhouse",
-  "term": "Winter 2027",
-  "term_end": null,
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Data Analyst Intern (Winter/January 2027, 12 Months)",
-  "track": "data_analytics",
-  "url": "https://job-boards.greenhouse.io/internshiplist2000/jobs/5444306008"
  },
  {
   "duration_is_range": false,
@@ -2140,8 +2281,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "901972d31f9109ff",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2153,6 +2295,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2176,8 +2319,9 @@
    "term_dates": "January 2027 - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9095bbb639cdedc2",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2189,6 +2333,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2208,8 +2353,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9660e4b12b6bdfbf",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -2221,6 +2367,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2236,8 +2383,9 @@
   "employer_id": "ami",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9668a6b4a297f6ed",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Paris / Singapore / New York / Montreal / France",
   "province": "QC",
   "provinces": [
@@ -2249,6 +2397,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AMI Scientist/Interns - Geometry and 3D Vision",
   "track": "ml_ai",
@@ -2262,8 +2411,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "99818f1d4c42e611",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -2275,6 +2425,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Electrical Engineer",
   "track": "other",
@@ -2296,8 +2447,9 @@
    "term_dates": "Jan 2027 - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9d9709a7ba21ec19",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
   "province": "BC",
   "provinces": [
@@ -2309,6 +2461,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2324,8 +2477,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9e3ef444d22b16fc",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -2337,6 +2491,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Physical Design Engineer Intern (Toronto)",
   "track": "software",
@@ -2358,8 +2513,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9ebe1735afb6812e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2371,6 +2527,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2386,8 +2543,9 @@
   "employer_id": "yotta_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9efb00d401390612",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "United States / Hong Kong / Canada / Singapore",
   "province": "REMOTE_CA",
   "provinces": [
@@ -2399,6 +2557,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Research Engineer Intern - AI Systems",
   "track": "ml_ai",
@@ -2412,8 +2571,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9f5a2e68b3fea647",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -2425,6 +2585,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Software/ML Engineer",
   "track": "ml_ai",
@@ -2446,8 +2607,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "9fc5dbd338bd75fc",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2459,6 +2621,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2474,8 +2637,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a27f3c8b30358716",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -2487,6 +2651,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern  - Partner Relations  (Procurement)",
   "track": "data_analytics",
@@ -2500,8 +2665,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a3131011cb1aa7b0",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, B.C. / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -2513,6 +2679,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Product Applications Engineer Intern (Scorpio)",
   "track": "business_ops",
@@ -2526,8 +2693,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a54586870245b7f1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -2539,6 +2707,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Design Verification Engineer Intern (Toronto)",
   "track": "software",
@@ -2560,8 +2729,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a56c2f8a1ed4bcde",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada / Oakville / Toronto",
   "province": "ON",
   "provinces": [
@@ -2573,6 +2743,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2593,8 +2764,9 @@
    "duration_context": "…unlock the full potential of the open-source community. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a65997a6286cf931",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -2606,6 +2778,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineering Co-op",
   "track": "software",
@@ -2627,8 +2800,9 @@
    "term_dates": "Jan 2027 - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a66d418149ec2889",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
   "province": "BC",
   "provinces": [
@@ -2640,6 +2814,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2655,8 +2830,9 @@
   "employer_id": "drw",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a67e2a975e6753e9",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal / Montreal, QC, Canada / Montréal",
   "province": "QC",
   "provinces": [
@@ -2668,6 +2844,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Developer Intern",
   "track": "software",
@@ -2681,8 +2858,9 @@
   "employer_id": "cresta",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a867a65904068ed4",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario",
   "province": "ON",
   "provinces": [
@@ -2694,6 +2872,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI Quality Assurance Intern",
   "track": "ml_ai",
@@ -2707,8 +2886,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "a91f67903167b2ab",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Ottawa, Ontario, Canada; Toronto, Ontario, Canada / Ottawa, Ontario, Canada / Toronto, Ontario, Canada / Ottawa / Toronto",
   "province": "ON",
   "provinces": [
@@ -2720,6 +2900,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Hardware Intern - AI HW & SoC (Canada)",
   "track": "ml_ai",
@@ -2741,8 +2922,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "af681646938ed56b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -2754,6 +2936,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2769,8 +2952,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b106166dd1924143",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / North America",
   "province": "ON",
   "provinces": [
@@ -2782,6 +2966,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "IP Sales and Operations Intern",
   "track": "business_ops",
@@ -2804,8 +2989,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b340442095f9beab",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Atlanta, Georgia - USA; Burnaby, British Columbia - Canada; Oakville, Ontario - Canada; Remote - USA; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / North America",
   "province": "BC",
   "provinces": [
@@ -2818,6 +3004,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2841,8 +3028,9 @@
    "term_dates": "January - August 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b35c53178c0e1acb",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2854,6 +3042,7 @@
   "term": "Winter 2027",
   "term_end": "2027-08-31",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2869,8 +3058,9 @@
   "employer_id": "human_computer_lab",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b3fd0d193980ceb6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / San Francisco / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -2882,6 +3072,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Mechatronics Engineer",
   "track": "software",
@@ -2895,8 +3086,9 @@
   "employer_id": "cresta",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b80f83425ff7bae6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada (Hybrid)",
   "province": "ON",
   "provinces": [
@@ -2908,6 +3100,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Machine Learning Engineering Intern",
   "track": "ml_ai",
@@ -2925,8 +3118,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b90af6d6e09b61dd",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -2938,6 +3132,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -2956,6 +3151,7 @@
    "term_context": "Software Engineer Intern (Summer 2027)"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "b91a251cf63771d2",
   "last_seen": "2026-11-02",
   "location_raw": "Toronto / Ontario / Canada",
@@ -2969,6 +3165,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -2984,8 +3181,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "bca5aedeac980293",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Canada",
   "province": "ON",
   "provinces": [
@@ -2997,6 +3195,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI Software Intern (Canada)",
   "track": "ml_ai",
@@ -3018,8 +3217,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "c10beb7a4c4b052e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3031,6 +3231,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3046,8 +3247,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "c1122af9d29da6fe",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -3059,6 +3261,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Firmware Engineer Intern Spring Co-Op",
   "track": "software",
@@ -3072,8 +3275,9 @@
   "employer_id": "instalily",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "c1ac8a9b13a11759",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada",
   "province": "ON",
   "provinces": [
@@ -3085,6 +3289,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineer I, Toronto Co-op",
   "track": "software",
@@ -3101,13 +3306,14 @@
   "evidence": {
    "duration": "8 months",
    "duration_context": "…Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate student (MS or PhD,…",
-   "term": "Winter 2026",
+   "term": "Fall/Winter 2026",
    "term_context": "…— Block Applied R&D Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate…",
    "term_dates": "start September 2026"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "c975acc509358f66",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario , Canada / CA - ON - Toronto - Remote",
   "province": "ON",
   "provinces": [
@@ -3116,12 +3322,13 @@
   "remote": "remote",
   "sector": "fintech",
   "source": "greenhouse",
-  "term": "Winter 2026",
+  "term": "Fall 2026",
   "term_end": null,
   "term_start": "2026-09-01",
+  "term_status": "stated",
   "terms": [
-   "Winter 2026",
-   "Fall 2026"
+   "Fall 2026",
+   "Winter 2027"
   ],
   "title": "Applied Research Intern, Proactive Intelligence & Customer World Models (PhD / Graduate Co-op)",
   "track": "ml_ai",
@@ -3141,8 +3348,9 @@
    "duration_context": "…experience in either C++ or C# Internship Details Duration : 5-12 months initially (depending on your location), with flexible start-dates…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "c9c454b4688b79cc",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal,Quebec,Canada / Manchester, England, United Kingdom / Manchester",
   "province": "QC",
   "provinces": [
@@ -3154,6 +3362,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Machine Learning Intern",
   "track": "ml_ai",
@@ -3167,8 +3376,9 @@
   "employer_id": "tenstorrent_university",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "cc27e70d3f364e9e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -3180,6 +3390,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI Software Intern - Cloud, Infrastructure & Data Centre Deployment (Canada)",
   "track": "ml_ai",
@@ -3196,13 +3407,14 @@
   "evidence": {
    "duration": "8 months",
    "duration_context": "…Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate student (MS or PhD,…",
-   "term": "Winter 2026",
+   "term": "Fall/Winter 2026",
    "term_context": "…— Block Applied R&D Location: Remote (US / Canada) Duration: Fall/Winter 2026 co-op — 8 months, flexible start September 2026 Level: Graduate…",
    "term_dates": "start September 2026"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d426584e1fb9b986",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Bay Area, CA, United States of America / CA - ON - Toronto - Remote",
   "province": "ON",
   "provinces": [
@@ -3211,12 +3423,13 @@
   "remote": "remote",
   "sector": "fintech",
   "source": "greenhouse",
-  "term": "Winter 2026",
+  "term": "Fall 2026",
   "term_end": null,
   "term_start": "2026-09-01",
+  "term_status": "stated",
   "terms": [
-   "Winter 2026",
-   "Fall 2026"
+   "Fall 2026",
+   "Winter 2027"
   ],
   "title": "Applied Research Intern, Proactive Intelligence & Customer World Models (PhD / Graduate Co-op)",
   "track": "ml_ai",
@@ -3230,8 +3443,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d5afdfdac08fcfb6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3243,6 +3457,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Revenue Optimization",
   "track": "other",
@@ -3264,8 +3479,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d634e4b7ed1a28e1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
   "province": "ON",
   "provinces": [
@@ -3277,6 +3493,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3295,6 +3512,7 @@
    "term_context": "Marketing Intern (Winter 2027)"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d6bcea7e3a6d9458",
   "last_seen": "2026-11-02",
   "location_raw": "Toronto / Ontario / Canada",
@@ -3308,6 +3526,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3331,8 +3550,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d71db94bafac318a",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -3344,6 +3564,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3359,8 +3580,9 @@
   "employer_id": "georgian",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d81b6d01c375ab8f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto Headquarters / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -3372,6 +3594,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "AI/ML Engineer Intern (2027)",
   "track": "ml_ai",
@@ -3385,8 +3608,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d90bf112d3ae6718",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -3398,6 +3622,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Design",
   "track": "other",
@@ -3411,8 +3636,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "d9bc62c505244bcc",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Agency",
   "province": "ON",
   "provinces": [
@@ -3424,6 +3650,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Business Analyst",
   "track": "data_analytics",
@@ -3445,8 +3672,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "da89b9daa0548bb6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3458,6 +3686,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3482,8 +3711,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "dde3657375106f06",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada; Waterloo, Ontario - Canada / Oakville / Toronto / Waterloo",
   "province": "ON",
   "provinces": [
@@ -3495,6 +3725,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3514,8 +3745,9 @@
    "term_dates": "starting in January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "e4b7b407a242bde8",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -3527,6 +3759,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3550,8 +3783,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "e60dcc2357b86370",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3563,6 +3797,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3583,8 +3818,9 @@
    "duration_context": "…to unlock the full potential of data observability. This is a 4 month assignment, 40 hours per week, with required on-site presence at 151…"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "e6f27645f4410c7d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -3596,6 +3832,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Sales Engineering Co-Op",
   "track": "software",
@@ -3613,8 +3850,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "e74117bdd4e61b8d",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -3626,6 +3864,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3641,8 +3880,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "eb912b2c61ff47c4",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3654,6 +3894,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Hotel Partner Relations & Procurement",
   "track": "data_analytics",
@@ -3675,8 +3916,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "f077b2ad2d0f7900",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3688,6 +3930,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3711,8 +3954,9 @@
    "term_dates": "January - April 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "f1302c4f73e00a3a",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3724,6 +3968,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3747,8 +3992,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "f4853a8149533b7e",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -3760,6 +4006,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -3775,8 +4022,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "f55441d1f406612f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -3788,46 +4036,11 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Strategy Intern",
   "track": "business_ops",
   "url": "https://job-boards.greenhouse.io/kensingtontours/jobs/5259079007"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "inferred_from_dates",
-  "employer": "Equitable Bank",
-  "employer_id": "equitable_bank",
-  "evidence": {
-   "duration": "January - April 2027",
-   "duration_context": "…big opportunity. We can’t wait to get to know you! Work Term: January - April 2027 The PC Mastercard team is seeking a Co-op Student to support its…",
-   "term": "Winter 2027",
-   "term_context": "Intern - PC Mastercard Lifecycle Management & Partnerships, Winter 2027",
-   "term_dates": "January - April 2027"
-  },
-  "first_seen": "2026-10-31",
-  "id": "fa3c218905a22ba1",
-  "last_seen": "2026-11-01",
-  "location_raw": "Toronto / Canada",
-  "province": "ON",
-  "provinces": [
-   "ON"
-  ],
-  "remote": "hybrid",
-  "sector": "fintech",
-  "source": "lever",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Intern - PC Mastercard Lifecycle Management & Partnerships, Winter 2027",
-  "track": "business_ops",
-  "url": "https://jobs.lever.co/eqbank/b8cab018-3e0d-439e-ba11-963aa4920af7"
  },
  {
   "duration_is_range": false,
@@ -3837,8 +4050,9 @@
   "employer_id": "cresta",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "fb92bf0fa7ab65d8",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto Canada",
   "province": "ON",
   "provinces": [
@@ -3850,6 +4064,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineer Intern",
   "track": "software",
@@ -3863,8 +4078,9 @@
   "employer_id": "astera_labs",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "fba32629c509357b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -3876,6 +4092,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Digital Design Engineer Intern (Toronto)",
   "track": "software",
@@ -3897,8 +4114,9 @@
    "term_dates": "June 2027 start"
   },
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "fbb23206b786d9db",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON / Toronto",
   "province": "ON",
   "provinces": [
@@ -3910,6 +4128,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": "2027-06-01",
+  "term_status": "stated",
   "terms": [
    "Summer 2027",
    "Summer 2024"
@@ -3926,8 +4145,9 @@
   "employer_id": "kensington_tours",
   "evidence": {},
   "first_seen": "2026-10-31",
+  "flag_term_in_past": false,
   "id": "fc1efdbe7e6623d6",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3939,6 +4159,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Intern - Analytics",
   "track": "data_analytics",
@@ -3955,8 +4176,9 @@
    "term_context": "…to offer Master's machine learning engineering internships for the summer of 2027. This is an exceptional opportunity to contribute to critical…"
   },
   "first_seen": "2026-10-30",
+  "flag_term_in_past": false,
   "id": "36ae68470273a9e5",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -3968,6 +4190,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -3986,8 +4209,9 @@
    "term_context": "…to offer PhD machine learning engineering internships for the summer of 2027. This is an exceptional opportunity to contribute to critical…"
   },
   "first_seen": "2026-10-30",
+  "flag_term_in_past": false,
   "id": "552a49e8ca55e48b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -3999,84 +4223,13 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
   "title": "PhD Machine Learning Engineer, Intern",
   "track": "ml_ai",
   "url": "https://stripe.com/jobs/search?gh_jid=8328664"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Write efficient,…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Extension Excellence - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "019791be2ebe529f",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Extension Excellence - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/7f1732a6-5317-4319-82b9-67c62e88d491"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Contribute to the…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Vault Team - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "07a4761515fc6137",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Vault Team - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/b2726ac7-dd0d-42f3-93a5-139e18c90779"
  },
  {
   "duration_is_range": false,
@@ -4089,8 +4242,9 @@
    "term_context": "Software Engineer Intern, Backend (Summer 2027 - Toronto)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "0c33e9d8bc096695",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4102,6 +4256,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4117,8 +4272,9 @@
   "employer_id": "stripe",
   "evidence": {},
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "14765a714e7f8c52",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -4130,6 +4286,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "PhD Data Scientist, Intern",
   "track": "data_science",
@@ -4151,8 +4308,9 @@
    "term_context": "…products. You will have a dedicated mentor and will join our summer 2027 intern cohort where you'll connect with engineers, other interns,…"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "147d9e10a6beeb00",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada / Mountain View, California",
   "province": "BC",
   "provinces": [
@@ -4164,84 +4322,13 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
   "title": "Software Engineering Intern (2027)",
   "track": "software",
   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=6865687002"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What you can expect: You have a passion…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Data Security - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "196b2bc1ecb3cd0a",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Data Security - Winter 2027",
-  "track": "data_analytics",
-  "url": "https://jobs.ashbyhq.com/1password/8af1359a-c8a2-492b-b567-ae8ae184a8a1"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Ship features and…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Developer Interfaces - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "2ff95c2863cab403",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Developer Interfaces - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/00f861d4-2b4a-4159-b6dc-8aed0cde6e39"
  },
  {
   "duration_is_range": false,
@@ -4254,8 +4341,9 @@
    "term_context": "Stagiaire en ingénierie de la qualité terrain, matériel (été 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "37773045e35aa743",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4267,6 +4355,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027",
    "Summer 2028"
@@ -4291,8 +4380,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "3da2cd34351796ce",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -4304,6 +4394,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4322,8 +4413,9 @@
    "term_context": "Software Engineer Intern, Fullstack (Summer 2027 - Toronto)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "4555ac8e946a1713",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4335,6 +4427,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4358,8 +4451,9 @@
    "term_dates": "January to April 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "5018b302c3a389ec",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -4371,6 +4465,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4389,8 +4484,9 @@
    "term_context": "Stagiaire en ingénierie d'industrialisation (été 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "518ad23e9671dad9",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -4402,6 +4498,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027",
    "Summer 2028"
@@ -4426,8 +4523,9 @@
    "term_context": "Research Internship (Winter 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "5aef43857a1b3172",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Canada / San Francisco / Europe / London / United States / United Kingdom / Toronto / Montreal",
   "province": "ON",
   "provinces": [
@@ -4440,6 +4538,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4458,8 +4557,9 @@
    "term_context": "Software Engineer Intern, Test Automation (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "647ff56f14830548",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4471,6 +4571,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4486,8 +4587,9 @@
   "employer_id": "pinterest",
   "evidence": {},
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "6551999a74291408",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -4499,46 +4601,11 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineering Intern 2027 (Toronto)",
   "track": "software",
   "url": "https://www.pinterestcareers.com/jobs/?gh_jid=8138039"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Contribute to…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Provisioning - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "6a61234617e01cec",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Provisioning - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/c5289ef1-e919-4672-85c5-ee3112f9ddb9"
  },
  {
   "duration_is_range": true,
@@ -4556,8 +4623,9 @@
    "term_context": "Software Engineer Intern (Winter 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "6a6272020faf485c",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Canada / Dubai / London / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -4569,6 +4637,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4587,8 +4656,9 @@
    "term_context": "Data Science Intern, Algorithms (Summer 2027 - Toronto)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "6a9ab99b66109f15",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4600,6 +4670,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4623,8 +4694,9 @@
    "term_dates": "January to April 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "6b6c40cb51d2e433",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -4636,6 +4708,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4654,8 +4727,9 @@
    "term_context": "UX Research Intern (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "72a0c71680e9e969",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -4667,6 +4741,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4685,8 +4760,9 @@
    "term_context": "Content Design Intern (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "7369006c3d80c2c1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -4698,6 +4774,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4716,8 +4793,9 @@
    "term_context": "Business Systems Engineer Intern, Finance Technology (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "78930bbe3223db3c",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4729,6 +4807,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4752,8 +4831,9 @@
    "term_dates": "January to April 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "8a71ec46d3a2e6d1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Remote (United States | Canada)",
   "province": "REMOTE_CA",
   "provinces": [
@@ -4765,6 +4845,7 @@
   "term": "Winter 2027",
   "term_end": "2027-04-30",
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4783,8 +4864,9 @@
    "term_context": "…week) in Canada (preferably Ottawa, ON) for at least a 4 month term (Winter 2027). We’re looking for curious, motivated, dependable students who…"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "8e28eb7cac331b95",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Ottawa, ON / Canada",
   "province": "ON",
   "provinces": [
@@ -4796,6 +4878,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4819,8 +4902,9 @@
    "term_dates": "starting January 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "8f635b280b9966d1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -4832,6 +4916,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -4850,8 +4935,9 @@
    "term_context": "Hardware Field Quality Engineer Intern (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "9a3c60880c35810b",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4863,84 +4949,13 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
   "title": "Hardware Field Quality Engineer Intern (Summer 2027)",
   "track": "data_analytics",
   "url": "https://app.careerpuck.com/job-board/lyft/job/8862215002?gh_jid=8862215002"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…opportunity within Canada or the US. This position will be for 4 months - January to April 2027. What you can expect: Assist our team in…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Front-End Platform - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "9c58f122bcf18b6e",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Front-End Platform - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/71a3afd1-12b3-4f55-a3bd-fc4e7c46ee37"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: You’ll participate…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Credential Brokering - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "9d855fe05dd4a9b4",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Credential Brokering - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/67bfbd8b-aba9-42b1-a8a8-833367888fba"
  },
  {
   "duration_is_range": false,
@@ -4953,8 +4968,9 @@
    "term_context": "Industrialization Engineer Intern (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "9f81a5d75e504e25",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -4966,6 +4982,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -4975,54 +4992,20 @@
  },
  {
   "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Code, test, debug,…",
-   "term": "Winter 2027",
-   "term_context": "Developer Intern, Machine Identity - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "id": "a218387a945b01ae",
-  "last_seen": "2026-11-01",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Developer Intern, Machine Identity - Winter 2027",
-  "track": "software",
-  "url": "https://jobs.ashbyhq.com/1password/6a6869a7-98d2-43e3-b9b5-b68fa4daeb9f"
- },
- {
-  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Later",
   "employer_id": "later",
   "evidence": {
    "term": "January 2027",
+   "term_ambiguous": "Spring 2027",
    "term_context": "…being supported and coached throughout. This role will begin in January 2027. You'll work closely with Later's AI Automation team and get direct…",
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "a90052befc0cd127",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -5034,6 +5017,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5057,8 +5041,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "acb729dd3fb58c58",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -5070,6 +5055,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5088,8 +5074,9 @@
    "term_context": "Data Engineer Intern (Summer 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "ae3fc07c3ad011b1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -5101,6 +5088,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -5116,8 +5104,9 @@
   "employer_id": "pinterest",
   "evidence": {},
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "b1949a038291eae1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -5129,6 +5118,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Machine Learning Intern 2027 (Toronto)",
   "track": "ml_ai",
@@ -5142,8 +5132,9 @@
   "employer_id": "stripe",
   "evidence": {},
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "b9c52250b631b583",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -5155,6 +5146,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Data Analyst, Intern",
   "track": "data_analytics",
@@ -5171,8 +5163,9 @@
    "term_context": "Développeur Logiciels (Stagiaire), Backend (l'été 2027 - Montreal)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "b9e7cceb23277778",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -5184,6 +5177,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -5202,8 +5196,9 @@
    "term_context": "Software Engineer Intern, Machine Learning (Summer 2027 - Toronto)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "ba80139f0da63d34",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -5215,6 +5210,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -5233,8 +5229,9 @@
    "term_context": "Software Developer Co-op (Winter 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "ccb9c4f453859d02",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -5246,6 +5243,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5264,8 +5262,9 @@
    "term_context": "Finance Co-op (Winter 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "d2cd5cea1837b415",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -5277,6 +5276,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5300,8 +5300,9 @@
    "term_context": "Machine Learning Intern/Co-op (Winter 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "d3264c45622979d7",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Canada / Europe / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -5313,6 +5314,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5331,8 +5333,9 @@
    "term_context": "Software Engineer Intern, Backend (Summer 2027 - Montreal)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "de6350f745224661",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -5344,6 +5347,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
@@ -5368,8 +5372,9 @@
    "term_dates": "January 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "deb3c12435abd2a7",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -5381,6 +5386,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": "2027-01-01",
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5399,8 +5405,9 @@
    "term_context": "Intern, Security Analyst - Winter Semester 2027"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "e6a6b0e7204b35d1",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montréal, Quebec, Canada / Montreal, Canada",
   "province": "QC",
   "provinces": [
@@ -5412,6 +5419,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5427,8 +5435,9 @@
   "employer_id": "stripe",
   "evidence": {},
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "e7189473b4506a27",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -5440,6 +5449,7 @@
   "term": null,
   "term_end": null,
   "term_start": null,
+  "term_status": "not_stated",
   "terms": [],
   "title": "Software Engineer, Intern (Summer or Winter)",
   "track": "software",
@@ -5460,8 +5470,9 @@
    "term_context": "Revenue Operations Intern (Winter, 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "f7f5f440bd76265f",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Toronto / New York / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -5473,6 +5484,7 @@
   "term": "Winter 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Winter 2027"
   ],
@@ -5491,8 +5503,9 @@
    "term_context": "Développeur Logiciels (Stagiaire), Automatisation des tests (l'été 2027)"
   },
   "first_seen": "2026-10-29",
+  "flag_term_in_past": false,
   "id": "ff21e2e6eb033364",
-  "last_seen": "2026-11-02",
+  "last_seen": "2026-11-03",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -5504,6 +5517,7 @@
   "term": "Summer 2027",
   "term_end": null,
   "term_start": null,
+  "term_status": "stated",
   "terms": [
    "Summer 2027"
   ],
