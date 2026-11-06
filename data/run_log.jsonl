@@ -43,3 +43,8 @@
 {"command": "process-postings", "open_canadian_student": 167, "postings": 9898, "with_stated_duration": 46}
 {"changes": 2, "command": "process-programs", "pages": 30}
 {"command": "build-site-data", "duration_from_dates": 14, "duration_stated": 46, "employer_boards_tracked": 171, "employers_with_postings": 44, "open_student_postings": 167, "programs_watched": 30}
+{"boards": 171, "boards_failed": 0, "command": "fetch-postings", "day": "2026-11-06", "failed": [], "new_description_gz_bytes": 2225736, "postings_gz_bytes": 1415246, "postings_kept": 8651}
+{"command": "fetch-programs", "day": "2026-11-06", "failed": [], "pages": 30}
+{"command": "process-postings", "open_canadian_student": 165, "postings": 10124, "with_stated_duration": 44}
+{"changes": 3, "command": "process-programs", "pages": 30}
+{"command": "build-site-data", "duration_from_dates": 15, "duration_stated": 44, "employer_boards_tracked": 171, "employers_with_postings": 43, "open_student_postings": 165, "programs_watched": 30}
