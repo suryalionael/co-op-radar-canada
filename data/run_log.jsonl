@@ -53,3 +53,8 @@
 {"command": "process-postings", "open_canadian_student": 163, "postings": 10268, "with_stated_duration": 43}
 {"changes": 4, "command": "process-programs", "pages": 30}
 {"command": "build-site-data", "duration_from_dates": 14, "duration_stated": 43, "employer_boards_tracked": 171, "employers_with_postings": 44, "open_student_postings": 163, "programs_watched": 30}
+{"boards": 171, "boards_failed": 0, "command": "fetch-postings", "day": "2026-11-08", "failed": [], "new_description_gz_bytes": 17124, "postings_gz_bytes": 1418121, "postings_kept": 8658}
+{"command": "fetch-programs", "day": "2026-11-08", "failed": ["bcps_coop: RemoteProtocolError: Server disconnected without sending a response.", "bcps_students: RemoteProtocolError: Server disconnected without sending a response."], "pages": 30}
+{"command": "process-postings", "open_canadian_student": 158, "postings": 10271, "with_stated_duration": 41}
+{"changes": 4, "command": "process-programs", "pages": 30}
+{"command": "build-site-data", "duration_from_dates": 13, "duration_stated": 41, "employer_boards_tracked": 171, "employers_with_postings": 44, "open_student_postings": 158, "programs_watched": 30}
