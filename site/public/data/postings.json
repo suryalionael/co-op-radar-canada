@@ -17,7 +17,7 @@
   "first_seen": "2026-11-13",
   "flag_term_in_past": false,
   "id": "31001d1585f23b7a",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / Canada",
   "province": "BC",
   "provinces": [
@@ -55,7 +55,7 @@
   "first_seen": "2026-11-13",
   "flag_term_in_past": false,
   "id": "68450690ae6f7ebc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal / Canada",
   "province": "QC",
   "provinces": [
@@ -93,7 +93,7 @@
   "first_seen": "2026-11-13",
   "flag_term_in_past": false,
   "id": "a75410f57d5b1a29",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal / Canada",
   "province": "QC",
   "provinces": [
@@ -131,7 +131,7 @@
   "first_seen": "2026-11-13",
   "flag_term_in_past": false,
   "id": "a8966d4a48e9e903",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / Canada",
   "province": "BC",
   "provinces": [
@@ -169,7 +169,7 @@
   "first_seen": "2026-11-11",
   "flag_term_in_past": false,
   "id": "4fbfbafe034245ad",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / Canada",
   "province": "BC",
   "provinces": [
@@ -202,7 +202,7 @@
   "first_seen": "2026-11-11",
   "flag_term_in_past": false,
   "id": "f0954b30fbc514c2",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -240,7 +240,7 @@
   "first_seen": "2026-11-10",
   "flag_term_in_past": false,
   "id": "cb7ff9a8aeb568ad",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -270,7 +270,7 @@
   "first_seen": "2026-11-09",
   "flag_term_in_past": false,
   "id": "0f387c29a92b4496",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -298,7 +298,7 @@
   "first_seen": "2026-11-09",
   "flag_term_in_past": false,
   "id": "856393a0d6a34ae8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -326,7 +326,7 @@
   "first_seen": "2026-11-07",
   "flag_term_in_past": false,
   "id": "429a113b7331a298",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Canada / Brave Canada",
   "province": "UNKNOWN",
   "provinces": [],
@@ -347,44 +347,6 @@
   "duration_options_months": [
    4.0
   ],
-  "duration_status": "stated",
-  "employer": "Hootsuite",
-  "employer_id": "hootsuite",
-  "evidence": {
-   "duration": "4 months",
-   "duration_context": "…Term) Location : Alberta or British Columbia (Remote) Term : 4 months Start Date: January 4, 2027 Openings : 1 Role Specifics We’re…",
-   "term": "Winter 2027",
-   "term_context": "Co-op/Intern, DevOps - Winter 2027"
-  },
-  "first_seen": "2026-11-07",
-  "flag_term_in_past": false,
-  "id": "7bf35f9cbdf8f6e9",
-  "last_seen": "2026-11-13",
-  "location_raw": "Alberta, British Columbia / Alberta, Canada / British Columbia, Canada / Vancouver, British Columbia, Canada / Alberta / British Columbia / Vancouver",
-  "province": "AB",
-  "provinces": [
-   "AB",
-   "BC"
-  ],
-  "remote": "unknown",
-  "sector": "software",
-  "source": "greenhouse",
-  "term": "Winter 2027",
-  "term_end": null,
-  "term_start": null,
-  "term_status": "stated",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Co-op/Intern, DevOps - Winter 2027",
-  "track": "software",
-  "url": "https://job-boards.greenhouse.io/hootsuite/jobs/8359242"
- },
- {
-  "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
   "duration_status": "inferred_from_dates",
   "employer": "Stripe",
   "employer_id": "stripe",
@@ -398,7 +360,7 @@
   "first_seen": "2026-11-06",
   "flag_term_in_past": false,
   "id": "ad8c9ef8544d2187",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -436,7 +398,7 @@
   "first_seen": "2026-11-05",
   "flag_term_in_past": false,
   "id": "ef9520e4045d092a",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -474,7 +436,7 @@
   "first_seen": "2026-11-04",
   "flag_term_in_past": false,
   "id": "cfe9d23f48448d61",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / Canada",
   "province": "BC",
   "provinces": [
@@ -512,7 +474,7 @@
   "first_seen": "2026-11-04",
   "flag_term_in_past": false,
   "id": "e8f84d76de739a1d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / Canada",
   "province": "BC",
   "provinces": [
@@ -550,7 +512,7 @@
   "first_seen": "2026-11-03",
   "flag_term_in_past": false,
   "id": "e4979eaa1ac0a670",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -580,7 +542,7 @@
   "first_seen": "2026-11-02",
   "flag_term_in_past": false,
   "id": "e12cc68b911a3cf1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -611,7 +573,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "00b96890ed191aa4",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montréal",
   "province": "QC",
   "provinces": [
@@ -649,7 +611,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "026629a2c64243e6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -679,7 +641,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "046e6b40a5b015be",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -707,7 +669,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "053caea8f3fc1f13",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / Toronto, Ontario, Canada / Santa Clara / Toronto",
   "province": "ON",
   "provinces": [
@@ -743,7 +705,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "09bfcd5102318579",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -778,7 +740,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "0b5bd27afd7274ff",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -809,7 +771,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "0d87d4998c02d36c",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Los Angeles, San Francisco, Toronto, Singapore / Los Angeles, California, United States / San Francisco, California, United States / Los Angeles / San Francisco",
   "province": "ON",
   "provinces": [
@@ -839,7 +801,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "0d9587679215bcee",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -871,7 +833,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "0e3edb8cc565558e",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -905,7 +867,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "10558c5183b39734",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -943,7 +905,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "1247a4b253f6f8a5",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Oakville, Ontario - Canada; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -977,7 +939,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "12697a76f70befcb",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -1007,7 +969,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "13dc3f42b10f8bc1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -1038,7 +1000,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "14c28d7445912d5f",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1068,7 +1030,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "1512773c8a526b1d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -1101,7 +1063,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "1929ec1bbfff6ddc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -1129,7 +1091,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "1ce824468c334008",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada",
   "province": "ON",
   "provinces": [
@@ -1157,7 +1119,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "211636b44b4441fb",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -1190,7 +1152,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "22840d509d44154c",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Jose, CA / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1218,7 +1180,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "22897e327e16feaf",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada; Toronto, Ontario, Canada; Vancouver, British Columbia, Canada / Toronto, Ontario, Canada / Vancouver, British Columbia, Canada / Toronto / Vancouver",
   "province": "ON",
   "provinces": [
@@ -1247,7 +1209,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "22f801a708c7720d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, British Columbia, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1275,7 +1237,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "23c8d52d0c8850f8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1311,7 +1273,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "243e127c8983cb06",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1341,7 +1303,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "25e6b25f5fc09d5f",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1377,7 +1339,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "2c2da8b0d3265204",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1407,7 +1369,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "338eb528a18d4d9c",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
   "province": "ON",
   "provinces": [
@@ -1439,7 +1401,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "34b686ea4e806da6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -1472,7 +1434,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "360fd8dfa9b44611",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -1502,7 +1464,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "37abea2df8d42c3f",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Ottawa, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -1530,7 +1492,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "38cb5b33966f7259",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1558,7 +1520,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "3d886b28f1efe98d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1586,7 +1548,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "45949c51e86b1b4d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / United States",
   "province": "ON",
   "provinces": [
@@ -1614,7 +1576,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "46ad1a7a752ef380",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Zürich / Seattle / California / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1642,7 +1604,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "47f2c902bff5202e",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -1674,7 +1636,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "4d669df24ba1f6e8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON / Pittsburgh, PA / San Francisco, CA / Canada",
   "province": "ON",
   "provinces": [
@@ -1705,7 +1667,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "50abc28bc7d803d4",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada (Hybrid)",
   "province": "ON",
   "provinces": [
@@ -1733,7 +1695,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "56838365b05df110",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Tours",
   "province": "ON",
   "provinces": [
@@ -1761,7 +1723,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "574af7346c16d8d8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -1789,7 +1751,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "58faf2dfd0d430c6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -1817,7 +1779,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "5ba8676e49855a2e",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON / San Francisco, CA / Remote US / Canada",
   "province": "ON",
   "provinces": [
@@ -1845,7 +1807,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "64604f13369444b0",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -1881,7 +1843,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "677df86842e11342",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -1911,7 +1873,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "6b10b33a923cfe63",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Jose, CA or Toronto, Ontario, Canada / California / San Jose",
   "province": "ON",
   "provinces": [
@@ -1939,7 +1901,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "6dc6ed50bb46fb71",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1967,7 +1929,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "6e3f63c33d42ab7b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -1995,7 +1957,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "720d0843c25ad062",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montréal",
   "province": "QC",
   "provinces": [
@@ -2023,7 +1985,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "73d79f67f880ae9d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -2051,7 +2013,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "741bfd617d246a11",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Tours",
   "province": "ON",
   "provinces": [
@@ -2082,7 +2044,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "75d20dbaf5e6f769",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver / British Columbia / Canada",
   "province": "BC",
   "provinces": [
@@ -2120,7 +2082,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "79264dd3ce090b9b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / ON / Canada",
   "province": "ON",
   "provinces": [
@@ -2150,7 +2112,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "886f834a1e242806",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver. BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -2186,7 +2148,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "901972d31f9109ff",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2220,7 +2182,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9660e4b12b6bdfbf",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, QC / Canada",
   "province": "QC",
   "provinces": [
@@ -2250,7 +2212,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "99818f1d4c42e611",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -2286,7 +2248,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9d9709a7ba21ec19",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, British Columbia / Vancouver, British Columbia, Canada / Vancouver Office",
   "province": "BC",
   "provinces": [
@@ -2316,7 +2278,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9e3ef444d22b16fc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -2344,7 +2306,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9efb00d401390612",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "United States / Hong Kong / Canada / Singapore",
   "province": "REMOTE_CA",
   "provinces": [
@@ -2372,7 +2334,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9f5a2e68b3fea647",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "San Francisco / Toronto / California / United States",
   "province": "ON",
   "provinces": [
@@ -2408,7 +2370,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "9fc5dbd338bd75fc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2438,7 +2400,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a27f3c8b30358716",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -2466,7 +2428,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a3131011cb1aa7b0",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, B.C. / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -2494,7 +2456,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a54586870245b7f1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -2527,7 +2489,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a65997a6286cf931",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -2555,7 +2517,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a67e2a975e6753e9",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal / Montreal, QC, Canada / Montréal",
   "province": "QC",
   "provinces": [
@@ -2583,7 +2545,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a867a65904068ed4",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario",
   "province": "ON",
   "provinces": [
@@ -2611,7 +2573,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "a91f67903167b2ab",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Ottawa, Ontario, Canada; Toronto, Ontario, Canada / Ottawa, Ontario, Canada / Toronto, Ontario, Canada / Ottawa / Toronto",
   "province": "ON",
   "provinces": [
@@ -2647,7 +2609,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "af681646938ed56b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -2677,7 +2639,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "b106166dd1924143",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Austin, Texas, United States; Santa Clara, California, United States; Toronto, Ontario, Canada / Santa Clara, California, United States / North America",
   "province": "ON",
   "provinces": [
@@ -2714,7 +2676,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "b340442095f9beab",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Atlanta, Georgia - USA; Burnaby, British Columbia - Canada; Oakville, Ontario - Canada; Remote - USA; Toronto, Ontario - Canada; Waterloo, Ontario - Canada / North America",
   "province": "BC",
   "provinces": [
@@ -2753,7 +2715,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "b35c53178c0e1acb",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -2783,7 +2745,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "b3fd0d193980ceb6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / San Francisco / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -2811,7 +2773,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "b80f83425ff7bae6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada (Hybrid)",
   "province": "ON",
   "provinces": [
@@ -2839,7 +2801,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "bca5aedeac980293",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Canada",
   "province": "ON",
   "provinces": [
@@ -2867,7 +2829,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "c1122af9d29da6fe",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, BC, Canada / Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -2895,7 +2857,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "c1ac8a9b13a11759",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada",
   "province": "ON",
   "provinces": [
@@ -2931,7 +2893,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "c975acc509358f66",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario , Canada / CA - ON - Toronto - Remote",
   "province": "ON",
   "provinces": [
@@ -2968,7 +2930,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "c9c454b4688b79cc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal,Quebec,Canada / Manchester, England, United Kingdom / Manchester",
   "province": "QC",
   "provinces": [
@@ -2996,7 +2958,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "cc27e70d3f364e9e",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -3032,7 +2994,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d426584e1fb9b986",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Bay Area, CA, United States of America / CA - ON - Toronto - Remote",
   "province": "ON",
   "provinces": [
@@ -3063,7 +3025,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d5afdfdac08fcfb6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3099,7 +3061,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d71db94bafac318a",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -3129,7 +3091,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d81b6d01c375ab8f",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto Headquarters / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -3157,7 +3119,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d90bf112d3ae6718",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Back Office",
   "province": "ON",
   "provinces": [
@@ -3185,7 +3147,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "d9bc62c505244bcc",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Agency",
   "province": "ON",
   "provinces": [
@@ -3221,7 +3183,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "da89b9daa0548bb6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3255,7 +3217,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "e4b7b407a242bde8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Surrey, BC / Surrey, British Columbia, Canada / Surrey",
   "province": "BC",
   "provinces": [
@@ -3290,7 +3252,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "e6f27645f4410c7d",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Kitchener / Canada",
   "province": "ON",
   "provinces": [
@@ -3318,7 +3280,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "eb912b2c61ff47c4",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3354,7 +3316,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "f077b2ad2d0f7900",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Saskatoon / Canada",
   "province": "ON",
   "provinces": [
@@ -3393,7 +3355,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "f1302c4f73e00a3a",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Canada",
   "province": "ON",
   "provinces": [
@@ -3431,7 +3393,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "f4853a8149533b7e",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Oakville, Ontario - Canada / Oakville",
   "province": "ON",
   "provinces": [
@@ -3461,7 +3423,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "fb92bf0fa7ab65d8",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto Canada",
   "province": "ON",
   "provinces": [
@@ -3489,7 +3451,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "fba32629c509357b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario, Canada / Canada / Toronto",
   "province": "ON",
   "provinces": [
@@ -3525,7 +3487,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "fbb23206b786d9db",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON / Toronto",
   "province": "ON",
   "provinces": [
@@ -3556,7 +3518,7 @@
   "first_seen": "2026-10-31",
   "flag_term_in_past": false,
   "id": "fc1efdbe7e6623d6",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, Canada / Kensington Platform",
   "province": "ON",
   "provinces": [
@@ -3587,7 +3549,7 @@
   "first_seen": "2026-10-30",
   "flag_term_in_past": false,
   "id": "36ae68470273a9e5",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -3620,7 +3582,7 @@
   "first_seen": "2026-10-30",
   "flag_term_in_past": false,
   "id": "552a49e8ca55e48b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -3653,7 +3615,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "0c33e9d8bc096695",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -3683,7 +3645,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "14765a714e7f8c52",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -3719,7 +3681,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "147d9e10a6beeb00",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Bellevue, Washington; Mountain View, California; San Francisco, California; Vancouver, Canada / Mountain View, California",
   "province": "BC",
   "provinces": [
@@ -3752,7 +3714,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "37773045e35aa743",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -3791,7 +3753,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "3da2cd34351796ce",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -3824,7 +3786,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "4555ac8e946a1713",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -3846,44 +3808,6 @@
  },
  {
   "duration_is_range": false,
-  "duration_options_months": [
-   4.0
-  ],
-  "duration_status": "stated",
-  "employer": "1Password",
-  "employer_id": "1password",
-  "evidence": {
-   "duration": "4 months | 4 month",
-   "duration_context": "…is a remote opportunity within Canada/US. This position will be for 4 months - January to April 2027. What You Can Expect: Develop deep…",
-   "term": "Winter 2027",
-   "term_context": "Product Management Intern, End User Experience - Winter 2027",
-   "term_dates": "January to April 2027"
-  },
-  "first_seen": "2026-10-29",
-  "flag_term_in_past": false,
-  "id": "5018b302c3a389ec",
-  "last_seen": "2026-11-13",
-  "location_raw": "Remote (United States | Canada)",
-  "province": "REMOTE_CA",
-  "provinces": [
-   "REMOTE_CA"
-  ],
-  "remote": "remote",
-  "sector": "security",
-  "source": "ashby",
-  "term": "Winter 2027",
-  "term_end": "2027-04-30",
-  "term_start": "2027-01-01",
-  "term_status": "stated",
-  "terms": [
-   "Winter 2027"
-  ],
-  "title": "Product Management Intern, End User Experience - Winter 2027",
-  "track": "business_ops",
-  "url": "https://jobs.ashbyhq.com/1password/bef2e88e-9590-467d-8ba6-821b30529003"
- },
- {
-  "duration_is_range": false,
   "duration_options_months": [],
   "duration_status": "not_stated",
   "employer": "Lyft",
@@ -3895,7 +3819,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "518ad23e9671dad9",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -3934,7 +3858,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "5aef43857a1b3172",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Canada / San Francisco / Europe / London / United States / United Kingdom / Toronto / Montreal",
   "province": "ON",
   "provinces": [
@@ -3968,7 +3892,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "647ff56f14830548",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -3998,7 +3922,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "6551999a74291408",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -4029,7 +3953,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "6a9ab99b66109f15",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4062,7 +3986,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "72a0c71680e9e969",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -4095,7 +4019,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "7369006c3d80c2c1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -4128,7 +4052,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "78930bbe3223db3c",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4166,7 +4090,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "8f635b280b9966d1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -4199,7 +4123,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "9a3c60880c35810b",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Longueuil, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4232,7 +4156,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "9f81a5d75e504e25",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Longueuil, Canada / Longueuil, Quebec, Canada / Longueuil Office",
   "province": "QC",
   "provinces": [
@@ -4267,7 +4191,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "a90052befc0cd127",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Vancouver, British Columbia, Canada / Vancouver",
   "province": "BC",
   "provinces": [
@@ -4300,7 +4224,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "ae3fc07c3ad011b1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Canada, Toronto / Toronto Office",
   "province": "ON",
   "provinces": [
@@ -4330,7 +4254,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "b1949a038291eae1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, ON, CA / Toronto",
   "province": "ON",
   "provinces": [
@@ -4358,7 +4282,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "b9c52250b631b583",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -4389,7 +4313,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "b9e7cceb23277778",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4422,7 +4346,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "ba80139f0da63d34",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Canada / Toronto, Ontario, Canada / Toronto Coworking",
   "province": "ON",
   "provinces": [
@@ -4455,7 +4379,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "ccb9c4f453859d02",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -4488,7 +4412,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "d2cd5cea1837b415",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Waterloo / Ottawa / Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -4526,7 +4450,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "d3264c45622979d7",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Canada / Europe / United States / United Kingdom",
   "province": "REMOTE_CA",
   "provinces": [
@@ -4559,7 +4483,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "de6350f745224661",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
@@ -4598,7 +4522,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "deb3c12435abd2a7",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto, Ontario / Canada",
   "province": "ON",
   "provinces": [
@@ -4631,7 +4555,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "e6a6b0e7204b35d1",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montréal, Quebec, Canada / Montreal, Canada",
   "province": "QC",
   "provinces": [
@@ -4661,7 +4585,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "e7189473b4506a27",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Toronto / Toronto, Ontario, Canada / CA-Toronto",
   "province": "ON",
   "provinces": [
@@ -4692,7 +4616,7 @@
   "first_seen": "2026-10-29",
   "flag_term_in_past": false,
   "id": "ff21e2e6eb033364",
-  "last_seen": "2026-11-14",
+  "last_seen": "2026-11-15",
   "location_raw": "Montreal, Canada / Montreal, Canada, Montreal / Montreal Office",
   "province": "QC",
   "provinces": [
