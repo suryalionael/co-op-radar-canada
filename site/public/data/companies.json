@@ -1,7 +1,7 @@
 [
  {
   "badge": "open",
-  "basis": "from 16 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/lyft",
   "name": "Lyft",
   "open_count": 16,
@@ -26,33 +26,11 @@
   "program_id": null,
   "sector": "transportation",
   "slug": "lyft",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    16,
-    0,
-    0
-   ],
-   "n_dates": 16,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 13 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/asteraearlycareer2027",
   "name": "Astera Labs",
   "open_count": 13,
@@ -74,33 +52,11 @@
   "program_id": null,
   "sector": "hardware",
   "slug": "astera_labs",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    13,
-    0,
-    0
-   ],
-   "n_dates": 13,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 21 postings, 2026",
+  "basis": "from 2 postings, 2026",
   "board_url": "https://jobs.lever.co/eqbank",
   "name": "Equitable Bank",
   "open_count": 11,
@@ -120,33 +76,11 @@
   "program_id": null,
   "sector": "fintech",
   "slug": "equitable_bank",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    19,
-    2,
-    0
-   ],
-   "n_dates": 21,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 9 postings, 2026",
+  "basis": "from 7 postings, 2026",
   "board_url": "https://jobs.lever.co/kabam",
   "name": "Kabam",
   "open_count": 9,
@@ -177,10 +111,10 @@
     0,
     0,
     0,
-    9,
+    7,
     0
    ],
-   "n_dates": 9,
+   "n_dates": 7,
    "start": 11,
    "years": [
     2026,
@@ -190,7 +124,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 6 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/human-computer-lab",
   "name": "Human Computer Lab",
   "open_count": 6,
@@ -205,33 +139,11 @@
   "program_id": null,
   "sector": "hardware",
   "slug": "human_computer_lab",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    6,
-    0,
-    0
-   ],
-   "n_dates": 6,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 17 postings, 2026",
+  "basis": "from 2 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/kensingtontours",
   "name": "Kensington Tours",
   "open_count": 6,
@@ -246,33 +158,11 @@
   "program_id": null,
   "sector": "travel",
   "slug": "kensington_tours",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    15,
-    2,
-    0
-   ],
-   "n_dates": 17,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 7 postings, 2026",
+  "basis": "from 1 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/momentenergy",
   "name": "Moment Energy",
   "open_count": 6,
@@ -287,33 +177,11 @@
   "program_id": null,
   "sector": "energy",
   "slug": "moment_energy",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    6,
-    1,
-    0
-   ],
-   "n_dates": 7,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 6 postings, 2026",
+  "basis": "from 3 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/stripe",
   "name": "Stripe",
   "open_count": 6,
@@ -340,394 +208,6 @@
     0,
     0,
     0,
-    5,
-    1,
-    0
-   ],
-   "n_dates": 6,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 7 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/tenstorrentuniversity",
-  "name": "Tenstorrent",
-  "open_count": 6,
-  "posting_ids": [
-   "053caea8f3fc1f13",
-   "22897e327e16feaf",
-   "45949c51e86b1b4d",
-   "a91f67903167b2ab",
-   "bca5aedeac980293",
-   "cc27e70d3f364e9e"
-  ],
-  "program_id": null,
-  "sector": "hardware",
-  "slug": "tenstorrent_university",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    7,
-    0,
-    0
-   ],
-   "n_dates": 7,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 5 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/cresta",
-  "name": "Cresta",
-  "open_count": 5,
-  "posting_ids": [
-   "1ce824468c334008",
-   "50abc28bc7d803d4",
-   "a867a65904068ed4",
-   "b80f83425ff7bae6",
-   "fb92bf0fa7ab65d8"
-  ],
-  "program_id": null,
-  "sector": "ml_ai",
-  "slug": "cresta",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0
-   ],
-   "n_dates": 5,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 3 postings, 2026",
-  "board_url": "https://jobs.lever.co/acceldata",
-  "name": "Acceldata",
-  "open_count": 3,
-  "posting_ids": [
-   "0b5bd27afd7274ff",
-   "a65997a6286cf931",
-   "e6f27645f4410c7d"
-  ],
-  "program_id": null,
-  "sector": "software",
-  "slug": "acceldata",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0
-   ],
-   "n_dates": 3,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 3 postings, 2026",
-  "board_url": "https://jobs.lever.co/shyftlabs",
-  "name": "ShyftLabs",
-  "open_count": 3,
-  "posting_ids": [
-   "046e6b40a5b015be",
-   "64604f13369444b0",
-   "73d79f67f880ae9d"
-  ],
-  "program_id": null,
-  "sector": "software",
-  "slug": "shyftlabs",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0
-   ],
-   "n_dates": 3,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 3 postings, 2026",
-  "board_url": "https://jobs.lever.co/waabi",
-  "name": "Waabi",
-  "open_count": 3,
-  "posting_ids": [
-   "338eb528a18d4d9c",
-   "4d669df24ba1f6e8",
-   "5ba8676e49855a2e"
-  ],
-  "program_id": null,
-  "sector": "ml_ai",
-  "slug": "waabi",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0
-   ],
-   "n_dates": 3,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 6 postings, 2026",
-  "board_url": "https://jobs.lever.co/bhvr",
-  "name": "Behaviour Interactive",
-  "open_count": 2,
-  "posting_ids": [
-   "34b686ea4e806da6",
-   "9660e4b12b6bdfbf"
-  ],
-  "program_id": null,
-  "sector": "gaming",
-  "slug": "behaviour_interactive",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    6,
-    0,
-    0
-   ],
-   "n_dates": 6,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 2 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/block",
-  "name": "Block",
-  "open_count": 2,
-  "posting_ids": [
-   "c975acc509358f66",
-   "d426584e1fb9b986"
-  ],
-  "program_id": null,
-  "sector": "fintech",
-  "slug": "block",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 4 postings, 2026",
-  "board_url": "https://jobs.ashbyhq.com/cohere",
-  "name": "Cohere",
-  "open_count": 2,
-  "posting_ids": [
-   "5aef43857a1b3172",
-   "d3264c45622979d7"
-  ],
-  "program_id": null,
-  "sector": "ml_ai",
-  "slug": "cohere",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    0,
-    0
-   ],
-   "n_dates": 4,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 2 postings, 2026",
-  "board_url": "https://jobs.ashbyhq.com/georgian",
-  "name": "Georgian",
-  "open_count": 2,
-  "posting_ids": [
-   "2a899d5017d4a804",
-   "d81b6d01c375ab8f"
-  ],
-  "program_id": null,
-  "sector": "fintech",
-  "slug": "georgian",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 13 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/internshiplist2000",
-  "name": "Geotab",
-  "open_count": 2,
-  "posting_ids": [
-   "0bc74d4a719ab193",
-   "d71db94bafac318a"
-  ],
-  "program_id": null,
-  "sector": "software",
-  "slug": "geotab_internships",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    12,
-    1,
-    0
-   ],
-   "n_dates": 13,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 2 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/studiokraftonboard",
-  "name": "KRAFTON Montréal Studio",
-  "open_count": 2,
-  "posting_ids": [
-   "00b96890ed191aa4",
-   "720d0843c25ad062"
-  ],
-  "program_id": null,
-  "sector": "gaming",
-  "slug": "krafton_montreal",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 3 postings, 2026",
-  "board_url": "https://jobs.lever.co/magnetforensics",
-  "name": "Magnet Forensics",
-  "open_count": 2,
-  "posting_ids": [
-   "f0954b30fbc514c2",
-   "ccb9c4f453859d02"
-  ],
-  "program_id": null,
-  "sector": "security",
-  "slug": "magnet_forensics",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     2,
     1,
     0
@@ -742,7 +222,197 @@
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/tenstorrentuniversity",
+  "name": "Tenstorrent",
+  "open_count": 6,
+  "posting_ids": [
+   "053caea8f3fc1f13",
+   "22897e327e16feaf",
+   "45949c51e86b1b4d",
+   "a91f67903167b2ab",
+   "bca5aedeac980293",
+   "cc27e70d3f364e9e"
+  ],
+  "program_id": null,
+  "sector": "hardware",
+  "slug": "tenstorrent_university",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/cresta",
+  "name": "Cresta",
+  "open_count": 5,
+  "posting_ids": [
+   "1ce824468c334008",
+   "50abc28bc7d803d4",
+   "a867a65904068ed4",
+   "b80f83425ff7bae6",
+   "fb92bf0fa7ab65d8"
+  ],
+  "program_id": null,
+  "sector": "ml_ai",
+  "slug": "cresta",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/acceldata",
+  "name": "Acceldata",
+  "open_count": 3,
+  "posting_ids": [
+   "0b5bd27afd7274ff",
+   "a65997a6286cf931",
+   "e6f27645f4410c7d"
+  ],
+  "program_id": null,
+  "sector": "software",
+  "slug": "acceldata",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/shyftlabs",
+  "name": "ShyftLabs",
+  "open_count": 3,
+  "posting_ids": [
+   "046e6b40a5b015be",
+   "64604f13369444b0",
+   "73d79f67f880ae9d"
+  ],
+  "program_id": null,
+  "sector": "software",
+  "slug": "shyftlabs",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/waabi",
+  "name": "Waabi",
+  "open_count": 3,
+  "posting_ids": [
+   "338eb528a18d4d9c",
+   "4d669df24ba1f6e8",
+   "5ba8676e49855a2e"
+  ],
+  "program_id": null,
+  "sector": "ml_ai",
+  "slug": "waabi",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/bhvr",
+  "name": "Behaviour Interactive",
+  "open_count": 2,
+  "posting_ids": [
+   "34b686ea4e806da6",
+   "9660e4b12b6bdfbf"
+  ],
+  "program_id": null,
+  "sector": "gaming",
+  "slug": "behaviour_interactive",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/block",
+  "name": "Block",
+  "open_count": 2,
+  "posting_ids": [
+   "c975acc509358f66",
+   "d426584e1fb9b986"
+  ],
+  "program_id": null,
+  "sector": "fintech",
+  "slug": "block",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/cohere",
+  "name": "Cohere",
+  "open_count": 2,
+  "posting_ids": [
+   "5aef43857a1b3172",
+   "d3264c45622979d7"
+  ],
+  "program_id": null,
+  "sector": "ml_ai",
+  "slug": "cohere",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 postings, 2026",
+  "board_url": "https://jobs.ashbyhq.com/georgian",
+  "name": "Georgian",
+  "open_count": 2,
+  "posting_ids": [
+   "2a899d5017d4a804",
+   "d81b6d01c375ab8f"
+  ],
+  "program_id": null,
+  "sector": "fintech",
+  "slug": "georgian",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/internshiplist2000",
+  "name": "Geotab",
+  "open_count": 2,
+  "posting_ids": [
+   "0bc74d4a719ab193",
+   "d71db94bafac318a"
+  ],
+  "program_id": null,
+  "sector": "software",
+  "slug": "geotab_internships",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/studiokraftonboard",
+  "name": "KRAFTON Montréal Studio",
+  "open_count": 2,
+  "posting_ids": [
+   "00b96890ed191aa4",
+   "720d0843c25ad062"
+  ],
+  "program_id": null,
+  "sector": "gaming",
+  "slug": "krafton_montreal",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 postings, 2026",
+  "board_url": "https://jobs.lever.co/magnetforensics",
+  "name": "Magnet Forensics",
+  "open_count": 2,
+  "posting_ids": [
+   "f0954b30fbc514c2",
+   "ccb9c4f453859d02"
+  ],
+  "program_id": null,
+  "sector": "security",
+  "slug": "magnet_forensics",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/pinterest",
   "name": "Pinterest",
   "open_count": 2,
@@ -757,7 +427,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/steel",
   "name": "Steel",
   "open_count": 2,
@@ -772,7 +442,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/veeda-ai",
   "name": "Veeda AI",
   "open_count": 2,
@@ -787,7 +457,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/alayacare",
   "name": "AlayaCare",
   "open_count": 1,
@@ -801,7 +471,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.lever.co/bosonai",
   "name": "Boson AI",
   "open_count": 1,
@@ -815,7 +485,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "from 1 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/brave",
   "name": "Brave",
   "open_count": 1,
@@ -829,7 +499,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/databricks",
   "name": "Databricks",
   "open_count": 1,
@@ -843,7 +513,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/doordashcanada",
   "name": "DoorDash",
   "open_count": 1,
@@ -857,7 +527,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/epicgames",
   "name": "Epic Games",
   "open_count": 1,
@@ -871,7 +541,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.lever.co/gomaterials",
   "name": "GoMaterials",
   "open_count": 1,
@@ -885,7 +555,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 4 postings, 2026",
+  "basis": "from 2 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/hootsuite",
   "name": "Hootsuite",
   "open_count": 1,
@@ -895,33 +565,11 @@
   "program_id": null,
   "sector": "software",
   "slug": "hootsuite",
-  "window": {
-   "end": 11,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    4,
-    0
-   ],
-   "n_dates": 4,
-   "start": 11,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/instalilyai",
   "name": "InstaLILY",
   "open_count": 1,
@@ -935,7 +583,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 4 postings, 2026",
+  "basis": "from 1 postings, 2026",
   "board_url": "https://jobs.lever.co/kepler",
   "name": "Kepler Communications",
   "open_count": 1,
@@ -945,33 +593,11 @@
   "program_id": null,
   "sector": "aerospace",
   "slug": "kepler_communications",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    1,
-    0
-   ],
-   "n_dates": 4,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "open",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/later",
   "name": "Later",
   "open_count": 1,
@@ -985,7 +611,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/roblox",
   "name": "Roblox",
   "open_count": 1,
@@ -999,7 +625,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/telus-digital",
   "name": "TELUS Digital",
   "open_count": 1,
@@ -1013,7 +639,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/tribalscale",
   "name": "TribalScale",
   "open_count": 1,
@@ -1027,7 +653,7 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/yotta",
   "name": "Yotta Labs",
   "open_count": 1,
@@ -1041,7 +667,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 11 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/1password",
   "name": "1Password",
   "open_count": 0,
@@ -1049,29 +675,7 @@
   "program_id": null,
   "sector": "security",
   "slug": "1password",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    11,
-    0,
-    0
-   ],
-   "n_dates": 11,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "quiet",
@@ -1231,7 +835,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 3 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/aperaaiinc",
   "name": "Apera AI",
   "open_count": 0,
@@ -1239,29 +843,7 @@
   "program_id": null,
   "sector": "ml_ai",
   "slug": "apera_ai",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0
-   ],
-   "n_dates": 3,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "quiet",
@@ -1397,7 +979,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 3 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/bree",
   "name": "Bree",
   "open_count": 0,
@@ -1405,29 +987,7 @@
   "program_id": null,
   "sector": "fintech",
   "slug": "bree",
-  "window": {
-   "end": 10,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0,
-    0
-   ],
-   "n_dates": 3,
-   "start": 10,
-   "years": [
-    2026,
-    2026
-   ]
-  }
+  "window": null
  },
  {
   "badge": "quiet",
@@ -1539,7 +1099,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/clutch",
   "name": "Clutch",
   "open_count": 0,
@@ -1707,7 +1267,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 2 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/drweng",
   "name": "DRW",
   "open_count": 0,
@@ -1839,7 +1399,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.lever.co/fullscript",
   "name": "Fullscript",
   "open_count": 0,
@@ -1947,7 +1507,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://job-boards.greenhouse.io/heygen",
   "name": "HeyGen",
   "open_count": 0,
@@ -2427,7 +1987,7 @@
  },
  {
   "badge": "quiet",
-  "basis": "from 1 postings, 2026",
+  "basis": "",
   "board_url": "https://jobs.ashbyhq.com/pebl",
   "name": "Pebl",
   "open_count": 0,

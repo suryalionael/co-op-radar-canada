@@ -175,6 +175,7 @@ def test_companies(tmp_path: Path) -> None:
     )
     write_postings(
         [
+            posting("backlog", first_seen=dt.date(2026, 8, 1), status=Status.closed),
             posting("a", first_seen=dt.date(2026, 9, 2)),
             posting("b", first_seen=dt.date(2026, 9, 9), status=Status.closed),
             posting("c", first_seen=dt.date(2026, 10, 1), status=Status.closed),
@@ -197,7 +198,8 @@ def test_companies(tmp_path: Path) -> None:
     assert (acme["open_count"], acme["posting_ids"], acme["badge"]) == (1, ["a"], "open")
     assert acme["board_url"] == "https://jobs.lever.co/acme"
     assert (acme["window"]["start"], acme["window"]["end"]) == (9, 9)
-    assert acme["basis"] == "from 3 postings, 2026"
+    assert acme["basis"] == "from 3 postings, 2026"  # the first day's backlog is not a hiring date
+    assert acme["window"]["months"][7] == 0
     assert companies["zeta"]["window"] is None and companies["zeta"]["badge"] == "quiet"
     assert companies["goc"]["program_id"] == "fswep" and companies["goc"]["name"] == "FSWEP"
     assert meta["counts"]["companies"] == 3

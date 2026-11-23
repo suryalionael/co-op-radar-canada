@@ -174,7 +174,11 @@ BADGE_ORDER = {"open": 0, "soon": 1, "quiet": 2}
 
 
 def student_first_seen(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[str, list[dt.date]]:
-    """First-seen dates of every Canadian student posting, open or closed, by employer."""
+    """First-seen dates of every Canadian student posting, open or closed, by employer.
+
+    The first day an employer's board was read finds its whole backlog at once, so
+    that day says when we started looking, not when the employer posted. It is dropped.
+    """
     path = processed / "postings.parquet"
     if not path.exists():
         return {}
@@ -182,7 +186,7 @@ def student_first_seen(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[
     sql = f"SELECT employer_id, first_seen FROM read_parquet('{path.as_posix()}') WHERE in_canada AND is_student_role"
     for row in _rows(con, sql):
         dates.setdefault(row["employer_id"], []).append(row["first_seen"])
-    return dates
+    return {eid: [d for d in ds if d != min(ds)] for eid, ds in dates.items()}
 
 
 def build_companies(
