@@ -2,7 +2,8 @@
 
 import MiniSearch from "minisearch";
 import { useEffect, useMemo, useState } from "react";
-import { JobRow, ROW_COLUMNS } from "./JobRow";
+import { JobRow } from "./JobRow";
+import { TimetableHead } from "./TimetableHead";
 import { compareTerms, daysBetween, offersDuration, PROVINCES, REMOTE_LABELS, TRACKS } from "@/lib/format";
 import type { Posting, RemoteMode } from "@/lib/types";
 
@@ -243,17 +244,7 @@ export function JobBoard({
 
           {results.length > 0 ? (
             <>
-              <div
-                aria-hidden="true"
-                className={`plate-type hidden bg-ink-bar px-5 py-2.5 text-xs text-ink-bar-fg md:grid md:gap-x-4 ${ROW_COLUMNS}`}
-              >
-                <span>Posted</span>
-                <span>Role</span>
-                <span>Term</span>
-                <span>Length</span>
-                <span>Prov</span>
-                <span />
-              </div>
+              <TimetableHead />
               <ul className="border-x border-t border-border md:border-t-0">
                 {results.slice(0, limit).map((p) => (
                   <JobRow key={p.id} posting={p} dataDate={dataDate} />

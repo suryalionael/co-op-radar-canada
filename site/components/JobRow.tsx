@@ -2,11 +2,9 @@
 
 import { useId, useState } from "react";
 import { EvidenceQuote } from "./EvidenceQuote";
+import { ROW_COLUMNS } from "./TimetableHead";
 import { daysBetween, durationNote, formatAge, formatDay, formatPlate, REMOTE_LABELS, SOURCES } from "@/lib/format";
 import type { Posting } from "@/lib/types";
-
-/** Desktop column rhythm, shared with the head bar in JobBoard. */
-export const ROW_COLUMNS = "md:grid-cols-[4.5rem_minmax(0,1fr)_8rem_5.5rem_2.75rem_4.75rem]";
 
 /** One timetable line: when it appeared, what it is, the term and length the posting states, and Apply. */
 export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: string | null }) {
