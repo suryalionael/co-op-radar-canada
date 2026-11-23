@@ -124,6 +124,49 @@
  },
  {
   "badge": "open",
+  "basis": "from 3 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/kensingtontours",
+  "name": "Kensington Tours",
+  "open_count": 8,
+  "posting_ids": [
+   "51fd719153657a95",
+   "0f387c29a92b4496",
+   "23c8d52d0c8850f8",
+   "38cb5b33966f7259",
+   "56838365b05df110",
+   "6a2aaa09ca3f180b",
+   "d90bf112d3ae6718",
+   "eb912b2c61ff47c4"
+  ],
+  "program_ids": [],
+  "sector": "travel",
+  "slug": "kensington_tours",
+  "window": {
+   "end": 11,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   "n_dates": 3,
+   "start": 11,
+   "years": [
+    2026,
+    2026
+   ]
+  }
+ },
+ {
+  "badge": "open",
   "basis": "",
   "board_url": "https://jobs.ashbyhq.com/human-computer-lab",
   "name": "Human Computer Lab",
@@ -139,44 +182,6 @@
   "program_ids": [],
   "sector": "hardware",
   "slug": "human_computer_lab",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 2 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/kensingtontours",
-  "name": "Kensington Tours",
-  "open_count": 6,
-  "posting_ids": [
-   "0f387c29a92b4496",
-   "23c8d52d0c8850f8",
-   "38cb5b33966f7259",
-   "56838365b05df110",
-   "d90bf112d3ae6718",
-   "eb912b2c61ff47c4"
-  ],
-  "program_ids": [],
-  "sector": "travel",
-  "slug": "kensington_tours",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 1 posting, 2026",
-  "board_url": "https://job-boards.greenhouse.io/momentenergy",
-  "name": "Moment Energy",
-  "open_count": 6,
-  "posting_ids": [
-   "e12cc68b911a3cf1",
-   "10558c5183b39734",
-   "12697a76f70befcb",
-   "47f2c902bff5202e",
-   "af681646938ed56b",
-   "e4b7b407a242bde8"
-  ],
-  "program_ids": [],
-  "sector": "energy",
-  "slug": "moment_energy",
   "window": null
  },
  {
@@ -259,6 +264,23 @@
  },
  {
   "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://job-boards.greenhouse.io/momentenergy",
+  "name": "Moment Energy",
+  "open_count": 4,
+  "posting_ids": [
+   "12697a76f70befcb",
+   "47f2c902bff5202e",
+   "af681646938ed56b",
+   "e4b7b407a242bde8"
+  ],
+  "program_ids": [],
+  "sector": "energy",
+  "slug": "moment_energy",
+  "window": null
+ },
+ {
+  "badge": "open",
   "basis": "",
   "board_url": "https://jobs.lever.co/acceldata",
   "name": "Acceldata",
@@ -272,6 +294,44 @@
   "sector": "software",
   "slug": "acceldata",
   "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 3 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/brave",
+  "name": "Brave",
+  "open_count": 3,
+  "posting_ids": [
+   "1e281f7cc752cf22",
+   "a41a8a68899cdec1",
+   "429a113b7331a298"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "brave",
+  "window": {
+   "end": 11,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   "n_dates": 3,
+   "start": 11,
+   "years": [
+    2026,
+    2026
+   ]
+  }
  },
  {
   "badge": "open",
@@ -481,20 +541,6 @@
   "program_ids": [],
   "sector": "ml_ai",
   "slug": "boson_ai",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 1 posting, 2026",
-  "board_url": "https://job-boards.greenhouse.io/brave",
-  "name": "Brave",
-  "open_count": 1,
-  "posting_ids": [
-   "429a113b7331a298"
-  ],
-  "program_ids": [],
-  "sector": "software",
-  "slug": "brave",
   "window": null
  },
  {
