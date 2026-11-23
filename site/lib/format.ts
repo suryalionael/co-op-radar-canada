@@ -114,3 +114,32 @@ export function formatSector(sector: string): string {
   const s = sector.replace(/_/g, " ");
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
+
+/**
+ * The title as a timetable line: drop a leading "[Summer 2027 Canada]" tag and a trailing
+ * " - Winter 2027" or "(Winter 2027)" that only repeats the Term column. The raw title stays in the evidence.
+ */
+export function displayTitle(title: string, terms: string[]): string {
+  let t = title.replace(/^\s*\[[^\]]*\]\s*/, "");
+  for (const term of terms) {
+    const esc = term.replace(/\s+/g, "\\s+");
+    t = t.replace(new RegExp(`\\s*(?:[-–—|,]\\s*${esc}|\\(\\s*${esc}\\s*\\))\\s*$`, "i"), "");
+  }
+  return t.trim() || title;
+}
+
+const PLACE_NOISE = /^(?:canada|remote|hybrid|on-?site|ca|headquarters|hq|office)$/i;
+
+/** "Toronto, Ontario; Ottawa, Ontario; Greater Toronto Area" -> "Toronto, Ottawa +1". */
+export function shortLocation(raw: string): string {
+  const cities: string[] = [];
+  for (const part of raw.split(/[;/|]|\bor\b/)) {
+    const city = part.split(",")[0].replace(/\b(?:headquarters|hq|office)\b/gi, "").trim();
+    if (city && !PLACE_NOISE.test(city) && !(city in PROVINCE_NAMES) && !cities.includes(city)) cities.push(city);
+  }
+  if (!cities.length) return raw.trim();
+  return cities.length > 2 ? `${cities.slice(0, 2).join(", ")} +${cities.length - 2}` : cities.join(", ");
+}
+const PROVINCE_NAMES: Record<string, true> = Object.fromEntries(
+  [...Object.values(PROVINCES), "Ontario", "Quebec", "Québec", "British Columbia", "ON", "QC", "BC", "AB"].map((n) => [n, true]),
+);

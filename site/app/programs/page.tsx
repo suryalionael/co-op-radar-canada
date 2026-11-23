@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EvidenceQuote } from "@/components/EvidenceQuote";
+import { ArrowUpRight } from "@/components/Icons";
 import { getMeta, getPrograms } from "@/lib/data";
 import { daysBetween } from "@/lib/format";
 
@@ -47,8 +48,9 @@ export default function ProgramsPage() {
                 <h3 className="text-lg font-semibold">
                   <a href={p.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                     {p.name}
-                    <span aria-hidden="true" className="text-muted">
-                      &nbsp;↗
+                    <span className="text-muted">
+                      &nbsp;
+                      <ArrowUpRight />
                     </span>
                   </a>
                 </h3>

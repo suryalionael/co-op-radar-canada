@@ -2,6 +2,7 @@
 
 import MiniSearch from "minisearch";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Cross } from "./Icons";
 import { JobRow } from "./JobRow";
 import { TimetableHead } from "./TimetableHead";
 import { compareTerms, daysBetween, offersDuration, PROVINCES, REMOTE_LABELS, TRACKS } from "@/lib/format";
@@ -96,6 +97,7 @@ export function JobBoard({
 
   const update = (patch: Partial<Filters>) => {
     const next = { ...filters, ...patch };
+    if (!next.duration || next.duration === "not_stated") next.unstated = false;
     setFilters(next);
     setLimit(PAGE);
     writeUrl(next);
@@ -120,8 +122,9 @@ export function JobBoard({
     const durations = [...new Set(postings.flatMap((p) => p.duration_options_months))].sort((a, b) => a - b);
     const provinces = Object.keys(PROVINCES).filter((code) => postings.some((p) => p.provinces.includes(code)));
     const tracks = Object.keys(TRACKS).filter((t) => postings.some((p) => p.track === t));
-    const termCount = (t: string) => postings.filter((p) => p.terms.includes(t)).length;
-    const provinceCount = (c: string) => postings.filter((p) => p.provinces.includes(c)).length;
+    // Same rule as the shortcut chips: a remote-in-Canada posting counts for every province.
+    const termCount = (term: string) => postings.filter((p) => matches(p, { ...EMPTY, term }, dataDate)).length;
+    const provinceCount = (province: string) => postings.filter((p) => matches(p, { ...EMPTY, province }, dataDate)).length;
     return { terms, durations, provinces, tracks, termCount, provinceCount };
   }, [postings, dataDate]);
 
@@ -282,10 +285,10 @@ export function JobBoard({
         </ul>
       )}
 
-      <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem]">
+      <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <section aria-labelledby="results-heading" className="min-w-0">
-          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-3">
-            <h2 id="results-heading" className="text-xl font-black" aria-live="polite">
+          <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
+            <h2 id="results-heading" className="text-lg font-black" aria-live="polite">
               <span className="figures">{results.length}</span> {results.length === 1 ? "role" : "roles"}
               {active > 0 ? " match" : " open now"}
             </h2>
@@ -314,19 +317,6 @@ export function JobBoard({
               </button>
             </p>
           )}
-          {results.length > 0 && (
-            <p className="mb-2 hidden flex-wrap gap-x-5 gap-y-1 text-xs text-muted md:flex">
-              <span>
-                <span className="plate-type mr-1.5 bg-go px-1.5 py-px text-[0.6875rem] text-go-fg">4 mo</span>length quoted from the posting
-              </span>
-              <span>
-                <span className="plate-type mr-1.5 border border-go px-1.5 text-[0.6875rem] text-go">4 mo</span>worked out from its dates
-              </span>
-              <span>
-                <span className="figures mr-1 font-black text-go">2d</span>new this week
-              </span>
-            </p>
-          )}
 
           {results.length > 0 ? (
             <>
@@ -336,6 +326,17 @@ export function JobBoard({
                   <JobRow key={p.id} posting={p} dataDate={dataDate} />
                 ))}
               </ul>
+              <p className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-xs text-muted">
+                <span>
+                  <span className="plate-type mr-1.5 bg-go px-1.5 py-px text-[0.6875rem] text-go-fg">4 mo</span>length quoted from the posting
+                </span>
+                <span>
+                  <span className="plate-type mr-1.5 border border-go px-1.5 text-[0.6875rem] text-go">4 mo</span>worked out from its dates
+                </span>
+                <span>
+                  <span className="figures mr-1 font-black text-go">2d</span>new this week
+                </span>
+              </p>
               {results.length > limit && (
                 <button
                   type="button"
@@ -368,7 +369,7 @@ export function JobBoard({
                       className="min-h-10 border-[1.5px] border-fg px-3 font-display text-sm font-bold hover:bg-fg hover:text-bg transition-colors"
                     >
                       Remove {k === "q" ? "search" : k === "duration" ? "length" : k === "recent" ? "new this week" : k === "track" ? "field" : k === "remote" ? "work mode" : k}
-                      <span aria-hidden="true"> ×</span>
+                      <Cross />
                     </button>
                   ))}
                 <button type="button" onClick={() => update(EMPTY)} className="min-h-10 px-2 font-bold text-link underline">
@@ -401,7 +402,7 @@ function BarSelect({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="-ml-1 w-full bg-transparent font-display text-[0.9375rem] font-bold outline-offset-4"
+        className="-ml-1 min-h-7 w-full bg-transparent font-display text-[0.9375rem] font-bold outline-offset-4"
       >
         {children}
       </select>

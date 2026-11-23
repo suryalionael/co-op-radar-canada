@@ -14,6 +14,8 @@ const VIEWS: { value: "" | CompanyBadge; label: string }[] = [
   { value: "quiet", label: "Quiet" },
 ];
 
+const COMPANY_COLUMNS = "md:grid-cols-[minmax(0,1.2fr)_9rem_7rem_minmax(0,1fr)]";
+
 export function CompanyTable({ companies, currentMonth }: { companies: Company[]; currentMonth: number }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState<"" | CompanyBadge>("");
@@ -60,33 +62,43 @@ export function CompanyTable({ companies, currentMonth }: { companies: Company[]
         <span className="figures font-bold text-fg">{shown.length}</span> {shown.length === 1 ? "company" : "companies"}
       </p>
       {shown.length ? (
-        <ul className="mt-2 grid border-l border-t border-border sm:grid-cols-2 xl:grid-cols-3">
-          {shown.map((c) => (
-            <li key={c.slug} className="border-b border-r border-border bg-surface p-4">
-              <div className="flex items-start justify-between gap-3">
-                <div className="min-w-0">
-                  <Link
-                    href={`/companies/${c.slug}/`}
-                    className="font-display text-[1.0625rem] font-extrabold leading-tight hover:text-link hover:underline"
-                  >
-                    {c.name}
-                  </Link>
-                  {c.sector && <p className="text-xs text-muted">{formatSector(c.sector)}</p>}
+        <div className="mt-2">
+          <div
+            aria-hidden="true"
+            className={`plate-type hidden bg-ink-bar px-5 py-2.5 text-xs text-ink-bar-fg md:grid md:gap-x-6 ${COMPANY_COLUMNS}`}
+          >
+            <span>Company</span>
+            <span>Sector</span>
+            <span>Status</span>
+            <span>Hiring months</span>
+          </div>
+          <ul className="border-x border-t border-border md:border-t-0">
+            {shown.map((c) => (
+              <li
+                key={c.slug}
+                className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-2 border-b border-border bg-surface px-4 py-3 md:gap-x-6 md:px-5 ${COMPANY_COLUMNS}`}
+              >
+                <Link
+                  href={`/companies/${c.slug}/`}
+                  className="min-w-0 break-words py-1 font-display text-base font-extrabold leading-tight hover:text-link hover:underline"
+                >
+                  {c.name}
+                </Link>
+                <span className="hidden text-sm text-muted md:block">{c.sector ? formatSector(c.sector) : "—"}</span>
+                <span className="justify-self-end md:justify-self-start">
+                  <StatusPlate company={c} />
+                </span>
+                <div className="col-span-2 md:col-span-1">
+                  {c.window ? (
+                    <WindowStrip window={c.window} currentMonth={currentMonth} />
+                  ) : (
+                    <span className="text-sm italic text-muted">{c.open_count ? "too new to tell" : "no postings seen yet"}</span>
+                  )}
                 </div>
-                <StatusPlate company={c} />
-              </div>
-              {c.window ? (
-                <div className="mt-3">
-                  <WindowStrip window={c.window} currentMonth={currentMonth} />
-                </div>
-              ) : (
-                <p className="mt-3 text-xs text-muted">
-                  {c.open_count ? "Calendar once there’s more history" : "No student postings seen yet"}
-                </p>
-              )}
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <div className="mt-2 border-2 border-dashed border-border px-6 py-10">
           <p className="font-display text-lg font-extrabold">No companies match.</p>

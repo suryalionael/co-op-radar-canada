@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "@/components/Icons";
 import { JobBoard } from "@/components/JobBoard";
 import { StatusPlate } from "@/components/StatusPlate";
 import { WindowStrip } from "@/components/WindowStrip";
@@ -16,13 +17,15 @@ export default function Home() {
 
   return (
     <>
-      <div className="grid items-end gap-x-12 gap-y-4 pb-8 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
+      <div className="grid items-end gap-x-12 gap-y-3 pb-6 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
         <h1 className="text-display font-black tracking-[-0.02em]">
           Your next work term, <span className="bg-signal px-2 text-signal-fg [box-decoration-break:clone]">on schedule.</span>
         </h1>
         <p className="max-w-[46ch] text-lg text-muted">
-          Co-ops and internships from {c.employer_boards_tracked} Canadian tech employers, checked daily. Every term
-          and length is quoted from the posting itself, and if a posting doesn&rsquo;t say, neither do we.
+          Co-ops and internships from {c.employer_boards_tracked} Canadian tech employers, checked daily.{" "}
+          <span className="hidden sm:inline">
+            Every term and length is quoted from the posting itself, and if a posting doesn&rsquo;t say, neither do we.
+          </span>
         </p>
       </div>
 
@@ -85,7 +88,8 @@ export default function Home() {
                 href="/companies/"
                 className="mt-2 inline-flex min-h-11 items-center font-display font-extrabold text-link underline decoration-2 underline-offset-4"
               >
-                All {c.companies ?? ""} companies<span aria-hidden="true">&nbsp;→</span>
+                All {c.companies ?? ""} companies&nbsp;
+                <ArrowRight />
               </Link>
             </aside>
           }

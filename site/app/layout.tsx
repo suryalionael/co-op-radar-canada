@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#007a40" },
-    { media: "(prefers-color-scheme: dark)", color: "#0f3d24" },
+    { media: "(prefers-color-scheme: light)", color: "#036d38" },
+    { media: "(prefers-color-scheme: dark)", color: "#074120" },
   ],
 };
 
@@ -47,8 +47,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {asOf ? (
                 <>
                   <strong className="font-bold text-rail-fg">{meta.counts.open_student_postings}</strong> open roles<span className="mx-2" aria-hidden="true">·</span>
-                  <strong className="font-bold text-rail-fg">{meta.counts.companies ?? meta.counts.employers_with_postings}</strong>{" "}
-                  companies<span className="mx-2" aria-hidden="true">·</span>updated {formatDay(asOf)}
+                  <strong className="font-bold text-rail-fg">{meta.counts.employers_with_postings}</strong>{" "}
+                  companies hiring<span className="mx-2" aria-hidden="true">·</span>updated {formatDay(asOf)}
                 </>
               ) : (
                 "No postings collected yet"
