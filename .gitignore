@@ -11,3 +11,6 @@ data/reference/raw/
 
 # Claude Code personal settings
 .claude/settings.local.json
+
+# superpowers plan workspaces
+.superpowers/
