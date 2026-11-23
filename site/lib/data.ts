@@ -1,7 +1,7 @@
 // Build-time data loading. Runs only on the server during `next build`.
 import { readFileSync } from "node:fs";
 import path from "node:path";
-import type { Meta, Posting, ProgramsData } from "./types";
+import type { Company, Meta, Posting, ProgramsData } from "./types";
 
 // SITE_DATA_DIR=sample-data switches to the fictional development data.
 const dataDir = path.join(process.cwd(), process.env.SITE_DATA_DIR ?? "public/data");
@@ -15,3 +15,5 @@ function read<T>(name: string): T {
 export const getPostings = (): Posting[] => read<Posting[]>("postings");
 export const getPrograms = (): ProgramsData => read<ProgramsData>("programs");
 export const getMeta = (): Meta => read<Meta>("meta");
+export const getCompanies = (): Company[] => read<Company[]>("companies");
+export const getCompany = (slug: string): Company | undefined => getCompanies().find((c) => c.slug === slug);

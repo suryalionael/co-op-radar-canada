@@ -163,3 +163,41 @@ def test_unclear_and_past_terms_reach_the_site(tmp_path: Path) -> None:
     assert rows["spring"]["term_status"] == "ambiguous"
     assert rows["spring"]["evidence"] == {"term_ambiguous": "Spring 2027"}  # province evidence stays out
     assert rows["past"]["flag_term_in_past"] is True
+
+
+def test_companies(tmp_path: Path) -> None:
+    processed, out, _ = setup(tmp_path)
+    employers = tmp_path / "employers.yaml"
+    employers.write_text(
+        "employers:\n"
+        "  - {id: acme, name: Acme Corp, sector: software, board_type: lever, board_token: acme}\n"
+        "  - {id: zeta, name: Zeta, sector: fintech, board_type: ashby, board_token: zeta}\n"
+    )
+    write_postings(
+        [
+            posting("a", first_seen=dt.date(2026, 9, 2)),
+            posting("b", first_seen=dt.date(2026, 9, 9), status=Status.closed),
+            posting("c", first_seen=dt.date(2026, 10, 1), status=Status.closed),
+            posting("senior", is_student_role=False, first_seen=dt.date(2026, 3, 1)),
+        ],
+        processed / "postings.parquet",
+    )
+    watch = [
+        ProgramWatch(
+            program_id="fswep", employer_id="goc", name="FSWEP", url="https://x", last_hash="h",
+            last_checked=dt.date(2026, 11, 3), last_fetch_ok=True, last_changed=None,
+            change_excerpt=None, expected_open=None, expected_open_src=None,
+        ),
+    ]  # fmt: skip
+    write_program_watch(watch, [], processed)
+    meta = build(processed, out, employers, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
+    companies = {c["slug"]: c for c in json.loads((out / "companies.json").read_text())}
+    assert list(companies) == ["acme", "goc", "zeta"]  # open first, then by name
+    acme = companies["acme"]
+    assert (acme["open_count"], acme["posting_ids"], acme["badge"]) == (1, ["a"], "open")
+    assert acme["board_url"] == "https://jobs.lever.co/acme"
+    assert (acme["window"]["start"], acme["window"]["end"]) == (9, 9)
+    assert acme["basis"] == "from 3 postings, 2026"
+    assert companies["zeta"]["window"] is None and companies["zeta"]["badge"] == "quiet"
+    assert companies["goc"]["program_id"] == "fswep" and companies["goc"]["name"] == "FSWEP"
+    assert meta["counts"]["companies"] == 3
