@@ -191,3 +191,43 @@ def test_robots_txt_is_respected() -> None:
     client = PoliteClient(min_interval=0, client=httpx.Client(transport=httpx.MockTransport(handler)))
     r = fetch_program(client, PROGRAMS[0], dt.datetime(2026, 11, 1, tzinfo=dt.UTC))
     assert not r["ok"] and r["error"] == "disallowed by robots.txt"
+
+
+# Patterns from the Oct 31 – Nov 22 dry run: each lasted one day, then the page went back.
+def test_one_day_blips_are_not_changes() -> None:
+    banner = page(status="will open in December. Une panne mondiale affecte actuellement Microsoft")
+    error_page = "<main><p>www.example.gc.ca is experiencing very high traffic today.</p></main>"
+    days = [
+        (day(0), [record(page())]),
+        (day(1), [record(banner)]),  # outage banner (Québec, Manitoba Hydro)
+        (day(2), [record(page())]),
+        (day(3), [record(error_page)]),  # error page served with HTTP 200 (NRCan)
+        (day(4), [record(page())]),
+    ]
+    watch, changes = build_program_watch(PROGRAMS, days)
+    assert changes == []
+    assert watch[0].last_changed is None
+
+
+def test_change_is_confirmed_by_the_next_check_and_dated_when_first_seen() -> None:
+    days = [
+        (day(0), [record(page())]),
+        (day(1), [record(page(status="are now open"))]),
+        (day(2), [record(None, ok=False)]),  # a failed check in between neither confirms nor cancels
+        (day(3), [record(page(status="are now open"))]),
+    ]
+    watch, changes = build_program_watch(PROGRAMS, days)
+    assert [c.changed_on for c in changes] == [day(1)]
+    assert watch[0].last_changed == day(1)
+
+
+def test_unconfirmed_change_is_not_published_yet() -> None:
+    days = [(day(0), [record(page())]), (day(1), [record(page(status="are now open"))])]
+    _, changes = build_program_watch(PROGRAMS, days)
+    assert changes == []  # shows up tomorrow, if the page still says it
+
+
+def test_page_that_changes_every_day_never_alerts() -> None:
+    days = [(day(i), [record(page(status=f"version {i}"))]) for i in range(5)]
+    _, changes = build_program_watch(PROGRAMS, days)
+    assert changes == []
