@@ -29,7 +29,7 @@ A value is correct only if it matches the label exactly: for duration, the whole
 | Field | Labelled examples | Precision | Recall |
 |---|---|---|---|
 | Term | 102 | 102/102 = 1.00 (95% CI 0.96–1.00) | 102/102 = 1.00 (95% CI 0.96–1.00) |
-| Duration | 79 | 65/66 = 0.98 (95% CI 0.92–1.00) | 65/79 = 0.82 (95% CI 0.72–0.89) |
+| Duration | 79 | 72/72 = 1.00 (95% CI 0.95–1.00) | 72/79 = 0.91 (95% CI 0.83–0.96) |
 | Province | 196 | 195/198 = 0.98 (95% CI 0.96–0.99) | 195/196 = 0.99 (95% CI 0.97–1.00) |
 | Track | 200 | 142/200 = 0.71 (95% CI 0.64–0.77) | 142/200 = 0.71 (95% CI 0.64–0.77) |
 | Student role | 200 | 200/200 = 1.00 (95% CI 0.98–1.00) | 200/200 = 1.00 (95% CI 0.98–1.00) |
@@ -38,6 +38,7 @@ Duration precision meets the 0.95 target. The interval's lower bound, 0.92, is a
 
 **Every error, by field:**
 
+- **Duration fixes (2026-11-23).** After this list was written, the duration rules were changed to fix the misses below (all but the Tenstorrent month ranges) and the Moment Energy preference. Duration went from 65/66 precision and 65/79 recall to 72/72 and 72/79. The fixes were made while looking at these same 200 postings, so the new figures overstate how the rules will do on postings they haven't seen. Ei Htoo's independent labels (#13) are the check on that.
 - **Duration, wrong (1):** Moment Energy's "Strong preference for students available for an 8-month co-op term" was read as an 8-month duration. It states a preference, so the label is blank.
 - **Duration, missed (14):**
   - Behaviour Interactive's "work 37,5 hours/week for 4 months" (5 postings): no co-op or internship word in the same sentence.
