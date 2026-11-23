@@ -22,13 +22,39 @@ A value is correct only if it matches the label exactly: for duration, the whole
 
 ## Results
 
+**Run on 2026-11-23** over the 200-row sheet (`data/labels/postings.csv`, Nov 1 snapshot), against the latest stored text of each posting.
+
+> **Who labelled this set: Claude (an AI model), not a person.** Claude labelled all 200 rows from each posting's stored description on the `data` branch, the same text the extractors read. The live pages could not be opened from Claude's environment, and many had closed. Labels were written before any extractor output was viewed. But Claude also wrote the extraction rules, so these labels are **not independent** of the rules and may share their blind spots. The brief allows an LLM for a one-time evaluation run; it does not make these figures human-verified. Ei Htoo's 40 independent human labels (`postings_second.csv`, V1-8) measure how far Claude's labels agree with a person's. Until that agreement is published, read these figures as provisional.
+
 | Field | Labelled examples | Precision | Recall |
 |---|---|---|---|
-| Term | not yet measured | — | — |
-| Duration | not yet measured | — | — |
-| Province | not yet measured | — | — |
-| Track | not yet measured | — | — |
-| Student role | not yet measured | — | — |
+| Term | 102 | 102/102 = 1.00 (95% CI 0.96–1.00) | 102/102 = 1.00 (95% CI 0.96–1.00) |
+| Duration | 79 | 65/66 = 0.98 (95% CI 0.92–1.00) | 65/79 = 0.82 (95% CI 0.72–0.89) |
+| Province | 196 | 195/198 = 0.98 (95% CI 0.96–0.99) | 195/196 = 0.99 (95% CI 0.97–1.00) |
+| Track | 200 | 142/200 = 0.71 (95% CI 0.64–0.77) | 142/200 = 0.71 (95% CI 0.64–0.77) |
+| Student role | 200 | 200/200 = 1.00 (95% CI 0.98–1.00) | 200/200 = 1.00 (95% CI 0.98–1.00) |
+
+Duration precision meets the 0.95 target. The interval's lower bound, 0.92, is above 0.90.
+
+**Every error, by field:**
+
+- **Duration, wrong (1):** Moment Energy's "Strong preference for students available for an 8-month co-op term" was read as an 8-month duration. It states a preference, so the label is blank.
+- **Duration, missed (14):**
+  - Behaviour Interactive's "work 37,5 hours/week for 4 months" (5 postings): no co-op or internship word in the same sentence.
+  - Month ranges with no year ("Winter Term: Jan–Apr work term") at Tenstorrent (2): dates only become a duration when they have a year.
+  - Cohere's "full-time4 month internship": no space before the number.
+  - TELUS Digital's "approx. 16 weeks": the abbreviation's period ends the sentence before the role word.
+  - "at least a 4 month term" (Fullscript): rejected by the "at least" rule.
+  - "12–16 week internship" (Yotta Labs).
+  - Brave's "$6000.00 per month for 3 months".
+- **Province (4):** all four are remote postings in Canada with no province. The extractor uses the board's structured remote field, which the labeller did not see; the labeller read only the location and description text. Three of these the extractor called `REMOTE_CA` and the labels left blank; one is the other way round.
+- **Track (58):** mostly about category boundaries rather than extraction errors:
+  - hardware, electrical and IT roles the labeller put in `other` and the rules put in `software` (13);
+  - marketing and sales roles with analytics in the title or description, `business_ops` vs `data_analytics` (8);
+  - AI-related titles the rules map to `ml_ai` (10).
+
+  The track definitions need a written boundary before this number means much.
+- **Term:** no errors. The postings in this set state their terms plainly ("Winter 2027", "Hiver 2027", "January – August 2027").
 
 ### Against a naive baseline
 
@@ -36,8 +62,10 @@ A value is correct only if it matches the label exactly: for duration, the whole
 
 | Question | Labelled | Ours: precision | Ours: recall | Naive baseline: precision | Naive baseline: recall |
 |---|---|---|---|---|---|
-| Student role | not yet measured | — | — | — | — |
-| Summer 2027 | not yet measured | — | — | — | — |
+| Student role | 200 | 175/175 = 1.00 (95% CI 0.98–1.00) | 175/175 = 1.00 (95% CI 0.98–1.00) | 171/171 = 1.00 (95% CI 0.98–1.00) | 171/175 = 0.98 (95% CI 0.94–0.99) |
+| Summer 2027 | 200 | 24/24 = 1.00 (95% CI 0.86–1.00) | 24/24 = 1.00 (95% CI 0.86–1.00) | 15/15 = 1.00 (95% CI 0.80–1.00) | 15/24 = 0.62 (95% CI 0.43–0.79) |
+
+On this sheet the baseline makes no false "yes" calls: the "Internal"/"International" titles it gets wrong (below) are not among the 200 rows. Its cost shows in recall: it misses four French "Stagiaire" titles as student roles, and misses Summer 2027 postings whose title says "été 2027" or gives the term only in the description.
 
 **Disagreements before labelling (not a score).** On the 2,018 open postings in Canada in the 2026-10-30 snapshot:
 

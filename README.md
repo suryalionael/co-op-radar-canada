@@ -2,7 +2,9 @@
 
 Free tracker for Canadian co-op and internship postings, with verified term, duration and province, plus alerts when student programs open. Public sources only, $0 to run.
 
-> **Status: building v1 (launch target Dec 13, 2026).** There is no public site yet. Phase 0 is done: on 2026-10-30, 171 employer job boards had **177 Canadian student postings** under the counting rules in [ADR 0001](docs/decisions/0001-coverage-thresholds.md), so v1 goes ahead as planned. The daily pipeline is running; extractor precision and recall are not measured yet. No metric is reported until it has been measured.
+**Live site: [co-op-radar-canada.vercel.app](https://co-op-radar-canada.vercel.app)**
+
+> **Status: building v1 (launch target Dec 13, 2026).** The site is live and updated daily, ahead of the public launch. Phase 0 is done: on 2026-10-30, 171 employer job boards had **177 Canadian student postings** under the counting rules in [ADR 0001](docs/decisions/0001-coverage-thresholds.md), so v1 goes ahead as planned. The daily pipeline is running. Extractor precision and recall are measured on 200 postings labelled by Claude (an AI model), not yet checked against human labels; see the Evaluation section. No metric is reported until it has been measured.
 
 ---
 
@@ -44,16 +46,18 @@ How big the gap is: in a curated list of Canadian tech internships, about a quar
 
 ## Evaluation
 
-The extractors and the news classifier will be evaluated against hand-labelled data, and the results published here with counts and confidence intervals. A wrong duration is treated as worse than "not stated", so the target is precision of at least 0.95 on duration, with recall reported as measured.
+Measured on 2026-11-23 against 200 labelled postings, reported with counts and 95% Wilson intervals. A wrong duration is treated as worse than "not stated", so the target is duration precision of at least 0.95.
+
+**Provisional:** the 200 labels were written by Claude (an AI model), which also wrote the extraction rules, so they are not independent of them. A second, human labeller's 40 rows will measure agreement before these figures are treated as final.
 
 | Field | Labelled examples | Precision | Recall |
 |---|---|---|---|
-| Term | not yet measured | — | — |
-| Duration | not yet measured | — | — |
-| Province | not yet measured | — | — |
-| Track | not yet measured | — | — |
+| Term | 102 | 102/102 = 1.00 (95% CI 0.96–1.00) | 102/102 = 1.00 (95% CI 0.96–1.00) |
+| Duration | 79 | 65/66 = 0.98 (95% CI 0.92–1.00) | 65/79 = 0.82 (95% CI 0.72–0.89) |
+| Province | 196 | 195/198 = 0.98 (95% CI 0.96–0.99) | 195/196 = 0.99 (95% CI 0.97–1.00) |
+| Track | 200 | 142/200 = 0.71 (95% CI 0.64–0.77) | 142/200 = 0.71 (95% CI 0.64–0.77) |
 
-Full method and results will live in [`docs/evaluation.md`](docs/evaluation.md).
+Every error, the labelling rules and the comparison with a naive baseline are in [`docs/evaluation.md`](docs/evaluation.md).
 
 ## Roadmap
 
