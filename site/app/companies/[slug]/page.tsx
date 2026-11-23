@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowLeft, ArrowUpRight } from "@/components/Icons";
 import { JobRow } from "@/components/JobRow";
 import { TimetableHead } from "@/components/TimetableHead";
 import { StatusPlate } from "@/components/StatusPlate";
@@ -28,18 +29,18 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
   const ids = new Set(company.posting_ids);
   const postings = getPostings().filter((p) => ids.has(p.id));
   const { programs, changes } = getPrograms();
-  const program = programs.find((p) => p.program_id === company.program_id);
-  const programChanges = changes.filter((ch) => ch.program_id === company.program_id).slice(0, 5);
+  const watched = programs.filter((p) => company.program_ids.includes(p.program_id));
+  const programChanges = changes.filter((ch) => company.program_ids.includes(ch.program_id)).slice(0, 5);
 
   return (
     <>
       <p className="text-sm">
         <Link href="/companies/" className="font-bold text-link underline">
-          <span aria-hidden="true">← </span>All companies
+          <ArrowLeft /> All companies
         </Link>
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
-        <h1 className="text-display font-black tracking-[-0.02em]">{company.name}</h1>
+        <h1 className="text-display font-black tracking-[-0.02em] break-words">{company.name}</h1>
         <StatusPlate company={company} />
       </div>
       {company.sector && <p className="mt-1 text-muted">{formatSector(company.sector)}</p>}
@@ -65,7 +66,8 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
           </h2>
           {company.board_url && (
             <a href={company.board_url} target="_blank" rel="noopener noreferrer" className="min-h-11 font-bold text-link underline">
-              Their job board<span aria-hidden="true">&nbsp;↗</span>
+              Their job board&nbsp;
+              <ArrowUpRight />
             </a>
           )}
         </div>
@@ -86,23 +88,29 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         )}
       </section>
 
-      {program && (
+      {watched.length > 0 && (
         <section aria-labelledby="watch" className="mt-10 max-w-3xl">
           <h2 id="watch" className="text-xl font-black">
             Program watch
           </h2>
-          <p className="mt-2">
-            We check{" "}
-            <a href={program.url} target="_blank" rel="noopener noreferrer" className="font-bold text-link underline">
-              {program.name}
-            </a>{" "}
-            every day.{" "}
-            {program.last_changed ? `It last changed on ${formatDay(program.last_changed)}.` : "No change recorded yet."}
-          </p>
+          <ul className="mt-2 space-y-1">
+            {watched.map((program) => (
+              <li key={program.program_id}>
+                <a href={program.url} target="_blank" rel="noopener noreferrer" className="font-bold text-link underline">
+                  {program.name}&nbsp;
+                  <ArrowUpRight />
+                </a>{" "}
+                <span className="text-sm text-muted">
+                  {program.last_changed ? `changed ${formatDay(program.last_changed)}` : "no change recorded yet"}
+                </span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-2 text-sm text-muted">We check these pages every day and record when they change.</p>
           {programChanges.length > 0 && (
             <ul className="mt-3 border-t border-border">
               {programChanges.map((ch) => (
-                <li key={ch.changed_on + ch.change_excerpt} className="grid grid-cols-[5rem_1fr] gap-4 border-b border-border py-3 text-sm">
+                <li key={ch.program_id + ch.changed_on + ch.change_excerpt} className="grid grid-cols-[5rem_1fr] gap-4 border-b border-border py-3 text-sm">
                   <span className="figures font-bold">{formatDay(ch.changed_on)}</span>
                   <span className="text-muted">{ch.change_excerpt}</span>
                 </li>

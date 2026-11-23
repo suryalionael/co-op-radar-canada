@@ -190,10 +190,18 @@ def test_companies(tmp_path: Path) -> None:
             change_excerpt=None, expected_open=None, expected_open_src=None,
         ),
     ]  # fmt: skip
+    watch.append(
+        ProgramWatch(
+            program_id="rap", employer_id="government_of_canada", name="Research Affiliate Program", url="https://z",
+            last_hash="h", last_checked=dt.date(2026, 11, 3), last_fetch_ok=True, last_changed=None,
+            change_excerpt=None, expected_open=None, expected_open_src=None,
+        )
+    )  # fmt: skip
+    watch[0] = watch[0].model_copy(update={"employer_id": "government_of_canada"})
     write_program_watch(watch, [], processed)
     meta = build(processed, out, employers, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
     companies = {c["slug"]: c for c in json.loads((out / "companies.json").read_text())}
-    assert list(companies) == ["acme", "goc", "zeta"]  # open first, then by name
+    assert list(companies) == ["acme", "government_of_canada", "zeta"]  # open first, then by name
     acme = companies["acme"]
     assert (acme["open_count"], acme["posting_ids"], acme["badge"]) == (1, ["a"], "open")
     assert acme["board_url"] == "https://jobs.lever.co/acme"
@@ -201,5 +209,18 @@ def test_companies(tmp_path: Path) -> None:
     assert acme["basis"] == "from 3 postings, 2026"  # the first day's backlog is not a hiring date
     assert acme["window"]["months"][7] == 0
     assert companies["zeta"]["window"] is None and companies["zeta"]["badge"] == "quiet"
-    assert companies["goc"]["program_id"] == "fswep" and companies["goc"]["name"] == "FSWEP"
+    goc = companies["government_of_canada"]
+    assert goc["name"] == "Government of Canada"  # a known name, not whichever program came last
+    assert goc["program_ids"] == ["fswep", "rap"]
     assert meta["counts"]["companies"] == 3
+
+
+def test_every_program_employer_has_a_name() -> None:
+    import yaml
+
+    from pipeline.build_site_data import EMPLOYERS, PROGRAM_EMPLOYER_NAMES, ROOT
+
+    employers = {e["id"] for e in yaml.safe_load(EMPLOYERS.read_text())["employers"]}
+    programs = yaml.safe_load((ROOT / "config" / "programs.yaml").read_text())["programs"]
+    missing = {p["employer_id"] for p in programs} - employers - set(PROGRAM_EMPLOYER_NAMES)
+    assert not missing

@@ -23,7 +23,7 @@
    "de6350f745224661",
    "ff21e2e6eb033364"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "transportation",
   "slug": "lyft",
   "window": null
@@ -49,7 +49,7 @@
    "c1122af9d29da6fe",
    "fba32629c509357b"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "astera_labs",
   "window": null
@@ -73,7 +73,7 @@
    "f077b2ad2d0f7900",
    "f1302c4f73e00a3a"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "equitable_bank",
   "window": null
@@ -95,7 +95,7 @@
    "cfe9d23f48448d61",
    "e8f84d76de739a1d"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "kabam",
   "window": {
@@ -136,7 +136,7 @@
    "9f5a2e68b3fea647",
    "b3fd0d193980ceb6"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "human_computer_lab",
   "window": null
@@ -155,14 +155,14 @@
    "d90bf112d3ae6718",
    "eb912b2c61ff47c4"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "travel",
   "slug": "kensington_tours",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://job-boards.greenhouse.io/momentenergy",
   "name": "Moment Energy",
   "open_count": 6,
@@ -174,7 +174,7 @@
    "af681646938ed56b",
    "e4b7b407a242bde8"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "energy",
   "slug": "moment_energy",
   "window": null
@@ -193,7 +193,7 @@
    "b9c52250b631b583",
    "e7189473b4506a27"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "stripe",
   "window": {
@@ -234,7 +234,7 @@
    "bca5aedeac980293",
    "cc27e70d3f364e9e"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "tenstorrent_university",
   "window": null
@@ -252,7 +252,7 @@
    "b80f83425ff7bae6",
    "fb92bf0fa7ab65d8"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "cresta",
   "window": null
@@ -268,7 +268,7 @@
    "a65997a6286cf931",
    "e6f27645f4410c7d"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "acceldata",
   "window": null
@@ -284,7 +284,7 @@
    "64604f13369444b0",
    "73d79f67f880ae9d"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "shyftlabs",
   "window": null
@@ -300,7 +300,7 @@
    "4d669df24ba1f6e8",
    "5ba8676e49855a2e"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "waabi",
   "window": null
@@ -315,7 +315,7 @@
    "34b686ea4e806da6",
    "9660e4b12b6bdfbf"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "behaviour_interactive",
   "window": null
@@ -330,7 +330,7 @@
    "c975acc509358f66",
    "d426584e1fb9b986"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "block",
   "window": null
@@ -345,14 +345,14 @@
    "5aef43857a1b3172",
    "d3264c45622979d7"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "cohere",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://jobs.ashbyhq.com/georgian",
   "name": "Georgian",
   "open_count": 2,
@@ -360,14 +360,14 @@
    "2a899d5017d4a804",
    "d81b6d01c375ab8f"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "georgian",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://job-boards.greenhouse.io/internshiplist2000",
   "name": "Geotab",
   "open_count": 2,
@@ -375,7 +375,7 @@
    "0bc74d4a719ab193",
    "d71db94bafac318a"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "geotab_internships",
   "window": null
@@ -390,14 +390,14 @@
    "00b96890ed191aa4",
    "720d0843c25ad062"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "krafton_montreal",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://jobs.lever.co/magnetforensics",
   "name": "Magnet Forensics",
   "open_count": 2,
@@ -405,7 +405,7 @@
    "f0954b30fbc514c2",
    "ccb9c4f453859d02"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "security",
   "slug": "magnet_forensics",
   "window": null
@@ -420,7 +420,7 @@
    "6551999a74291408",
    "b1949a038291eae1"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "media",
   "slug": "pinterest",
   "window": null
@@ -435,7 +435,7 @@
    "b91a251cf63771d2",
    "d6bcea7e3a6d9458"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "steel",
   "window": null
@@ -450,7 +450,7 @@
    "3d886b28f1efe98d",
    "46ad1a7a752ef380"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "veeda_ai",
   "window": null
@@ -464,7 +464,7 @@
   "posting_ids": [
    "e6a6b0e7204b35d1"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "alayacare",
   "window": null
@@ -478,21 +478,21 @@
   "posting_ids": [
    "2c2da8b0d3265204"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "boson_ai",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://job-boards.greenhouse.io/brave",
   "name": "Brave",
   "open_count": 1,
   "posting_ids": [
    "429a113b7331a298"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "brave",
   "window": null
@@ -506,7 +506,7 @@
   "posting_ids": [
    "147d9e10a6beeb00"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "databricks",
   "window": null
@@ -520,7 +520,7 @@
   "posting_ids": [
    "fbb23206b786d9db"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "doordash_canada",
   "window": null
@@ -534,7 +534,7 @@
   "posting_ids": [
    "c9c454b4688b79cc"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "epic_games",
   "window": null
@@ -548,7 +548,7 @@
   "posting_ids": [
    "677df86842e11342"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "gomaterials",
   "window": null
@@ -562,7 +562,7 @@
   "posting_ids": [
    "5d43f7b9a548f08a"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "hootsuite",
   "window": null
@@ -576,21 +576,21 @@
   "posting_ids": [
    "c1ac8a9b13a11759"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "instalily",
   "window": null
  },
  {
   "badge": "open",
-  "basis": "from 1 postings, 2026",
+  "basis": "from 1 posting, 2026",
   "board_url": "https://jobs.lever.co/kepler",
   "name": "Kepler Communications",
   "open_count": 1,
   "posting_ids": [
    "deb3c12435abd2a7"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "aerospace",
   "slug": "kepler_communications",
   "window": null
@@ -604,7 +604,7 @@
   "posting_ids": [
    "a90052befc0cd127"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "later",
   "window": null
@@ -618,7 +618,7 @@
   "posting_ids": [
    "a0202c608ce5b886"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "roblox",
   "window": null
@@ -632,7 +632,7 @@
   "posting_ids": [
    "75d20dbaf5e6f769"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "telus_digital",
   "window": null
@@ -646,7 +646,7 @@
   "posting_ids": [
    "0d9587679215bcee"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "tribalscale",
   "window": null
@@ -660,7 +660,7 @@
   "posting_ids": [
    "9efb00d401390612"
   ],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "yotta_labs",
   "window": null
@@ -672,7 +672,7 @@
   "name": "1Password",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "security",
   "slug": "1password",
   "window": null
@@ -684,7 +684,7 @@
   "name": "Achievers",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "achievers",
   "window": null
@@ -696,7 +696,7 @@
   "name": "Ada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "ada",
   "window": null
@@ -708,7 +708,7 @@
   "name": "Adyen",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "adyen",
   "window": null
@@ -720,7 +720,7 @@
   "name": "Affirm",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "affirm",
   "window": null
@@ -732,7 +732,7 @@
   "name": "Airbnb",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "travel",
   "slug": "airbnb",
   "window": null
@@ -744,7 +744,7 @@
   "name": "Airbyte",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "airbyte",
   "window": null
@@ -756,7 +756,7 @@
   "name": "Alan",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "insurtech",
   "slug": "alan",
   "window": null
@@ -765,10 +765,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Alberta Public Service summer student opportunities",
+  "name": "Alberta Public Service",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "alberta_ps_summer",
+  "program_ids": [
+   "alberta_ps_summer"
+  ],
   "sector": null,
   "slug": "alberta_public_service",
   "window": null
@@ -780,7 +782,7 @@
   "name": "AltaML",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "altaml",
   "window": null
@@ -792,7 +794,7 @@
   "name": "AMI",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "ami",
   "window": null
@@ -804,7 +806,7 @@
   "name": "Amplitude",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "amplitude",
   "window": null
@@ -816,7 +818,7 @@
   "name": "Anchorage Digital",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "anchorage",
   "window": null
@@ -828,7 +830,7 @@
   "name": "Anthropic",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "anthropic",
   "window": null
@@ -840,7 +842,7 @@
   "name": "Apera AI",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "apera_ai",
   "window": null
@@ -852,7 +854,7 @@
   "name": "AppDirect",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "appdirect",
   "window": null
@@ -864,7 +866,7 @@
   "name": "Asana",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "asana",
   "window": null
@@ -876,7 +878,7 @@
   "name": "Ashby",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "ashby",
   "window": null
@@ -888,7 +890,7 @@
   "name": "Auvik",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "auvik",
   "window": null
@@ -897,10 +899,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Bank of Canada students and recent graduates",
+  "name": "Bank of Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "bank_of_canada_students",
+  "program_ids": [
+   "bank_of_canada_students"
+  ],
   "sector": null,
   "slug": "bank_of_canada",
   "window": null
@@ -909,10 +913,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "BC Hydro co-operative education program",
+  "name": "BC Hydro",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "bc_hydro_students",
+  "program_ids": [
+   "bc_hydro_students"
+  ],
   "sector": null,
   "slug": "bc_hydro",
   "window": null
@@ -921,10 +927,13 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "BC Public Service Student Employment Program",
+  "name": "BC Public Service",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "bcps_students",
+  "program_ids": [
+   "bcps_coop",
+   "bcps_students"
+  ],
   "sector": null,
   "slug": "bc_public_service",
   "window": null
@@ -936,7 +945,7 @@
   "name": "Benevity",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "benevity",
   "window": null
@@ -948,7 +957,7 @@
   "name": "Blackbird Interactive",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "blackbird_interactive",
   "window": null
@@ -957,10 +966,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "BMO campus recruiting",
+  "name": "BMO",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "bmo_students",
+  "program_ids": [
+   "bmo_students"
+  ],
   "sector": null,
   "slug": "bmo",
   "window": null
@@ -972,7 +983,7 @@
   "name": "Braze",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "braze",
   "window": null
@@ -984,7 +995,7 @@
   "name": "Bree",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "bree",
   "window": null
@@ -996,7 +1007,7 @@
   "name": "Brex",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "brex",
   "window": null
@@ -1005,10 +1016,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Canada Life students and new graduates",
+  "name": "Canada Life",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "canada_life_students",
+  "program_ids": [
+   "canada_life_students"
+  ],
   "sector": null,
   "slug": "canada_life",
   "window": null
@@ -1017,10 +1030,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Canada Revenue Agency student and graduate hiring",
+  "name": "Canada Revenue Agency",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "cra_students",
+  "program_ids": [
+   "cra_students"
+  ],
   "sector": null,
   "slug": "cra",
   "window": null
@@ -1032,7 +1047,7 @@
   "name": "Carta",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "carta",
   "window": null
@@ -1044,7 +1059,7 @@
   "name": "Cerebras Systems",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "cerebras",
   "window": null
@@ -1053,10 +1068,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "CIBC internships and co-op students",
+  "name": "CIBC",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "cibc_students",
+  "program_ids": [
+   "cibc_students"
+  ],
   "sector": null,
   "slug": "cibc",
   "window": null
@@ -1068,7 +1085,7 @@
   "name": "CircleCI",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "circleci",
   "window": null
@@ -1080,7 +1097,7 @@
   "name": "Clearco",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "clearco",
   "window": null
@@ -1092,7 +1109,7 @@
   "name": "ClickUp",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "clickup",
   "window": null
@@ -1104,7 +1121,7 @@
   "name": "Clutch",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "clutch",
   "window": null
@@ -1116,7 +1133,7 @@
   "name": "Coinbase",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "coinbase",
   "window": null
@@ -1128,7 +1145,7 @@
   "name": "Consensys (MetaMask)",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "consensys",
   "window": null
@@ -1140,7 +1157,7 @@
   "name": "CoreWeave",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "coreweave",
   "window": null
@@ -1152,7 +1169,7 @@
   "name": "Coursera",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "edtech",
   "slug": "coursera",
   "window": null
@@ -1164,7 +1181,7 @@
   "name": "Cribl",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "cribl",
   "window": null
@@ -1176,7 +1193,7 @@
   "name": "D2L",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "edtech",
   "slug": "d2l",
   "window": null
@@ -1188,7 +1205,7 @@
   "name": "Datadog",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "datadog",
   "window": null
@@ -1200,7 +1217,7 @@
   "name": "Deep Genomics",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "deep_genomics",
   "window": null
@@ -1209,24 +1226,14 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Deloitte Canada students",
+  "name": "Deloitte Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "deloitte_ca_students",
+  "program_ids": [
+   "deloitte_ca_students"
+  ],
   "sector": null,
   "slug": "deloitte_canada",
-  "window": null
- },
- {
-  "badge": "quiet",
-  "basis": "",
-  "board_url": null,
-  "name": "Department of Justice Canada co-op/internship program",
-  "open_count": 0,
-  "posting_ids": [],
-  "program_id": "justice_coop",
-  "sector": null,
-  "slug": "justice_canada",
   "window": null
  },
  {
@@ -1236,7 +1243,7 @@
   "name": "Domino Data Lab",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "domino_data_lab",
   "window": null
@@ -1248,7 +1255,7 @@
   "name": "DoorDash",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "doordash",
   "window": null
@@ -1260,7 +1267,7 @@
   "name": "Dropbox",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "dropbox",
   "window": null
@@ -1272,7 +1279,7 @@
   "name": "DRW",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "drw",
   "window": null
@@ -1284,7 +1291,7 @@
   "name": "Elastic",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "elastic",
   "window": null
@@ -1293,10 +1300,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Elk Valley Resources student careers",
+  "name": "Elk Valley Resources",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "evr_students",
+  "program_ids": [
+   "evr_students"
+  ],
   "sector": null,
   "slug": "evr",
   "window": null
@@ -1305,10 +1314,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Export Development Canada student programs",
+  "name": "Export Development Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "edc_students",
+  "program_ids": [
+   "edc_students"
+  ],
   "sector": null,
   "slug": "edc",
   "window": null
@@ -1317,10 +1328,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "EY Canada early careers",
+  "name": "EY Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "ey_ca_students",
+  "program_ids": [
+   "ey_ca_students"
+  ],
   "sector": null,
   "slug": "ey_canada",
   "window": null
@@ -1332,21 +1345,9 @@
   "name": "Faire",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "faire",
-  "window": null
- },
- {
-  "badge": "quiet",
-  "basis": "",
-  "board_url": null,
-  "name": "Federal Research Affiliate Program (RAP)",
-  "open_count": 0,
-  "posting_ids": [],
-  "program_id": "gc_research_affiliate",
-  "sector": null,
-  "slug": "government_of_canada",
   "window": null
  },
  {
@@ -1356,7 +1357,7 @@
   "name": "Felix Health",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "felix",
   "window": null
@@ -1368,7 +1369,7 @@
   "name": "Fivetran",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "fivetran",
   "window": null
@@ -1380,21 +1381,9 @@
   "name": "Float",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "float",
-  "window": null
- },
- {
-  "badge": "quiet",
-  "basis": "",
-  "board_url": null,
-  "name": "Fonction publique du Québec: emplois étudiants et stages",
-  "open_count": 0,
-  "posting_ids": [],
-  "program_id": "quebec_ps_students",
-  "sector": null,
-  "slug": "quebec_public_service",
   "window": null
  },
  {
@@ -1404,7 +1393,7 @@
   "name": "Fullscript",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "fullscript",
   "window": null
@@ -1416,7 +1405,7 @@
   "name": "Gearbox",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "gearbox",
   "window": null
@@ -1428,7 +1417,7 @@
   "name": "Geotab",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "geotab",
   "window": null
@@ -1440,7 +1429,7 @@
   "name": "GitLab",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "gitlab",
   "window": null
@@ -1452,9 +1441,25 @@
   "name": "Gorgias",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "gorgias",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Government of Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "fswep",
+   "gc_coop_internship",
+   "gc_research_affiliate"
+  ],
+  "sector": null,
+  "slug": "government_of_canada",
   "window": null
  },
  {
@@ -1464,7 +1469,7 @@
   "name": "Grafana Labs",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "grafana_labs",
   "window": null
@@ -1476,7 +1481,7 @@
   "name": "Greenhouse",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "greenhouse",
   "window": null
@@ -1488,7 +1493,7 @@
   "name": "Gusto",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "gusto",
   "window": null
@@ -1497,10 +1502,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Health Canada and PHAC student and graduate programs",
+  "name": "Health Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "health_canada_students",
+  "program_ids": [
+   "health_canada_students"
+  ],
   "sector": null,
   "slug": "health_canada",
   "window": null
@@ -1512,7 +1519,7 @@
   "name": "HeyGen",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "heygen",
   "window": null
@@ -1524,7 +1531,7 @@
   "name": "Honeycomb",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "honeycomb",
   "window": null
@@ -1536,7 +1543,7 @@
   "name": "Hopper",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "travel",
   "slug": "hopper",
   "window": null
@@ -1548,7 +1555,7 @@
   "name": "HubSpot",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "hubspot",
   "window": null
@@ -1557,10 +1564,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Hydro One student jobs",
+  "name": "Hydro One",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "hydro_one_students",
+  "program_ids": [
+   "hydro_one_students"
+  ],
   "sector": null,
   "slug": "hydro_one",
   "window": null
@@ -1572,7 +1581,7 @@
   "name": "Instacart",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ecommerce",
   "slug": "instacart",
   "window": null
@@ -1581,10 +1590,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Interac student work program",
+  "name": "Interac",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "interac_students",
+  "program_ids": [
+   "interac_students"
+  ],
   "sector": null,
   "slug": "interac",
   "window": null
@@ -1596,7 +1607,7 @@
   "name": "Jane App",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "jane_app",
   "window": null
@@ -1608,9 +1619,23 @@
   "name": "Jobber",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "jobber",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Justice Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "justice_coop"
+  ],
+  "sector": null,
+  "slug": "justice_canada",
   "window": null
  },
  {
@@ -1620,7 +1645,7 @@
   "name": "Justworks",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "justworks",
   "window": null
@@ -1632,7 +1657,7 @@
   "name": "Khan Academy",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "edtech",
   "slug": "khan_academy",
   "window": null
@@ -1644,7 +1669,7 @@
   "name": "Kindred",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "travel",
   "slug": "kindred",
   "window": null
@@ -1656,7 +1681,7 @@
   "name": "Klue",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "klue",
   "window": null
@@ -1668,7 +1693,7 @@
   "name": "Kong",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "kong",
   "window": null
@@ -1680,7 +1705,7 @@
   "name": "Konrad",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "konrad",
   "window": null
@@ -1689,10 +1714,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "KPMG Canada student careers",
+  "name": "KPMG Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "kpmg_ca_students",
+  "program_ids": [
+   "kpmg_ca_students"
+  ],
   "sector": null,
   "slug": "kpmg_canada",
   "window": null
@@ -1704,7 +1731,7 @@
   "name": "Lattice",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "lattice",
   "window": null
@@ -1716,7 +1743,7 @@
   "name": "League",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "league",
   "window": null
@@ -1728,7 +1755,7 @@
   "name": "Lightspeed",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "lightspeed",
   "window": null
@@ -1740,7 +1767,7 @@
   "name": "Loopio",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "loopio",
   "window": null
@@ -1749,10 +1776,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Manitoba Hydro students",
+  "name": "Manitoba Hydro",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "manitoba_hydro_students",
+  "program_ids": [
+   "manitoba_hydro_students"
+  ],
   "sector": null,
   "slug": "manitoba_hydro",
   "window": null
@@ -1764,7 +1793,7 @@
   "name": "Maple",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "maple",
   "window": null
@@ -1776,7 +1805,7 @@
   "name": "Mercury",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "mercury",
   "window": null
@@ -1788,7 +1817,7 @@
   "name": "Miovision",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "miovision",
   "window": null
@@ -1800,7 +1829,7 @@
   "name": "MobSquad",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "mobsquad",
   "window": null
@@ -1812,7 +1841,7 @@
   "name": "MongoDB",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "mongodb",
   "window": null
@@ -1824,7 +1853,7 @@
   "name": "Mozilla",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "mozilla",
   "window": null
@@ -1833,10 +1862,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Natural Resources Canada programs for post-secondary students",
+  "name": "Natural Resources Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "nrcan_students",
+  "program_ids": [
+   "nrcan_students"
+  ],
   "sector": null,
   "slug": "nrcan",
   "window": null
@@ -1848,7 +1879,7 @@
   "name": "Neo Financial",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "neo_financial",
   "window": null
@@ -1860,7 +1891,7 @@
   "name": "NerdWallet",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "nerdwallet",
   "window": null
@@ -1872,7 +1903,7 @@
   "name": "New Relic",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "new_relic",
   "window": null
@@ -1884,7 +1915,7 @@
   "name": "Nubank",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "nubank",
   "window": null
@@ -1896,7 +1927,7 @@
   "name": "Okta",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "security",
   "slug": "okta",
   "window": null
@@ -1905,10 +1936,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "OMERS students and new grads",
+  "name": "OMERS",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "omers_students",
+  "program_ids": [
+   "omers_students"
+  ],
   "sector": null,
   "slug": "omers",
   "window": null
@@ -1917,10 +1950,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Ontario Public Service Summer Employment Opportunities",
+  "name": "Ontario Public Service",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "ops_students",
+  "program_ids": [
+   "ops_students"
+  ],
   "sector": null,
   "slug": "ontario_public_service",
   "window": null
@@ -1932,7 +1967,7 @@
   "name": "OpenAI",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "openai",
   "window": null
@@ -1944,7 +1979,7 @@
   "name": "Osedea",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "osedea",
   "window": null
@@ -1956,7 +1991,7 @@
   "name": "Oyster",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "oyster",
   "window": null
@@ -1968,7 +2003,7 @@
   "name": "PagerDuty",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "pagerduty",
   "window": null
@@ -1980,7 +2015,7 @@
   "name": "Paytm",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "paytm",
   "window": null
@@ -1992,7 +2027,7 @@
   "name": "Pebl",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "pebl",
   "window": null
@@ -2004,7 +2039,7 @@
   "name": "Peloton",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "peloton",
   "window": null
@@ -2016,7 +2051,7 @@
   "name": "Perplexity",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "perplexity",
   "window": null
@@ -2028,7 +2063,7 @@
   "name": "Plooto",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "plooto",
   "window": null
@@ -2040,7 +2075,7 @@
   "name": "PointClickCare",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "healthtech",
   "slug": "pointclickcare",
   "window": null
@@ -2052,7 +2087,7 @@
   "name": "Poka",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "poka",
   "window": null
@@ -2064,7 +2099,7 @@
   "name": "PolicyMe",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "insurtech",
   "slug": "policyme",
   "window": null
@@ -2076,7 +2111,7 @@
   "name": "Procurify",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "procurify",
   "window": null
@@ -2088,7 +2123,7 @@
   "name": "Promise Robotics",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "promise_robotics",
   "window": null
@@ -2097,10 +2132,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "PwC Canada campus careers",
+  "name": "PwC Canada",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "pwc_ca_students",
+  "program_ids": [
+   "pwc_ca_students"
+  ],
   "sector": null,
   "slug": "pwc_canada",
   "window": null
@@ -2112,9 +2149,23 @@
   "name": "Quora",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "media",
   "slug": "quora",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Québec Public Service",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "quebec_ps_students"
+  ],
+  "sector": null,
+  "slug": "quebec_public_service",
   "window": null
  },
  {
@@ -2124,7 +2175,7 @@
   "name": "Ramp",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "ramp",
   "window": null
@@ -2133,10 +2184,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "RBC students and graduates",
+  "name": "RBC",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "rbc_students",
+  "program_ids": [
+   "rbc_students"
+  ],
   "sector": null,
   "slug": "rbc",
   "window": null
@@ -2148,7 +2201,7 @@
   "name": "Reddit",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "media",
   "slug": "reddit",
   "window": null
@@ -2160,7 +2213,7 @@
   "name": "Render",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "render",
   "window": null
@@ -2172,7 +2225,7 @@
   "name": "Rewind",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "rewind",
   "window": null
@@ -2184,7 +2237,7 @@
   "name": "Ripple",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "ripple",
   "window": null
@@ -2196,7 +2249,7 @@
   "name": "Robinhood",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "robinhood",
   "window": null
@@ -2208,7 +2261,7 @@
   "name": "Samsara",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "samsara",
   "window": null
@@ -2220,7 +2273,7 @@
   "name": "Sanity",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "sanity",
   "window": null
@@ -2232,7 +2285,7 @@
   "name": "Sardine",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "sardine",
   "window": null
@@ -2244,7 +2297,7 @@
   "name": "Scale AI",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "ml_ai",
   "slug": "scale_ai",
   "window": null
@@ -2256,7 +2309,7 @@
   "name": "Scopely",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "gaming",
   "slug": "scopely",
   "window": null
@@ -2265,10 +2318,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "Scotiabank students and new grads",
+  "name": "Scotiabank",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "scotiabank_students",
+  "program_ids": [
+   "scotiabank_students"
+  ],
   "sector": null,
   "slug": "scotiabank",
   "window": null
@@ -2280,7 +2335,7 @@
   "name": "Sentry",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "sentry",
   "window": null
@@ -2292,7 +2347,7 @@
   "name": "Snowflake",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "snowflake",
   "window": null
@@ -2304,7 +2359,7 @@
   "name": "Snyk",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "security",
   "slug": "snyk",
   "window": null
@@ -2316,7 +2371,7 @@
   "name": "Spotify",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "media",
   "slug": "spotify",
   "window": null
@@ -2328,7 +2383,7 @@
   "name": "Sprout Social",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "sprout_social",
   "window": null
@@ -2340,7 +2395,7 @@
   "name": "StackAdapt",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "adtech",
   "slug": "stackadapt",
   "window": null
@@ -2352,7 +2407,7 @@
   "name": "Syntronic",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "syntronic",
   "window": null
@@ -2364,7 +2419,7 @@
   "name": "Tailscale",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "tailscale",
   "window": null
@@ -2376,7 +2431,7 @@
   "name": "Telesat",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "aerospace",
   "slug": "telesat",
   "window": null
@@ -2388,7 +2443,7 @@
   "name": "Temporal Technologies",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "temporal",
   "window": null
@@ -2400,7 +2455,7 @@
   "name": "Tenstorrent",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "hardware",
   "slug": "tenstorrent",
   "window": null
@@ -2412,7 +2467,7 @@
   "name": "Thinkific",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "edtech",
   "slug": "thinkific",
   "window": null
@@ -2424,7 +2479,7 @@
   "name": "Toast",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "toast",
   "window": null
@@ -2436,7 +2491,7 @@
   "name": "Trulioo",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "trulioo",
   "window": null
@@ -2445,10 +2500,12 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
-  "name": "TTC summer student opportunities",
+  "name": "TTC",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": "ttc_summer_students",
+  "program_ids": [
+   "ttc_summer_students"
+  ],
   "sector": null,
   "slug": "ttc",
   "window": null
@@ -2460,7 +2517,7 @@
   "name": "Twilio",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "twilio",
   "window": null
@@ -2472,7 +2529,7 @@
   "name": "Unbounce",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "unbounce",
   "window": null
@@ -2484,7 +2541,7 @@
   "name": "Varicent",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "varicent",
   "window": null
@@ -2496,7 +2553,7 @@
   "name": "Visier",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "visier",
   "window": null
@@ -2508,7 +2565,7 @@
   "name": "Wattpad",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "media",
   "slug": "wattpad",
   "window": null
@@ -2520,7 +2577,7 @@
   "name": "Wave",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "wave",
   "window": null
@@ -2532,7 +2589,7 @@
   "name": "Wealthsimple",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "fintech",
   "slug": "wealthsimple",
   "window": null
@@ -2544,7 +2601,7 @@
   "name": "Webflow",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "webflow",
   "window": null
@@ -2556,7 +2613,7 @@
   "name": "Workleap",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "workleap",
   "window": null
@@ -2568,7 +2625,7 @@
   "name": "Zip",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "software",
   "slug": "zip",
   "window": null
@@ -2580,7 +2637,7 @@
   "name": "Zscaler",
   "open_count": 0,
   "posting_ids": [],
-  "program_id": null,
+  "program_ids": [],
   "sector": "security",
   "slug": "zscaler",
   "window": null

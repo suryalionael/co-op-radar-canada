@@ -81,8 +81,9 @@ NEGATIVE_BEFORE = re.compile(
     r"previous|prior|first|probation(?:ary)?(?: period)?(?: of)?|au moins)\s*(?:the\s+)?(?:a\s+)?$",
     re.IGNORECASE,
 )
-# A period ends a sentence unless it sits inside a number ("6000.00") or ends an abbreviation ("approx.").
-SENTENCE_END = re.compile(r"[!?;\n•]|(?<!\bapprox)(?<!\bca)(?<!\be\.g)(?<!\bi\.e)(?:(?<!\d)\.|\.(?!\d))")
+# A period ends a sentence unless it sits inside a number ("6000.00") or ends an abbreviation ("approx.", "e.g.").
+SENTENCE_END = re.compile(r"[!?;\n•]|(?<!\d)\.|\.(?!\d)")
+ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|approx|ca|incl|est)\.", re.IGNORECASE)
 PREFERENCE = re.compile(r"\bprefer(?:s|red|ably|ence)?\b", re.IGNORECASE)
 RANGE_SPAN = re.compile(rf"^{_NUM}\s*(?:-|–|—|\bto\b|\bà\b)\s*{_NUM}\s*[-‐‑]?\s*\D", re.IGNORECASE)
 WEEKS_PER_MONTH = 52 / 12
@@ -104,6 +105,8 @@ def _to_number(token: str) -> float:
 
 def _sentence_around(text: str, start: int, end: int) -> tuple[str, str]:
     """Text before and after a match, cut at sentence boundaries."""
+    # Same-length swap, so match offsets still line up: "e.g." -> "e,g,".
+    text = ABBREVIATION.sub(lambda a: a.group(0).replace(".", ","), text)
     before = text[max(0, start - 120) : start]
     cuts = list(SENTENCE_END.finditer(before))
     if cuts:

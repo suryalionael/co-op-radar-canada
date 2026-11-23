@@ -172,6 +172,37 @@ BOARD_URLS = {
 }
 BADGE_ORDER = {"open": 0, "soon": 1, "quiet": 2}
 
+# Employers known only through program watch (config/programs.yaml has ids, not names).
+PROGRAM_EMPLOYER_NAMES = {
+    "alberta_public_service": "Alberta Public Service",
+    "bank_of_canada": "Bank of Canada",
+    "bc_hydro": "BC Hydro",
+    "bc_public_service": "BC Public Service",
+    "bmo": "BMO",
+    "canada_life": "Canada Life",
+    "cibc": "CIBC",
+    "cra": "Canada Revenue Agency",
+    "deloitte_canada": "Deloitte Canada",
+    "edc": "Export Development Canada",
+    "evr": "Elk Valley Resources",
+    "ey_canada": "EY Canada",
+    "government_of_canada": "Government of Canada",
+    "health_canada": "Health Canada",
+    "hydro_one": "Hydro One",
+    "interac": "Interac",
+    "justice_canada": "Justice Canada",
+    "kpmg_canada": "KPMG Canada",
+    "manitoba_hydro": "Manitoba Hydro",
+    "nrcan": "Natural Resources Canada",
+    "omers": "OMERS",
+    "ontario_public_service": "Ontario Public Service",
+    "pwc_canada": "PwC Canada",
+    "quebec_public_service": "Québec Public Service",
+    "rbc": "RBC",
+    "scotiabank": "Scotiabank",
+    "ttc": "TTC",
+}
+
 
 def student_first_seen(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[str, list[dt.date]]:
     """First-seen dates of every Canadian student posting, open or closed, by employer.
@@ -189,6 +220,13 @@ def student_first_seen(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[
     return {eid: [d for d in ds if d != min(ds)] for eid, ds in dates.items()}
 
 
+def _basis(n_postings: int, n_opens: int, span: str) -> str:
+    """ "from 6 postings, 2025–2026", plus program opening dates when there are any."""
+    parts = [f"{n_postings} posting{'s' * (n_postings != 1)}"] if n_postings else []
+    parts += [f"{n_opens} program opening date{'s' * (n_opens != 1)}"] if n_opens else []
+    return f"from {' and '.join(parts)}, {span}" if parts else ""
+
+
 def build_companies(
     employers: dict[str, dict[str, Any]],
     postings: list[Any],
@@ -199,15 +237,18 @@ def build_companies(
     open_ids: dict[str, list[str]] = {}
     for p in postings:
         open_ids.setdefault(p["employer_id"], []).append(p["id"])
-    by_employer = {p["employer_id"]: p for p in programs}
+    by_employer: dict[str, list[Any]] = {}
+    for p in sorted(programs, key=lambda p: p["program_id"]):
+        by_employer.setdefault(p["employer_id"], []).append(p)
     names = {eid: e.get("name", eid) for eid, e in employers.items()}
-    names |= {eid: p["name"] for eid, p in by_employer.items() if eid not in names}
+    for eid, progs in by_employer.items():
+        names.setdefault(eid, PROGRAM_EMPLOYER_NAMES.get(eid) or (progs[0]["name"] if len(progs) == 1 else eid))
     out = []
     for eid, name in names.items():
-        e, program = employers.get(eid, {}), by_employer.get(eid)
-        company_dates = list(dates.get(eid, []))
-        if program and program.get("expected_open"):
-            company_dates.append(dt.date.fromisoformat(str(program["expected_open"])))
+        e, progs = employers.get(eid, {}), by_employer.get(eid, [])
+        posting_dates = list(dates.get(eid, []))
+        opens = [dt.date.fromisoformat(str(p["expected_open"])) for p in progs if p.get("expected_open")]
+        company_dates = posting_dates + opens
         window = hiring_window(company_dates)
         ids = open_ids.get(eid, [])
         years = sorted({d.year for d in company_dates})
@@ -222,9 +263,9 @@ def build_companies(
                 else None,
                 "open_count": len(ids),
                 "posting_ids": ids,
-                "program_id": program["program_id"] if program else None,
+                "program_ids": [p["program_id"] for p in progs],
                 "window": window,
-                "basis": f"from {len(company_dates)} postings, {span}" if company_dates else "",
+                "basis": _basis(len(posting_dates), len(opens), span),
                 "badge": badge(window, len(ids), today),
             }
         )

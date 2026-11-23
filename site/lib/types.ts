@@ -97,7 +97,7 @@ export interface Company {
   board_url: string | null;
   open_count: number;
   posting_ids: string[];
-  program_id: string | null;
+  program_ids: string[]; // program-watch pages for this company, if any
   window: HiringWindow | null;
   basis: string; // e.g. "from 6 postings, 2025–2026"; empty when there are no dates
   badge: CompanyBadge;

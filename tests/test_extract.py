@@ -214,6 +214,8 @@ def test_start_month() -> None:
         ("This is at least a 4 month term.", [4.0]),  # Fullscript
         ("A 12–16 week internship.", [3.0, 4.0]),  # Yotta Labs
         ("Internship stipend: $6000.00 per month for 3 months.", [3.0]),  # Brave
+        ("Internship length (e.g. 4 months) varies.", [4.0]),
+        ("The internship lasts Approx. 16 weeks.", [4.0]),
     ],
 )
 def test_stated_durations(text: str, options: list[float]) -> None:
