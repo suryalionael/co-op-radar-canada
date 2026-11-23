@@ -8,3 +8,6 @@ __pycache__/
 node_modules/
 data-branch/
 data/reference/raw/
+
+# Claude Code personal settings
+.claude/settings.local.json
