@@ -287,8 +287,8 @@ export function JobBoard({
 
       <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <section aria-labelledby="results-heading" className="min-w-0">
-          <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3 md:mb-0 md:justify-end">
-            <h2 id="results-heading" className="text-lg font-black md:sr-only" aria-live="polite">
+          <div className={`mb-2 flex flex-wrap items-baseline justify-between gap-3 ${active > 0 ? "" : "md:mb-0"}`}>
+            <h2 id="results-heading" className={`text-lg font-black ${active > 0 ? "" : "md:sr-only"}`} aria-live="polite">
               <span className="figures">{results.length}</span> {results.length === 1 ? "role" : "roles"}
               {active > 0 ? " match" : " open now"}
             </h2>
