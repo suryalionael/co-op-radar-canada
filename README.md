@@ -70,6 +70,26 @@ Every error, the labelling rules and the comparison with a naive baseline are in
 
 The week-by-week schedule, with what is done and what is next, is in [`docs/timeline.md`](docs/timeline.md).
 
+## Ideas list
+
+Lio's running list of ideas, kept here for reference. "Building" means work has started; everything else is open.
+
+| Idea | Status | Notes |
+|---|---|---|
+| Jobs-first board, like Speedrun's internship page | Building | Search, filter shortcuts, dense rows. Design: `docs/superpowers/specs/2026-11-23-board-redesign-design.md` |
+| Companies section | Building | Every tracked company, with open roles and status. Expand with the negarprh list once the owner's permission is in writing |
+| Hiring window per company | Building | The months a company's student postings usually appear. Needs a year of history to be reliable |
+| Program watch | Live | Daily checks of big employers' student pages (banks, governments) |
+| Recruiting calendar | Planned (v3) | When each big program opens, year over year |
+| Weekly digest, RSS and alerts | Planned (v2) | "Tell me when Shopify posts" |
+| Student-opportunity news | Planned (v2) | Metadata and links only, labelled as hints |
+| Posting submissions | Planned (v2) | Students add a posting the pipeline missed |
+| Employer pages | Planned (v2) | Partly covered by the company pages |
+| LinkedIn link-outs | Idea | Outbound search links only; nothing is fetched from LinkedIn |
+| Indonesian internships | Open question | A separate board, or out of scope? |
+| Cheaper AI help | Idea | Route simple Claude Code tasks to smaller models (subagents) |
+| Market view and season write-up | Planned (v3) | What the 2027 season looked like |
+
 ## Repository layout
 
 ```
