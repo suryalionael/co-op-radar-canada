@@ -84,3 +84,26 @@ export function durationNote(p: Posting): string {
 export function daysBetween(from: string, to: string): number {
   return Math.round((Date.parse(to) - Date.parse(from)) / 86_400_000);
 }
+
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+export const MONTH_NAMES = MONTHS;
+
+/** "2026-11-21" -> "Nov 21". Parsed as text so the time zone can't shift the day. */
+export function formatDay(iso: string): string {
+  const [, m, d] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${d}`;
+}
+
+/** How long ago, timetable-short: "today", "3d", "2w", "3mo". */
+export function formatAge(days: number): string {
+  if (days <= 0) return "today";
+  if (days < 7) return `${days}d`;
+  if (days < 60) return `${Math.floor(days / 7)}w`;
+  return `${Math.floor(days / 30)}mo`;
+}
+
+/** Duration plate text: [4] -> "4 mo", [4, 8] -> "4/8 mo", range [4, 16] -> "4–16 mo". */
+export function formatPlate(months: number[], isRange = false): string {
+  const parts = months.map((m) => (Number.isInteger(m) ? String(m) : m.toFixed(1)));
+  return `${parts.join(isRange && parts.length === 2 ? "–" : "/")} mo`;
+}
