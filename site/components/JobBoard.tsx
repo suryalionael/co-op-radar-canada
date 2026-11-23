@@ -1,7 +1,7 @@
 "use client";
 
 import MiniSearch from "minisearch";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { JobRow } from "./JobRow";
 import { TimetableHead } from "./TimetableHead";
 import { compareTerms, daysBetween, offersDuration, PROVINCES, REMOTE_LABELS, TRACKS } from "@/lib/format";
@@ -16,9 +16,10 @@ interface Filters {
   remote: string;
   recent: boolean;
   sort: string; // "" (newest) or "company"
+  unstated: boolean; // with a length filter on, also show postings that don't state a length
 }
 
-const EMPTY: Filters = { q: "", term: "", duration: "", province: "", track: "", remote: "", recent: false, sort: "" };
+const EMPTY: Filters = { q: "", term: "", duration: "", province: "", track: "", remote: "", recent: false, sort: "", unstated: false };
 const KEYS = ["q", "term", "duration", "province", "track", "remote", "sort"] as const;
 const PAGE = 50;
 
@@ -27,6 +28,7 @@ function readUrl(): Filters {
   const f = { ...EMPTY };
   for (const k of KEYS) f[k] = params.get(k) ?? "";
   f.recent = params.get("new") === "1";
+  f.unstated = params.get("unstated") === "1";
   return f;
 }
 
@@ -34,6 +36,7 @@ function writeUrl(f: Filters) {
   const params = new URLSearchParams();
   for (const k of KEYS) if (f[k]) params.set(k, f[k]);
   if (f.recent) params.set("new", "1");
+  if (f.unstated) params.set("unstated", "1");
   const query = params.toString();
   window.history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
 }
@@ -41,8 +44,16 @@ function writeUrl(f: Filters) {
 function matches(p: Posting, f: Filters, dataDate: string | null): boolean {
   if (f.term && !p.terms.includes(f.term)) return false;
   if (f.duration === "not_stated" && p.duration_options_months.length) return false;
+  // Most postings don't state a length; with "unstated" on, a length filter keeps them rather than hiding them.
+  if (f.unstated && f.duration && f.duration !== "not_stated" && !p.duration_options_months.length)
+    return matchesRest(p, f, dataDate);
   if (f.duration === "8plus" && !p.duration_options_months.some((m) => m >= 8)) return false;
   if (/^\d+$/.test(f.duration) && !offersDuration(p, Number(f.duration))) return false;
+  return matchesRest(p, f, dataDate);
+}
+
+/** Every filter except term and length. */
+function matchesRest(p: Posting, f: Filters, dataDate: string | null): boolean {
   // A remote-in-Canada posting is open to students in every province.
   if (f.province && !p.provinces.includes(f.province) && !p.provinces.includes("REMOTE_CA")) return false;
   if (f.track && p.track !== f.track) return false;
@@ -63,6 +74,19 @@ export function JobBoard({
   const [filters, setFilters] = useState<Filters>(EMPTY);
   const [more, setMore] = useState(false);
   const [limit, setLimit] = useState(PAGE);
+
+  const searchRef = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const t = e.target as HTMLElement;
+      if (e.key === "/" && !/^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName) && !t.isContentEditable) {
+        e.preventDefault();
+        searchRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   useEffect(() => {
     const f = readUrl();
@@ -88,12 +112,18 @@ export function JobBoard({
   }, [postings]);
 
   const options = useMemo(() => {
-    const terms = [...new Set(postings.flatMap((p) => p.terms))].sort(compareTerms);
+    // A term that ended before this year is a mis-read or stale, not something to filter for.
+    const thisYear = Number((dataDate ?? new Date().toISOString()).slice(0, 4));
+    const terms = [...new Set(postings.flatMap((p) => p.terms))]
+      .filter((t) => Number(t.split(" ")[1]) >= thisYear)
+      .sort(compareTerms);
     const durations = [...new Set(postings.flatMap((p) => p.duration_options_months))].sort((a, b) => a - b);
     const provinces = Object.keys(PROVINCES).filter((code) => postings.some((p) => p.provinces.includes(code)));
     const tracks = Object.keys(TRACKS).filter((t) => postings.some((p) => p.track === t));
-    return { terms, durations, provinces, tracks };
-  }, [postings]);
+    const termCount = (t: string) => postings.filter((p) => p.terms.includes(t)).length;
+    const provinceCount = (c: string) => postings.filter((p) => p.provinces.includes(c)).length;
+    return { terms, durations, provinces, tracks, termCount, provinceCount };
+  }, [postings, dataDate]);
 
   // Shortcut lines, like the routes printed on a timetable's cover. Each is a preset of the same filters.
   const collections = useMemo(() => {
@@ -120,6 +150,26 @@ export function JobBoard({
       : found;
   }, [postings, filters, search, dataDate]);
 
+  // With a length filter on, how many more postings would match if their length were stated?
+  const hiddenUnstated = useMemo(() => {
+    if (!filters.duration || filters.duration === "not_stated" || filters.unstated) return 0;
+    const hits = filters.q.trim() ? new Set(search.search(filters.q).map((r) => r.id as string)) : null;
+    return postings.filter(
+      (p) => !p.duration_options_months.length && (!hits || hits.has(p.id)) && matches(p, { ...filters, unstated: true }, dataDate),
+    ).length;
+  }, [postings, filters, search, dataDate]);
+
+  const activeNames = [
+    filters.q && `“${filters.q}”`,
+    filters.term,
+    filters.province && PROVINCES[filters.province],
+    filters.duration &&
+      (filters.duration === "8plus" ? "8+ months" : filters.duration === "not_stated" ? "length not stated" : `${filters.duration} months`),
+    filters.track && TRACKS[filters.track],
+    filters.remote && REMOTE_LABELS[filters.remote as RemoteMode],
+    filters.recent && "new this week",
+  ].filter(Boolean) as string[];
+
   const active =
     ["term", "duration", "province", "track", "remote"].filter((k) => filters[k as keyof Filters]).length +
     (filters.recent ? 1 : 0) +
@@ -136,25 +186,29 @@ export function JobBoard({
             <span className="sr-only">Search roles, companies or cities</span>
             <input
               type="search"
+              ref={searchRef}
               value={filters.q}
               onChange={(e) => update({ q: e.target.value })}
               placeholder="Search roles, companies, cities"
+              aria-keyshortcuts="/"
               autoComplete="off"
-              className="h-14 w-full bg-transparent text-base outline-none placeholder:text-muted"
+              className="h-14 w-full bg-transparent text-base placeholder:text-muted focus-visible:outline-offset-[-3px]"
             />
           </label>
           <div className="grid grid-cols-3 border-t border-border md:flex md:border-t-0">
             <BarSelect label="Term" value={filters.term} onChange={(term) => update({ term })}>
               <option value="">Any</option>
               {options.terms.map((t) => (
-                <option key={t}>{t}</option>
+                <option key={t} value={t}>
+                  {t} ({options.termCount(t)})
+                </option>
               ))}
             </BarSelect>
             <BarSelect label="Province" value={filters.province} onChange={(province) => update({ province })}>
               <option value="">Any</option>
               {options.provinces.map((code) => (
                 <option key={code} value={code}>
-                  {PROVINCES[code]}
+                  {PROVINCES[code]} ({options.provinceCount(code)})
                 </option>
               ))}
             </BarSelect>
@@ -206,7 +260,7 @@ export function JobBoard({
       </form>
 
       {collections.length > 0 && (
-        <ul aria-label="Shortcuts" className="mt-4 flex flex-wrap gap-2">
+        <ul aria-label="Shortcuts" className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:flex-wrap md:overflow-visible md:px-0">
           {collections.map((c) => {
             const on = isPreset(c.patch);
             return (
@@ -215,7 +269,7 @@ export function JobBoard({
                   type="button"
                   aria-pressed={on}
                   onClick={() => update(on ? Object.fromEntries(Object.keys(c.patch).map((k) => [k, EMPTY[k as keyof Filters]])) : c.patch)}
-                  className={`inline-flex min-h-10 items-center gap-2 border-[1.5px] px-3 font-display text-sm font-bold transition-colors ${
+                  className={`inline-flex min-h-10 items-center gap-2 whitespace-nowrap border-[1.5px] px-3 font-display text-sm font-bold transition-colors ${
                     on ? "border-go bg-go text-go-fg" : "border-border bg-surface hover:border-fg"
                   }`}
                 >
@@ -241,6 +295,38 @@ export function JobBoard({
               </button>
             )}
           </div>
+          {hiddenUnstated > 0 && (
+            <p className="mb-3 flex flex-wrap items-center gap-x-3 border-[1.5px] border-signal bg-surface px-4 py-2.5 text-sm">
+              <span>
+                <strong className="figures">{hiddenUnstated}</strong> more {hiddenUnstated === 1 ? "posting matches" : "postings match"}{" "}
+                but {hiddenUnstated === 1 ? "doesn’t" : "don’t"} say how long the term is.
+              </span>
+              <button type="button" onClick={() => update({ unstated: true })} className="min-h-11 font-bold text-link underline">
+                Show them too
+              </button>
+            </p>
+          )}
+          {filters.unstated && filters.duration && filters.duration !== "not_stated" && (
+            <p className="mb-3 text-sm text-muted">
+              Including postings that don&rsquo;t state a length.{" "}
+              <button type="button" onClick={() => update({ unstated: false })} className="min-h-11 font-bold text-link underline">
+                Only stated lengths
+              </button>
+            </p>
+          )}
+          {results.length > 0 && (
+            <p className="mb-2 hidden flex-wrap gap-x-5 gap-y-1 text-xs text-muted md:flex">
+              <span>
+                <span className="plate-type mr-1.5 bg-go px-1.5 py-px text-[0.6875rem] text-go-fg">4 mo</span>length quoted from the posting
+              </span>
+              <span>
+                <span className="plate-type mr-1.5 border border-go px-1.5 text-[0.6875rem] text-go">4 mo</span>worked out from its dates
+              </span>
+              <span>
+                <span className="figures mr-1 font-black text-go">2d</span>new this week
+              </span>
+            </p>
+          )}
 
           {results.length > 0 ? (
             <>
@@ -263,17 +349,32 @@ export function JobBoard({
             </>
           ) : (
             <div className="border-2 border-dashed border-border px-6 py-10">
-              <p className="font-display text-lg font-extrabold">No roles match these filters.</p>
+              <p className="font-display text-lg font-extrabold">No roles match {activeNames.join(" + ")}.</p>
               <p className="mt-1 text-muted">
-                Try another term or length, or check{" "}
+                Remove one filter at a time below, or check{" "}
                 <a href="/programs/" className="text-link underline">
                   Program watch
                 </a>{" "}
                 for programs that haven&rsquo;t posted yet.
               </p>
-              <button type="button" onClick={() => update(EMPTY)} className="mt-4 min-h-11 font-bold text-link underline">
-                Clear filters
-              </button>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {(["q", "term", "province", "duration", "track", "remote", "recent"] as const)
+                  .filter((k) => filters[k])
+                  .map((k) => (
+                    <button
+                      key={k}
+                      type="button"
+                      onClick={() => update({ [k]: EMPTY[k] })}
+                      className="min-h-10 border-[1.5px] border-fg px-3 font-display text-sm font-bold hover:bg-fg hover:text-bg transition-colors"
+                    >
+                      Remove {k === "q" ? "search" : k === "duration" ? "length" : k === "recent" ? "new this week" : k === "track" ? "field" : k === "remote" ? "work mode" : k}
+                      <span aria-hidden="true"> ×</span>
+                    </button>
+                  ))}
+                <button type="button" onClick={() => update(EMPTY)} className="min-h-10 px-2 font-bold text-link underline">
+                  Clear all
+                </button>
+              </div>
             </div>
           )}
         </section>
@@ -295,7 +396,7 @@ function BarSelect({
   children: React.ReactNode;
 }) {
   return (
-    <label className="flex min-h-14 flex-col justify-center border-r border-border px-3 last:border-r-0 md:min-w-36 md:border-l md:border-r-0 md:px-4">
+    <label className="flex min-h-14 flex-col justify-center border-r border-border px-3 last:border-r-0 md:min-w-44 md:border-l md:border-r-0 md:px-4">
       <span className="text-xs text-muted">{label}</span>
       <select
         value={value}

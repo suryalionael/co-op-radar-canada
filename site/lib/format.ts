@@ -107,3 +107,10 @@ export function formatPlate(months: number[], isRange = false): string {
   const parts = months.map((m) => (Number.isInteger(m) ? String(m) : m.toFixed(1)));
   return `${parts.join(isRange && parts.length === 2 ? "–" : "/")} mo`;
 }
+
+/** "ml_ai" -> "ML / AI", "fintech" -> "Fintech". */
+export function formatSector(sector: string): string {
+  if (sector in TRACKS) return TRACKS[sector];
+  const s = sector.replace(/_/g, " ");
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}

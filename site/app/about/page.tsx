@@ -103,7 +103,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="text-base text-muted">
+      <section className="max-w-[56ch] text-base text-muted">
         <h2 className="text-xl font-semibold text-fg">Disclaimer</h2>
         <p className="mt-2">
           Co-op Radar Canada is an independent student project. It is not affiliated with, endorsed by, or sponsored

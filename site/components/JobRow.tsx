@@ -28,7 +28,7 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
   return (
     <li className="border-b border-border bg-surface">
       <article aria-labelledby={`t-${p.id}`} className={`grid grid-cols-[4rem_minmax(0,1fr)] gap-x-4 gap-y-2 px-4 py-3.5 md:items-center md:gap-y-0 md:px-5 ${ROW_COLUMNS}`}>
-        <p className="row-span-3 md:row-span-1">
+        <p className="row-span-2 md:row-span-1">
           <span className="sr-only">Posted </span>
           <span className={`figures block text-xl font-black leading-none ${isNew ? "text-go" : ""}`}>
             {age === null ? "—" : formatAge(age)}
@@ -57,16 +57,17 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
           )}
         </div>
 
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 md:contents">
         <p className="facts text-[0.9375rem]">
           <span className="sr-only">Term: </span>
           {p.terms.length ? (
             p.terms.join(" / ")
           ) : (
-            <span className="font-sans font-normal italic text-muted">{ambiguous ? "Term unclear" : "Not stated"}</span>
+            <span className="font-sans text-sm font-normal italic text-muted">{ambiguous ? "term unclear" : "term not stated"}</span>
           )}
         </p>
 
-        <p className="flex flex-wrap items-center gap-2 md:block">
+        <p>
           <span className="sr-only">Length: </span>
           {hasLength ? (
             <span
@@ -78,19 +79,18 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
               {formatPlate(p.duration_options_months, p.duration_is_range)}
             </span>
           ) : (
-            <span className="text-sm italic text-muted">not stated</span>
+            <span className="text-sm italic text-muted">length not stated</span>
           )}
-          <span className="figures text-sm text-muted md:hidden">
-            {p.province === "REMOTE_CA" ? "Remote CA" : p.province}
-          </span>
         </p>
 
-        <p className="figures hidden font-bold md:block">
+        <p className="figures font-bold">
           <span className="sr-only">Province: </span>
-          {p.province === "REMOTE_CA" ? "Rem." : p.province === "UNKNOWN" ? "—" : p.province}
+          <abbr title={p.province === "REMOTE_CA" ? "Remote, anywhere in Canada" : undefined} className="no-underline">
+            {p.province === "REMOTE_CA" ? "Remote" : p.province === "UNKNOWN" ? "—" : p.province}
+          </abbr>
         </p>
 
-        <div className="col-start-2 flex items-center gap-4 md:col-start-auto md:justify-end">
+        <div className="ml-auto flex items-center md:ml-0 md:justify-end">
           <a
             href={p.url}
             target="_blank"
@@ -100,6 +100,7 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
             Apply<span aria-hidden="true">&nbsp;↗</span>
             <span className="sr-only"> to {p.title} at {p.employer} (opens the employer&rsquo;s site)</span>
           </a>
+        </div>
         </div>
       </article>
 

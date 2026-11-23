@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { StatusPlate } from "./StatusPlate";
 import { WindowStrip } from "./WindowStrip";
+import { formatSector } from "@/lib/format";
 import type { Company, CompanyBadge } from "@/lib/types";
 
 const VIEWS: { value: "" | CompanyBadge; label: string }[] = [
@@ -39,7 +40,7 @@ export function CompanyTable({ companies, currentMonth }: { companies: Company[]
           />
         </label>
         <div role="group" aria-label="Show" className="flex flex-wrap gap-2">
-          {VIEWS.map((v) => (
+          {VIEWS.filter((v) => counts[v.value] > 0).map((v) => (
             <button
               key={v.label}
               type="button"
@@ -70,13 +71,19 @@ export function CompanyTable({ companies, currentMonth }: { companies: Company[]
                   >
                     {c.name}
                   </Link>
-                  {c.sector && <p className="text-xs capitalize text-muted">{c.sector.replace(/_/g, " ")}</p>}
+                  {c.sector && <p className="text-xs text-muted">{formatSector(c.sector)}</p>}
                 </div>
                 <StatusPlate company={c} />
               </div>
-              <div className="mt-3">
-                <WindowStrip window={c.window} currentMonth={currentMonth} />
-              </div>
+              {c.window ? (
+                <div className="mt-3">
+                  <WindowStrip window={c.window} currentMonth={currentMonth} />
+                </div>
+              ) : (
+                <p className="mt-3 text-xs text-muted">
+                  {c.open_count ? "Calendar once there’s more history" : "No student postings seen yet"}
+                </p>
+              )}
             </li>
           ))}
         </ul>

@@ -6,7 +6,7 @@ import { TimetableHead } from "@/components/TimetableHead";
 import { StatusPlate } from "@/components/StatusPlate";
 import { WindowStrip } from "@/components/WindowStrip";
 import { getCompanies, getCompany, getMeta, getPostings, getPrograms } from "@/lib/data";
-import { formatDay } from "@/lib/format";
+import { formatDay, formatSector } from "@/lib/format";
 
 export const dynamicParams = false;
 
@@ -42,7 +42,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         <h1 className="text-display font-black tracking-[-0.02em]">{company.name}</h1>
         <StatusPlate company={company} />
       </div>
-      {company.sector && <p className="mt-1 capitalize text-muted">{company.sector.replace(/_/g, " ")}</p>}
+      {company.sector && <p className="mt-1 text-muted">{formatSector(company.sector)}</p>}
 
       <section aria-labelledby="calendar" className="mt-8 max-w-3xl">
         <h2 id="calendar" className="text-xl font-black">
@@ -53,7 +53,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ slug: 
         </div>
         <p className="mt-2 text-sm text-muted">
           {company.basis
-            ? `Built ${company.basis}, by the month each one first appeared.`
+            ? `Built ${company.basis}, by the month each one first appeared. The first day we read their board doesn’t count: everything already up looks new that day.`
             : "No student postings recorded yet."}
         </p>
       </section>

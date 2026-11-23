@@ -24,7 +24,7 @@ export default function CompaniesPage() {
         </p>
       </div>
       <CompanyTable companies={companies} currentMonth={month} />
-      <p className="mt-6 max-w-[70ch] text-sm text-muted">
+      <p className="mt-6 max-w-[54ch] text-sm text-muted">
         We started reading job boards in October 2026, so most companies don&rsquo;t have enough history for a calendar
         yet. A company needs at least three postings before we draw one. The first day we read a board doesn&rsquo;t
         count, because everything already up looks new that day.
