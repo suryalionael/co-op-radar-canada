@@ -8,8 +8,11 @@ For each page in config/programs.yaml:
 2. Normalize away content that changes without the program changing: dates,
    times, "last updated" lines, copyright years, long numbers (view counts,
    cache busters), and session tokens (long hex strings, UUIDs).
-3. Hash what is left. A new hash on a successful fetch is a change; a failed
-   fetch is never a change.
+3. Hash what is left. A new hash counts as a change only when the next
+   successful fetch sees the same new hash; it is dated the day it first
+   appeared. A version that lasts one day (an outage banner, an error page
+   served as 200, a language flip) never becomes an alert. A failed fetch is
+   never a change.
 
 The raw main text is stored on the `data` branch so changes can be shown as a
 short excerpt of the lines that were added.
@@ -150,9 +153,12 @@ def build_program_watch(
 ) -> tuple[list[ProgramWatch], list[ProgramChange]]:
     """Replay every day's records, oldest first, into current status and a change history."""
     state: dict[str, dict[str, Any]] = {
-        p["id"]: {"hash": None, "text": None, "checked": None, "ok": False, "changed": None, "excerpt": None}
+        p["id"]: {
+            "hash": None, "text": None, "checked": None, "ok": False, "changed": None, "excerpt": None,
+            "pending": None,  # (hash, text, day) of a new version not yet seen on two checks in a row
+        }
         for p in programs
-    }
+    }  # fmt: skip
     changes: list[ProgramChange] = []
     for day, records in sorted(days, key=lambda d: d[0]):
         for r in records:
@@ -162,16 +168,26 @@ def build_program_watch(
             s["checked"], s["ok"] = day, bool(r["ok"])
             if not r["ok"]:
                 continue
-            if s["hash"] is not None and r["hash"] != s["hash"]:
-                excerpt = change_excerpt(s["text"] or "", r["text"])
-                changes.append(
-                    ProgramChange(
-                        program_id=r["program_id"], changed_on=day, change_excerpt=excerpt,
-                        kind=ChangeKind.content_change,
-                    )
-                )  # fmt: skip
-                s["changed"], s["excerpt"] = day, excerpt
-            s["hash"], s["text"] = r["hash"], r["text"]
+            if s["hash"] is None or r["hash"] == s["hash"]:
+                # First check, or the page is back to its confirmed version: any one-day blip is dropped.
+                s["hash"], s["text"], s["pending"] = r["hash"], r["text"], None
+                continue
+            pending = s["pending"]
+            if pending is None or pending[0] != r["hash"]:
+                # A new version counts only if the next successful check sees it again. Outage
+                # banners, error pages and language flips last one day and never become alerts.
+                s["pending"] = (r["hash"], r["text"], day)
+                continue
+            first_seen = pending[2]
+            excerpt = change_excerpt(s["text"] or "", r["text"])
+            changes.append(
+                ProgramChange(
+                    program_id=r["program_id"], changed_on=first_seen, change_excerpt=excerpt,
+                    kind=ChangeKind.content_change,
+                )
+            )  # fmt: skip
+            s["changed"], s["excerpt"] = first_seen, excerpt
+            s["hash"], s["text"], s["pending"] = r["hash"], r["text"], None
 
     for p in programs:
         if p.get("note"):
