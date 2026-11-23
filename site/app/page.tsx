@@ -22,7 +22,7 @@ export default function Home() {
           Your next work term, <span className="bg-signal px-2 text-signal-fg [box-decoration-break:clone]">on schedule.</span>
         </h1>
         <p className="max-w-[46ch] text-lg text-muted">
-          Co-ops and internships from {c.employer_boards_tracked} Canadian tech employers, checked daily.{" "}
+          Co-ops and internships from {c.companies ?? c.employer_boards_tracked} Canadian employers, checked daily.{" "}
           <span className="hidden sm:inline">
             Every term and length is quoted from the posting itself, and if a posting doesn&rsquo;t say, neither do we.
           </span>

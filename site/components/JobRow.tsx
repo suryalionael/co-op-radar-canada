@@ -106,7 +106,7 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
           </abbr>
         </p>
 
-        <div className="ml-auto flex items-center md:ml-0 md:justify-end">
+        <div className="flex w-full items-center justify-end md:w-auto">
           <a
             href={p.url}
             target="_blank"

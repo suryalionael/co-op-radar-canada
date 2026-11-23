@@ -125,6 +125,8 @@ export function displayTitle(title: string, terms: string[]): string {
     const esc = term.replace(/\s+/g, "\\s+");
     t = t.replace(new RegExp(`\\s*(?:[-–—|,]\\s*${esc}|\\(\\s*${esc}\\s*\\))\\s*$`, "i"), "");
   }
+  // A trailing "(Winter/January 2027, 12 Months)" only repeats the Term and Length columns.
+  if (terms.length) t = t.replace(/\s*\([^)]*\b20\d\d\b[^)]*\)\s*$/, "");
   return t.trim() || title;
 }
 
@@ -134,7 +136,12 @@ const PLACE_NOISE = /^(?:canada|remote|hybrid|on-?site|ca|headquarters|hq|office
 export function shortLocation(raw: string): string {
   const cities: string[] = [];
   for (const part of raw.split(/[;/|]|\bor\b/)) {
-    const city = part.split(",")[0].replace(/\b(?:headquarters|hq|office)\b/gi, "").trim();
+    const city = part
+      .split(",")[0]
+      .trim()
+      .replace(/^[A-Z]{2}-/, "") // "CA-Toronto"
+      .replace(/\b(?:headquarters|hq|office)\b/gi, "")
+      .trim();
     if (city && !PLACE_NOISE.test(city) && !(city in PROVINCE_NAMES) && !cities.includes(city)) cities.push(city);
   }
   if (!cities.length) return raw.trim();

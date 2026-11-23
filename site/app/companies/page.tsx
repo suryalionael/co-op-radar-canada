@@ -19,8 +19,8 @@ export default function CompaniesPage() {
           Who&rsquo;s hiring, <span className="bg-signal px-2 text-signal-fg [box-decoration-break:clone]">and when.</span>
         </h1>
         <p className="max-w-[46ch] text-lg text-muted">
-          {open} of {companies.length} companies have student roles open right now. The strip under each one shows the
-          months its postings appeared, so you know when to look again.
+          {open} of {companies.length} companies have student roles open right now. Hiring months show when a
+          company&rsquo;s postings usually appear, so you know when to look again.
         </p>
       </div>
       <CompanyTable companies={companies} currentMonth={month} />

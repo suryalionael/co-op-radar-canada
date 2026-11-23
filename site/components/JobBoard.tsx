@@ -287,8 +287,8 @@ export function JobBoard({
 
       <div className="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <section aria-labelledby="results-heading" className="min-w-0">
-          <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3">
-            <h2 id="results-heading" className="text-lg font-black" aria-live="polite">
+          <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3 md:mb-0 md:justify-end">
+            <h2 id="results-heading" className="text-lg font-black md:sr-only" aria-live="polite">
               <span className="figures">{results.length}</span> {results.length === 1 ? "role" : "roles"}
               {active > 0 ? " match" : " open now"}
             </h2>
@@ -320,7 +320,7 @@ export function JobBoard({
 
           {results.length > 0 ? (
             <>
-              <TimetableHead />
+              <TimetableHead role={`Role · ${results.length} ${active > 0 ? "match" : "open"}`} />
               <ul className="border-x border-t border-border md:border-t-0">
                 {results.slice(0, limit).map((p) => (
                   <JobRow key={p.id} posting={p} dataDate={dataDate} />
@@ -397,7 +397,7 @@ function BarSelect({
   children: React.ReactNode;
 }) {
   return (
-    <label className="flex min-h-14 flex-col justify-center border-r border-border px-3 last:border-r-0 md:min-w-44 md:border-l md:border-r-0 md:px-4">
+    <label className="flex min-h-14 flex-col justify-center border-r border-border px-3 last:border-r-0 md:min-w-52 md:border-l md:border-r-0 md:px-4">
       <span className="text-xs text-muted">{label}</span>
       <select
         value={value}
