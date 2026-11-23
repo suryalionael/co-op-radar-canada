@@ -1,0 +1,2645 @@
+[
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/lyft",
+  "name": "Lyft",
+  "open_count": 16,
+  "posting_ids": [
+   "0c33e9d8bc096695",
+   "37773045e35aa743",
+   "4555ac8e946a1713",
+   "518ad23e9671dad9",
+   "647ff56f14830548",
+   "6a9ab99b66109f15",
+   "72a0c71680e9e969",
+   "7369006c3d80c2c1",
+   "78930bbe3223db3c",
+   "9a3c60880c35810b",
+   "9f81a5d75e504e25",
+   "ae3fc07c3ad011b1",
+   "b9e7cceb23277778",
+   "ba80139f0da63d34",
+   "de6350f745224661",
+   "ff21e2e6eb033364"
+  ],
+  "program_ids": [],
+  "sector": "transportation",
+  "slug": "lyft",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/asteraearlycareer2027",
+  "name": "Astera Labs",
+  "open_count": 13,
+  "posting_ids": [
+   "1512773c8a526b1d",
+   "1e6c17afb91b2e2b",
+   "22840d509d44154c",
+   "22f801a708c7720d",
+   "37abea2df8d42c3f",
+   "574af7346c16d8d8",
+   "6b10b33a923cfe63",
+   "886f834a1e242806",
+   "9e3ef444d22b16fc",
+   "a3131011cb1aa7b0",
+   "a54586870245b7f1",
+   "c1122af9d29da6fe",
+   "fba32629c509357b"
+  ],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "astera_labs",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 2 postings, 2026",
+  "board_url": "https://jobs.lever.co/eqbank",
+  "name": "Equitable Bank",
+  "open_count": 11,
+  "posting_ids": [
+   "cb7ff9a8aeb568ad",
+   "ef9520e4045d092a",
+   "026629a2c64243e6",
+   "14c28d7445912d5f",
+   "243e127c8983cb06",
+   "360fd8dfa9b44611",
+   "901972d31f9109ff",
+   "b35c53178c0e1acb",
+   "da89b9daa0548bb6",
+   "f077b2ad2d0f7900",
+   "f1302c4f73e00a3a"
+  ],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "equitable_bank",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 7 postings, 2026",
+  "board_url": "https://jobs.lever.co/kabam",
+  "name": "Kabam",
+  "open_count": 9,
+  "posting_ids": [
+   "38161ab5ffd5a53e",
+   "b73241e9df65d10e",
+   "31001d1585f23b7a",
+   "68450690ae6f7ebc",
+   "a75410f57d5b1a29",
+   "a8966d4a48e9e903",
+   "4fbfbafe034245ad",
+   "cfe9d23f48448d61",
+   "e8f84d76de739a1d"
+  ],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "kabam",
+  "window": {
+   "end": 11,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0
+   ],
+   "n_dates": 7,
+   "start": 11,
+   "years": [
+    2026,
+    2026
+   ]
+  }
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/human-computer-lab",
+  "name": "Human Computer Lab",
+  "open_count": 6,
+  "posting_ids": [
+   "13dc3f42b10f8bc1",
+   "211636b44b4441fb",
+   "58faf2dfd0d430c6",
+   "99818f1d4c42e611",
+   "9f5a2e68b3fea647",
+   "b3fd0d193980ceb6"
+  ],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "human_computer_lab",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 2 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/kensingtontours",
+  "name": "Kensington Tours",
+  "open_count": 6,
+  "posting_ids": [
+   "0f387c29a92b4496",
+   "23c8d52d0c8850f8",
+   "38cb5b33966f7259",
+   "56838365b05df110",
+   "d90bf112d3ae6718",
+   "eb912b2c61ff47c4"
+  ],
+  "program_ids": [],
+  "sector": "travel",
+  "slug": "kensington_tours",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://job-boards.greenhouse.io/momentenergy",
+  "name": "Moment Energy",
+  "open_count": 6,
+  "posting_ids": [
+   "e12cc68b911a3cf1",
+   "10558c5183b39734",
+   "12697a76f70befcb",
+   "47f2c902bff5202e",
+   "af681646938ed56b",
+   "e4b7b407a242bde8"
+  ],
+  "program_ids": [],
+  "sector": "energy",
+  "slug": "moment_energy",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 3 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/stripe",
+  "name": "Stripe",
+  "open_count": 6,
+  "posting_ids": [
+   "ad8c9ef8544d2187",
+   "36ae68470273a9e5",
+   "552a49e8ca55e48b",
+   "14765a714e7f8c52",
+   "b9c52250b631b583",
+   "e7189473b4506a27"
+  ],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "stripe",
+  "window": {
+   "end": 10,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0
+   ],
+   "n_dates": 3,
+   "start": 10,
+   "years": [
+    2026,
+    2026
+   ]
+  }
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/tenstorrentuniversity",
+  "name": "Tenstorrent",
+  "open_count": 6,
+  "posting_ids": [
+   "053caea8f3fc1f13",
+   "22897e327e16feaf",
+   "45949c51e86b1b4d",
+   "a91f67903167b2ab",
+   "bca5aedeac980293",
+   "cc27e70d3f364e9e"
+  ],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "tenstorrent_university",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/cresta",
+  "name": "Cresta",
+  "open_count": 5,
+  "posting_ids": [
+   "1ce824468c334008",
+   "50abc28bc7d803d4",
+   "a867a65904068ed4",
+   "b80f83425ff7bae6",
+   "fb92bf0fa7ab65d8"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "cresta",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/acceldata",
+  "name": "Acceldata",
+  "open_count": 3,
+  "posting_ids": [
+   "0b5bd27afd7274ff",
+   "a65997a6286cf931",
+   "e6f27645f4410c7d"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "acceldata",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/shyftlabs",
+  "name": "ShyftLabs",
+  "open_count": 3,
+  "posting_ids": [
+   "046e6b40a5b015be",
+   "64604f13369444b0",
+   "73d79f67f880ae9d"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "shyftlabs",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/waabi",
+  "name": "Waabi",
+  "open_count": 3,
+  "posting_ids": [
+   "338eb528a18d4d9c",
+   "4d669df24ba1f6e8",
+   "5ba8676e49855a2e"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "waabi",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/bhvr",
+  "name": "Behaviour Interactive",
+  "open_count": 2,
+  "posting_ids": [
+   "34b686ea4e806da6",
+   "9660e4b12b6bdfbf"
+  ],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "behaviour_interactive",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/block",
+  "name": "Block",
+  "open_count": 2,
+  "posting_ids": [
+   "c975acc509358f66",
+   "d426584e1fb9b986"
+  ],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "block",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/cohere",
+  "name": "Cohere",
+  "open_count": 2,
+  "posting_ids": [
+   "5aef43857a1b3172",
+   "d3264c45622979d7"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "cohere",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://jobs.ashbyhq.com/georgian",
+  "name": "Georgian",
+  "open_count": 2,
+  "posting_ids": [
+   "2a899d5017d4a804",
+   "d81b6d01c375ab8f"
+  ],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "georgian",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://job-boards.greenhouse.io/internshiplist2000",
+  "name": "Geotab",
+  "open_count": 2,
+  "posting_ids": [
+   "0bc74d4a719ab193",
+   "d71db94bafac318a"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "geotab_internships",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/studiokraftonboard",
+  "name": "KRAFTON Montréal Studio",
+  "open_count": 2,
+  "posting_ids": [
+   "00b96890ed191aa4",
+   "720d0843c25ad062"
+  ],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "krafton_montreal",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://jobs.lever.co/magnetforensics",
+  "name": "Magnet Forensics",
+  "open_count": 2,
+  "posting_ids": [
+   "f0954b30fbc514c2",
+   "ccb9c4f453859d02"
+  ],
+  "program_ids": [],
+  "sector": "security",
+  "slug": "magnet_forensics",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/pinterest",
+  "name": "Pinterest",
+  "open_count": 2,
+  "posting_ids": [
+   "6551999a74291408",
+   "b1949a038291eae1"
+  ],
+  "program_ids": [],
+  "sector": "media",
+  "slug": "pinterest",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/steel",
+  "name": "Steel",
+  "open_count": 2,
+  "posting_ids": [
+   "b91a251cf63771d2",
+   "d6bcea7e3a6d9458"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "steel",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/veeda-ai",
+  "name": "Veeda AI",
+  "open_count": 2,
+  "posting_ids": [
+   "3d886b28f1efe98d",
+   "46ad1a7a752ef380"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "veeda_ai",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/alayacare",
+  "name": "AlayaCare",
+  "open_count": 1,
+  "posting_ids": [
+   "e6a6b0e7204b35d1"
+  ],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "alayacare",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/bosonai",
+  "name": "Boson AI",
+  "open_count": 1,
+  "posting_ids": [
+   "2c2da8b0d3265204"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "boson_ai",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://job-boards.greenhouse.io/brave",
+  "name": "Brave",
+  "open_count": 1,
+  "posting_ids": [
+   "429a113b7331a298"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "brave",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/databricks",
+  "name": "Databricks",
+  "open_count": 1,
+  "posting_ids": [
+   "147d9e10a6beeb00"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "databricks",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/doordashcanada",
+  "name": "DoorDash",
+  "open_count": 1,
+  "posting_ids": [
+   "fbb23206b786d9db"
+  ],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "doordash_canada",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/epicgames",
+  "name": "Epic Games",
+  "open_count": 1,
+  "posting_ids": [
+   "c9c454b4688b79cc"
+  ],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "epic_games",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/gomaterials",
+  "name": "GoMaterials",
+  "open_count": 1,
+  "posting_ids": [
+   "677df86842e11342"
+  ],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "gomaterials",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 2 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/hootsuite",
+  "name": "Hootsuite",
+  "open_count": 1,
+  "posting_ids": [
+   "5d43f7b9a548f08a"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "hootsuite",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/instalilyai",
+  "name": "InstaLILY",
+  "open_count": 1,
+  "posting_ids": [
+   "c1ac8a9b13a11759"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "instalily",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://jobs.lever.co/kepler",
+  "name": "Kepler Communications",
+  "open_count": 1,
+  "posting_ids": [
+   "deb3c12435abd2a7"
+  ],
+  "program_ids": [],
+  "sector": "aerospace",
+  "slug": "kepler_communications",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/later",
+  "name": "Later",
+  "open_count": 1,
+  "posting_ids": [
+   "a90052befc0cd127"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "later",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/roblox",
+  "name": "Roblox",
+  "open_count": 1,
+  "posting_ids": [
+   "a0202c608ce5b886"
+  ],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "roblox",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/telus-digital",
+  "name": "TELUS Digital",
+  "open_count": 1,
+  "posting_ids": [
+   "75d20dbaf5e6f769"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "telus_digital",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/tribalscale",
+  "name": "TribalScale",
+  "open_count": 1,
+  "posting_ids": [
+   "0d9587679215bcee"
+  ],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "tribalscale",
+  "window": null
+ },
+ {
+  "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/yotta",
+  "name": "Yotta Labs",
+  "open_count": 1,
+  "posting_ids": [
+   "9efb00d401390612"
+  ],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "yotta_labs",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/1password",
+  "name": "1Password",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "security",
+  "slug": "1password",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/achievers",
+  "name": "Achievers",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "achievers",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/ada18",
+  "name": "Ada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "ada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/adyen",
+  "name": "Adyen",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "adyen",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/affirm",
+  "name": "Affirm",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "affirm",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/airbnb",
+  "name": "Airbnb",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "travel",
+  "slug": "airbnb",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/airbyte",
+  "name": "Airbyte",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "airbyte",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/alan",
+  "name": "Alan",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "insurtech",
+  "slug": "alan",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Alberta Public Service",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "alberta_ps_summer"
+  ],
+  "sector": null,
+  "slug": "alberta_public_service",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/altaml",
+  "name": "AltaML",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "altaml",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/ami",
+  "name": "AMI",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "ami",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/amplitude",
+  "name": "Amplitude",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "amplitude",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/anchorage",
+  "name": "Anchorage Digital",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "anchorage",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/anthropic",
+  "name": "Anthropic",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "anthropic",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/aperaaiinc",
+  "name": "Apera AI",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "apera_ai",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/appdirect",
+  "name": "AppDirect",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "appdirect",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/asana",
+  "name": "Asana",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "asana",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/ashby",
+  "name": "Ashby",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "ashby",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/auviknetworks",
+  "name": "Auvik",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "auvik",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Bank of Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "bank_of_canada_students"
+  ],
+  "sector": null,
+  "slug": "bank_of_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "BC Hydro",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "bc_hydro_students"
+  ],
+  "sector": null,
+  "slug": "bc_hydro",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "BC Public Service",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "bcps_coop",
+   "bcps_students"
+  ],
+  "sector": null,
+  "slug": "bc_public_service",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/benevity",
+  "name": "Benevity",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "benevity",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/blackbirdinteractive",
+  "name": "Blackbird Interactive",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "blackbird_interactive",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "BMO",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "bmo_students"
+  ],
+  "sector": null,
+  "slug": "bmo",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/braze",
+  "name": "Braze",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "braze",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/bree",
+  "name": "Bree",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "bree",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/brex",
+  "name": "Brex",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "brex",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Canada Life",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "canada_life_students"
+  ],
+  "sector": null,
+  "slug": "canada_life",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Canada Revenue Agency",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "cra_students"
+  ],
+  "sector": null,
+  "slug": "cra",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/carta",
+  "name": "Carta",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "carta",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/cerebras",
+  "name": "Cerebras Systems",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "cerebras",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "CIBC",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "cibc_students"
+  ],
+  "sector": null,
+  "slug": "cibc",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/circleci",
+  "name": "CircleCI",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "circleci",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/clearco",
+  "name": "Clearco",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "clearco",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/clickup",
+  "name": "ClickUp",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "clickup",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/clutch",
+  "name": "Clutch",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "clutch",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/coinbase",
+  "name": "Coinbase",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "coinbase",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/consensys",
+  "name": "Consensys (MetaMask)",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "consensys",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/coreweave",
+  "name": "CoreWeave",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "coreweave",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/coursera",
+  "name": "Coursera",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "edtech",
+  "slug": "coursera",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/cribl",
+  "name": "Cribl",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "cribl",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/d2l",
+  "name": "D2L",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "edtech",
+  "slug": "d2l",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/datadog",
+  "name": "Datadog",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "datadog",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/deepgenomics",
+  "name": "Deep Genomics",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "deep_genomics",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Deloitte Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "deloitte_ca_students"
+  ],
+  "sector": null,
+  "slug": "deloitte_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/dominodatalab",
+  "name": "Domino Data Lab",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "domino_data_lab",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/doordashusa",
+  "name": "DoorDash",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "doordash",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/dropbox",
+  "name": "Dropbox",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "dropbox",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/drweng",
+  "name": "DRW",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "drw",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/elastic",
+  "name": "Elastic",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "elastic",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Elk Valley Resources",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "evr_students"
+  ],
+  "sector": null,
+  "slug": "evr",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Export Development Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "edc_students"
+  ],
+  "sector": null,
+  "slug": "edc",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "EY Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "ey_ca_students"
+  ],
+  "sector": null,
+  "slug": "ey_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/faire",
+  "name": "Faire",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "faire",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/felix",
+  "name": "Felix Health",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "felix",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/fivetran",
+  "name": "Fivetran",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "fivetran",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/float",
+  "name": "Float",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "float",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/fullscript",
+  "name": "Fullscript",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "fullscript",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/gearbox",
+  "name": "Gearbox",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "gearbox",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/geotab",
+  "name": "Geotab",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "geotab",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/gitlab",
+  "name": "GitLab",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "gitlab",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/gorgias",
+  "name": "Gorgias",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "gorgias",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Government of Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "fswep",
+   "gc_coop_internship",
+   "gc_research_affiliate"
+  ],
+  "sector": null,
+  "slug": "government_of_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/grafanalabs",
+  "name": "Grafana Labs",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "grafana_labs",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/greenhouse",
+  "name": "Greenhouse",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "greenhouse",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/gusto",
+  "name": "Gusto",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "gusto",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Health Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "health_canada_students"
+  ],
+  "sector": null,
+  "slug": "health_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/heygen",
+  "name": "HeyGen",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "heygen",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/honeycomb",
+  "name": "Honeycomb",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "honeycomb",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/hopper",
+  "name": "Hopper",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "travel",
+  "slug": "hopper",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/hubspotjobs",
+  "name": "HubSpot",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "hubspot",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Hydro One",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "hydro_one_students"
+  ],
+  "sector": null,
+  "slug": "hydro_one",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/instacart",
+  "name": "Instacart",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ecommerce",
+  "slug": "instacart",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Interac",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "interac_students"
+  ],
+  "sector": null,
+  "slug": "interac",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/jane",
+  "name": "Jane App",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "jane_app",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/jobber",
+  "name": "Jobber",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "jobber",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Justice Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "justice_coop"
+  ],
+  "sector": null,
+  "slug": "justice_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/justworks",
+  "name": "Justworks",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "justworks",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/khanacademy",
+  "name": "Khan Academy",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "edtech",
+  "slug": "khan_academy",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/kindred",
+  "name": "Kindred",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "travel",
+  "slug": "kindred",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/klue",
+  "name": "Klue",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "klue",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/kong",
+  "name": "Kong",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "kong",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/konradgroup",
+  "name": "Konrad",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "konrad",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "KPMG Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "kpmg_ca_students"
+  ],
+  "sector": null,
+  "slug": "kpmg_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/lattice",
+  "name": "Lattice",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "lattice",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/leagueinc",
+  "name": "League",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "league",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/lightspeedhq",
+  "name": "Lightspeed",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "lightspeed",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/loopio",
+  "name": "Loopio",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "loopio",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Manitoba Hydro",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "manitoba_hydro_students"
+  ],
+  "sector": null,
+  "slug": "manitoba_hydro",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/getmaple",
+  "name": "Maple",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "maple",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/mercury",
+  "name": "Mercury",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "mercury",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/miovision",
+  "name": "Miovision",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "miovision",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/mobsquad",
+  "name": "MobSquad",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "mobsquad",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/mongodb",
+  "name": "MongoDB",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "mongodb",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/mozilla",
+  "name": "Mozilla",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "mozilla",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Natural Resources Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "nrcan_students"
+  ],
+  "sector": null,
+  "slug": "nrcan",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/neofinancial",
+  "name": "Neo Financial",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "neo_financial",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/nerdwallet",
+  "name": "NerdWallet",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "nerdwallet",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/newrelic",
+  "name": "New Relic",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "new_relic",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/nubank",
+  "name": "Nubank",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "nubank",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/okta",
+  "name": "Okta",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "security",
+  "slug": "okta",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "OMERS",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "omers_students"
+  ],
+  "sector": null,
+  "slug": "omers",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Ontario Public Service",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "ops_students"
+  ],
+  "sector": null,
+  "slug": "ontario_public_service",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/openai",
+  "name": "OpenAI",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "openai",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/osedea",
+  "name": "Osedea",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "osedea",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/oyster",
+  "name": "Oyster",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "oyster",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/pagerduty",
+  "name": "PagerDuty",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "pagerduty",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/paytm",
+  "name": "Paytm",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "paytm",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/pebl",
+  "name": "Pebl",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "pebl",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/peloton",
+  "name": "Peloton",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "peloton",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/perplexity",
+  "name": "Perplexity",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "perplexity",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/plooto",
+  "name": "Plooto",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "plooto",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/pointclickcare",
+  "name": "PointClickCare",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "pointclickcare",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/poka",
+  "name": "Poka",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "poka",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/policyme",
+  "name": "PolicyMe",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "insurtech",
+  "slug": "policyme",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/procurify",
+  "name": "Procurify",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "procurify",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/promiserobotics",
+  "name": "Promise Robotics",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "promise_robotics",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "PwC Canada",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "pwc_ca_students"
+  ],
+  "sector": null,
+  "slug": "pwc_canada",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/quora",
+  "name": "Quora",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "media",
+  "slug": "quora",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Québec Public Service",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "quebec_ps_students"
+  ],
+  "sector": null,
+  "slug": "quebec_public_service",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/ramp",
+  "name": "Ramp",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "ramp",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "RBC",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "rbc_students"
+  ],
+  "sector": null,
+  "slug": "rbc",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/reddit",
+  "name": "Reddit",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "media",
+  "slug": "reddit",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/render",
+  "name": "Render",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "render",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/rewind",
+  "name": "Rewind",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "rewind",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/ripple",
+  "name": "Ripple",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "ripple",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/robinhood",
+  "name": "Robinhood",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "robinhood",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/samsara",
+  "name": "Samsara",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "samsara",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/sanity",
+  "name": "Sanity",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "sanity",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/sardine",
+  "name": "Sardine",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "sardine",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/scaleai",
+  "name": "Scale AI",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "ml_ai",
+  "slug": "scale_ai",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/scopely",
+  "name": "Scopely",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "gaming",
+  "slug": "scopely",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "Scotiabank",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "scotiabank_students"
+  ],
+  "sector": null,
+  "slug": "scotiabank",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/sentry",
+  "name": "Sentry",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "sentry",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/snowflake",
+  "name": "Snowflake",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "snowflake",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/snyk",
+  "name": "Snyk",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "security",
+  "slug": "snyk",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/spotify",
+  "name": "Spotify",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "media",
+  "slug": "spotify",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/sproutsocial",
+  "name": "Sprout Social",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "sprout_social",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/stackadapt",
+  "name": "StackAdapt",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "adtech",
+  "slug": "stackadapt",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/syntronic",
+  "name": "Syntronic",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "syntronic",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/tailscale",
+  "name": "Tailscale",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "tailscale",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/telesat",
+  "name": "Telesat",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "aerospace",
+  "slug": "telesat",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/temporal",
+  "name": "Temporal Technologies",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "temporal",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/tenstorrent",
+  "name": "Tenstorrent",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "tenstorrent",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/thinkific",
+  "name": "Thinkific",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "edtech",
+  "slug": "thinkific",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/toast",
+  "name": "Toast",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "toast",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/trulioo",
+  "name": "Trulioo",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "trulioo",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": null,
+  "name": "TTC",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [
+   "ttc_summer_students"
+  ],
+  "sector": null,
+  "slug": "ttc",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/twilio",
+  "name": "Twilio",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "twilio",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/unbounce",
+  "name": "Unbounce",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "unbounce",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/varicent",
+  "name": "Varicent",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "varicent",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/visier",
+  "name": "Visier",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "visier",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/wattpad",
+  "name": "Wattpad",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "media",
+  "slug": "wattpad",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.lever.co/waveapps",
+  "name": "Wave",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "wave",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/wealthsimple",
+  "name": "Wealthsimple",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "fintech",
+  "slug": "wealthsimple",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/webflow",
+  "name": "Webflow",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "webflow",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/workleap",
+  "name": "Workleap",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "workleap",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/zip",
+  "name": "Zip",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "zip",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/zscaler",
+  "name": "Zscaler",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "security",
+  "slug": "zscaler",
+  "window": null
+ }
+]

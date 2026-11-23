@@ -76,5 +76,29 @@ export interface Meta {
     employers_with_postings: number;
     employer_boards_tracked: number;
     programs_watched: number;
+    companies?: number; // absent in older data
   };
+}
+
+export interface HiringWindow {
+  months: number[]; // 12 counts of posting dates, January first
+  start: number; // 1–12
+  end: number; // 1–12, may be before start when the window wraps across December
+  n_dates: number;
+  years: [number, number];
+}
+
+export type CompanyBadge = "open" | "soon" | "quiet";
+
+export interface Company {
+  slug: string;
+  name: string;
+  sector: string | null;
+  board_url: string | null;
+  open_count: number;
+  posting_ids: string[];
+  program_ids: string[]; // program-watch pages for this company, if any
+  window: HiringWindow | null;
+  basis: string; // e.g. "from 6 postings, 2025–2026"; empty when there are no dates
+  badge: CompanyBadge;
 }

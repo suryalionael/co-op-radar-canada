@@ -84,3 +84,69 @@ export function durationNote(p: Posting): string {
 export function daysBetween(from: string, to: string): number {
   return Math.round((Date.parse(to) - Date.parse(from)) / 86_400_000);
 }
+
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+export const MONTH_NAMES = MONTHS;
+
+/** "2026-11-21" -> "Nov 21". Parsed as text so the time zone can't shift the day. */
+export function formatDay(iso: string): string {
+  const [, m, d] = iso.split("-").map(Number);
+  return `${MONTHS[m - 1]} ${d}`;
+}
+
+/** How long ago, timetable-short: "today", "3d", "2w", "3mo". */
+export function formatAge(days: number): string {
+  if (days <= 0) return "today";
+  if (days < 7) return `${days}d`;
+  if (days < 60) return `${Math.floor(days / 7)}w`;
+  return `${Math.floor(days / 30)}mo`;
+}
+
+/** Duration plate text: [4] -> "4 mo", [4, 8] -> "4/8 mo", range [4, 16] -> "4–16 mo". */
+export function formatPlate(months: number[], isRange = false): string {
+  const parts = months.map((m) => (Number.isInteger(m) ? String(m) : m.toFixed(1)));
+  return `${parts.join(isRange && parts.length === 2 ? "–" : "/")} mo`;
+}
+
+/** "ml_ai" -> "ML / AI", "fintech" -> "Fintech". */
+export function formatSector(sector: string): string {
+  if (sector in TRACKS) return TRACKS[sector];
+  const s = sector.replace(/_/g, " ");
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+/**
+ * The title as a timetable line: drop a leading "[Summer 2027 Canada]" tag and a trailing
+ * " - Winter 2027" or "(Winter 2027)" that only repeats the Term column. The raw title stays in the evidence.
+ */
+export function displayTitle(title: string, terms: string[]): string {
+  let t = title.replace(/^\s*\[[^\]]*\]\s*/, "");
+  for (const term of terms) {
+    const esc = term.replace(/\s+/g, "\\s+");
+    t = t.replace(new RegExp(`\\s*(?:[-–—|,]\\s*${esc}|\\(\\s*${esc}\\s*\\))\\s*$`, "i"), "");
+  }
+  // A trailing "(Winter/January 2027, 12 Months)" only repeats the Term and Length columns.
+  if (terms.length) t = t.replace(/\s*\([^)]*\b20\d\d\b[^)]*\)\s*$/, "");
+  return t.trim() || title;
+}
+
+const PLACE_NOISE = /^(?:canada|remote|hybrid|on-?site|ca|headquarters|hq|office)$/i;
+
+/** "Toronto, Ontario; Ottawa, Ontario; Greater Toronto Area" -> "Toronto, Ottawa +1". */
+export function shortLocation(raw: string): string {
+  const cities: string[] = [];
+  for (const part of raw.split(/[;/|]|\bor\b/)) {
+    const city = part
+      .split(",")[0]
+      .trim()
+      .replace(/^[A-Z]{2}-/, "") // "CA-Toronto"
+      .replace(/\b(?:headquarters|hq|office)\b/gi, "")
+      .trim();
+    if (city && !PLACE_NOISE.test(city) && !(city in PROVINCE_NAMES) && !cities.includes(city)) cities.push(city);
+  }
+  if (!cities.length) return raw.trim();
+  return cities.length > 2 ? `${cities.slice(0, 2).join(", ")} +${cities.length - 2}` : cities.join(", ");
+}
+const PROVINCE_NAMES: Record<string, true> = Object.fromEntries(
+  [...Object.values(PROVINCES), "Ontario", "Quebec", "Québec", "British Columbia", "ON", "QC", "BC", "AB"].map((n) => [n, true]),
+);

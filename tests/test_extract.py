@@ -207,6 +207,15 @@ def test_start_month() -> None:
         ("Stage de 4 mois à Montréal", [4.0]),
         ("This 12 week internship pays well.", [3.0]),
         ("Work term: 4/8 months", [4.0, 8.0]),
+        # Misses found in the evaluation (docs/evaluation.md)
+        ("You will work 37,5 hours/week for 4 months.", [4.0]),  # Behaviour Interactive
+        ("Join us for a full-time4 month internship.", [4.0]),  # Cohere
+        ("The internship lasts approx. 16 weeks.", [4.0]),  # TELUS Digital
+        ("This is at least a 4 month term.", [4.0]),  # Fullscript
+        ("A 12–16 week internship.", [3.0, 4.0]),  # Yotta Labs
+        ("Internship stipend: $6000.00 per month for 3 months.", [3.0]),  # Brave
+        ("Internship length (e.g. 4 months) varies.", [4.0]),
+        ("The internship lasts Approx. 16 weeks.", [4.0]),
     ],
 )
 def test_stated_durations(text: str, options: list[float]) -> None:
@@ -227,6 +236,9 @@ def test_stated_durations(text: str, options: list[float]) -> None:
         "12 months of parental leave for every employee.",
         "Our team shipped 3 products in 6 months.",
         "Salary review every 6 months.",
+        "Strong preference for students available for an 8-month co-op term.",  # Moment Energy
+        "Must have at least 4 months of experience as an intern.",
+        "Python3 months of fun",
     ],
 )
 def test_not_a_duration(text: str) -> None:

@@ -7,7 +7,9 @@ so this extractor is strict. A phrase like "4 months" counts only when:
   contract, stage, position, role, program, duration, length), and
 - nothing right around it says it is about something else: experience
   ("6+ months of experience"), leave, probation, vacation, notice, vesting,
-  "within 3 months", "every 6 months", "at least 4 months", "up to 12 months".
+  "within 3 months", "every 6 months", "at least 4 months", "up to 12 months",
+  or a stated preference ("preference for students available for 8 months").
+  "At least a 4-month term" is kept: it names the term.
 
 When a posting offers several lengths ("4, 8 or 12-month terms") every option
 is kept. A range ("8–12 months", "8 to 12 months") keeps its two ends as options
@@ -57,7 +59,7 @@ WORD_NUMBERS = {
 _NUM = r"(?:\d{1,2}(?:\.\d)?|" + "|".join(sorted(WORD_NUMBERS, key=len, reverse=True)) + r")"
 _SEP = r"\s*(?:,\s*(?:or\s+|and\s+)?|/|\bor\b|\band\b|\bto\b|-|–|\bou\b|\bà\b|\bet\b)\s*"
 DURATION = re.compile(
-    rf"(?<![\w$.])(?P<nums>{_NUM}(?:{_SEP}{_NUM})*)(?P<plus>\s*\+)?\s*[-‐‑]?\s*"
+    rf"(?<![\d_$.,])(?P<nums>{_NUM}(?:{_SEP}{_NUM})*)(?P<plus>\s*\+)?\s*[-‐‑]?\s*"
     r"(?P<unit>months?|mos?\b|weeks?|wks?\b|mois|semaines?)\b",
     re.IGNORECASE,
 )
@@ -65,7 +67,7 @@ NUMBER = re.compile(_NUM, re.IGNORECASE)
 
 ROLE_WORDS = re.compile(
     r"\b(?:co-?op|co op|intern(?:ship)?s?|terms?|work terms?|placements?|contracts?|stages?|positions?|roles?|"
-    r"programs?|programmes?|assignments?|duration|length|durée|fixed-term|temporary)\b",
+    r"programs?|programmes?|assignments?|duration|length|durée|fixed-term|temporary|hours?\s*(?:/|per)\s*week)\b",
     re.IGNORECASE,
 )
 NEGATIVE_AFTER = re.compile(
@@ -75,11 +77,14 @@ NEGATIVE_AFTER = re.compile(
     re.IGNORECASE,
 )
 NEGATIVE_BEFORE = re.compile(
-    r"(?:within|every|after|at least|minimum(?: of)?|min\.?|up to|over|more than|less than|past|last|"
+    r"(?:within|every|after|at least(?!\s+an?\b)|minimum(?: of)?|min\.?|up to|over|more than|less than|past|last|"
     r"previous|prior|first|probation(?:ary)?(?: period)?(?: of)?|au moins)\s*(?:the\s+)?(?:a\s+)?$",
     re.IGNORECASE,
 )
-SENTENCE_END = re.compile(r"[.!?;\n•]")
+# A period ends a sentence unless it sits inside a number ("6000.00") or ends an abbreviation ("approx.", "e.g.").
+SENTENCE_END = re.compile(r"[!?;\n•]|(?<!\d)\.|\.(?!\d)")
+ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|approx|ca|incl|est)\.", re.IGNORECASE)
+PREFERENCE = re.compile(r"\bprefer(?:s|red|ably|ence)?\b", re.IGNORECASE)
 RANGE_SPAN = re.compile(rf"^{_NUM}\s*(?:-|–|—|\bto\b|\bà\b)\s*{_NUM}\s*[-‐‑]?\s*\D", re.IGNORECASE)
 WEEKS_PER_MONTH = 52 / 12
 MAX_MONTHS = 24
@@ -100,6 +105,8 @@ def _to_number(token: str) -> float:
 
 def _sentence_around(text: str, start: int, end: int) -> tuple[str, str]:
     """Text before and after a match, cut at sentence boundaries."""
+    # Same-length swap, so match offsets still line up: "e.g." -> "e,g,".
+    text = ABBREVIATION.sub(lambda a: a.group(0).replace(".", ","), text)
     before = text[max(0, start - 120) : start]
     cuts = list(SENTENCE_END.finditer(before))
     if cuts:
@@ -117,6 +124,8 @@ def _accept(text: str, m: re.Match[str]) -> bool:
     before, after = _sentence_around(text, m.start(), m.end())
     if NEGATIVE_BEFORE.search(before) or NEGATIVE_AFTER.search(after):
         return False
+    if PREFERENCE.search(before):
+        return False  # "strong preference for students available for an 8-month term" is a wish, not the term
     return bool(ROLE_WORDS.search(before) or ROLE_WORDS.search(after))
 
 

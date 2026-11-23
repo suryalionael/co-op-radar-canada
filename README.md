@@ -53,7 +53,7 @@ Measured on 2026-11-23 against 200 labelled postings, reported with counts and 9
 | Field | Labelled examples | Precision | Recall |
 |---|---|---|---|
 | Term | 102 | 102/102 = 1.00 (95% CI 0.96–1.00) | 102/102 = 1.00 (95% CI 0.96–1.00) |
-| Duration | 79 | 65/66 = 0.98 (95% CI 0.92–1.00) | 65/79 = 0.82 (95% CI 0.72–0.89) |
+| Duration | 79 | 72/72 = 1.00 (95% CI 0.95–1.00) | 72/79 = 0.91 (95% CI 0.83–0.96) |
 | Province | 196 | 195/198 = 0.98 (95% CI 0.96–0.99) | 195/196 = 0.99 (95% CI 0.97–1.00) |
 | Track | 200 | 142/200 = 0.71 (95% CI 0.64–0.77) | 142/200 = 0.71 (95% CI 0.64–0.77) |
 
@@ -69,6 +69,26 @@ Every error, the labelling rules and the comparison with a naive baseline are in
 | v3 | Spring 2027 | Market view, recruiting calendar, season write-up |
 
 The week-by-week schedule, with what is done and what is next, is in [`docs/timeline.md`](docs/timeline.md).
+
+## Ideas list
+
+Lio's running list of ideas, kept here for reference. "Building" means work has started; everything else is open.
+
+| Idea | Status | Notes |
+|---|---|---|
+| Jobs-first board, like Speedrun's internship page | Building | Search, filter shortcuts, dense rows. Design: `docs/superpowers/specs/2026-11-23-board-redesign-design.md` |
+| Companies section | Building | Every tracked company, with open roles and status. Expand with the negarprh list once the owner's permission is in writing |
+| Hiring window per company | Building | The months a company's student postings usually appear. Needs a year of history to be reliable |
+| Program watch | Live | Daily checks of big employers' student pages (banks, governments) |
+| Recruiting calendar | Planned (v3) | When each big program opens, year over year |
+| Weekly digest, RSS and alerts | Planned (v2) | "Tell me when Shopify posts" |
+| Student-opportunity news | Planned (v2) | Metadata and links only, labelled as hints |
+| Posting submissions | Planned (v2) | Students add a posting the pipeline missed |
+| Employer pages | Planned (v2) | Partly covered by the company pages |
+| LinkedIn link-outs | Idea | Outbound search links only; nothing is fetched from LinkedIn |
+| Indonesian internships | Open question | A separate board, or out of scope? |
+| Cheaper AI help | Idea | Route simple Claude Code tasks to smaller models (subagents) |
+| Market view and season write-up | Planned (v3) | What the 2027 season looked like |
 
 ## Repository layout
 

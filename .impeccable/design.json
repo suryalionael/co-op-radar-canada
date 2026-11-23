@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T16:59:43.899Z",
+  "title": "Design System: Co-op Radar Canada",
+  "extensions": {
+    "colorMeta": {
+      "rail": {
+        "role": "primary",
+        "displayName": "Platform Rail Green",
+        "canonical": "oklch(0.47 0.12 153)",
+        "tonalRamp": [
+          "oklch(0.15 0.043 153)",
+          "oklch(0.27 0.066 153)",
+          "oklch(0.39 0.089 153)",
+          "oklch(0.51 0.112 153)",
+          "oklch(0.63 0.105 153)",
+          "oklch(0.75 0.082 153)",
+          "oklch(0.86 0.06 153)",
+          "oklch(0.95 0.043 153)"
+        ]
+      },
+      "rail-dark": {
+        "role": "primary",
+        "displayName": "Platform Rail Green (night service)",
+        "canonical": "oklch(0.33 0.08 153)",
+        "tonalRamp": [
+          "oklch(0.15 0.043 153)",
+          "oklch(0.27 0.066 153)",
+          "oklch(0.39 0.089 153)",
+          "oklch(0.51 0.112 153)",
+          "oklch(0.63 0.105 153)",
+          "oklch(0.75 0.082 153)",
+          "oklch(0.86 0.06 153)",
+          "oklch(0.95 0.043 153)"
+        ]
+      },
+      "rail-fg": {
+        "role": "primary",
+        "displayName": "Rail White",
+        "canonical": "oklch(0.99 0.01 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 150)",
+          "oklch(0.27 0.006 150)",
+          "oklch(0.39 0.007 150)",
+          "oklch(0.51 0.009 150)",
+          "oklch(0.63 0.009 150)",
+          "oklch(0.75 0.007 150)",
+          "oklch(0.86 0.005 150)",
+          "oklch(0.95 0.004 150)"
+        ]
+      },
+      "rail-fg-dark": {
+        "role": "primary",
+        "displayName": "Rail White (night service)",
+        "canonical": "oklch(0.97 0.01 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 150)",
+          "oklch(0.27 0.006 150)",
+          "oklch(0.39 0.007 150)",
+          "oklch(0.51 0.009 150)",
+          "oklch(0.63 0.009 150)",
+          "oklch(0.75 0.007 150)",
+          "oklch(0.86 0.005 150)",
+          "oklch(0.95 0.004 150)"
+        ]
+      },
+      "rail-muted": {
+        "role": "primary",
+        "displayName": "Rail Mist",
+        "canonical": "oklch(0.9 0.04 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.014 152)",
+          "oklch(0.27 0.022 152)",
+          "oklch(0.39 0.03 152)",
+          "oklch(0.51 0.037 152)",
+          "oklch(0.63 0.035 152)",
+          "oklch(0.75 0.027 152)",
+          "oklch(0.86 0.02 152)",
+          "oklch(0.95 0.014 152)"
+        ]
+      },
+      "rail-muted-dark": {
+        "role": "primary",
+        "displayName": "Rail Mist (night service)",
+        "canonical": "oklch(0.85 0.04 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.014 152)",
+          "oklch(0.27 0.022 152)",
+          "oklch(0.39 0.03 152)",
+          "oklch(0.51 0.037 152)",
+          "oklch(0.63 0.035 152)",
+          "oklch(0.75 0.027 152)",
+          "oklch(0.86 0.02 152)",
+          "oklch(0.95 0.014 152)"
+        ]
+      },
+      "go": {
+        "role": "primary",
+        "displayName": "Go Green",
+        "canonical": "oklch(0.42 0.11 153)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 153)",
+          "oklch(0.27 0.061 153)",
+          "oklch(0.39 0.082 153)",
+          "oklch(0.51 0.103 153)",
+          "oklch(0.63 0.096 153)",
+          "oklch(0.75 0.075 153)",
+          "oklch(0.86 0.055 153)",
+          "oklch(0.95 0.04 153)"
+        ]
+      },
+      "go-dark": {
+        "role": "primary",
+        "displayName": "Go Green (night service)",
+        "canonical": "oklch(0.72 0.14 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 153)",
+          "oklch(0.27 0.061 153)",
+          "oklch(0.39 0.082 153)",
+          "oklch(0.51 0.103 153)",
+          "oklch(0.63 0.096 153)",
+          "oklch(0.75 0.075 153)",
+          "oklch(0.86 0.055 153)",
+          "oklch(0.95 0.04 153)"
+        ]
+      },
+      "go-fg": {
+        "role": "primary",
+        "displayName": "Go White",
+        "canonical": "oklch(0.99 0.01 150)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 150)",
+          "oklch(0.27 0.006 150)",
+          "oklch(0.39 0.007 150)",
+          "oklch(0.51 0.009 150)",
+          "oklch(0.63 0.009 150)",
+          "oklch(0.75 0.007 150)",
+          "oklch(0.86 0.005 150)",
+          "oklch(0.95 0.004 150)"
+        ]
+      },
+      "go-fg-dark": {
+        "role": "primary",
+        "displayName": "Go White (night service)",
+        "canonical": "oklch(0.17 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 150)",
+          "oklch(0.27 0.006 150)",
+          "oklch(0.39 0.007 150)",
+          "oklch(0.51 0.009 150)",
+          "oklch(0.63 0.009 150)",
+          "oklch(0.75 0.007 150)",
+          "oklch(0.86 0.005 150)",
+          "oklch(0.95 0.004 150)"
+        ]
+      },
+      "go-soft": {
+        "role": "primary",
+        "displayName": "Soft Go",
+        "canonical": "oklch(0.86 0.06 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.022 152)",
+          "oklch(0.27 0.033 152)",
+          "oklch(0.39 0.045 152)",
+          "oklch(0.51 0.056 152)",
+          "oklch(0.63 0.052 152)",
+          "oklch(0.75 0.041 152)",
+          "oklch(0.86 0.03 152)",
+          "oklch(0.95 0.022 152)"
+        ]
+      },
+      "go-soft-dark": {
+        "role": "primary",
+        "displayName": "Soft Go (night service)",
+        "canonical": "oklch(0.55 0.1 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.022 152)",
+          "oklch(0.27 0.033 152)",
+          "oklch(0.39 0.045 152)",
+          "oklch(0.51 0.056 152)",
+          "oklch(0.63 0.052 152)",
+          "oklch(0.75 0.041 152)",
+          "oklch(0.86 0.03 152)",
+          "oklch(0.95 0.022 152)"
+        ]
+      },
+      "link": {
+        "role": "primary",
+        "displayName": "Line Green Link",
+        "canonical": "oklch(0.42 0.11 153)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 153)",
+          "oklch(0.27 0.061 153)",
+          "oklch(0.39 0.082 153)",
+          "oklch(0.51 0.103 153)",
+          "oklch(0.63 0.096 153)",
+          "oklch(0.75 0.075 153)",
+          "oklch(0.86 0.055 153)",
+          "oklch(0.95 0.04 153)"
+        ]
+      },
+      "link-dark": {
+        "role": "primary",
+        "displayName": "Line Green Link (night service)",
+        "canonical": "oklch(0.8 0.13 152)",
+        "tonalRamp": [
+          "oklch(0.15 0.04 153)",
+          "oklch(0.27 0.061 153)",
+          "oklch(0.39 0.082 153)",
+          "oklch(0.51 0.103 153)",
+          "oklch(0.63 0.096 153)",
+          "oklch(0.75 0.075 153)",
+          "oklch(0.86 0.055 153)",
+          "oklch(0.95 0.04 153)"
+        ]
+      },
+      "signal": {
+        "role": "secondary",
+        "displayName": "Timetable Yellow",
+        "canonical": "oklch(0.85 0.17 86)",
+        "tonalRamp": [
+          "oklch(0.15 0.061 86)",
+          "oklch(0.27 0.094 86)",
+          "oklch(0.39 0.126 86)",
+          "oklch(0.51 0.159 86)",
+          "oklch(0.63 0.148 86)",
+          "oklch(0.75 0.116 86)",
+          "oklch(0.86 0.086 86)",
+          "oklch(0.95 0.061 86)"
+        ]
+      },
+      "signal-dark": {
+        "role": "secondary",
+        "displayName": "Timetable Yellow (night service)",
+        "canonical": "oklch(0.85 0.16 86)",
+        "tonalRamp": [
+          "oklch(0.15 0.061 86)",
+          "oklch(0.27 0.094 86)",
+          "oklch(0.39 0.126 86)",
+          "oklch(0.51 0.159 86)",
+          "oklch(0.63 0.148 86)",
+          "oklch(0.75 0.116 86)",
+          "oklch(0.86 0.086 86)",
+          "oklch(0.95 0.061 86)"
+        ]
+      },
+      "signal-fg": {
+        "role": "secondary",
+        "displayName": "Signal Ink",
+        "canonical": "oklch(0.22 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "signal-fg-dark": {
+        "role": "secondary",
+        "displayName": "Signal Ink (night service)",
+        "canonical": "oklch(0.2 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "warning": {
+        "role": "tertiary",
+        "displayName": "Amber Notice",
+        "canonical": "oklch(0.47 0.12 60)",
+        "tonalRamp": [
+          "oklch(0.15 0.043 60)",
+          "oklch(0.27 0.066 60)",
+          "oklch(0.39 0.089 60)",
+          "oklch(0.51 0.112 60)",
+          "oklch(0.63 0.105 60)",
+          "oklch(0.75 0.082 60)",
+          "oklch(0.86 0.06 60)",
+          "oklch(0.95 0.043 60)"
+        ]
+      },
+      "warning-dark": {
+        "role": "tertiary",
+        "displayName": "Amber Notice (night service)",
+        "canonical": "oklch(0.82 0.12 75)",
+        "tonalRamp": [
+          "oklch(0.15 0.043 60)",
+          "oklch(0.27 0.066 60)",
+          "oklch(0.39 0.089 60)",
+          "oklch(0.51 0.112 60)",
+          "oklch(0.63 0.105 60)",
+          "oklch(0.75 0.082 60)",
+          "oklch(0.86 0.06 60)",
+          "oklch(0.95 0.043 60)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Platform Off-White",
+        "canonical": "oklch(0.973 0.007 120)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 120)",
+          "oklch(0.27 0.004 120)",
+          "oklch(0.39 0.005 120)",
+          "oklch(0.51 0.007 120)",
+          "oklch(0.63 0.006 120)",
+          "oklch(0.75 0.005 120)",
+          "oklch(0.86 0.004 120)",
+          "oklch(0.95 0.003 120)"
+        ]
+      },
+      "bg-dark": {
+        "role": "neutral",
+        "displayName": "Platform Off-White (night service)",
+        "canonical": "oklch(0.18 0.015 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.003 120)",
+          "oklch(0.27 0.004 120)",
+          "oklch(0.39 0.005 120)",
+          "oklch(0.51 0.007 120)",
+          "oklch(0.63 0.006 120)",
+          "oklch(0.75 0.005 120)",
+          "oklch(0.86 0.004 120)",
+          "oklch(0.95 0.003 120)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(0.995 0.002 120)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 120)",
+          "oklch(0.27 0.001 120)",
+          "oklch(0.39 0.001 120)",
+          "oklch(0.51 0.002 120)",
+          "oklch(0.63 0.002 120)",
+          "oklch(0.75 0.001 120)",
+          "oklch(0.86 0.001 120)",
+          "oklch(0.95 0.001 120)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Card White (night service)",
+        "canonical": "oklch(0.215 0.018 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.001 120)",
+          "oklch(0.27 0.001 120)",
+          "oklch(0.39 0.001 120)",
+          "oklch(0.51 0.002 120)",
+          "oklch(0.63 0.002 120)",
+          "oklch(0.75 0.001 120)",
+          "oklch(0.86 0.001 120)",
+          "oklch(0.95 0.001 120)"
+        ]
+      },
+      "fg": {
+        "role": "neutral",
+        "displayName": "Timetable Ink",
+        "canonical": "oklch(0.22 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "fg-dark": {
+        "role": "neutral",
+        "displayName": "Timetable Ink (night service)",
+        "canonical": "oklch(0.94 0.01 120)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "oklch(0.45 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Faded Ink (night service)",
+        "canonical": "oklch(0.74 0.02 140)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Rule Grey-Green",
+        "canonical": "oklch(0.87 0.012 130)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 130)",
+          "oklch(0.27 0.007 130)",
+          "oklch(0.39 0.009 130)",
+          "oklch(0.51 0.011 130)",
+          "oklch(0.63 0.01 130)",
+          "oklch(0.75 0.008 130)",
+          "oklch(0.86 0.006 130)",
+          "oklch(0.95 0.004 130)"
+        ]
+      },
+      "border-dark": {
+        "role": "neutral",
+        "displayName": "Rule Grey-Green (night service)",
+        "canonical": "oklch(0.33 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.004 130)",
+          "oklch(0.27 0.007 130)",
+          "oklch(0.39 0.009 130)",
+          "oklch(0.51 0.011 130)",
+          "oklch(0.63 0.01 130)",
+          "oklch(0.75 0.008 130)",
+          "oklch(0.86 0.006 130)",
+          "oklch(0.95 0.004 130)"
+        ]
+      },
+      "ink-bar": {
+        "role": "neutral",
+        "displayName": "Head-Bar Black",
+        "canonical": "oklch(0.22 0.02 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "ink-bar-dark": {
+        "role": "neutral",
+        "displayName": "Head-Bar Black (night service)",
+        "canonical": "oklch(0.12 0.012 155)",
+        "tonalRamp": [
+          "oklch(0.15 0.007 155)",
+          "oklch(0.27 0.011 155)",
+          "oklch(0.39 0.015 155)",
+          "oklch(0.51 0.019 155)",
+          "oklch(0.63 0.017 155)",
+          "oklch(0.75 0.014 155)",
+          "oklch(0.86 0.01 155)",
+          "oklch(0.95 0.007 155)"
+        ]
+      },
+      "ink-bar-fg": {
+        "role": "neutral",
+        "displayName": "Head-Bar White",
+        "canonical": "oklch(0.99 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.27 0 0)",
+          "oklch(0.39 0 0)",
+          "oklch(0.51 0 0)",
+          "oklch(0.63 0 0)",
+          "oklch(0.75 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "ink-bar-fg-dark": {
+        "role": "neutral",
+        "displayName": "Head-Bar White (night service)",
+        "canonical": "oklch(0.95 0.01 120)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.27 0 0)",
+          "oklch(0.39 0 0)",
+          "oklch(0.51 0 0)",
+          "oklch(0.63 0 0)",
+          "oklch(0.75 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "One page headline; last phrase on a yellow highlight block."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads and result counts."
+      },
+      "title": {
+        "displayName": "Row Title",
+        "purpose": "Role title in each timetable row (text face, read not scanned)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and evidence quotes (max 75ch)."
+      },
+      "body-lead": {
+        "displayName": "Lead",
+        "purpose": "The muted one-line pitch beside the headline (max 46ch)."
+      },
+      "label": {
+        "displayName": "Plate Label",
+        "purpose": "Uppercase tracked capitals for column heads, length and status plates, quote labels."
+      },
+      "figures": {
+        "displayName": "Figures",
+        "purpose": "Every number, tabular; ages at this size."
+      },
+      "facts": {
+        "displayName": "Facts",
+        "purpose": "Term cell, nav links, bar-select values."
+      }
+    },
+    "shadows": [
+      {
+        "name": "focus-halo",
+        "value": "outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal)",
+        "purpose": "The only shadow: keyboard focus ring (ink inside, timetable yellow outside), legible on every ground."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-state",
+        "value": "150ms cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Colour transitions on chips, nav links and buttons."
+      },
+      {
+        "name": "unfold",
+        "value": "220ms cubic-bezier(0.16, 1, 0.3, 1); clip-path inset(0 0 100% 0) to inset(0); opacity 0.4 to 1",
+        "purpose": "Opening a row's evidence and the More-filters panel."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce disables all transitions and animations",
+        "purpose": "Accessibility."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "container",
+        "value": "80rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Rail and Nav",
+      "kind": "nav",
+      "refersTo": "rail",
+      "description": "The green rail header: radar wordmark, signage nav with a yellow current-page underline.",
+      "html": "<header class=\"ds-rail\"><a class=\"ds-mark\" href=\"#\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 30 30\" aria-hidden=\"true\"><circle cx=\"15\" cy=\"15\" r=\"14\" fill=\"var(--signal)\"/><circle cx=\"15\" cy=\"15\" r=\"9\" fill=\"none\" stroke=\"var(--rail)\" stroke-width=\"2.5\"/><circle cx=\"15\" cy=\"15\" r=\"3\" fill=\"var(--rail)\"/><path d=\"M15 15 L26 8\" stroke=\"var(--rail)\" stroke-width=\"2.5\" stroke-linecap=\"round\"/></svg>Co-op Radar</a><nav><a class=\"ds-nav cur\" href=\"#\">Jobs</a><a class=\"ds-nav\" href=\"#\">Companies</a><a class=\"ds-nav\" href=\"#\">Programs</a><a class=\"ds-nav\" href=\"#\">About</a></nav></header>",
+      "css": ".ds-rail { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 32px; background: var(--rail); color: var(--rail-fg); padding: 8px 16px; } .ds-mark { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--rail-fg); text-decoration: none; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 900; font-size: 1.375rem; letter-spacing: -0.01em; } .ds-rail nav { display: flex; gap: 16px; } .ds-nav { display: inline-flex; align-items: center; min-height: 44px; padding: 2px 6px 0; border-bottom: 3px solid transparent; color: var(--rail-muted); text-decoration: none; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 1.0625rem; transition: color 150ms cubic-bezier(0.23,1,0.32,1); } .ds-nav:hover { color: var(--rail-fg); } .ds-nav.cur { color: var(--rail-fg); border-bottom-color: var(--signal); } .ds-nav:focus-visible, .ds-mark:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); }"
+    },
+    {
+      "name": "Search Bar with Bar Selects",
+      "kind": "input",
+      "refersTo": "search-bar",
+      "description": "One framed instrument: search field, Term / Province / Length selects, and the ink More-filters button.",
+      "html": "<form class=\"ds-search\" role=\"search\" onsubmit=\"return false\"><label class=\"ds-q\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" aria-hidden=\"true\"><circle cx=\"8.5\" cy=\"8.5\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M13 13l5 5\" stroke=\"currentColor\" stroke-width=\"2\"/></svg><input type=\"search\" placeholder=\"Search roles, companies or cities\"></label><label class=\"ds-bsel\"><span>Term</span><select><option>Summer 2027</option></select></label><label class=\"ds-bsel\"><span>Province</span><select><option>Any</option></select></label><label class=\"ds-bsel\"><span>Length</span><select><option>4 months</option></select></label><button type=\"button\" class=\"ds-btn-ink\">More filters</button></form>",
+      "css": ".ds-search { display: flex; flex-wrap: wrap; border: 2px solid var(--fg); background: var(--surface); color: var(--fg); } .ds-q { flex: 1 1 260px; display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 16px; color: var(--muted); } .ds-q input { flex: 1; height: 56px; border: 0; background: transparent; color: var(--fg); font: inherit; font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); font-size: 1rem; } .ds-q input:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); outline-offset: -3px; } .ds-bsel { display: flex; flex-direction: column; justify-content: center; min-height: 56px; min-width: 140px; padding: 0 16px; border-left: 1px solid var(--border); } .ds-bsel span { font-size: 0.8125rem; color: var(--muted); } .ds-bsel select { margin-left: -4px; border: 0; background: transparent; color: var(--fg); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 0.9375rem; accent-color: var(--go); } .ds-bsel select:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); } .ds-btn-ink { min-height: 48px; padding: 0 24px; border: 0; border-radius: 0; background: var(--fg); color: var(--bg); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; font-size: 0.9375rem; cursor: pointer; transition: background-color 150ms cubic-bezier(0.23,1,0.32,1), color 150ms; } .ds-btn-ink:hover { background: var(--go); color: var(--go-fg); } .ds-btn-ink:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); }"
+    },
+    {
+      "name": "Shortcut Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Square toggle chips with a tabular count; Go Green when pressed.",
+      "html": "<div class=\"ds-chips\"><button type=\"button\" class=\"ds-chip\" aria-pressed=\"true\">Summer 2027 · 4 mo <span>42</span></button><button type=\"button\" class=\"ds-chip\" aria-pressed=\"false\">Ontario <span>88</span></button><button type=\"button\" class=\"ds-chip\" aria-pressed=\"false\">New this week <span>17</span></button></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; } .ds-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 12px; border: 1.5px solid var(--border); border-radius: 0; background: var(--surface); color: var(--fg); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 0.875rem; white-space: nowrap; cursor: pointer; transition: border-color 150ms cubic-bezier(0.23,1,0.32,1), background-color 150ms; } .ds-chip span { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--muted); } .ds-chip:hover { border-color: var(--fg); } .ds-chip[aria-pressed=\"true\"] { border-color: var(--go); background: var(--go); color: var(--go-fg); } .ds-chip[aria-pressed=\"true\"] span { color: inherit; } .ds-chip:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); }"
+    },
+    {
+      "name": "Timetable Head and JobRow",
+      "kind": "custom",
+      "refersTo": "job-row",
+      "description": "The black head bar over ruled rows: age figure, role, term, length plate, province, Apply.",
+      "html": "<div class=\"ds-tt\"><div class=\"ds-head\" aria-hidden=\"true\"><span>Posted</span><span>Role</span><span>Term</span><span>Length</span><span>Prov</span><span></span></div><div class=\"ds-row\"><p class=\"ds-age\"><b class=\"new\">2d</b><small>Nov 21</small></p><div class=\"ds-role\"><h3>Software Developer Co-op</h3><p>Shopify · Ottawa, ON · Hybrid</p><button type=\"button\" class=\"ds-open\">Show the posting's words</button></div><p class=\"ds-term\">Summer 2027</p><p><span class=\"ds-plate\">4 mo</span></p><p class=\"ds-prov\">ON</p><a class=\"ds-apply\" href=\"#\">Apply&nbsp;<svg width=\"11\" height=\"11\" viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M3 9L9 3M4 3h5v5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg></a></div><div class=\"ds-row\"><p class=\"ds-age\"><b>12d</b><small>Nov 11</small></p><div class=\"ds-role\"><h3>Data Engineering Intern</h3><p>RBC · Toronto, ON</p></div><p class=\"ds-term\">Fall 2027</p><p><span class=\"ds-plate out\">8 mo</span></p><p class=\"ds-prov\">ON</p><a class=\"ds-apply\" href=\"#\">Apply</a></div></div>",
+      "css": ".ds-tt { border: 1px solid var(--border); border-top: 0; } .ds-head, .ds-row { display: grid; grid-template-columns: 4.5rem minmax(0,1fr) 8rem 5.5rem 4rem 4.75rem; column-gap: 16px; align-items: center; } .ds-head { background: var(--ink-bar); color: var(--ink-bar-fg); padding: 10px 20px; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; } .ds-row { background: var(--surface); color: var(--fg); padding: 14px 20px; border-top: 1px solid var(--border); font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); } .ds-row p { margin: 0; } .ds-age b { display: block; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-variant-numeric: tabular-nums; font-weight: 900; font-size: 1.375rem; line-height: 1; } .ds-age b.new { color: var(--go); } .ds-age small { display: block; margin-top: 4px; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-variant-numeric: tabular-nums; font-size: 0.8125rem; color: var(--muted); } .ds-role { min-width: 0; } .ds-role h3 { margin: 0; font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 1rem; line-height: 1.375; } .ds-role p { font-size: 0.875rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } .ds-open { min-height: 32px; padding: 0; border: 0; background: none; color: var(--muted); font: inherit; font-size: 0.8125rem; font-weight: 700; text-decoration: underline dotted; text-underline-offset: 4px; cursor: pointer; } .ds-open:hover { color: var(--fg); } .ds-term { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 0.9375rem; } .ds-prov { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-variant-numeric: tabular-nums; font-weight: 700; } .ds-plate { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; padding: 2px 8px; display: inline-block; white-space: nowrap; background: var(--go); color: var(--go-fg); } .ds-plate.out { background: none; color: var(--go); border: 1.5px solid var(--go); } .ds-apply { display: inline-flex; align-items: center; justify-self: end; min-height: 44px; color: var(--link); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; } .ds-apply:hover { text-decoration-thickness: 3px; } .ds-apply:focus-visible, .ds-open:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); }"
+    },
+    {
+      "name": "Length Plates",
+      "kind": "chip",
+      "refersTo": "plate-length-stated",
+      "description": "Solid green plate when the posting states the length; outlined when worked out from dates.",
+      "html": "<p class=\"ds-legend\"><span class=\"ds-lp\">4 mo</span> length quoted from the posting <span class=\"ds-lp out\">4 mo</span> worked out from its dates <span class=\"ds-ns\">length not stated</span></p>",
+      "css": ".ds-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); font-size: 0.8125rem; color: var(--muted); } .ds-lp { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; padding: 2px 8px; display: inline-block; white-space: nowrap; background: var(--go); color: var(--go-fg); border: 1.5px solid var(--go); } .ds-lp.out { background: none; color: var(--go); } .ds-ns { font-style: italic; font-size: 0.875rem; }"
+    },
+    {
+      "name": "Status Plates",
+      "kind": "chip",
+      "refersTo": "status-open",
+      "description": "Company status printed like a service notice: open (yellow), opens soon (ink outline), quiet (muted).",
+      "html": "<p class=\"ds-stat\"><span class=\"ds-sp open\">Open · <span>6</span></span><span class=\"ds-sp soon\">Opens ~Jan</span><span class=\"ds-sp quiet\">Quiet</span></p>",
+      "css": ".ds-stat { display: flex; gap: 12px; } .ds-sp { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; padding: 2px 8px; display: inline-block; white-space: nowrap; font-size: 0.75rem; border: 1.5px solid transparent; } .ds-sp span { font-variant-numeric: tabular-nums; } .ds-sp.open { background: var(--signal); color: var(--signal-fg); } .ds-sp.soon { border-color: var(--fg); color: var(--fg); } .ds-sp.quiet { color: var(--muted); }"
+    },
+    {
+      "name": "Service Calendar (WindowStrip)",
+      "kind": "custom",
+      "refersTo": "window-strip-sm",
+      "description": "Twelve framed month cells; go green for the hiring window, soft go for weaker months, a yellow ring on the current month. Shown at sm and lg.",
+      "html": "<figure class=\"ds-cal\"><ol class=\"ds-strip \"><li class=\"\">J</li><li class=\"\">F</li><li class=\"\">M</li><li class=\"\">A</li><li class=\"\">M</li><li class=\"\">J</li><li class=\"\">J</li><li class=\"w\">A</li><li class=\"s\">S</li><li class=\"s\">O</li><li class=\"s now\">N</li><li class=\"w\">D</li></ol><figcaption>Usually hires Sep–Nov</figcaption></figure><figure class=\"ds-cal\"><ol class=\"ds-strip lg\"><li class=\"\">J</li><li class=\"\">F</li><li class=\"\">M</li><li class=\"\">A</li><li class=\"\">M</li><li class=\"\">J</li><li class=\"\">J</li><li class=\"w\">A</li><li class=\"s\">S</li><li class=\"s\">O</li><li class=\"s now\">N</li><li class=\"w\">D</li></ol><figcaption>Usually hires Sep–Nov</figcaption></figure>",
+      "css": ".ds-cal { margin: 0 0 16px; } .ds-strip { display: grid; grid-template-columns: repeat(12, 1fr); height: 24px; margin: 0; padding: 0; list-style: none; border: 1.5px solid var(--fg); } .ds-strip.lg { height: 56px; } .ds-strip li { display: grid; place-items: center; border-right: 1px solid var(--border); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-variant-numeric: tabular-nums; font-weight: 700; font-size: 0.625rem; text-transform: uppercase; color: var(--fg); } .ds-strip.lg li { font-size: 0.8125rem; } .ds-strip li:last-child { border-right: 0; } .ds-strip li.s { background: var(--go); color: var(--go-fg); } .ds-strip li.w { background: var(--go-soft); } .ds-strip li.now { outline: 2.5px solid var(--signal); outline-offset: -2.5px; } .ds-cal figcaption { margin-top: 4px; font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); font-size: 0.8125rem; color: var(--muted); }"
+    },
+    {
+      "name": "Company Card",
+      "kind": "card",
+      "refersTo": "company-card",
+      "description": "Square white cell in a shared-border grid: name, sector, status plate, small service calendar.",
+      "html": "<ul class=\"ds-cards\"><li class=\"ds-card\"><div class=\"ds-ctop\"><div><a href=\"#\">Kabam</a><p>Games</p></div><span class=\"ds-sp2\">Open · 3</span></div><ol class=\"ds-strip \"><li class=\"\">J</li><li class=\"\">F</li><li class=\"\">M</li><li class=\"\">A</li><li class=\"\">M</li><li class=\"\">J</li><li class=\"\">J</li><li class=\"w\">A</li><li class=\"s\">S</li><li class=\"s\">O</li><li class=\"s now\">N</li><li class=\"w\">D</li></ol><p class=\"ds-cap\">Usually hires Sep–Nov</p></li><li class=\"ds-card\"><div class=\"ds-ctop\"><div><a href=\"#\">Wealthsimple</a><p>Fintech</p></div><span class=\"ds-sp2 soon\">Opens ~Jan</span></div><ol class=\"ds-strip \"><li class=\"\">J</li><li class=\"\">F</li><li class=\"\">M</li><li class=\"\">A</li><li class=\"\">M</li><li class=\"\">J</li><li class=\"\">J</li><li class=\"w\">A</li><li class=\"s\">S</li><li class=\"s\">O</li><li class=\"s now\">N</li><li class=\"w\">D</li></ol><p class=\"ds-cap\">Usually hires Sep–Nov</p></li></ul>",
+      "css": ".ds-cards { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); margin: 0; padding: 0; list-style: none; border-left: 1px solid var(--border); border-top: 1px solid var(--border); } .ds-card { background: var(--surface); padding: 16px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); } .ds-ctop { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px; } .ds-ctop a { color: var(--fg); text-decoration: none; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; font-size: 1.0625rem; line-height: 1.2; } .ds-ctop a:hover { color: var(--link); text-decoration: underline; } .ds-ctop a:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; box-shadow: 0 0 0 7px var(--signal); } .ds-ctop p { margin: 0; font-size: 0.8125rem; color: var(--muted); font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); } .ds-sp2 { font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.8125rem; padding: 2px 8px; display: inline-block; white-space: nowrap; font-size: 0.75rem; background: var(--signal); color: var(--signal-fg); border: 1.5px solid transparent; } .ds-sp2.soon { background: none; color: var(--fg); border-color: var(--fg); } .ds-card .ds-strip { display: grid; grid-template-columns: repeat(12, 1fr); height: 24px; margin: 0; padding: 0; list-style: none; border: 1.5px solid var(--fg); } .ds-card .ds-strip li { display: grid; place-items: center; border-right: 1px solid var(--border); font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 700; font-size: 0.625rem; } .ds-card .ds-strip li:last-child { border-right: 0; } .ds-card .ds-strip li.s { background: var(--go); color: var(--go-fg); } .ds-card .ds-strip li.w { background: var(--go-soft); } .ds-card .ds-strip li.now { outline: 2.5px solid var(--signal); outline-offset: -2.5px; } .ds-cap { margin: 4px 0 0; font-size: 0.8125rem; color: var(--muted); font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); }"
+    },
+    {
+      "name": "Evidence Quote",
+      "kind": "custom",
+      "refersTo": "job-row",
+      "description": "The posting's own words in an opened row, matched phrase highlighted in timetable yellow; unfolds on open.",
+      "html": "<div class=\"ds-ev\"><p class=\"ds-q2\"><span class=\"ds-lab\">Term</span><q>We are hiring co-op students for the <mark>Summer 2027</mark> work term (May to August).</q></p><p class=\"ds-q2\"><span class=\"ds-lab\">Length</span><q>This is a <mark>4-month</mark> placement with the option to extend.</q></p><p class=\"ds-prov2\">Length quoted from the posting · first seen 2026-11-21 · via Greenhouse</p></div>",
+      "css": ".ds-ev { background: var(--surface); border-top: 1px dashed var(--border); padding: 12px 20px 16px; font-family: var(--font-sans, 'Atkinson Hyperlegible Next', 'Helvetica Neue', Arial, sans-serif); color: var(--fg); animation: ds-unfold 220ms cubic-bezier(0.16,1,0.3,1); } .ds-q2 { display: flex; gap: 12px; max-width: 75ch; margin: 6px 0 0; font-size: 0.875rem; } .ds-lab { flex-shrink: 0; width: 3.5rem; padding-top: 2px; font-family: var(--font-display, 'Overpass Variable', 'Helvetica Neue', Arial, sans-serif); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6875rem; color: var(--muted); } .ds-q2 q { quotes: \"\\201C\" \"\\201D\"; } .ds-ev mark { background: var(--signal); color: var(--signal-fg); padding: 0 0.12em; } .ds-prov2 { margin: 8px 0 0; font-size: 0.8125rem; color: var(--muted); } @keyframes ds-unfold { from { clip-path: inset(0 0 100% 0); opacity: 0.4; } to { clip-path: inset(0 0 0 0); opacity: 1; } } @media (prefers-reduced-motion: reduce) { .ds-ev { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Work-Term Timetable",
+    "overview": "The site is a printed transit timetable for co-op terms. A green rail runs across the top like a line colour on a platform sign; below it, postings are departures in a ruled table: age in the first column, the role, then term, length and province as service facts, and Apply at the end. Everything is square, ruled in 1px lines, and set in a signage face for figures and labels, with a highly legible text face for everything a student actually reads.\n\nDensity is timetable-high but calm. Rows are tight (14px vertical padding), numbers are tabular and aligned like timings, and colour carries meaning rather than decoration: green is the line and the stated fact, yellow is the signal (highlight, \"open now\", current month, focus), black is the head bar and frame. Night mode is the same board after dark, not an inverted one; the rail deepens and the go-green lightens so plates still read.\n\nTrust comes from showing the posting's own words. The row opens to quote the sentence a term or length was read from, with the matched phrase highlighted in timetable yellow; when a posting doesn't say, the board says \"not stated\" in muted italic instead of guessing.\n\nThis world replaced the earlier \"evidence ledger\" world (serif display, red accent), which the owner rejected. It also refuses the category default for job boards: soft rounded cards on grey with a purple accent.",
+    "keyCharacteristics": [
+      "A green rail header (wordmark, nav, live counts) on every page.",
+      "Square corners everywhere (radius 0); 1px rules, 1.5px plate and chip borders, 2px frames on the search bar and empty states.",
+      "Overpass for display, labels, plates and every number; Atkinson Hyperlegible Next for titles and running text.",
+      "A black timetable head bar over ruled rows; length plates as solid (stated) or outlined (worked out) green.",
+      "Timetable yellow is the one highlight colour: headline highlight, open-status plate, current-month ring, `<mark>`, selection and the focus halo."
+    ],
+    "rules": [
+      {
+        "name": "The Two Signals Rule",
+        "body": "Green means a fact or an \"on\" state; yellow means \"look here\" (highlight, open now, now, focus). No third accent. Amber appears only inside opened evidence as a caveat.",
+        "section": "colors"
+      },
+      {
+        "name": "The Night Service Rule",
+        "body": "Dark mode is a re-tuned set, not an inversion: rail darkens, go and link lighten, yellow stays yellow. Every new token gets both values.",
+        "section": "colors"
+      },
+      {
+        "name": "The Timings Rule",
+        "body": "Every number on the board is Overpass with tabular numerals, so ages, counts and dates align like departure times.",
+        "section": "typography"
+      },
+      {
+        "name": "The Read vs Scan Rule",
+        "body": "Things you scan (labels, plates, figures, nav) are Overpass; things you read (titles, sentences, quotes) are Atkinson.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled, Not Lifted Rule",
+        "body": "Surfaces never cast shadows. If two things need separating, draw a rule.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Nothing is rounded except the radar mark's circles in the wordmark.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do set every number (ages, counts, dates, province codes, calendar letters) in Overpass with tabular numerals.",
+      "Do separate rows, cards and cells with 1px Rule Grey-Green lines on Card White; keep corners at 0.",
+      "Do use the solid Go Green plate only for a length the posting states, and the outlined plate for a length worked out from dates.",
+      "Do say \"not stated\" in muted italic when the posting doesn't say, rather than leaving a cell blank or guessing.",
+      "Do keep Timetable Yellow for highlight and \"now\": the headline phrase, open status, the current month, `<mark>`, selection and focus.",
+      "Do give every new colour token both a daylight and a night-service value.",
+      "Do keep tap targets at 44px or more for links and buttons, 40px for chips."
+    ],
+    "donts": [
+      "Don't round corners, add drop shadows, or float postings as separate cards; the board is a ruled table.",
+      "Don't add a third accent colour (no purple, blue or red accent); green and yellow carry all meaning.",
+      "Don't set role titles or reading text in Overpass, or figures in Atkinson.",
+      "Don't bring back the rejected evidence-ledger look: serif display faces, monospace labels, red accent.",
+      "Don't use the soft rounded card on grey with a purple accent that job boards default to.",
+      "Don't animate anything beyond the row-open unfold and short colour transitions, and never when reduced motion is requested."
+    ]
+  }
+}

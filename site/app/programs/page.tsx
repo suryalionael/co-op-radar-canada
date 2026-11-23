@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { EvidenceQuote } from "@/components/EvidenceQuote";
+import { ArrowUpRight } from "@/components/Icons";
 import { getMeta, getPrograms } from "@/lib/data";
 import { daysBetween } from "@/lib/format";
 
@@ -7,6 +8,9 @@ export const metadata: Metadata = {
   title: "Program watch",
   description: "Student-program pages from Canadian employers and governments, checked daily for changes.",
 };
+
+// pipeline/program_watch.py writes this when a change only removed text.
+const REMOVED = "(text removed)";
 
 export default function ProgramsPage() {
   const { programs, changes } = getPrograms();
@@ -18,7 +22,7 @@ export default function ProgramsPage() {
     <>
       <div className="max-w-3xl">
         <h1 className="text-3xl font-semibold">Program watch</h1>
-        <p className="mt-3 text-lg text-muted">
+        <p className="mt-3 max-w-[62ch] text-lg text-muted">
           Banks, insurers, utilities and governments often announce student hiring on their own pages before postings
           appear. We check these pages every day and record the day each one changes. A change is a hint, not an
           opening: open the page to see what&rsquo;s new.
@@ -44,8 +48,9 @@ export default function ProgramsPage() {
                 <h3 className="text-lg font-semibold">
                   <a href={p.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                     {p.name}
-                    <span aria-hidden="true" className="text-muted">
-                      &nbsp;↗
+                    <span className="text-muted">
+                      &nbsp;
+                      <ArrowUpRight />
                     </span>
                   </a>
                 </h3>
@@ -62,7 +67,12 @@ export default function ProgramsPage() {
                   )}
                   {p.expected_open && <span> · Expected to open {p.expected_open}</span>}
                 </p>
-                {p.change_excerpt && <EvidenceQuote context={p.change_excerpt} />}
+                {p.change_excerpt &&
+                  (p.change_excerpt === REMOVED ? (
+                    <p className="mt-1 text-sm text-muted">Text was taken off the page; nothing new was added.</p>
+                  ) : (
+                    <EvidenceQuote context={p.change_excerpt} />
+                  ))}
                 <p className="mt-2 flex flex-wrap gap-x-3 text-sm">
                   <span className="font-mono text-muted tabular">last checked {p.last_checked ?? "never"}</span>
                   {!p.last_fetch_ok && p.last_checked && p.ever_read !== false && (
@@ -93,7 +103,9 @@ export default function ProgramsPage() {
                       {c.kind === "manual_note" ? " · note" : ""}
                     </p>
                     <p className="mt-1 font-medium">{names[c.program_id] ?? c.program_id}</p>
-                    <p className="mt-1 text-sm text-muted">{c.change_excerpt}</p>
+                    <p className="mt-1 text-sm text-muted">
+                      {c.change_excerpt === REMOVED ? "Text was taken off the page." : c.change_excerpt}
+                    </p>
                   </li>
                 ))}
               </ol>
