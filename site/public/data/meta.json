@@ -1,15 +1,15 @@
 {
  "counts": {
   "companies": 198,
-  "duration_from_dates": 9,
+  "duration_from_dates": 8,
   "duration_stated": 29,
   "employer_boards_tracked": 171,
   "employers_with_postings": 38,
-  "open_student_postings": 130,
+  "open_student_postings": 127,
   "programs_watched": 30
  },
  "data_as_of": {
-  "postings": "2026-11-23",
-  "programs": "2026-11-23"
+  "postings": "2026-11-24",
+  "programs": "2026-11-24"
  }
 }

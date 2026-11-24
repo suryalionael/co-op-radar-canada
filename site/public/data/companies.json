@@ -33,7 +33,7 @@
   "basis": "",
   "board_url": "https://job-boards.greenhouse.io/asteraearlycareer2027",
   "name": "Astera Labs",
-  "open_count": 13,
+  "open_count": 12,
   "posting_ids": [
    "1512773c8a526b1d",
    "1e6c17afb91b2e2b",
@@ -41,7 +41,6 @@
    "22f801a708c7720d",
    "37abea2df8d42c3f",
    "574af7346c16d8d8",
-   "6b10b33a923cfe63",
    "886f834a1e242806",
    "9e3ef444d22b16fc",
    "a3131011cb1aa7b0",
@@ -59,7 +58,7 @@
   "basis": "from 2 postings, 2026",
   "board_url": "https://jobs.lever.co/eqbank",
   "name": "Equitable Bank",
-  "open_count": 11,
+  "open_count": 10,
   "posting_ids": [
    "cb7ff9a8aeb568ad",
    "ef9520e4045d092a",
@@ -69,7 +68,6 @@
    "360fd8dfa9b44611",
    "901972d31f9109ff",
    "b35c53178c0e1acb",
-   "da89b9daa0548bb6",
    "f077b2ad2d0f7900",
    "f1302c4f73e00a3a"
   ],
@@ -127,13 +125,12 @@
   "basis": "from 3 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/kensingtontours",
   "name": "Kensington Tours",
-  "open_count": 8,
+  "open_count": 7,
   "posting_ids": [
    "51fd719153657a95",
    "0f387c29a92b4496",
    "23c8d52d0c8850f8",
    "38cb5b33966f7259",
-   "56838365b05df110",
    "6a2aaa09ca3f180b",
    "d90bf112d3ae6718",
    "eb912b2c61ff47c4"
@@ -432,7 +429,7 @@
   "name": "Geotab",
   "open_count": 2,
   "posting_ids": [
-   "0bc74d4a719ab193",
+   "60fc5aa1bae67877",
    "d71db94bafac318a"
   ],
   "program_ids": [],
