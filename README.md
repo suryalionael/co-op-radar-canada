@@ -4,6 +4,8 @@ Free tracker for Canadian co-op and internship postings, with verified term, dur
 
 **Live site: [co-op-radar-canada.vercel.app](https://co-op-radar-canada.vercel.app)**
 
+**Company list: [Co-op Radar companies (Google Sheet)](https://docs.google.com/spreadsheets/d/1RFY_fErRSApQla3tFlW2cdJhslf83lfDwe_4iV7EdKc/edit)**. Anyone can view it; the team edits it, and the daily run copies it into `config/companies.csv`. How to edit it: [`docs/deploy.md`](docs/deploy.md#the-company-sheet).
+
 > **Status: building v1 (launch target Dec 13, 2026).** The site is live and updated daily, ahead of the public launch. Phase 0 is done: on 2026-10-30, 171 employer job boards had **177 Canadian student postings** under the counting rules in [ADR 0001](docs/decisions/0001-coverage-thresholds.md), so v1 goes ahead as planned. The daily pipeline is running. Extractor precision and recall are measured on 200 postings labelled by Claude (an AI model), not yet checked against human labels; see the Evaluation section. No metric is reported until it has been measured.
 
 ---
@@ -32,7 +34,7 @@ Co-op Radar Canada aims to answer three questions:
 
 A scheduled job runs once a day:
 
-1. **Postings.** For each company with a job board in `config/companies.csv` (a copy of the team's Google Sheet), fetch open jobs from that employer's public Greenhouse, Lever or Ashby job-board API. Keep Canadian and remote postings and save a dated snapshot.
+1. **Postings.** For each company with a job board in `config/companies.csv` (a copy of the team's [company sheet](https://docs.google.com/spreadsheets/d/1RFY_fErRSApQla3tFlW2cdJhslf83lfDwe_4iV7EdKc/edit)), fetch open jobs from that employer's public Greenhouse, Lever or Ashby job-board API. Keep Canadian and remote postings and save a dated snapshot.
 2. **Extraction.** Rule-based extractors find the term, duration, province and role track in each posting, storing the matching text span as evidence.
 3. **Program watch.** Fetch about 30 student-program pages, fingerprint their main text, and record the date whenever it changes.
 4. **News (v2).** Search public news APIs and RSS feeds for student-opportunity headlines. Store only the headline, outlet, date and link, never article text.
