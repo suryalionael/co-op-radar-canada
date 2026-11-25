@@ -163,7 +163,7 @@ def load_companies(path: Path) -> list[dict[str, str]]:
 
 
 def load_employers(path: Path, include_hidden: bool = False) -> list[dict[str, Any]]:
-    """Companies that have a job board, shaped like the old config/employers.yaml entries."""
+    """Companies that have a job board, shaped like the old employers.yaml entries."""
     return [
         {
             "id": r["id"],

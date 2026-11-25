@@ -11,7 +11,7 @@ aggregate counts and our own token lists, never the listings themselves:
 - data/coverage/reference_candidate_tokens.csv: every Greenhouse, Lever and
   Ashby board token the list links to, plus the companies whose links show
   Greenhouse (gh_jid) without a token, and whether each is already in
-  config/employers.yaml.
+  config/companies.csv.
 
 Usage:
     python scripts/reference_list_coverage.py            # fetch, save raw, write CSVs
@@ -26,14 +26,13 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-import yaml
-
+from pipeline.companies import load_employers
 from pipeline.reference_list import FILES, TOKEN_PLATFORMS, ReferenceRow, classify_url, fetch_raw, load_rows
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "reference" / "raw"
 OUT_DIR = ROOT / "data" / "coverage"
-EMPLOYERS = ROOT / "config" / "employers.yaml"
+EMPLOYERS = ROOT / "config" / "companies.csv"
 
 
 def platform_breakdown(rows: list[ReferenceRow]) -> list[dict[str, object]]:
@@ -65,8 +64,7 @@ def platform_breakdown(rows: list[ReferenceRow]) -> list[dict[str, object]]:
 def configured_boards(path: Path = EMPLOYERS) -> set[tuple[str, str]]:
     """(platform, token) for every configured board, plus (platform, "name:<employer name>") so that
     a link with an unknown token can still be matched to a configured employer by name."""
-    with path.open(encoding="utf-8") as f:
-        employers = yaml.safe_load(f)["employers"]
+    employers = load_employers(path, include_hidden=True)
     boards = {(e["board_type"], str(e["board_token"]).lower()) for e in employers}
     return boards | {(e["board_type"], f"name:{e['name'].casefold()}") for e in employers}
 

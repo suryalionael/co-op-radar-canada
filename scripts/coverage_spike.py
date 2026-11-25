@@ -1,6 +1,6 @@
 """Phase 0 coverage spike: how many Canadian student postings do the seed boards carry?
 
-Fetches every board in config/employers.yaml once, politely, and applies the
+Fetches every board in config/companies.csv once, politely, and applies the
 counting rules written down in docs/decisions/0001-coverage-thresholds.md
 before any results existed. Those rules, in short:
 
@@ -44,7 +44,7 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any
 
-import yaml
+from pipeline import companies
 
 USER_AGENT = (
     "co-op-radar-canada/0.1 (student project; coverage check; +https://github.com/suryalionael/co-op-radar-canada)"
@@ -54,7 +54,7 @@ TIMEOUT_SECONDS = 30
 MIN_RESPONDING_BOARDS = 100  # ADR 0001 validity rule
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_EMPLOYERS = ROOT / "config" / "employers.yaml"
+DEFAULT_EMPLOYERS = ROOT / "config" / "companies.csv"
 DEFAULT_OUT_DIR = ROOT / "data" / "coverage"
 
 # --- Location rules (ADR 0001, rule 2) ------------------------------------------
@@ -514,9 +514,7 @@ def markdown_report(summary: dict[str, Any], results: list[BoardResult]) -> str:
 
 
 def load_employers(path: Path) -> list[dict[str, Any]]:
-    with path.open(encoding="utf-8") as f:
-        employers: list[dict[str, Any]] = yaml.safe_load(f)["employers"]
-    return employers
+    return companies.load_employers(path, include_hidden=True)
 
 
 def main(argv: list[str] | None = None) -> int:

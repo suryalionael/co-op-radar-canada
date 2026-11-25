@@ -194,3 +194,16 @@ def test_empty_or_html_body_is_rejected(tmp_path: Path) -> None:
 
 def test_first_sync_accepts_any_valid_sheet(tmp_path: Path) -> None:
     assert sync_sheet(lambda: many(1), tmp_path / "new" / "companies.csv").ok
+
+
+def test_committed_companies_csv_covers_the_old_lists() -> None:
+    import yaml
+
+    root = Path(__file__).resolve().parent.parent
+    rows = load_companies(root / "config" / "companies.csv")
+    ids = [r["id"] for r in rows]
+    assert len(ids) == len(set(ids))
+    assert len(load_employers(root / "config" / "companies.csv")) == 171
+    programs = yaml.safe_load((root / "config" / "programs.yaml").read_text())["programs"]
+    assert {p["employer_id"] for p in programs} <= set(ids)  # every program employer is a company
+    assert all(r["show"] == "yes" for r in rows)

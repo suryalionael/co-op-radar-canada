@@ -42,10 +42,22 @@ def posting(pid: str, **changes: object) -> Posting:
     return base.model_copy(update=changes)
 
 
+def write_companies(path: Path, *rows: dict[str, str]) -> Path:
+    """A companies.csv with the given rows; each needs id and name."""
+    import csv
+
+    from pipeline.companies import COLUMNS
+
+    with path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=COLUMNS, lineterminator="\n", restval="")
+        writer.writeheader()
+        writer.writerows({"show": "yes", **r} for r in rows)
+    return path
+
+
 def setup(tmp_path: Path) -> tuple[Path, Path, Path]:
     processed, out = tmp_path / "processed", tmp_path / "out"
-    employers = tmp_path / "employers.yaml"
-    employers.write_text("employers:\n  - {id: acme, name: Acme Corp, sector: software}\n")
+    employers = write_companies(tmp_path / "companies.csv", {"id": "acme", "name": "Acme Corp", "sector": "software"})
     return processed, out, employers
 
 
@@ -167,11 +179,11 @@ def test_unclear_and_past_terms_reach_the_site(tmp_path: Path) -> None:
 
 def test_companies(tmp_path: Path) -> None:
     processed, out, _ = setup(tmp_path)
-    employers = tmp_path / "employers.yaml"
-    employers.write_text(
-        "employers:\n"
-        "  - {id: acme, name: Acme Corp, sector: software, board_type: lever, board_token: acme}\n"
-        "  - {id: zeta, name: Zeta, sector: fintech, board_type: ashby, board_token: zeta}\n"
+    employers = write_companies(
+        tmp_path / "companies.csv",
+        {"id": "acme", "name": "Acme Corp", "sector": "software", "board_type": "lever", "board_token": "acme"},
+        {"id": "zeta", "name": "Zeta", "sector": "fintech", "board_type": "ashby", "board_token": "zeta"},
+        {"id": "government_of_canada", "name": "Government of Canada"},
     )
     write_postings(
         [
@@ -215,15 +227,18 @@ def test_companies(tmp_path: Path) -> None:
     assert meta["counts"]["companies"] == 3
 
 
-def test_every_program_employer_has_a_name() -> None:
-    import yaml
-
-    from pipeline.build_site_data import EMPLOYERS, PROGRAM_EMPLOYER_NAMES, ROOT
-
-    employers = {e["id"] for e in yaml.safe_load(EMPLOYERS.read_text())["employers"]}
-    programs = yaml.safe_load((ROOT / "config" / "programs.yaml").read_text())["programs"]
-    missing = {p["employer_id"] for p in programs} - employers - set(PROGRAM_EMPLOYER_NAMES)
-    assert not missing
+def test_hidden_company_and_its_postings_are_dropped(tmp_path: Path) -> None:
+    processed, out, _ = setup(tmp_path)
+    companies = write_companies(
+        tmp_path / "companies.csv",
+        {"id": "acme", "name": "Acme Corp", "board_type": "lever", "board_token": "acme"},
+        {"id": "gone", "name": "Gone Inc", "show": "no", "board_type": "lever", "board_token": "gone"},
+    )
+    write_postings([posting("a"), posting("g", employer_id="gone")], processed / "postings.parquet")
+    meta = build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
+    assert [r["id"] for r in json.loads((out / "postings.json").read_text())] == ["a"]
+    assert [c["slug"] for c in json.loads((out / "companies.json").read_text())] == ["acme"]
+    assert meta["counts"]["employer_boards_tracked"] == 1 and meta["counts"]["companies"] == 1
 
 
 def put_description(root: Path, description_hash: str, text: str) -> None:

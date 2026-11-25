@@ -27,10 +27,9 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-import yaml
 
 from pipeline import build_site_data, program_watch, reference_recall
-from pipeline.companies import sync_sheet
+from pipeline.companies import load_employers, sync_sheet
 from pipeline.evaluate import (
     agreement,
     agreement_table,
@@ -48,7 +47,6 @@ from pipeline.sources.http import PoliteClient
 from pipeline.storage import iter_programs_days, posting_days, read_postings_day, write_postings_day, write_programs_day
 
 ROOT = Path(__file__).resolve().parent.parent
-EMPLOYERS = ROOT / "config" / "employers.yaml"
 COMPANIES = ROOT / "config" / "companies.csv"
 PROGRAMS = ROOT / "config" / "programs.yaml"
 PROCESSED = ROOT / "data" / "processed"
@@ -66,8 +64,7 @@ def log_run(entry: dict[str, Any]) -> None:
 
 
 def fetch_postings(data_root: Path, day: dt.date) -> int:
-    with EMPLOYERS.open(encoding="utf-8") as f:
-        employers = yaml.safe_load(f)["employers"]
+    employers = load_employers(COMPANIES)
     client = PoliteClient()
     boards, postings = [], []
     try:
@@ -193,8 +190,7 @@ def run_reference_recall(data_root: Path, offline: bool) -> int:
     """Recall of our open Canadian student postings against the curated list's open 2027 rows."""
     if not offline or not (REFERENCE_RAW / "README.md").exists():
         fetch_raw(REFERENCE_RAW)
-    with EMPLOYERS.open(encoding="utf-8") as f:
-        employers = yaml.safe_load(f)["employers"]
+    employers = load_employers(COMPANIES, include_hidden=True)
     candidates = reference_recall.reference_set(load_rows(REFERENCE_RAW), employers)
     outcomes = reference_recall.match(candidates, build_postings(data_root))
     days = posting_days(data_root)
