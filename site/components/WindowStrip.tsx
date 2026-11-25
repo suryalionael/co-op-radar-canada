@@ -1,4 +1,4 @@
-import { MONTH_NAMES } from "@/lib/format";
+import { formatMonthRuns, MONTH_NAMES } from "@/lib/format";
 import type { HiringWindow } from "@/lib/types";
 
 /**
@@ -16,9 +16,12 @@ export function WindowStrip({
 }) {
   const max = w ? Math.max(...w.months) : 0;
   const inWindow = (m: number) => (w ? (w.start <= w.end ? m >= w.start && m <= w.end : m >= w.start || m <= w.end) : false);
-  const label = w
-    ? `Usually hires ${MONTH_NAMES[w.start - 1]}${w.end !== w.start ? `–${MONTH_NAMES[w.end - 1]}` : ""}`
-    : "Not enough history yet";
+  const researched = w?.source === "researched";
+  const label = !w
+    ? "Not enough history yet"
+    : researched
+      ? `Researched: ${formatMonthRuns(w.months)}`
+      : `Usually hires ${MONTH_NAMES[w.start - 1]}${w.end !== w.start ? `–${MONTH_NAMES[w.end - 1]}` : ""}`;
   return (
     <figure className="m-0">
       <ol
@@ -28,7 +31,7 @@ export function WindowStrip({
         {MONTH_NAMES.map((name, i) => {
           const m = i + 1;
           const n = w?.months[i] ?? 0;
-          const strong = n > 0 && (n >= max / 2 || inWindow(m));
+          const strong = n > 0 && (researched || n >= max / 2 || inWindow(m));
           const tone = n === 0 ? "" : strong ? "bg-go text-go-fg" : "bg-go-soft text-fg";
           return (
             <li
@@ -38,9 +41,9 @@ export function WindowStrip({
               } ${size === "lg" ? "text-xs" : ""}`}
             >
               <span aria-hidden="true">{size === "lg" ? name : name[0]}</span>
-              {size === "lg" && n > 0 && <span className="text-[0.6875rem] font-semibold">{n}</span>}
+              {size === "lg" && n > 0 && !researched && <span className="text-[0.6875rem] font-semibold">{n}</span>}
               <span className="sr-only">
-                {name}: {n} {n === 1 ? "posting" : "postings"}
+                {researched ? `${name}: ${n ? "hires" : "no"}` : `${name}: ${n} ${n === 1 ? "posting" : "postings"}`}
               </span>
             </li>
           );

@@ -320,3 +320,39 @@ def test_missing_data_checkout_does_not_delete_descriptions(tmp_path: Path) -> N
         descriptions_dir=descriptions,
     )
     assert (descriptions / "a.html").read_text() == "<p>keep</p>"
+
+
+def test_researched_months_win_and_are_labelled(tmp_path: Path) -> None:
+    processed, out, _ = setup(tmp_path)
+    companies = write_companies(
+        tmp_path / "companies.csv",
+        {
+            "id": "acme", "name": "Acme", "board_type": "lever", "board_token": "acme", "hiring_months": "Sep-Oct",
+            "hiring_note": "Summer roles post in September.", "hiring_source": "https://acme.com/students",
+            "website": "https://acme.com", "careers_url": "https://acme.com/jobs", "notes": "INTERNAL ONLY",
+        },
+        {"id": "nodata", "name": "No Data Co", "hiring_months": "Nov-Jan"},  # no board, no postings
+        {"id": "plain", "name": "Plain", "board_type": "ashby", "board_token": "plain"},
+    )  # fmt: skip
+    write_postings(
+        [posting(f"m{i}", first_seen=dt.date(2026, 3, 2 + i)) for i in range(5)], processed / "postings.parquet"
+    )
+    build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
+    by_slug = {c["slug"]: c for c in json.loads((out / "companies.json").read_text())}
+    acme = by_slug["acme"]
+    assert acme["window"]["source"] == "researched"  # the five March postings do not override it
+    assert (acme["window"]["start"], acme["window"]["end"]) == (9, 10)
+    assert acme["basis"] == "Researched"
+    assert (acme["hiring_note"], acme["hiring_source"]) == (
+        "Summer roles post in September.",
+        "https://acme.com/students",
+    )
+    assert (acme["website"], acme["careers_url"]) == ("https://acme.com", "https://acme.com/jobs")
+    nodata = by_slug["nodata"]
+    assert (nodata["window"]["start"], nodata["window"]["end"], nodata["open_count"]) == (11, 1, 0)
+    assert by_slug["plain"]["window"] is None and by_slug["plain"]["hiring_note"] == ""
+    assert "INTERNAL ONLY" not in (out / "companies.json").read_text()  # notes are never published
+    assert nodata["badge"] == "quiet"  # inside its window on Nov 23 with nothing open
+    build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 10, 15))
+    soon = {c["slug"]: c["badge"] for c in json.loads((out / "companies.json").read_text())}
+    assert soon["nodata"] == "soon"  # a month before Nov-Jan opens

@@ -24,8 +24,8 @@ from typing import Any
 
 import duckdb
 
-from pipeline.companies import load_companies
-from pipeline.hiring_window import badge, hiring_window
+from pipeline.companies import load_companies, parse_hiring_months
+from pipeline.hiring_window import badge, hiring_window, researched_window
 from pipeline.sanitize import sanitize_description
 from pipeline.storage import read_description
 
@@ -253,7 +253,8 @@ def build_companies(
         posting_dates = list(dates.get(eid, []))
         opens = [dt.date.fromisoformat(str(p["expected_open"])) for p in progs if p.get("expected_open")]
         company_dates = posting_dates + opens
-        window = hiring_window(company_dates)
+        researched = parse_hiring_months(c["hiring_months"])  # the sheet was validated, so this parses
+        window = researched_window(researched) if researched else hiring_window(company_dates)
         ids = open_ids.get(eid, [])
         years = sorted({d.year for d in company_dates})
         span = f"{years[0]}" if years and years[0] == years[-1] else f"{years[0]}–{years[-1]}" if years else ""
@@ -269,7 +270,11 @@ def build_companies(
                 "posting_ids": ids,
                 "program_ids": [p["program_id"] for p in progs],
                 "window": window,
-                "basis": _basis(len(posting_dates), len(opens), span),
+                "basis": "Researched" if researched else _basis(len(posting_dates), len(opens), span),
+                "website": c["website"],
+                "careers_url": c["careers_url"],
+                "hiring_note": c["hiring_note"],
+                "hiring_source": c["hiring_source"],
                 "badge": badge(window, len(ids), today),
             }
         )
