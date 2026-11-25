@@ -35,6 +35,7 @@ from pipeline.sanitize import sanitize_description
         ("Plain text & more", "Plain text &amp; more"),
         ("<p>5 &lt; 6</p>", "<p>5 &lt; 6</p>"),
         ("<p>a<br>b</p>", "<p>a<br>b</p>"),
+        ("<p>a<embed src=x>b</p><p>c</p>", "<p>ab</p><p>c</p>"),  # embed has no end tag: nothing after it is lost
         ("", ""),
     ],
 )
@@ -62,3 +63,10 @@ def test_no_event_handler_or_script_survives_in_hostile_soup() -> None:
     out = sanitize_description(raw).lower()
     for needle in ("script", "onmouseover", "javascript", "<img", "bad()"):
         assert needle not in out
+
+
+@pytest.mark.parametrize("opener", ["<title>", "<textarea>", "<head>"])
+def test_a_stray_unclosed_title_does_not_lose_the_text_after_it(opener: str) -> None:
+    # Parsers differ on whether the rest is markup or plain text; either way it is kept and safe.
+    out = sanitize_description(f"<p>a{opener}x</p><p>more</p><script>bad()</script>")
+    assert "more" in out and "<script" not in out  # escaped text is fine; a live tag is not

@@ -49,7 +49,9 @@ jobs:
       - name: Refresh the company list from the Google Sheet
         id: companies
         continue-on-error: true
-        run: python -m pipeline.cli sync-companies --url "${{ vars.COMPANY_SHEET_CSV_URL }}"
+        env:
+          COMPANY_SHEET_CSV_URL: ${{ vars.COMPANY_SHEET_CSV_URL }}
+        run: python -m pipeline.cli sync-companies --url "$COMPANY_SHEET_CSV_URL"
 
       - name: Fetch postings
         id: postings

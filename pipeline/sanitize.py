@@ -8,7 +8,8 @@ to a small allowlist here, in the pipeline, not in the browser:
 - links keep only an absolute https URL and get rel="noopener noreferrer nofollow";
   any other link is replaced by its text;
 - every other tag is removed and its text kept, except scripts, styles, frames,
-  objects, svg, templates and noscript, whose contents are dropped too;
+  objects, svg, templates and noscript, whose contents are dropped too (embed has
+  no content, so only the tag goes);
 - attributes other than a link's href are dropped, so no style or event handler survives.
 
 Greenhouse sends its description with the markup escaped ("&lt;p&gt;"); that is
@@ -23,7 +24,8 @@ from urllib.parse import urlsplit
 
 KEEP = {"p", "br", "ul", "ol", "li", "strong", "b", "em", "i", "a", "h3", "h4"}
 HEADINGS = {"h1": "h3", "h2": "h3", "h3": "h3", "h4": "h4", "h5": "h4", "h6": "h4"}
-DROP_WITH_CONTENT = {"script", "style", "iframe", "object", "embed", "svg", "noscript", "template", "head", "title"}
+DROP_WITH_CONTENT = {"script", "style", "iframe", "object", "svg", "noscript", "template"}
+DROP_VOID = {"embed"}  # no end tag, so skipping "until it closes" would swallow the rest of the text
 VOID = {"br"}
 LINK_REL = "noopener noreferrer nofollow"
 
@@ -83,6 +85,8 @@ class _Cleaner(HTMLParser):
             return
         if tag in DROP_WITH_CONTENT:
             self.skip, self.skip_depth = tag, 1
+            return
+        if tag in DROP_VOID:
             return
         self._open(tag, attrs)
 

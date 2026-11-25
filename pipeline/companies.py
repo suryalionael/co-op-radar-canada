@@ -48,6 +48,7 @@ COLUMNS = [
 ]
 BOARD_TYPES = {"greenhouse", "lever", "ashby"}
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
+TOKEN_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]*$")  # goes into board URLs, so no "/", "?" or ".."
 MONTH_NAMES = {
     name: i + 1
     for i, name in enumerate(
@@ -142,6 +143,8 @@ def parse_companies(csv_text: str) -> list[dict[str, str]]:
             bad("board_type", f"must be one of {', '.join(sorted(BOARD_TYPES))} (got {row['board_type']!r})")
         if row["board_type"] and not row["board_token"]:
             bad("board_token", "is required when board_type is set")
+        elif row["board_token"] and not TOKEN_PATTERN.match(row["board_token"]):
+            bad("board_token", f"may only use letters, digits, . _ - (got {row['board_token']!r})")
         for column in ("website", "careers_url"):
             if row[column] and not row[column].lower().startswith("https://"):
                 bad(column, f"must start with https:// (got {row[column]!r})")
@@ -211,18 +214,28 @@ def sync_sheet(fetch: Callable[[], str], committed: Path) -> SyncResult:
     except Exception as err:  # the download itself: network, HTTP status, a sign-in page
         return SyncResult(False, reason=f"could not read the sheet: {err}")
 
-    previous = 0
+    previous = previous_boards = 0
     if committed.exists():
         try:
-            previous = len(load_companies(committed))
+            old = load_companies(committed)
+            previous, previous_boards = len(old), sum(1 for r in old if r["board_type"])
         except SheetError:
-            previous = 0  # a broken committed copy must not block a good sheet
+            pass  # a broken committed copy must not block a good sheet
+    boards = sum(1 for r in rows if r["board_type"])
+    if previous_boards and boards < previous_boards * MIN_KEPT_SHARE:
+        return SyncResult(
+            False,
+            rows=len(rows),
+            reason=f"refused: the sheet has {boards} companies with a job board and the committed list has "
+            f"{previous_boards} (under {MIN_KEPT_SHARE:.0%}); were the board_type or board_token columns overwritten?",
+        )
     if previous and len(rows) < previous * MIN_KEPT_SHARE:
         return SyncResult(
             False,
             rows=len(rows),
             reason=f"refused: the sheet has {len(rows)} companies and the committed list has {previous} "
-            f"(under {MIN_KEPT_SHARE:.0%}); fix the sheet or edit {committed.name} by hand",
+            f"(under {MIN_KEPT_SHARE:.0%}); fix the sheet (a hand edit to {committed.name} "
+            "is overwritten by the next good sync)",
         )
 
     text = _canonical(rows)

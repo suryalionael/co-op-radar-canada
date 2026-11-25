@@ -79,6 +79,9 @@ def test_blank_rows_are_skipped() -> None:
         (row(show="maybe"), "show"),
         (row(board_type="workday", board_token="x"), "board_type"),
         (row(board_type="lever", board_token=""), "board_token"),
+        (row(board_type="lever", board_token="a/../b"), "board_token"),
+        (row(board_type="lever", board_token="a?b=c"), "board_token"),
+        (row(board_type="lever", board_token=".."), "board_token"),
         (row(website="http://acme.com"), "website"),
         (row(careers_url="javascript:alert(1)"), "careers_url"),
         (row(hiring_months="banana"), "hiring_months"),
@@ -207,3 +210,22 @@ def test_committed_companies_csv_covers_the_old_lists() -> None:
     programs = yaml.safe_load((root / "config" / "programs.yaml").read_text())["programs"]
     assert {p["employer_id"] for p in programs} <= set(ids)  # every program employer is a company
     assert all(r["show"] == "yes" for r in rows)
+
+
+def test_a_sheet_that_lost_its_boards_is_refused(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    with_boards = sheet(*[row(id=f"c{i}", name=f"C{i}", board_type="lever", board_token=f"t{i}") for i in range(20)])
+    sync_sheet(lambda: with_boards, committed)
+    before = committed.read_bytes()
+    # every row still valid and the count unchanged, but the board columns were pasted over
+    blanked = sheet(*[row(id=f"c{i}", name=f"C{i}", board_type="", board_token="") for i in range(20)])
+    result = sync_sheet(lambda: blanked, committed)
+    assert not result.ok and "board" in (result.reason or "")
+    assert committed.read_bytes() == before
+    half = sheet(
+        *[
+            row(id=f"c{i}", name=f"C{i}", board_type="lever" if i < 10 else "", board_token=f"t{i}" if i < 10 else "")
+            for i in range(20)
+        ]
+    )
+    assert sync_sheet(lambda: half, committed).ok  # exactly half the boards is allowed

@@ -94,6 +94,7 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
           </p>
 
           <div className="relative z-10 flex w-full items-center justify-end md:w-auto">
+            {/^https?:\/\//i.test(p.url) && (
             <a
               href={p.url}
               target="_blank"
@@ -107,6 +108,7 @@ export function JobRow({ posting: p, dataDate }: { posting: Posting; dataDate: s
                 to {p.title} at {p.employer} (opens the employer&rsquo;s site)
               </span>
             </a>
+            )}
           </div>
         </div>
       </article>
