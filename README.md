@@ -77,8 +77,9 @@ Lio's running list of ideas, kept here for reference. "Building" means work has 
 | Idea | Status | Notes |
 |---|---|---|
 | Jobs-first board, like Speedrun's internship page | Building | Search, filter shortcuts, dense rows. Design: `docs/superpowers/specs/2026-11-23-board-redesign-design.md` |
-| Companies section | Building | Every tracked company, with open roles and status. Expand with the negarprh list once the owner's permission is in writing |
-| Hiring window per company | Building | The months a company's student postings usually appear. Needs a year of history to be reliable |
+| Companies section | Live | Every tracked company, with open roles and status, edited in a Google Sheet. Expand with the negarprh list once the owner's permission is in writing |
+| Hiring window per company | Live | Researched months from the sheet, or the months postings usually appear (needs history to be reliable) |
+| Job detail pages | Live | Full description, verified term and length, and an Apply button to the employer |
 | Program watch | Live | Daily checks of big employers' student pages (banks, governments) |
 | Recruiting calendar | Planned (v3) | When each big program opens, year over year |
 | Weekly digest, RSS and alerts | Planned (v2) | "Tell me when Shopify posts" |
