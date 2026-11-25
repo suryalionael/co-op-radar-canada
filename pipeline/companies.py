@@ -26,6 +26,8 @@ from __future__ import annotations
 import csv
 import io
 import re
+from collections.abc import Callable
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -174,3 +176,60 @@ def load_employers(path: Path, include_hidden: bool = False) -> list[dict[str, A
         for r in load_companies(path)
         if r["board_type"] and (include_hidden or r["show"] == "yes")
     ]
+
+
+MIN_KEPT_SHARE = 0.5  # a sheet with fewer than half the committed rows is treated as a mistake
+
+
+@dataclass
+class SyncResult:
+    ok: bool
+    rows: int = 0
+    changed: bool = False
+    reason: str | None = None
+
+
+def _canonical(rows: list[dict[str, str]]) -> str:
+    """The committed form: our columns, in order, LF line endings, so Google's formatting never causes a diff."""
+    out = io.StringIO()
+    writer = csv.DictWriter(out, fieldnames=COLUMNS, lineterminator="\n")
+    writer.writeheader()
+    writer.writerows(rows)
+    return out.getvalue()
+
+
+def sync_sheet(fetch: Callable[[], str], committed: Path) -> SyncResult:
+    """Replace the committed CSV with the sheet's current content, or keep the last good copy.
+
+    Nothing is written unless the download worked, the sheet validates, and it still has at least
+    half the committed rows (a cleared or sorted-over sheet must not wipe the site).
+    """
+    try:
+        rows = parse_companies(fetch())
+    except SheetError as err:
+        return SyncResult(False, reason=f"invalid sheet: {'; '.join(err.problems)}")
+    except Exception as err:  # the download itself: network, HTTP status, a sign-in page
+        return SyncResult(False, reason=f"could not read the sheet: {err}")
+
+    previous = 0
+    if committed.exists():
+        try:
+            previous = len(load_companies(committed))
+        except SheetError:
+            previous = 0  # a broken committed copy must not block a good sheet
+    if previous and len(rows) < previous * MIN_KEPT_SHARE:
+        return SyncResult(
+            False,
+            rows=len(rows),
+            reason=f"refused: the sheet has {len(rows)} companies and the committed list has {previous} "
+            f"(under {MIN_KEPT_SHARE:.0%}); fix the sheet or edit {committed.name} by hand",
+        )
+
+    text = _canonical(rows)
+    changed = not committed.exists() or committed.read_text(encoding="utf-8") != text
+    if changed:
+        committed.parent.mkdir(parents=True, exist_ok=True)
+        tmp = committed.with_suffix(".csv.tmp")
+        tmp.write_text(text, encoding="utf-8")
+        tmp.replace(committed)
+    return SyncResult(True, rows=len(rows), changed=changed)

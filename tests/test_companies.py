@@ -126,3 +126,71 @@ def test_load_employers_shapes_rows_and_hides(tmp_path: Path) -> None:
     ]
     assert [e["id"] for e in load_employers(path, include_hidden=True)] == ["a", "c"]
     assert [c["id"] for c in load_companies(path)] == ["a", "b", "c"]
+
+
+# --- sync from the sheet -------------------------------------------------------------------
+
+from pipeline.companies import sync_sheet  # noqa: E402
+
+
+def many(n: int, prefix: str = "c") -> str:
+    return sheet(*[row(id=f"{prefix}{i}", name=f"Company {i}") for i in range(n)])
+
+
+def test_good_sheet_replaces_the_committed_copy(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    result = sync_sheet(lambda: many(3), committed)
+    assert (result.ok, result.rows, result.changed, result.reason) == (True, 3, True, None)
+    assert [c["id"] for c in load_companies(committed)] == ["c0", "c1", "c2"]
+
+
+def test_identical_content_reports_unchanged(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    sync_sheet(lambda: many(3), committed)
+    before = committed.read_bytes()
+    again = sync_sheet(lambda: many(3).replace("\n", "\r\n"), committed)  # same data, other line endings
+    assert (again.ok, again.changed) == (True, False)
+    assert committed.read_bytes() == before
+
+
+def test_failed_download_keeps_the_last_good_copy(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    sync_sheet(lambda: many(3), committed)
+    before = committed.read_bytes()
+
+    def boom() -> str:
+        raise OSError("connection reset")
+
+    result = sync_sheet(boom, committed)
+    assert not result.ok and "connection reset" in (result.reason or "")
+    assert committed.read_bytes() == before
+
+
+def test_invalid_sheet_is_rejected_and_names_the_row(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    sync_sheet(lambda: many(3), committed)
+    before = committed.read_bytes()
+    result = sync_sheet(lambda: sheet(row(), row(name="Other")), committed)  # duplicate id
+    assert not result.ok and "row 3" in (result.reason or "")
+    assert committed.read_bytes() == before
+
+
+def test_a_sheet_that_lost_half_its_rows_is_refused(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    sync_sheet(lambda: many(20), committed)
+    before = committed.read_bytes()
+    refused = sync_sheet(lambda: many(9), committed)
+    assert not refused.ok and "20" in (refused.reason or "") and "9" in (refused.reason or "")
+    assert committed.read_bytes() == before
+    assert sync_sheet(lambda: many(10), committed).ok  # exactly half is allowed
+
+
+def test_empty_or_html_body_is_rejected(tmp_path: Path) -> None:
+    committed = tmp_path / "companies.csv"
+    assert not sync_sheet(lambda: "", committed).ok
+    assert not sync_sheet(lambda: "<!doctype html><html>Sign in</html>", committed).ok
+    assert not committed.exists()
+
+
+def test_first_sync_accepts_any_valid_sheet(tmp_path: Path) -> None:
+    assert sync_sheet(lambda: many(1), tmp_path / "new" / "companies.csv").ok
