@@ -33,7 +33,7 @@
   "basis": "",
   "board_url": "https://job-boards.greenhouse.io/asteraearlycareer2027",
   "name": "Astera Labs",
-  "open_count": 12,
+  "open_count": 11,
   "posting_ids": [
    "1512773c8a526b1d",
    "1e6c17afb91b2e2b",
@@ -43,7 +43,6 @@
    "574af7346c16d8d8",
    "886f834a1e242806",
    "9e3ef444d22b16fc",
-   "a3131011cb1aa7b0",
    "a54586870245b7f1",
    "c1122af9d29da6fe",
    "fba32629c509357b"
@@ -122,12 +121,30 @@
  },
  {
   "badge": "open",
+  "basis": "",
+  "board_url": "https://jobs.ashbyhq.com/human-computer-lab",
+  "name": "Human Computer Lab",
+  "open_count": 6,
+  "posting_ids": [
+   "13dc3f42b10f8bc1",
+   "211636b44b4441fb",
+   "58faf2dfd0d430c6",
+   "99818f1d4c42e611",
+   "9f5a2e68b3fea647",
+   "b3fd0d193980ceb6"
+  ],
+  "program_ids": [],
+  "sector": "hardware",
+  "slug": "human_computer_lab",
+  "window": null
+ },
+ {
+  "badge": "open",
   "basis": "from 3 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/kensingtontours",
   "name": "Kensington Tours",
-  "open_count": 7,
+  "open_count": 6,
   "posting_ids": [
-   "51fd719153657a95",
    "0f387c29a92b4496",
    "23c8d52d0c8850f8",
    "38cb5b33966f7259",
@@ -161,25 +178,6 @@
     2026
    ]
   }
- },
- {
-  "badge": "open",
-  "basis": "",
-  "board_url": "https://jobs.ashbyhq.com/human-computer-lab",
-  "name": "Human Computer Lab",
-  "open_count": 6,
-  "posting_ids": [
-   "13dc3f42b10f8bc1",
-   "211636b44b4441fb",
-   "58faf2dfd0d430c6",
-   "99818f1d4c42e611",
-   "9f5a2e68b3fea647",
-   "b3fd0d193980ceb6"
-  ],
-  "program_ids": [],
-  "sector": "hardware",
-  "slug": "human_computer_lab",
-  "window": null
  },
  {
   "badge": "open",
