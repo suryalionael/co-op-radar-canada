@@ -4,6 +4,7 @@
     python -m pipeline.cli process-postings --data-root data-branch
     python -m pipeline.cli fetch-programs   --data-root data-branch
     python -m pipeline.cli process-programs --data-root data-branch
+    python -m pipeline.cli sync-companies   --url <sheet csv link>   # Google Sheet -> config/companies.csv
     python -m pipeline.cli build-site-data  # data/processed -> site/public/data
     python -m pipeline.cli label-sheet      --data-root data-branch
     python -m pipeline.cli evaluate         --data-root data-branch
@@ -25,9 +26,10 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import yaml
+import httpx
 
 from pipeline import build_site_data, program_watch, reference_recall
+from pipeline.companies import load_employers, sync_sheet
 from pipeline.evaluate import (
     agreement,
     agreement_table,
@@ -45,7 +47,7 @@ from pipeline.sources.http import PoliteClient
 from pipeline.storage import iter_programs_days, posting_days, read_postings_day, write_postings_day, write_programs_day
 
 ROOT = Path(__file__).resolve().parent.parent
-EMPLOYERS = ROOT / "config" / "employers.yaml"
+COMPANIES = ROOT / "config" / "companies.csv"
 PROGRAMS = ROOT / "config" / "programs.yaml"
 PROCESSED = ROOT / "data" / "processed"
 RUN_LOG = ROOT / "data" / "run_log.jsonl"
@@ -62,8 +64,7 @@ def log_run(entry: dict[str, Any]) -> None:
 
 
 def fetch_postings(data_root: Path, day: dt.date) -> int:
-    with EMPLOYERS.open(encoding="utf-8") as f:
-        employers = yaml.safe_load(f)["employers"]
+    employers = load_employers(COMPANIES)
     client = PoliteClient()
     boards, postings = [], []
     try:
@@ -92,6 +93,30 @@ def fetch_postings(data_root: Path, day: dt.date) -> int:
     )
     # Exit non-zero only if every board failed: that points at the runner, not a source.
     return 1 if boards and len(failed) == len(boards) else 0
+
+
+def sync_companies(url: str) -> int:
+    """Refresh config/companies.csv from the Google Sheet. A bad sheet keeps the last good copy and fails the step."""
+    if not url:
+        log_run({"command": "sync-companies", "ok": False, "reason": "no sheet url set (COMPANY_SHEET_CSV_URL)"})
+        return 1
+
+    def fetch() -> str:
+        response = httpx.get(url, follow_redirects=True, timeout=30)
+        response.raise_for_status()
+        return response.text
+
+    result = sync_sheet(fetch, COMPANIES)
+    log_run(
+        {
+            "command": "sync-companies",
+            "ok": result.ok,
+            "rows": result.rows,
+            "changed": result.changed,
+            "reason": result.reason,
+        }
+    )
+    return 0 if result.ok else 1
 
 
 def process_postings(data_root: Path) -> int:
@@ -165,8 +190,7 @@ def run_reference_recall(data_root: Path, offline: bool) -> int:
     """Recall of our open Canadian student postings against the curated list's open 2027 rows."""
     if not offline or not (REFERENCE_RAW / "README.md").exists():
         fetch_raw(REFERENCE_RAW)
-    with EMPLOYERS.open(encoding="utf-8") as f:
-        employers = yaml.safe_load(f)["employers"]
+    employers = load_employers(COMPANIES, include_hidden=True)
     candidates = reference_recall.reference_set(load_rows(REFERENCE_RAW), employers)
     outcomes = reference_recall.match(candidates, build_postings(data_root))
     days = posting_days(data_root)
@@ -195,10 +219,14 @@ def main(argv: list[str] | None = None) -> int:
             "evaluate",
             "agreement",
             "reference-recall",
+            "sync-companies",
         ],
     )
     parser.add_argument("--data-root", type=Path, default=ROOT / "data-branch", help="checkout of the data branch")
     parser.add_argument("--date", type=dt.date.fromisoformat, default=None, help="snapshot date (default: today, UTC)")
+    parser.add_argument(
+        "--url", default="", help="sync-companies: the sheet's CSV export link (view-only, not a secret)"
+    )
     parser.add_argument("--offline", action="store_true", help="reference-recall: no live board checks")
     args = parser.parse_args(argv)
     day = args.date or dt.datetime.now(dt.UTC).date()
@@ -209,8 +237,10 @@ def main(argv: list[str] | None = None) -> int:
         return process_postings(args.data_root)
     if args.command == "fetch-programs":
         return fetch_programs(args.data_root, day)
+    if args.command == "sync-companies":
+        return sync_companies(args.url)
     if args.command == "build-site-data":
-        meta = build_site_data.build()
+        meta = build_site_data.build(data_root=args.data_root)
         log_run({"command": "build-site-data", **meta["counts"]})
         return 0
     if args.command == "label-sheet":

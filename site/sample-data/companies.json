@@ -3,6 +3,9 @@
   "badge": "open",
   "basis": "from 5 postings, 2025–2026",
   "board_url": "https://jobs.lever.co/cedar-sample",
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Cedar Health (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -11,6 +14,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "cedar",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -28,6 +32,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -37,8 +42,11 @@
  },
  {
   "badge": "open",
-  "basis": "from 5 postings, 2025–2026",
+  "basis": "Researched",
   "board_url": null,
+  "careers_url": "https://example.com/fernhill/students",
+  "hiring_note": "Summer analyst roles post in September (sample text).",
+  "hiring_source": "https://example.com/fernhill/students",
   "name": "Fernhill Bank (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -49,27 +57,29 @@
   ],
   "sector": "software",
   "slug": "fernhill",
+  "website": "https://example.com/fernhill",
   "window": {
-   "end": 9,
+   "end": 10,
    "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
     1,
     0,
     0
    ],
-   "n_dates": 5,
+   "n_dates": 0,
+   "source": "researched",
    "start": 9,
    "years": [
-    2025,
-    2026
+    0,
+    0
    ]
   }
  },
@@ -77,6 +87,9 @@
   "badge": "open",
   "basis": "from 5 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Harbour Logistics (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -85,6 +98,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "harbour",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -102,6 +116,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -113,6 +128,9 @@
   "badge": "open",
   "basis": "from 5 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Harbourline Robotics (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -121,6 +139,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "harbourline",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -138,6 +157,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -149,6 +169,9 @@
   "badge": "open",
   "basis": "from 5 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Lakeshore Robotics (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -157,6 +180,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "lakeshore",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -174,6 +198,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -185,6 +210,9 @@
   "badge": "open",
   "basis": "from 5 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Maple Ledger (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -193,6 +221,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "mapleledger",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -210,6 +239,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -221,6 +251,9 @@
   "badge": "open",
   "basis": "from 3 postings, 2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Northwind Analytics (sample)",
   "open_count": 1,
   "posting_ids": [
@@ -229,6 +262,7 @@
   "program_ids": [],
   "sector": "software",
   "slug": "northwind",
+  "website": "",
   "window": {
    "end": 1,
    "months": [
@@ -246,6 +280,7 @@
     0
    ],
    "n_dates": 3,
+   "source": "postings",
    "start": 1,
    "years": [
     2026,
@@ -257,12 +292,16 @@
   "badge": "soon",
   "basis": "from 4 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Quiet Co (sample)",
   "open_count": 0,
   "posting_ids": [],
   "program_ids": [],
   "sector": "software",
   "slug": "quietco",
+  "website": "",
   "window": {
    "end": 1,
    "months": [
@@ -280,6 +319,7 @@
     0
    ],
    "n_dates": 4,
+   "source": "postings",
    "start": 1,
    "years": [
     2025,
@@ -291,12 +331,16 @@
   "badge": "quiet",
   "basis": "from 5 postings, 2025–2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Maplewood Software (sample)",
   "open_count": 0,
   "posting_ids": [],
   "program_ids": [],
   "sector": "software",
   "slug": "maplewood",
+  "website": "",
   "window": {
    "end": 9,
    "months": [
@@ -314,6 +358,7 @@
     0
    ],
    "n_dates": 5,
+   "source": "postings",
    "start": 9,
    "years": [
     2025,
@@ -325,6 +370,9 @@
   "badge": "quiet",
   "basis": "",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Northern Hydro co-op students (sample)",
   "open_count": 0,
   "posting_ids": [],
@@ -333,12 +381,16 @@
   ],
   "sector": null,
   "slug": "util",
+  "website": "",
   "window": null
  },
  {
   "badge": "quiet",
   "basis": "",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Provincial co-op program (sample, page never loaded)",
   "open_count": 0,
   "posting_ids": [],
@@ -347,12 +399,16 @@
   ],
   "sector": null,
   "slug": "prov",
+  "website": "",
   "window": null
  },
  {
   "badge": "quiet",
   "basis": "from 1 postings, 2026",
   "board_url": null,
+  "careers_url": "",
+  "hiring_note": "",
+  "hiring_source": "",
   "name": "Provincial summer student program (sample)",
   "open_count": 0,
   "posting_ids": [],
@@ -361,6 +417,7 @@
   ],
   "sector": null,
   "slug": "gov",
+  "website": "",
   "window": null
  }
 ]

@@ -1,6 +1,6 @@
 """Check which job-board platforms a candidate board token exists on.
 
-Used to build and re-verify config/employers.yaml. For each token it tries
+Used to check a board token before it is added to the company sheet (config/companies.csv). For each token it tries
 Greenhouse, Lever and Ashby once, politely, and prints one JSON line per hit:
 platform, token, board name (Greenhouse only), total jobs, and how many jobs
 have a Canadian-looking location (a sanity check that the token belongs to the

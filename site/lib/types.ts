@@ -86,6 +86,7 @@ export interface HiringWindow {
   end: number; // 1–12, may be before start when the window wraps across December
   n_dates: number;
   years: [number, number];
+  source: "researched" | "postings"; // researched = months someone looked up; no counts behind them
 }
 
 export type CompanyBadge = "open" | "soon" | "quiet";
@@ -99,6 +100,10 @@ export interface Company {
   posting_ids: string[];
   program_ids: string[]; // program-watch pages for this company, if any
   window: HiringWindow | null;
-  basis: string; // e.g. "from 6 postings, 2025–2026"; empty when there are no dates
+  basis: string; // "Researched", or e.g. "from 6 postings, 2025–2026"; empty when there are no dates
+  website: string; // "" when blank
+  careers_url: string;
+  hiring_note: string; // shown with researched months
+  hiring_source: string; // a https link or a short note on where the months came from
   badge: CompanyBadge;
 }

@@ -62,7 +62,7 @@ jobs:
           import json
           hits = [json.loads(line) for line in open("hits.jsonl")]
           print(f"### {len(hits)} boards found\n")
-          print("Add a board to config/employers.yaml only if canada_jobs > 0 and it is the right company.\n")
+          print("Add a board to the company sheet only if canada_jobs > 0 and it is the right company.\n")
           print("| Token | Platform | Board name | Jobs | Canadian jobs |")
           print("|---|---|---|---|---|")
           for h in sorted(hits, key=lambda h: (-h["canada_jobs"], h["token"])):

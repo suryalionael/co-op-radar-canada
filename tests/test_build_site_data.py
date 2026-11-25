@@ -42,10 +42,22 @@ def posting(pid: str, **changes: object) -> Posting:
     return base.model_copy(update=changes)
 
 
+def write_companies(path: Path, *rows: dict[str, str]) -> Path:
+    """A companies.csv with the given rows; each needs id and name."""
+    import csv
+
+    from pipeline.companies import COLUMNS
+
+    with path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=COLUMNS, lineterminator="\n", restval="")
+        writer.writeheader()
+        writer.writerows({"show": "yes", **r} for r in rows)
+    return path
+
+
 def setup(tmp_path: Path) -> tuple[Path, Path, Path]:
     processed, out = tmp_path / "processed", tmp_path / "out"
-    employers = tmp_path / "employers.yaml"
-    employers.write_text("employers:\n  - {id: acme, name: Acme Corp, sector: software}\n")
+    employers = write_companies(tmp_path / "companies.csv", {"id": "acme", "name": "Acme Corp", "sector": "software"})
     return processed, out, employers
 
 
@@ -167,11 +179,11 @@ def test_unclear_and_past_terms_reach_the_site(tmp_path: Path) -> None:
 
 def test_companies(tmp_path: Path) -> None:
     processed, out, _ = setup(tmp_path)
-    employers = tmp_path / "employers.yaml"
-    employers.write_text(
-        "employers:\n"
-        "  - {id: acme, name: Acme Corp, sector: software, board_type: lever, board_token: acme}\n"
-        "  - {id: zeta, name: Zeta, sector: fintech, board_type: ashby, board_token: zeta}\n"
+    employers = write_companies(
+        tmp_path / "companies.csv",
+        {"id": "acme", "name": "Acme Corp", "sector": "software", "board_type": "lever", "board_token": "acme"},
+        {"id": "zeta", "name": "Zeta", "sector": "fintech", "board_type": "ashby", "board_token": "zeta"},
+        {"id": "government_of_canada", "name": "Government of Canada"},
     )
     write_postings(
         [
@@ -215,12 +227,132 @@ def test_companies(tmp_path: Path) -> None:
     assert meta["counts"]["companies"] == 3
 
 
-def test_every_program_employer_has_a_name() -> None:
-    import yaml
+def test_hidden_company_and_its_postings_are_dropped(tmp_path: Path) -> None:
+    processed, out, _ = setup(tmp_path)
+    companies = write_companies(
+        tmp_path / "companies.csv",
+        {"id": "acme", "name": "Acme Corp", "board_type": "lever", "board_token": "acme"},
+        {"id": "gone", "name": "Gone Inc", "show": "no", "board_type": "lever", "board_token": "gone"},
+    )
+    write_postings([posting("a"), posting("g", employer_id="gone")], processed / "postings.parquet")
+    meta = build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
+    assert [r["id"] for r in json.loads((out / "postings.json").read_text())] == ["a"]
+    assert [c["slug"] for c in json.loads((out / "companies.json").read_text())] == ["acme"]
+    assert meta["counts"]["employer_boards_tracked"] == 1 and meta["counts"]["companies"] == 1
 
-    from pipeline.build_site_data import EMPLOYERS, PROGRAM_EMPLOYER_NAMES, ROOT
 
-    employers = {e["id"] for e in yaml.safe_load(EMPLOYERS.read_text())["employers"]}
-    programs = yaml.safe_load((ROOT / "config" / "programs.yaml").read_text())["programs"]
-    missing = {p["employer_id"] for p in programs} - employers - set(PROGRAM_EMPLOYER_NAMES)
-    assert not missing
+def put_description(root: Path, description_hash: str, text: str) -> None:
+    import gzip
+
+    from pipeline.storage import description_path
+
+    path = description_path(root, description_hash)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(gzip.compress(text.encode()))
+
+
+def test_descriptions_written_for_open_postings_only(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings(
+        [
+            posting("a", description_hash="ha"),
+            posting("closed", description_hash="hc", status=Status.closed),
+            posting("noresult", description_hash="hn", is_student_role=False),
+        ],
+        processed / "postings.parquet",
+    )
+    for h in ("ha", "hc", "hn"):
+        put_description(data_root, h, f"<p>{h}</p><script>bad()</script>")
+    descriptions.mkdir()
+    (descriptions / "old-closed-id.html").write_text("<p>stale</p>")
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert sorted(p.name for p in descriptions.iterdir()) == ["a.html"]  # stale file deleted
+    assert (descriptions / "a.html").read_text() == "<p>ha</p>"  # sanitised
+    assert "description" not in (out / "postings.json").read_text().lower().replace("description_", "")
+
+
+def test_descriptions_untouched_when_unchanged(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    put_description(data_root, "ha", "<p>same</p>")
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    first = (descriptions / "a.html").stat().st_mtime_ns
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert (descriptions / "a.html").stat().st_mtime_ns == first
+
+
+def test_missing_description_is_skipped_not_fatal(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings(
+        [posting("a", description_hash="ha"), posting("b", description_hash="hb")], processed / "postings.parquet"
+    )
+    put_description(data_root, "hb", "<p>b</p>")  # "ha" has no file
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert sorted(p.name for p in descriptions.iterdir()) == ["b.html"]
+    assert {r["id"] for r in json.loads((out / "postings.json").read_text())} == {"a", "b"}  # both still listed
+
+
+def test_no_data_root_leaves_descriptions_alone(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    descriptions = tmp_path / "descriptions"
+    descriptions.mkdir()
+    (descriptions / "keep.html").write_text("<p>keep</p>")
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    build(processed, out, employers, tmp_path / "none.jsonl", descriptions_dir=descriptions)
+    assert [p.name for p in descriptions.iterdir()] == ["keep.html"]
+
+
+def test_missing_data_checkout_does_not_delete_descriptions(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    descriptions = tmp_path / "descriptions"
+    descriptions.mkdir()
+    (descriptions / "a.html").write_text("<p>keep</p>")
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    build(
+        processed,
+        out,
+        employers,
+        tmp_path / "none.jsonl",
+        data_root=tmp_path / "no-such-checkout",
+        descriptions_dir=descriptions,
+    )
+    assert (descriptions / "a.html").read_text() == "<p>keep</p>"
+
+
+def test_researched_months_win_and_are_labelled(tmp_path: Path) -> None:
+    processed, out, _ = setup(tmp_path)
+    companies = write_companies(
+        tmp_path / "companies.csv",
+        {
+            "id": "acme", "name": "Acme", "board_type": "lever", "board_token": "acme", "hiring_months": "Sep-Oct",
+            "hiring_note": "Summer roles post in September.", "hiring_source": "https://acme.com/students",
+            "website": "https://acme.com", "careers_url": "https://acme.com/jobs", "notes": "INTERNAL ONLY",
+        },
+        {"id": "nodata", "name": "No Data Co", "hiring_months": "Nov-Jan"},  # no board, no postings
+        {"id": "plain", "name": "Plain", "board_type": "ashby", "board_token": "plain"},
+    )  # fmt: skip
+    write_postings(
+        [posting(f"m{i}", first_seen=dt.date(2026, 3, 2 + i)) for i in range(5)], processed / "postings.parquet"
+    )
+    build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 11, 23))
+    by_slug = {c["slug"]: c for c in json.loads((out / "companies.json").read_text())}
+    acme = by_slug["acme"]
+    assert acme["window"]["source"] == "researched"  # the five March postings do not override it
+    assert (acme["window"]["start"], acme["window"]["end"]) == (9, 10)
+    assert acme["basis"] == "Researched"
+    assert (acme["hiring_note"], acme["hiring_source"]) == (
+        "Summer roles post in September.",
+        "https://acme.com/students",
+    )
+    assert (acme["website"], acme["careers_url"]) == ("https://acme.com", "https://acme.com/jobs")
+    nodata = by_slug["nodata"]
+    assert (nodata["window"]["start"], nodata["window"]["end"], nodata["open_count"]) == (11, 1, 0)
+    assert by_slug["plain"]["window"] is None and by_slug["plain"]["hiring_note"] == ""
+    assert "INTERNAL ONLY" not in (out / "companies.json").read_text()  # notes are never published
+    assert nodata["badge"] == "quiet"  # inside its window on Nov 23 with nothing open
+    build(processed, out, companies, tmp_path / "none.jsonl", today=dt.date(2026, 10, 15))
+    soon = {c["slug"]: c["badge"] for c in json.loads((out / "companies.json").read_text())}
+    assert soon["nodata"] == "soon"  # a month before Nov-Jan opens

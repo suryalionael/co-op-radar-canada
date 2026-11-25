@@ -37,3 +37,24 @@ def test_badge() -> None:
     assert badge(w, 0, dt.date(2027, 7, 15)) == "soon"
     assert badge(w, 0, dt.date(2027, 3, 1)) == "quiet"
     assert badge(None, 0, dt.date(2027, 3, 1)) == "quiet"
+
+
+def test_researched_window_flags_the_listed_months() -> None:
+    from pipeline.hiring_window import researched_window
+
+    w = researched_window([9, 10])
+    assert w["months"] == [0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0]
+    assert (w["start"], w["end"], w["source"], w["n_dates"], w["years"]) == (9, 10, "researched", 0, [0, 0])
+
+
+def test_researched_window_wraps_the_year() -> None:
+    from pipeline.hiring_window import researched_window
+
+    w = researched_window([11, 12, 1])
+    assert (w["start"], w["end"]) == (11, 1)
+    assert sum(w["months"]) == 3 and w["months"][10] == w["months"][0] == 1
+
+
+def test_postings_window_says_where_it_came_from() -> None:
+    w = hiring_window(days((9, 3)))
+    assert w is not None and w["source"] == "postings"

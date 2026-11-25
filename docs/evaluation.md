@@ -91,7 +91,7 @@ A second, independent check: of the internships a human curator found, how many 
 python -m pipeline.cli reference-recall --data-root data-branch   # add --offline to skip live board checks
 ```
 
-**Reference set:** open rows of the 2027 list whose Apply link is on Greenhouse, Lever or Ashby and whose employer is in `config/employers.yaml`. A listing is **found** if our processed postings hold it (matched by the job id in the link, else by normalized URL) as an open, Canadian student posting. Each miss gets a likely reason from one live check of its board: gone from the board, filtered out as non-Canadian at fetch, employer added after our latest snapshot, or held but not counted (closed, location not read as Canadian, missed by role detection).
+**Reference set:** open rows of the 2027 list whose Apply link is on Greenhouse, Lever or Ashby and whose employer is in `config/companies.csv`. A listing is **found** if our processed postings hold it (matched by the job id in the link, else by normalized URL) as an open, Canadian student posting. Each miss gets a likely reason from one live check of its board: gone from the board, filtered out as non-Canadian at fetch, employer added after our latest snapshot, or held but not counted (closed, location not read as Canadian, missed by role detection).
 
 **Result (2026-11-01, latest snapshot 2026-11-01, all 171 boards fetched):**
 

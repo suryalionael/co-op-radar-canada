@@ -150,3 +150,17 @@ export function shortLocation(raw: string): string {
 const PROVINCE_NAMES: Record<string, true> = Object.fromEntries(
   [...Object.values(PROVINCES), "Ontario", "Quebec", "Québec", "British Columbia", "ON", "QC", "BC", "AB"].map((n) => [n, true]),
 );
+
+/** Month flags to words: [0,0,0,0,0,0,0,0,1,1,0,0] -> "Sep–Oct"; wraps the year; gaps give "Sep, Nov". */
+export function formatMonthRuns(flags: number[]): string {
+  const on = flags.map((n) => n > 0);
+  if (on.every(Boolean)) return "all year";
+  const runs: string[] = [];
+  for (let i = 0; i < 12; i++) {
+    if (!on[i] || on[(i + 11) % 12]) continue; // only start at the first month of a run
+    let j = i;
+    while (on[(j + 1) % 12]) j++;
+    runs.push(j === i ? MONTHS[i] : `${MONTHS[i]}–${MONTHS[j % 12]}`);
+  }
+  return runs.join(", ");
+}

@@ -6,7 +6,7 @@ Which open 2027 listings in the curated list do our processed postings contain?
 
 1. **The reference set** is the open rows of the 2027 README whose Apply link
    is on Greenhouse, Lever or Ashby and whose employer is in
-   config/employers.yaml: matched by (platform, board token), or by employer
+   config/companies.csv: matched by (platform, board token), or by employer
    name when a Greenhouse link (gh_jid) hides the token.
 2. **Matching** is by job id parsed from the link (the same key the pipeline
    uses), falling back to a normalized URL.

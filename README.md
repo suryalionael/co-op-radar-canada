@@ -4,6 +4,8 @@ Free tracker for Canadian co-op and internship postings, with verified term, dur
 
 **Live site: [co-op-radar-canada.vercel.app](https://co-op-radar-canada.vercel.app)**
 
+**Company list: [Co-op Radar companies (Google Sheet)](https://docs.google.com/spreadsheets/d/1RFY_fErRSApQla3tFlW2cdJhslf83lfDwe_4iV7EdKc/edit)**. Anyone can view it; the team edits it, and the daily run copies it into `config/companies.csv`. How to edit it: [`docs/deploy.md`](docs/deploy.md#the-company-sheet).
+
 > **Status: building v1 (launch target Dec 13, 2026).** The site is live and updated daily, ahead of the public launch. Phase 0 is done: on 2026-10-30, 171 employer job boards had **177 Canadian student postings** under the counting rules in [ADR 0001](docs/decisions/0001-coverage-thresholds.md), so v1 goes ahead as planned. The daily pipeline is running. Extractor precision and recall are measured on 200 postings labelled by Claude (an AI model), not yet checked against human labels; see the Evaluation section. No metric is reported until it has been measured.
 
 ---
@@ -32,7 +34,7 @@ Co-op Radar Canada aims to answer three questions:
 
 A scheduled job runs once a day:
 
-1. **Postings.** For each employer in `config/employers.yaml`, fetch open jobs from that employer's public Greenhouse, Lever or Ashby job-board API. Keep Canadian and remote postings and save a dated snapshot.
+1. **Postings.** For each company with a job board in `config/companies.csv` (a copy of the team's [company sheet](https://docs.google.com/spreadsheets/d/1RFY_fErRSApQla3tFlW2cdJhslf83lfDwe_4iV7EdKc/edit)), fetch open jobs from that employer's public Greenhouse, Lever or Ashby job-board API. Keep Canadian and remote postings and save a dated snapshot.
 2. **Extraction.** Rule-based extractors find the term, duration, province and role track in each posting, storing the matching text span as evidence.
 3. **Program watch.** Fetch about 30 student-program pages, fingerprint their main text, and record the date whenever it changes.
 4. **News (v2).** Search public news APIs and RSS feeds for student-opportunity headlines. Store only the headline, outlet, date and link, never article text.
@@ -77,8 +79,9 @@ Lio's running list of ideas, kept here for reference. "Building" means work has 
 | Idea | Status | Notes |
 |---|---|---|
 | Jobs-first board, like Speedrun's internship page | Building | Search, filter shortcuts, dense rows. Design: `docs/superpowers/specs/2026-11-23-board-redesign-design.md` |
-| Companies section | Building | Every tracked company, with open roles and status. Expand with the negarprh list once the owner's permission is in writing |
-| Hiring window per company | Building | The months a company's student postings usually appear. Needs a year of history to be reliable |
+| Companies section | Live | Every tracked company, with open roles and status, edited in a Google Sheet. Expand with the negarprh list once the owner's permission is in writing |
+| Hiring window per company | Live | Researched months from the sheet, or the months postings usually appear (needs history to be reliable) |
+| Job detail pages | Live | Full description, verified term and length, and an Apply button to the employer |
 | Program watch | Live | Daily checks of big employers' student pages (banks, governments) |
 | Recruiting calendar | Planned (v3) | When each big program opens, year over year |
 | Weekly digest, RSS and alerts | Planned (v2) | "Tell me when Shopify posts" |
@@ -121,7 +124,7 @@ Phase 0:
 python scripts/coverage_spike.py         # fetch every seed board once, save to data/coverage/
 ```
 
-`scripts/check_board_tokens.py` checks which platform a candidate board token lives on, for adding employers to `config/employers.yaml`.
+`scripts/check_board_tokens.py` checks which platform a candidate board token lives on, for adding companies to the company sheet (`config/companies.csv`).
 
 Pipeline (the daily Action runs the same commands; `data-branch/` is a checkout of the `data` branch):
 

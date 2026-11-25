@@ -46,6 +46,13 @@ jobs:
             git worktree add --orphan -b data data-branch
           fi
 
+      - name: Refresh the company list from the Google Sheet
+        id: companies
+        continue-on-error: true
+        env:
+          COMPANY_SHEET_CSV_URL: ${{ vars.COMPANY_SHEET_CSV_URL }}
+        run: python -m pipeline.cli sync-companies --url "$COMPANY_SHEET_CSV_URL"
+
       - name: Fetch postings
         id: postings
         continue-on-error: true
@@ -80,11 +87,11 @@ jobs:
       - name: Build site data
         id: site_data
         continue-on-error: true
-        run: python -m pipeline.cli build-site-data
+        run: python -m pipeline.cli build-site-data --data-root data-branch
 
       - name: Commit processed outputs and site data to main
         run: |
-          for path in data/processed data/run_log.jsonl site/public/data; do
+          for path in config/companies.csv data/processed data/run_log.jsonl site/public/data site/content/descriptions; do
             if [ -e "$path" ]; then git add -A "$path"; fi
           done
           if git diff --cached --quiet; then
@@ -97,11 +104,11 @@ jobs:
 
       - name: Fail the run if any step failed
         if: >-
-          steps.postings.outcome == 'failure' || steps.programs.outcome == 'failure' ||
+          steps.companies.outcome == 'failure' || steps.postings.outcome == 'failure' || steps.programs.outcome == 'failure' ||
           steps.process_postings.outcome == 'failure' || steps.process_programs.outcome == 'failure' ||
           steps.site_data.outcome == 'failure'
         run: |
-          echo "postings=${{ steps.postings.outcome }} programs=${{ steps.programs.outcome }}"
+          echo "companies=${{ steps.companies.outcome }} postings=${{ steps.postings.outcome }} programs=${{ steps.programs.outcome }}"
           echo "process_postings=${{ steps.process_postings.outcome }} process_programs=${{ steps.process_programs.outcome }}"
           echo "site_data=${{ steps.site_data.outcome }}"
           exit 1
