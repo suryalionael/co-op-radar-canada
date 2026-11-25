@@ -210,7 +210,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "fetch-programs":
         return fetch_programs(args.data_root, day)
     if args.command == "build-site-data":
-        meta = build_site_data.build()
+        meta = build_site_data.build(data_root=args.data_root)
         log_run({"command": "build-site-data", **meta["counts"]})
         return 0
     if args.command == "label-sheet":

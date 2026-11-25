@@ -26,11 +26,14 @@ import duckdb
 import yaml
 
 from pipeline.hiring_window import badge, hiring_window
+from pipeline.sanitize import sanitize_description
+from pipeline.storage import read_description
 
 ROOT = Path(__file__).resolve().parent.parent
 PROCESSED = ROOT / "data" / "processed"
 SITE_DATA = ROOT / "site" / "public" / "data"
 EMPLOYERS = ROOT / "config" / "employers.yaml"
+DESCRIPTIONS = ROOT / "site" / "content" / "descriptions"
 RUN_LOG = ROOT / "data" / "run_log.jsonl"
 
 POSTING_FIELDS = [
@@ -132,6 +135,45 @@ def build_postings(con: duckdb.DuckDBPyConnection, processed: Path, employers: d
             }
         )
     return out
+
+
+def open_posting_hashes(con: duckdb.DuckDBPyConnection, processed: Path) -> list[dict[str, Any]]:
+    """id and description hash of every posting the site lists."""
+    path = processed / "postings.parquet"
+    if not path.exists():
+        return []
+    return _rows(
+        con,
+        f"""
+        SELECT id, description_hash
+        FROM read_parquet('{path.as_posix()}')
+        WHERE in_canada AND is_student_role AND status = 'open'
+        ORDER BY id
+        """,
+    )
+
+
+def write_descriptions(rows: list[dict[str, Any]], data_root: Path, out_dir: Path) -> int:
+    """Write each open posting's cleaned description to out_dir/<id>.html; return how many files exist.
+
+    A file is rewritten only when its text changed, and files for postings that are no longer
+    listed are deleted, so git history grows only by new and edited postings (ADR 0002). A posting
+    whose description was never stored is skipped: its page shows the facts without the text.
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    keep: set[str] = set()
+    for row in rows:
+        text = sanitize_description(read_description(data_root, row["description_hash"]))
+        if not text:
+            continue
+        keep.add(f"{row['id']}.html")
+        path = out_dir / f"{row['id']}.html"
+        if not path.exists() or path.read_text(encoding="utf-8") != text:
+            path.write_text(text, encoding="utf-8")
+    for stale in out_dir.glob("*.html"):
+        if stale.name not in keep:
+            stale.unlink()
+    return len(keep)
 
 
 def build_programs(con: duckdb.DuckDBPyConnection, processed: Path) -> dict[str, list[Any]]:
@@ -278,6 +320,8 @@ def build(
     employers_path: Path = EMPLOYERS,
     run_log: Path = RUN_LOG,
     today: dt.date | None = None,
+    data_root: Path | None = None,
+    descriptions_dir: Path = DESCRIPTIONS,
 ) -> dict[str, Any]:
     employers = load_employers(employers_path)
     con = duckdb.connect()
@@ -299,6 +343,10 @@ def build(
             "companies": len(companies),
         },
     }
+    if data_root is not None and (data_root / "raw").is_dir():  # no checkout means no text: keep what we have
+        meta["counts"]["descriptions"] = write_descriptions(
+            open_posting_hashes(con, processed), data_root, descriptions_dir
+        )
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, data in (("postings", postings), ("programs", programs), ("meta", meta), ("companies", companies)):
         text = json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True) + "\n"

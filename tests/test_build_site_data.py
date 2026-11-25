@@ -224,3 +224,84 @@ def test_every_program_employer_has_a_name() -> None:
     programs = yaml.safe_load((ROOT / "config" / "programs.yaml").read_text())["programs"]
     missing = {p["employer_id"] for p in programs} - employers - set(PROGRAM_EMPLOYER_NAMES)
     assert not missing
+
+
+def put_description(root: Path, description_hash: str, text: str) -> None:
+    import gzip
+
+    from pipeline.storage import description_path
+
+    path = description_path(root, description_hash)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_bytes(gzip.compress(text.encode()))
+
+
+def test_descriptions_written_for_open_postings_only(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings(
+        [
+            posting("a", description_hash="ha"),
+            posting("closed", description_hash="hc", status=Status.closed),
+            posting("noresult", description_hash="hn", is_student_role=False),
+        ],
+        processed / "postings.parquet",
+    )
+    for h in ("ha", "hc", "hn"):
+        put_description(data_root, h, f"<p>{h}</p><script>bad()</script>")
+    descriptions.mkdir()
+    (descriptions / "old-closed-id.html").write_text("<p>stale</p>")
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert sorted(p.name for p in descriptions.iterdir()) == ["a.html"]  # stale file deleted
+    assert (descriptions / "a.html").read_text() == "<p>ha</p>"  # sanitised
+    assert "description" not in (out / "postings.json").read_text().lower().replace("description_", "")
+
+
+def test_descriptions_untouched_when_unchanged(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    put_description(data_root, "ha", "<p>same</p>")
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    first = (descriptions / "a.html").stat().st_mtime_ns
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert (descriptions / "a.html").stat().st_mtime_ns == first
+
+
+def test_missing_description_is_skipped_not_fatal(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    data_root, descriptions = tmp_path / "data-branch", tmp_path / "descriptions"
+    write_postings(
+        [posting("a", description_hash="ha"), posting("b", description_hash="hb")], processed / "postings.parquet"
+    )
+    put_description(data_root, "hb", "<p>b</p>")  # "ha" has no file
+    build(processed, out, employers, tmp_path / "none.jsonl", data_root=data_root, descriptions_dir=descriptions)
+    assert sorted(p.name for p in descriptions.iterdir()) == ["b.html"]
+    assert {r["id"] for r in json.loads((out / "postings.json").read_text())} == {"a", "b"}  # both still listed
+
+
+def test_no_data_root_leaves_descriptions_alone(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    descriptions = tmp_path / "descriptions"
+    descriptions.mkdir()
+    (descriptions / "keep.html").write_text("<p>keep</p>")
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    build(processed, out, employers, tmp_path / "none.jsonl", descriptions_dir=descriptions)
+    assert [p.name for p in descriptions.iterdir()] == ["keep.html"]
+
+
+def test_missing_data_checkout_does_not_delete_descriptions(tmp_path: Path) -> None:
+    processed, out, employers = setup(tmp_path)
+    descriptions = tmp_path / "descriptions"
+    descriptions.mkdir()
+    (descriptions / "a.html").write_text("<p>keep</p>")
+    write_postings([posting("a", description_hash="ha")], processed / "postings.parquet")
+    build(
+        processed,
+        out,
+        employers,
+        tmp_path / "none.jsonl",
+        data_root=tmp_path / "no-such-checkout",
+        descriptions_dir=descriptions,
+    )
+    assert (descriptions / "a.html").read_text() == "<p>keep</p>"

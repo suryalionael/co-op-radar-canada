@@ -80,11 +80,11 @@ jobs:
       - name: Build site data
         id: site_data
         continue-on-error: true
-        run: python -m pipeline.cli build-site-data
+        run: python -m pipeline.cli build-site-data --data-root data-branch
 
       - name: Commit processed outputs and site data to main
         run: |
-          for path in data/processed data/run_log.jsonl site/public/data; do
+          for path in data/processed data/run_log.jsonl site/public/data site/content/descriptions; do
             if [ -e "$path" ]; then git add -A "$path"; fi
           done
           if git diff --cached --quiet; then
