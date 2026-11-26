@@ -1,0 +1,1712 @@
+[
+ {
+  "board_token": "1password",
+  "employer_id": "1password",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:43.072448Z",
+  "job_count": 78,
+  "kept_count": 78,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "airbyte",
+  "employer_id": "airbyte",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:47.919436Z",
+  "job_count": 14,
+  "kept_count": 5,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "alan",
+  "employer_id": "alan",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:47.955802Z",
+  "job_count": 140,
+  "kept_count": 129,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ami",
+  "employer_id": "ami",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:49.232135Z",
+  "job_count": 7,
+  "kept_count": 7,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "amplitude",
+  "employer_id": "amplitude",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:49.938394Z",
+  "job_count": 47,
+  "kept_count": 47,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ashby",
+  "employer_id": "ashby",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:55.347228Z",
+  "job_count": 79,
+  "kept_count": 75,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "benevity",
+  "employer_id": "benevity",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:57.613019Z",
+  "job_count": 19,
+  "kept_count": 19,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "bree",
+  "employer_id": "bree",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:01.574334Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "cerebras",
+  "employer_id": "cerebras",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:02.752940Z",
+  "job_count": 134,
+  "kept_count": 58,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "clearco",
+  "employer_id": "clearco",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:03.654923Z",
+  "job_count": 5,
+  "kept_count": 5,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "clickup",
+  "employer_id": "clickup",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:03.769481Z",
+  "job_count": 50,
+  "kept_count": 23,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "cohere",
+  "employer_id": "cohere",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:04.956226Z",
+  "job_count": 123,
+  "kept_count": 123,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "felix",
+  "employer_id": "felix",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:23.508350Z",
+  "job_count": 11,
+  "kept_count": 11,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "float",
+  "employer_id": "float",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:24.940837Z",
+  "job_count": 19,
+  "kept_count": 19,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "georgian",
+  "employer_id": "georgian",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:25.604218Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "gorgias",
+  "employer_id": "gorgias",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:29.222076Z",
+  "job_count": 15,
+  "kept_count": 8,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "hopper",
+  "employer_id": "hopper",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:34.638332Z",
+  "job_count": 29,
+  "kept_count": 29,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "human-computer-lab",
+  "employer_id": "human_computer_lab",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:35.955122Z",
+  "job_count": 14,
+  "kept_count": 11,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "jane",
+  "employer_id": "jane_app",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:37.654111Z",
+  "job_count": 18,
+  "kept_count": 18,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "jobber",
+  "employer_id": "jobber",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:37.691422Z",
+  "job_count": 32,
+  "kept_count": 31,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "kindred",
+  "employer_id": "kindred",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:40.743968Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "klue",
+  "employer_id": "klue",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:40.768013Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "kong",
+  "employer_id": "kong",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:41.781567Z",
+  "job_count": 122,
+  "kept_count": 7,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "lightspeedhq",
+  "employer_id": "lightspeed",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:46.981817Z",
+  "job_count": 132,
+  "kept_count": 132,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "loopio",
+  "employer_id": "loopio",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:47.119507Z",
+  "job_count": 13,
+  "kept_count": 13,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "miovision",
+  "employer_id": "miovision",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:49.673184Z",
+  "job_count": 12,
+  "kept_count": 12,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "neofinancial",
+  "employer_id": "neo_financial",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:53.907142Z",
+  "job_count": 59,
+  "kept_count": 59,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "nerdwallet",
+  "employer_id": "nerdwallet",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:53.952504Z",
+  "job_count": 27,
+  "kept_count": 27,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "nubank",
+  "employer_id": "nubank",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:55.104742Z",
+  "job_count": 109,
+  "kept_count": 13,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "openai",
+  "employer_id": "openai",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:56.851876Z",
+  "job_count": 876,
+  "kept_count": 83,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "oyster",
+  "employer_id": "oyster",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:59.627608Z",
+  "job_count": 16,
+  "kept_count": 14,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "pebl",
+  "employer_id": "pebl",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:01.015919Z",
+  "job_count": 37,
+  "kept_count": 12,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "perplexity",
+  "employer_id": "perplexity",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:01.169293Z",
+  "job_count": 150,
+  "kept_count": 18,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "procurify",
+  "employer_id": "procurify",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:04.907217Z",
+  "job_count": 9,
+  "kept_count": 9,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "quora",
+  "employer_id": "quora",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:05.705060Z",
+  "job_count": 8,
+  "kept_count": 8,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ramp",
+  "employer_id": "ramp",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:05.928843Z",
+  "job_count": 183,
+  "kept_count": 183,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "render",
+  "employer_id": "render",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:07.419004Z",
+  "job_count": 39,
+  "kept_count": 39,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "rewind",
+  "employer_id": "rewind",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:07.998925Z",
+  "job_count": 4,
+  "kept_count": 4,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "sanity",
+  "employer_id": "sanity",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:13.270086Z",
+  "job_count": 32,
+  "kept_count": 23,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "sardine",
+  "employer_id": "sardine",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:13.336144Z",
+  "job_count": 40,
+  "kept_count": 40,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "sentry",
+  "employer_id": "sentry",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:15.700466Z",
+  "job_count": 40,
+  "kept_count": 9,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "snowflake",
+  "employer_id": "snowflake",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:30.732709Z",
+  "job_count": 376,
+  "kept_count": 70,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "snyk",
+  "employer_id": "snyk",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:31.388772Z",
+  "job_count": 35,
+  "kept_count": 17,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "steel",
+  "employer_id": "steel",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:34.672481Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "telus-digital",
+  "employer_id": "telus_digital",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:38.261863Z",
+  "job_count": 55,
+  "kept_count": 51,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "temporal",
+  "employer_id": "temporal",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:38.336934Z",
+  "job_count": 90,
+  "kept_count": 64,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "thinkific",
+  "employer_id": "thinkific",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:40.454024Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "trulioo",
+  "employer_id": "trulioo",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:42.475114Z",
+  "job_count": 26,
+  "kept_count": 26,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "veeda-ai",
+  "employer_id": "veeda_ai",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:45.480792Z",
+  "job_count": 11,
+  "kept_count": 10,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "visier",
+  "employer_id": "visier",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:45.500226Z",
+  "job_count": 1,
+  "kept_count": 1,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "wealthsimple",
+  "employer_id": "wealthsimple",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:49.166523Z",
+  "job_count": 37,
+  "kept_count": 37,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "webflow",
+  "employer_id": "webflow",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:49.219127Z",
+  "job_count": 31,
+  "kept_count": 31,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "yotta",
+  "employer_id": "yotta_labs",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:50.275767Z",
+  "job_count": 4,
+  "kept_count": 4,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "zip",
+  "employer_id": "zip",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:51.248836Z",
+  "job_count": 112,
+  "kept_count": 45,
+  "ok": true,
+  "source": "ashby"
+ },
+ {
+  "board_token": "ada18",
+  "employer_id": "ada",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:44.449035Z",
+  "job_count": 0,
+  "kept_count": 0,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "adyen",
+  "employer_id": "adyen",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:44.625414Z",
+  "job_count": 233,
+  "kept_count": 189,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "affirm",
+  "employer_id": "affirm",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:45.928195Z",
+  "job_count": 216,
+  "kept_count": 216,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "airbnb",
+  "employer_id": "airbnb",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:46.747917Z",
+  "job_count": 201,
+  "kept_count": 93,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "alayacare",
+  "employer_id": "alayacare",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:49.077014Z",
+  "job_count": 27,
+  "kept_count": 27,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "anthropic",
+  "employer_id": "anthropic",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:51.238079Z",
+  "job_count": 634,
+  "kept_count": 92,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "aperaaiinc",
+  "employer_id": "apera_ai",
+  "error": "HTTP 404",
+  "fetched_at": "2026-11-26T19:37:53.059329Z",
+  "job_count": 0,
+  "kept_count": 0,
+  "ok": false,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "appdirect",
+  "employer_id": "appdirect",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:53.087271Z",
+  "job_count": 33,
+  "kept_count": 29,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "asana",
+  "employer_id": "asana",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:54.127513Z",
+  "job_count": 109,
+  "kept_count": 39,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "asteraearlycareer2027",
+  "employer_id": "astera_labs",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:55.715596Z",
+  "job_count": 76,
+  "kept_count": 14,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "auviknetworks",
+  "employer_id": "auvik",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:56.209807Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "block",
+  "employer_id": "block",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:58.191168Z",
+  "job_count": 183,
+  "kept_count": 183,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "brave",
+  "employer_id": "brave",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:59.258426Z",
+  "job_count": 11,
+  "kept_count": 11,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "braze",
+  "employer_id": "braze",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:59.297591Z",
+  "job_count": 350,
+  "kept_count": 33,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "brex",
+  "employer_id": "brex",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:01.593503Z",
+  "job_count": 270,
+  "kept_count": 260,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "carta",
+  "employer_id": "carta",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:01.924116Z",
+  "job_count": 81,
+  "kept_count": 19,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "circleci",
+  "employer_id": "circleci",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:02.995849Z",
+  "job_count": 15,
+  "kept_count": 15,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "clutch",
+  "employer_id": "clutch",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:04.864963Z",
+  "job_count": 85,
+  "kept_count": 85,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "coinbase",
+  "employer_id": "coinbase",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:05.976954Z",
+  "job_count": 256,
+  "kept_count": 256,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "consensys",
+  "employer_id": "consensys",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:06.408628Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "coreweave",
+  "employer_id": "coreweave",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:07.020687Z",
+  "job_count": 317,
+  "kept_count": 52,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "coursera",
+  "employer_id": "coursera",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:08.867023Z",
+  "job_count": 35,
+  "kept_count": 9,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "cresta",
+  "employer_id": "cresta",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:09.078936Z",
+  "job_count": 79,
+  "kept_count": 79,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "cribl",
+  "employer_id": "cribl",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:10.142223Z",
+  "job_count": 77,
+  "kept_count": 77,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "d2l",
+  "employer_id": "d2l",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:11.204378Z",
+  "job_count": 31,
+  "kept_count": 31,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "databricks",
+  "employer_id": "databricks",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:12.063627Z",
+  "job_count": 882,
+  "kept_count": 306,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "datadog",
+  "employer_id": "datadog",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:14.896500Z",
+  "job_count": 391,
+  "kept_count": 101,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "dominodatalab",
+  "employer_id": "domino_data_lab",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:16.050464Z",
+  "job_count": 15,
+  "kept_count": 14,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "doordashcanada",
+  "employer_id": "doordash_canada",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:18.297216Z",
+  "job_count": 41,
+  "kept_count": 41,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "doordashusa",
+  "employer_id": "doordash",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:16.110442Z",
+  "job_count": 402,
+  "kept_count": 173,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "dropbox",
+  "employer_id": "dropbox",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:18.405336Z",
+  "job_count": 51,
+  "kept_count": 51,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "drweng",
+  "employer_id": "drw",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:19.411117Z",
+  "job_count": 149,
+  "kept_count": 146,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "elastic",
+  "employer_id": "elastic",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:20.492419Z",
+  "job_count": 375,
+  "kept_count": 57,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "epicgames",
+  "employer_id": "epic_games",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:22.339964Z",
+  "job_count": 137,
+  "kept_count": 38,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "faire",
+  "employer_id": "faire",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:23.302658Z",
+  "job_count": 72,
+  "kept_count": 72,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "fivetran",
+  "employer_id": "fivetran",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:23.551952Z",
+  "job_count": 201,
+  "kept_count": 130,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "gearbox",
+  "employer_id": "gearbox",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:25.574220Z",
+  "job_count": 0,
+  "kept_count": 0,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "geotab",
+  "employer_id": "geotab",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:25.958454Z",
+  "job_count": 53,
+  "kept_count": 36,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "gitlab",
+  "employer_id": "gitlab",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:27.606393Z",
+  "job_count": 241,
+  "kept_count": 241,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "grafanalabs",
+  "employer_id": "grafana_labs",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:29.267061Z",
+  "job_count": 137,
+  "kept_count": 137,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "greenhouse",
+  "employer_id": "greenhouse",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:29.889828Z",
+  "job_count": 24,
+  "kept_count": 24,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "gusto",
+  "employer_id": "gusto",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:30.650129Z",
+  "job_count": 86,
+  "kept_count": 86,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "heygen",
+  "employer_id": "heygen",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:31.865773Z",
+  "job_count": 19,
+  "kept_count": 11,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "honeycomb",
+  "employer_id": "honeycomb",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:32.637014Z",
+  "job_count": 16,
+  "kept_count": 16,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "hootsuite",
+  "employer_id": "hootsuite",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:33.632313Z",
+  "job_count": 16,
+  "kept_count": 7,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "hubspotjobs",
+  "employer_id": "hubspot",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:34.706664Z",
+  "job_count": 142,
+  "kept_count": 142,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "instacart",
+  "employer_id": "instacart",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:35.986617Z",
+  "job_count": 97,
+  "kept_count": 97,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "instalilyai",
+  "employer_id": "instalily",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:36.734324Z",
+  "job_count": 24,
+  "kept_count": 24,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "internshiplist2000",
+  "employer_id": "geotab_internships",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:26.769180Z",
+  "job_count": 1,
+  "kept_count": 1,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "justworks",
+  "employer_id": "justworks",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:38.705719Z",
+  "job_count": 100,
+  "kept_count": 21,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "kensingtontours",
+  "employer_id": "kensington_tours",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:39.550954Z",
+  "job_count": 20,
+  "kept_count": 20,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "khanacademy",
+  "employer_id": "khan_academy",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:40.298220Z",
+  "job_count": 5,
+  "kept_count": 5,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "konradgroup",
+  "employer_id": "konrad",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:42.936857Z",
+  "job_count": 109,
+  "kept_count": 44,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "later",
+  "employer_id": "later",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:43.983776Z",
+  "job_count": 35,
+  "kept_count": 35,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "lattice",
+  "employer_id": "lattice",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:45.031702Z",
+  "job_count": 2,
+  "kept_count": 2,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "leagueinc",
+  "employer_id": "league",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:45.979732Z",
+  "job_count": 8,
+  "kept_count": 8,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "lyft",
+  "employer_id": "lyft",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:48.012787Z",
+  "job_count": 144,
+  "kept_count": 67,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "mercury",
+  "employer_id": "mercury",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:49.578449Z",
+  "job_count": 68,
+  "kept_count": 68,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "mobsquad",
+  "employer_id": "mobsquad",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:49.700628Z",
+  "job_count": 5,
+  "kept_count": 5,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "momentenergy",
+  "employer_id": "moment_energy",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:50.609333Z",
+  "job_count": 25,
+  "kept_count": 25,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "mongodb",
+  "employer_id": "mongodb",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:51.640630Z",
+  "job_count": 421,
+  "kept_count": 82,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "mozilla",
+  "employer_id": "mozilla",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:53.457912Z",
+  "job_count": 153,
+  "kept_count": 153,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "newrelic",
+  "employer_id": "new_relic",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:54.987469Z",
+  "job_count": 42,
+  "kept_count": 42,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "okta",
+  "employer_id": "okta",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:56.130187Z",
+  "job_count": 360,
+  "kept_count": 142,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "pagerduty",
+  "employer_id": "pagerduty",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:59.672419Z",
+  "job_count": 49,
+  "kept_count": 49,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "peloton",
+  "employer_id": "peloton",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:01.095241Z",
+  "job_count": 40,
+  "kept_count": 40,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "pinterest",
+  "employer_id": "pinterest",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:02.207550Z",
+  "job_count": 167,
+  "kept_count": 99,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "poka",
+  "employer_id": "poka",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:03.807913Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "reddit",
+  "employer_id": "reddit",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:07.072300Z",
+  "job_count": 149,
+  "kept_count": 113,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "ripple",
+  "employer_id": "ripple",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:08.928146Z",
+  "job_count": 107,
+  "kept_count": 6,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "robinhood",
+  "employer_id": "robinhood",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:09.202177Z",
+  "job_count": 162,
+  "kept_count": 42,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "roblox",
+  "employer_id": "roblox",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:10.292187Z",
+  "job_count": 254,
+  "kept_count": 16,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "samsara",
+  "employer_id": "samsara",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:12.437717Z",
+  "job_count": 299,
+  "kept_count": 299,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "scaleai",
+  "employer_id": "scale_ai",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:14.309662Z",
+  "job_count": 158,
+  "kept_count": 15,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "scopely",
+  "employer_id": "scopely",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:14.691990Z",
+  "job_count": 164,
+  "kept_count": 41,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "sproutsocial",
+  "employer_id": "sprout_social",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:33.575287Z",
+  "job_count": 18,
+  "kept_count": 16,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "stackadapt",
+  "employer_id": "stackadapt",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:33.778509Z",
+  "job_count": 73,
+  "kept_count": 73,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "stripe",
+  "employer_id": "stripe",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:34.693961Z",
+  "job_count": 768,
+  "kept_count": 182,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "studiokraftonboard",
+  "employer_id": "krafton_montreal",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:43.106600Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tailscale",
+  "employer_id": "tailscale",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:37.153797Z",
+  "job_count": 87,
+  "kept_count": 87,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tenstorrent",
+  "employer_id": "tenstorrent",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:39.410804Z",
+  "job_count": 154,
+  "kept_count": 100,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tenstorrentuniversity",
+  "employer_id": "tenstorrent_university",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:39.604727Z",
+  "job_count": 12,
+  "kept_count": 6,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "toast",
+  "employer_id": "toast",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:40.471592Z",
+  "job_count": 300,
+  "kept_count": 80,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "tribalscale",
+  "employer_id": "tribalscale",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:42.060533Z",
+  "job_count": 18,
+  "kept_count": 18,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "twilio",
+  "employer_id": "twilio",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:42.527585Z",
+  "job_count": 113,
+  "kept_count": 113,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "unbounce",
+  "employer_id": "unbounce",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:43.702904Z",
+  "job_count": 3,
+  "kept_count": 3,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "varicent",
+  "employer_id": "varicent",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:44.442287Z",
+  "job_count": 24,
+  "kept_count": 24,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "workleap",
+  "employer_id": "workleap",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:50.238673Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "zscaler",
+  "employer_id": "zscaler",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:52.364736Z",
+  "job_count": 390,
+  "kept_count": 180,
+  "ok": true,
+  "source": "greenhouse"
+ },
+ {
+  "board_token": "acceldata",
+  "employer_id": "acceldata",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:43.275896Z",
+  "job_count": 41,
+  "kept_count": 13,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "achievers",
+  "employer_id": "achievers",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:43.830774Z",
+  "job_count": 15,
+  "kept_count": 13,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "altaml",
+  "employer_id": "altaml",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:49.141324Z",
+  "job_count": 5,
+  "kept_count": 5,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "anchorage",
+  "employer_id": "anchorage",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:51.102836Z",
+  "job_count": 19,
+  "kept_count": 3,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "bhvr",
+  "employer_id": "behaviour_interactive",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:57.097422Z",
+  "job_count": 18,
+  "kept_count": 18,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "blackbirdinteractive",
+  "employer_id": "blackbird_interactive",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:57.643048Z",
+  "job_count": 2,
+  "kept_count": 2,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "bosonai",
+  "employer_id": "boson_ai",
+  "error": null,
+  "fetched_at": "2026-11-26T19:37:58.687844Z",
+  "job_count": 11,
+  "kept_count": 6,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "deepgenomics",
+  "employer_id": "deep_genomics",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:15.699276Z",
+  "job_count": 0,
+  "kept_count": 0,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "eqbank",
+  "employer_id": "equitable_bank",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:22.573954Z",
+  "job_count": 76,
+  "kept_count": 76,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "fullscript",
+  "employer_id": "fullscript",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:24.970542Z",
+  "job_count": 16,
+  "kept_count": 16,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "getmaple",
+  "employer_id": "maple",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:49.151756Z",
+  "job_count": 12,
+  "kept_count": 12,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "gomaterials",
+  "employer_id": "gomaterials",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:29.128829Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "kabam",
+  "employer_id": "kabam",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:39.042279Z",
+  "job_count": 34,
+  "kept_count": 34,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "kepler",
+  "employer_id": "kepler_communications",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:39.758539Z",
+  "job_count": 14,
+  "kept_count": 14,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "magnetforensics",
+  "employer_id": "magnet_forensics",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:48.247643Z",
+  "job_count": 31,
+  "kept_count": 19,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "osedea",
+  "employer_id": "osedea",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:59.102564Z",
+  "job_count": 22,
+  "kept_count": 22,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "paytm",
+  "employer_id": "paytm",
+  "error": null,
+  "fetched_at": "2026-11-26T19:38:59.754813Z",
+  "job_count": 197,
+  "kept_count": 0,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "plooto",
+  "employer_id": "plooto",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:02.580979Z",
+  "job_count": 6,
+  "kept_count": 6,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "pointclickcare",
+  "employer_id": "pointclickcare",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:02.718884Z",
+  "job_count": 81,
+  "kept_count": 81,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "policyme",
+  "employer_id": "policyme",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:03.848708Z",
+  "job_count": 10,
+  "kept_count": 10,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "promiserobotics",
+  "employer_id": "promise_robotics",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:04.930878Z",
+  "job_count": 21,
+  "kept_count": 15,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "shyftlabs",
+  "employer_id": "shyftlabs",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:15.783402Z",
+  "job_count": 26,
+  "kept_count": 19,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "spotify",
+  "employer_id": "spotify",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:31.806726Z",
+  "job_count": 97,
+  "kept_count": 6,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "syntronic",
+  "employer_id": "syntronic",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:36.669556Z",
+  "job_count": 41,
+  "kept_count": 38,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "telesat",
+  "employer_id": "telesat",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:37.255038Z",
+  "job_count": 50,
+  "kept_count": 50,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "waabi",
+  "employer_id": "waabi",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:46.495405Z",
+  "job_count": 80,
+  "kept_count": 80,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "wattpad",
+  "employer_id": "wattpad",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:47.152364Z",
+  "job_count": 18,
+  "kept_count": 6,
+  "ok": true,
+  "source": "lever"
+ },
+ {
+  "board_token": "waveapps",
+  "employer_id": "wave",
+  "error": null,
+  "fetched_at": "2026-11-26T19:39:47.602411Z",
+  "job_count": 11,
+  "kept_count": 11,
+  "ok": true,
+  "source": "lever"
+ }
+]
