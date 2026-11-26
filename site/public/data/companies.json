@@ -141,47 +141,6 @@
  {
   "badge": "open",
   "basis": "from 3 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/kensingtontours",
-  "name": "Kensington Tours",
-  "open_count": 6,
-  "posting_ids": [
-   "0f387c29a92b4496",
-   "23c8d52d0c8850f8",
-   "38cb5b33966f7259",
-   "6a2aaa09ca3f180b",
-   "d90bf112d3ae6718",
-   "eb912b2c61ff47c4"
-  ],
-  "program_ids": [],
-  "sector": "travel",
-  "slug": "kensington_tours",
-  "window": {
-   "end": 11,
-   "months": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    3,
-    0
-   ],
-   "n_dates": 3,
-   "start": 11,
-   "years": [
-    2026,
-    2026
-   ]
-  }
- },
- {
-  "badge": "open",
-  "basis": "from 3 postings, 2026",
   "board_url": "https://job-boards.greenhouse.io/stripe",
   "name": "Stripe",
   "open_count": 6,
@@ -259,20 +218,43 @@
  },
  {
   "badge": "open",
-  "basis": "from 1 posting, 2026",
-  "board_url": "https://job-boards.greenhouse.io/momentenergy",
-  "name": "Moment Energy",
-  "open_count": 4,
+  "basis": "from 3 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/kensingtontours",
+  "name": "Kensington Tours",
+  "open_count": 5,
   "posting_ids": [
-   "12697a76f70befcb",
-   "47f2c902bff5202e",
-   "af681646938ed56b",
-   "e4b7b407a242bde8"
+   "23c8d52d0c8850f8",
+   "38cb5b33966f7259",
+   "6a2aaa09ca3f180b",
+   "d90bf112d3ae6718",
+   "eb912b2c61ff47c4"
   ],
   "program_ids": [],
-  "sector": "energy",
-  "slug": "moment_energy",
-  "window": null
+  "sector": "travel",
+  "slug": "kensington_tours",
+  "window": {
+   "end": 11,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   "n_dates": 3,
+   "start": 11,
+   "years": [
+    2026,
+    2026
+   ]
+  }
  },
  {
   "badge": "open",
@@ -327,6 +309,22 @@
     2026
    ]
   }
+ },
+ {
+  "badge": "open",
+  "basis": "from 1 posting, 2026",
+  "board_url": "https://job-boards.greenhouse.io/momentenergy",
+  "name": "Moment Energy",
+  "open_count": 3,
+  "posting_ids": [
+   "12697a76f70befcb",
+   "47f2c902bff5202e",
+   "af681646938ed56b"
+  ],
+  "program_ids": [],
+  "sector": "energy",
+  "slug": "moment_energy",
+  "window": null
  },
  {
   "badge": "open",
@@ -592,20 +590,6 @@
   "program_ids": [],
   "sector": "ecommerce",
   "slug": "gomaterials",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "from 2 postings, 2026",
-  "board_url": "https://job-boards.greenhouse.io/hootsuite",
-  "name": "Hootsuite",
-  "open_count": 1,
-  "posting_ids": [
-   "5d43f7b9a548f08a"
-  ],
-  "program_ids": [],
-  "sector": "software",
-  "slug": "hootsuite",
   "window": null
  },
  {
@@ -1575,6 +1559,18 @@
   "program_ids": [],
   "sector": "software",
   "slug": "honeycomb",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "from 2 postings, 2026",
+  "board_url": "https://job-boards.greenhouse.io/hootsuite",
+  "name": "Hootsuite",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "software",
+  "slug": "hootsuite",
   "window": null
  },
  {
