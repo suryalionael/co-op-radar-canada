@@ -148,3 +148,8 @@
 {"command": "process-postings", "open_canadian_student": 122, "postings": 12779, "with_stated_duration": 28}
 {"changes": 8, "command": "process-programs", "pages": 30}
 {"command": "build-site-data", "companies": 198, "duration_from_dates": 8, "duration_stated": 28, "employer_boards_tracked": 171, "employers_with_postings": 37, "open_student_postings": 122, "programs_watched": 30}
+{"boards": 171, "boards_failed": 1, "command": "fetch-postings", "day": "2026-11-27", "failed": ["greenhouse/aperaaiinc: HTTP 404"], "new_description_gz_bytes": 417950, "postings_gz_bytes": 1408781, "postings_kept": 8480}
+{"command": "fetch-programs", "day": "2026-11-27", "failed": ["nrcan_students: HTTP 202"], "pages": 30}
+{"command": "process-postings", "open_canadian_student": 121, "postings": 12841, "with_stated_duration": 28}
+{"changes": 8, "command": "process-programs", "pages": 30}
+{"command": "build-site-data", "companies": 198, "duration_from_dates": 8, "duration_stated": 28, "employer_boards_tracked": 171, "employers_with_postings": 36, "open_student_postings": 121, "programs_watched": 30}

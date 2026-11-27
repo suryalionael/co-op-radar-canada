@@ -511,20 +511,6 @@
  {
   "badge": "open",
   "basis": "",
-  "board_url": "https://job-boards.greenhouse.io/alayacare",
-  "name": "AlayaCare",
-  "open_count": 1,
-  "posting_ids": [
-   "e6a6b0e7204b35d1"
-  ],
-  "program_ids": [],
-  "sector": "healthtech",
-  "slug": "alayacare",
-  "window": null
- },
- {
-  "badge": "open",
-  "basis": "",
   "board_url": "https://jobs.lever.co/bosonai",
   "name": "Boson AI",
   "open_count": 1,
@@ -784,6 +770,18 @@
   "program_ids": [],
   "sector": "insurtech",
   "slug": "alan",
+  "window": null
+ },
+ {
+  "badge": "quiet",
+  "basis": "",
+  "board_url": "https://job-boards.greenhouse.io/alayacare",
+  "name": "AlayaCare",
+  "open_count": 0,
+  "posting_ids": [],
+  "program_ids": [],
+  "sector": "healthtech",
+  "slug": "alayacare",
   "window": null
  },
  {
